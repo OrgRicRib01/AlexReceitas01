@@ -1,8 +1,2847 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1793127099545,
+ "updatedAt": 1793127204775,
  "docs": {
+  "ingredients/i-abobora": {
+   "name": "Abóbora",
+   "category": "legumes",
+   "unit": "",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 0.99,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "vendida a granel"
+   },
+   "updatedAt": 1793127184890
+  },
+  "ingredients/i-acucar-branco": {
+   "name": "Açúcar branco",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 1.09,
+    "unit": "kg",
+    "src": "A",
+    "date": "2026-10-27",
+    "note": "1 kg"
+   },
+   "updatedAt": 1793127200073
+  },
+  "ingredients/i-acucar-em-po": {
+   "name": "Açúcar em pó",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 4.2,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "250 g"
+   },
+   "updatedAt": 1793127200103
+  },
+  "ingredients/i-aguardente": {
+   "name": "Aguardente",
+   "category": "bebidas",
+   "unit": "L",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 17.13,
+    "unit": "L",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "70 cl"
+   },
+   "updatedAt": 1793127201502
+  },
+  "ingredients/i-alecrim-fresco": {
+   "name": "Alecrim fresco",
+   "category": "ervas",
+   "unit": "molho",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 1.94,
+    "unit": "molho",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "embalagem 23 g"
+   },
+   "updatedAt": 1793127201176
+  },
+  "ingredients/i-alface": {
+   "name": "Alface",
+   "category": "legumes",
+   "unit": "un",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 1.24,
+    "unit": "un",
+    "src": "A",
+    "date": "2026-10-27",
+    "note": "embalagem de 2 un"
+   },
+   "updatedAt": 1793127185328
+  },
+  "ingredients/i-alheira": {
+   "name": "Alheira",
+   "category": "carne",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 6.95,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "200 g"
+   },
+   "updatedAt": 1793127197770
+  },
+  "ingredients/i-alho-frances": {
+   "name": "Alho-francês",
+   "category": "legumes",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 4.72,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "embalagem 400 g"
+   },
+   "updatedAt": 1793127185430
+  },
+  "ingredients/i-amendoa": {
+   "name": "Amêndoa",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 12.6,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "150 g"
+   },
+   "updatedAt": 1793127200461
+  },
+  "ingredients/i-amendoa-moida": {
+   "name": "Amêndoa moída",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 17.52,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "125 g"
+   },
+   "updatedAt": 1793127200486
+  },
+  "ingredients/i-amendoins": {
+   "name": "Amendoins",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 3.98,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "500 g"
+   },
+   "updatedAt": 1793127200529
+  },
+  "ingredients/i-amido-de-milho-maizena": {
+   "name": "Amido de milho (maizena)",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 6.47,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "400 g"
+   },
+   "updatedAt": 1793127200057
+  },
+  "ingredients/i-ananas": {
+   "name": "Ananás",
+   "category": "frutas",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 1.49,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "a granel"
+   },
+   "updatedAt": 1793127188757
+  },
+  "ingredients/i-arroz-agulha": {
+   "name": "Arroz agulha",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 1.15,
+    "unit": "kg",
+    "src": "A",
+    "date": "2026-10-27",
+    "note": "2 kg"
+   },
+   "updatedAt": 1793127199890
+  },
+  "ingredients/i-arroz-arboreo": {
+   "name": "Arroz arbóreo",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 3.18,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "500 g"
+   },
+   "updatedAt": 1793127199922
+  },
+  "ingredients/i-arroz-basmati-jasmim": {
+   "name": "Arroz basmati / jasmim",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 1.99,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "1 kg"
+   },
+   "updatedAt": 1793127199938
+  },
+  "ingredients/i-arroz-carolino": {
+   "name": "Arroz carolino",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 1.09,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "1 kg"
+   },
+   "updatedAt": 1793127199905
+  },
+  "ingredients/i-asas-de-frango": {
+   "name": "Asas de frango",
+   "category": "carne",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 2.79,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "preço ao kg"
+   },
+   "updatedAt": 1793127191182
+  },
+  "ingredients/i-atum-em-conserva": {
+   "name": "Atum em conserva",
+   "category": "peixe",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 8.81,
+    "unit": "kg",
+    "src": "A",
+    "date": "2026-10-27",
+    "note": "atum ao natural, 480 g"
+   },
+   "updatedAt": 1793127199566
+  },
+  "ingredients/i-azeite-virgem-extra": {
+   "name": "Azeite virgem extra",
+   "category": "gorduras",
+   "unit": "L",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 6.12,
+    "unit": "L",
+    "src": "A",
+    "date": "2026-10-27",
+    "note": "1 L"
+   },
+   "updatedAt": 1793127200969
+  },
+  "ingredients/i-azeitonas-pretas": {
+   "name": "Azeitonas pretas",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 5.48,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "210 g escorridas"
+   },
+   "updatedAt": 1793127200439
+  },
+  "ingredients/i-bacalhau-desfiado-demolhado": {
+   "name": "Bacalhau desfiado demolhado",
+   "category": "peixe",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 10.58,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "congelado, 500 g"
+   },
+   "updatedAt": 1793127199374
+  },
+  "ingredients/i-bacalhau-em-postas-demolhado": {
+   "name": "Bacalhau em postas demolhado",
+   "category": "peixe",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 9.11,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "congelado, 800 g"
+   },
+   "updatedAt": 1793127199360
+  },
+  "ingredients/i-bacalhau-graudo-seco": {
+   "name": "Bacalhau graúdo (seco)",
+   "category": "peixe",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 20.73,
+    "unit": "kg",
+    "src": "D",
+    "date": "2026-10-07",
+    "note": ""
+   },
+   "updatedAt": 1793127199343
+  },
+  "ingredients/i-bacon": {
+   "name": "Bacon",
+   "category": "carne",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 9.45,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "embalagem 200 g"
+   },
+   "updatedAt": 1793127196256
+  },
+  "ingredients/i-banana": {
+   "name": "Banana",
+   "category": "frutas",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 1.17,
+    "unit": "kg",
+    "src": "A",
+    "date": "2026-10-27",
+    "note": "1 kg"
+   },
+   "updatedAt": 1793127188963
+  },
+  "ingredients/i-batata": {
+   "name": "Batata",
+   "category": "legumes",
+   "unit": "",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 1.17,
+    "unit": "kg",
+    "src": "A",
+    "date": "2026-10-27",
+    "note": "saco 2 kg"
+   },
+   "updatedAt": 1793127185131
+  },
+  "ingredients/i-batata-doce": {
+   "name": "Batata-doce",
+   "category": "legumes",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 1.99,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "a granel"
+   },
+   "updatedAt": 1793127185536
+  },
+  "ingredients/i-beringela": {
+   "name": "Beringela",
+   "category": "legumes",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 3.88,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "embalagem 400 g"
+   },
+   "updatedAt": 1793127185656
+  },
+  "ingredients/i-bife-de-peru": {
+   "name": "Bife de peru",
+   "category": "carne",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 6.99,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "preço ao kg"
+   },
+   "updatedAt": 1793127192011
+  },
+  "ingredients/i-bife-de-vaca": {
+   "name": "Bife de vaca",
+   "category": "carne",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 17.49,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "preço ao kg"
+   },
+   "updatedAt": 1793127194854
+  },
+  "ingredients/i-bolacha-maria": {
+   "name": "Bolacha Maria",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 2.97,
+    "unit": "kg",
+    "src": "A",
+    "date": "2026-10-27",
+    "note": "400 g"
+   },
+   "updatedAt": 1793127200599
+  },
+  "ingredients/i-borrego-em-pedacos": {
+   "name": "Borrego em pedaços",
+   "category": "carne",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 12.99,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "preço ao kg"
+   },
+   "updatedAt": 1793127195534
+  },
+  "ingredients/i-broa-de-milho": {
+   "name": "Broa de milho",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 3.11,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "800 g"
+   },
+   "updatedAt": 1793127200669
+  },
+  "ingredients/i-brocolos": {
+   "name": "Brócolos",
+   "category": "legumes",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 4.42,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "embalagem 450 g"
+   },
+   "updatedAt": 1793127185774
+  },
+  "ingredients/i-cabrito-em-pedacos": {
+   "name": "Cabrito em pedaços",
+   "category": "carne",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 16.99,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "preço ao kg"
+   },
+   "updatedAt": 1793127195895
+  },
+  "ingredients/i-cacau-em-po": {
+   "name": "Cacau em pó",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 15.92,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "125 g"
+   },
+   "updatedAt": 1793127200223
+  },
+  "ingredients/i-cafe-moido": {
+   "name": "Café moído",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 15.44,
+    "unit": "kg",
+    "src": "A",
+    "date": "2026-10-27",
+    "note": "250 g"
+   },
+   "updatedAt": 1793127200692
+  },
+  "ingredients/i-caldo-de-carne-cubo": {
+   "name": "Caldo de carne (cubo)",
+   "category": "mercearia",
+   "unit": "un",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 0.066,
+    "unit": "un",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "embalagem 24 un"
+   },
+   "updatedAt": 1793127200738
+  },
+  "ingredients/i-caldo-de-galinha-cubo": {
+   "name": "Caldo de galinha (cubo)",
+   "category": "mercearia",
+   "unit": "un",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 0.066,
+    "unit": "un",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "embalagem 24 un"
+   },
+   "updatedAt": 1793127200717
+  },
+  "ingredients/i-caldo-de-legumes-cubo": {
+   "name": "Caldo de legumes (cubo)",
+   "category": "mercearia",
+   "unit": "un",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 0.083,
+    "unit": "un",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "embalagem 12 un"
+   },
+   "updatedAt": 1793127200762
+  },
+  "ingredients/i-camarao-descascado": {
+   "name": "Camarão descascado",
+   "category": "peixe",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 22.95,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "congelado, 200 g"
+   },
+   "updatedAt": 1793127199536
+  },
+  "ingredients/i-canela-em-po": {
+   "name": "Canela em pó",
+   "category": "ervas",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 10.9,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "100 g"
+   },
+   "updatedAt": 1793127201242
+  },
+  "ingredients/i-carapau": {
+   "name": "Carapau",
+   "category": "peixe",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 5.57,
+    "unit": "kg",
+    "src": "D",
+    "date": "2026-10-07",
+    "note": "fresco"
+   },
+   "updatedAt": 1793127199391
+  },
+  "ingredients/i-carcaca": {
+   "name": "Carcaça",
+   "category": "mercearia",
+   "unit": "un",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 0.17,
+    "unit": "un",
+    "src": "A",
+    "date": "2026-10-27",
+    "note": "embalagem 6 un"
+   },
+   "updatedAt": 1793127200644
+  },
+  "ingredients/i-caril-em-po": {
+   "name": "Caril em pó",
+   "category": "ervas",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 19.9,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "100 g"
+   },
+   "updatedAt": 1793127201344
+  },
+  "ingredients/i-carne-de-novilho-para-cozer": {
+   "name": "Carne de novilho para cozer",
+   "category": "carne",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 12.25,
+    "unit": "kg",
+    "src": "D",
+    "date": "2026-10-07",
+    "note": ""
+   },
+   "updatedAt": 1793127194186
+  },
+  "ingredients/i-carne-picada-de-vaca": {
+   "name": "Carne picada de vaca",
+   "category": "carne",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 9.98,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "embalagem 500 g; as fontes divergem entre ≈10 e 16 €/kg — confirmar"
+   },
+   "updatedAt": 1793127194506
+  },
+  "ingredients/i-cebola": {
+   "name": "Cebola",
+   "category": "legumes",
+   "unit": "",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 1.19,
+    "unit": "kg",
+    "src": "A",
+    "date": "2026-10-27",
+    "note": "1 kg"
+   },
+   "updatedAt": 1793127185230
+  },
+  "ingredients/i-cebolinho-fresco": {
+   "name": "Cebolinho fresco",
+   "category": "ervas",
+   "unit": "molho",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 1.29,
+    "unit": "molho",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "embalagem 30 g"
+   },
+   "updatedAt": 1793127201133
+  },
+  "ingredients/i-cenoura": {
+   "name": "Cenoura",
+   "category": "legumes",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 1.19,
+    "unit": "kg",
+    "src": "A",
+    "date": "2026-10-27",
+    "note": "1 kg"
+   },
+   "updatedAt": 1793127185905
+  },
+  "ingredients/i-cerveja": {
+   "name": "Cerveja",
+   "category": "bebidas",
+   "unit": "L",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 1.94,
+    "unit": "L",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "33 cl"
+   },
+   "updatedAt": 1793127201479
+  },
+  "ingredients/i-choco-limpo": {
+   "name": "Choco limpo",
+   "category": "peixe",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 9.61,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "congelado, 800 g"
+   },
+   "updatedAt": 1793127199520
+  },
+  "ingredients/i-chocolate-negro-70": {
+   "name": "Chocolate negro 70%",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 19.9,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "100 g"
+   },
+   "updatedAt": 1793127200241
+  },
+  "ingredients/i-chourico-de-carne": {
+   "name": "Chouriço de carne",
+   "category": "carne",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 7.45,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "200 g"
+   },
+   "updatedAt": 1793127197015
+  },
+  "ingredients/i-claras-de-ovo": {
+   "name": "Claras de ovo",
+   "category": "laticinios",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 2.99,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "1 kg"
+   },
+   "updatedAt": 1793127199644
+  },
+  "ingredients/i-coco-ralado": {
+   "name": "Coco ralado",
+   "category": "frutas",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 7.95,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "embalagem 200 g"
+   },
+   "updatedAt": 1793127190378
+  },
+  "ingredients/i-coentros": {
+   "name": "Coentros",
+   "category": "ervas",
+   "unit": "molho",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 0.99,
+    "unit": "molho",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "molho ≈ 50 g"
+   },
+   "updatedAt": 1793127201084
+  },
+  "ingredients/i-cogumelos-frescos": {
+   "name": "Cogumelos frescos",
+   "category": "legumes",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 6.36,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "embalagem 250 g"
+   },
+   "updatedAt": 1793127186029
+  },
+  "ingredients/i-colorau-pimentao-doce": {
+   "name": "Colorau (pimentão doce)",
+   "category": "ervas",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 11.8,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "50 g"
+   },
+   "updatedAt": 1793127201296
+  },
+  "ingredients/i-cominhos": {
+   "name": "Cominhos",
+   "category": "ervas",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 19.78,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "45 g"
+   },
+   "updatedAt": 1793127201269
+  },
+  "ingredients/i-concentrado-de-tomate": {
+   "name": "Concentrado de tomate",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 7.07,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "140 g"
+   },
+   "updatedAt": 1793127200316
+  },
+  "ingredients/i-corvina": {
+   "name": "Corvina",
+   "category": "peixe",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 11.99,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "fresca, preço ao kg"
+   },
+   "updatedAt": 1793127199477
+  },
+  "ingredients/i-costeletas-de-porco": {
+   "name": "Costeletas de porco",
+   "category": "carne",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 4.39,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "preço ao kg"
+   },
+   "updatedAt": 1793127192892
+  },
+  "ingredients/i-couve-flor": {
+   "name": "Couve-flor",
+   "category": "legumes",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 1.85,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "750 g"
+   },
+   "updatedAt": 1793127186161
+  },
+  "ingredients/i-coxas-de-frango": {
+   "name": "Coxas de frango",
+   "category": "carne",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 3.49,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "1 kg"
+   },
+   "updatedAt": 1793127190891
+  },
+  "ingredients/i-curgete": {
+   "name": "Curgete",
+   "category": "legumes",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 1.99,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "preço ao kg; 1 un ≈ 500 g"
+   },
+   "updatedAt": 1793127186302
+  },
+  "ingredients/i-dourada": {
+   "name": "Dourada",
+   "category": "peixe",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 8.99,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "fresca, preço ao kg"
+   },
+   "updatedAt": 1793127199449
+  },
+  "ingredients/i-entrecosto-de-porco": {
+   "name": "Entrecosto de porco",
+   "category": "carne",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 6.29,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "preço ao kg"
+   },
+   "updatedAt": 1793127193177
+  },
+  "ingredients/i-ervilhas-congeladas": {
+   "name": "Ervilhas congeladas",
+   "category": "legumes",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 1.49,
+    "unit": "kg",
+    "src": "A",
+    "date": "2026-10-27",
+    "note": "embalagem 750 g"
+   },
+   "updatedAt": 1793127186737
+  },
+  "ingredients/i-espargos": {
+   "name": "Espargos",
+   "category": "legumes",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 11.96,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "molho 250 g"
+   },
+   "updatedAt": 1793127186442
+  },
+  "ingredients/i-esparguete": {
+   "name": "Esparguete",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 0.99,
+    "unit": "kg",
+    "src": "A",
+    "date": "2026-10-27",
+    "note": "2 kg"
+   },
+   "updatedAt": 1793127199955
+  },
+  "ingredients/i-espinafres-baby": {
+   "name": "Espinafres baby",
+   "category": "legumes",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 6.6,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "embalagem 150 g"
+   },
+   "updatedAt": 1793127186591
+  },
+  "ingredients/i-essencia-de-baunilha": {
+   "name": "Essência de baunilha",
+   "category": "ervas",
+   "unit": "L",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 22.45,
+    "unit": "L",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "200 ml"
+   },
+   "updatedAt": 1793127201410
+  },
+  "ingredients/i-farinha-de-trigo": {
+   "name": "Farinha de trigo",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 0.69,
+    "unit": "kg",
+    "src": "A",
+    "date": "2026-10-27",
+    "note": "tipo 55, 1 kg"
+   },
+   "updatedAt": 1793127200040
+  },
+  "ingredients/i-febras-de-porco": {
+   "name": "Febras de porco",
+   "category": "carne",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 4.49,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "1 kg"
+   },
+   "updatedAt": 1793127192598
+  },
+  "ingredients/i-feijao-seco": {
+   "name": "Feijão seco",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 2.42,
+    "unit": "kg",
+    "src": "A",
+    "date": "2026-10-27",
+    "note": "500 g"
+   },
+   "updatedAt": 1793127200334
+  },
+  "ingredients/i-fermento-de-padeiro-seco": {
+   "name": "Fermento de padeiro seco",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 90.55,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "27,5 g"
+   },
+   "updatedAt": 1793127200187
+  },
+  "ingredients/i-fermento-em-po": {
+   "name": "Fermento em pó",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 8.6,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "150 g"
+   },
+   "updatedAt": 1793127200167
+  },
+  "ingredients/i-fiambre-fatiado": {
+   "name": "Fiambre fatiado",
+   "category": "carne",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 11.15,
+    "unit": "kg",
+    "src": "A",
+    "date": "2026-10-27",
+    "note": "fiambre da perna, 200 g"
+   },
+   "updatedAt": 1793127198547
+  },
+  "ingredients/i-filetes-de-pescada": {
+   "name": "Filetes de pescada",
+   "category": "peixe",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 7.89,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "congelados, 1 kg"
+   },
+   "updatedAt": 1793127199419
+  },
+  "ingredients/i-flocos-de-aveia": {
+   "name": "Flocos de aveia",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 1.98,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "500 g"
+   },
+   "updatedAt": 1793127200279
+  },
+  "ingredients/i-frutos-vermelhos-congelados": {
+   "name": "Frutos vermelhos congelados",
+   "category": "frutas",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 11.09,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "embalagem 450 g"
+   },
+   "updatedAt": 1793127190127
+  },
+  "ingredients/i-galinha-inteira": {
+   "name": "Galinha inteira",
+   "category": "carne",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 2.99,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "preço ao kg"
+   },
+   "updatedAt": 1793127191452
+  },
+  "ingredients/i-gelatina-em-po": {
+   "name": "Gelatina em pó",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 31.94,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "31 g"
+   },
+   "updatedAt": 1793127200206
+  },
+  "ingredients/i-gengibre-fresco": {
+   "name": "Gengibre fresco",
+   "category": "legumes",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 4.99,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "preço ao kg"
+   },
+   "updatedAt": 1793127186915
+  },
+  "ingredients/i-grao-de-bico-seco": {
+   "name": "Grão-de-bico seco",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 1.96,
+    "unit": "kg",
+    "src": "A",
+    "date": "2026-10-27",
+    "note": "500 g"
+   },
+   "updatedAt": 1793127200352
+  },
+  "ingredients/i-grelos-de-nabo": {
+   "name": "Grelos de nabo",
+   "category": "legumes",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 3.27,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "embalagem 700 g"
+   },
+   "updatedAt": 1793127187081
+  },
+  "ingredients/i-iogurte-grego": {
+   "name": "Iogurte grego",
+   "category": "laticinios",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 3.18,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "4 × 125 g"
+   },
+   "updatedAt": 1793127199676
+  },
+  "ingredients/i-iogurte-natural": {
+   "name": "Iogurte natural",
+   "category": "laticinios",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 1.39,
+    "unit": "kg",
+    "src": "A",
+    "date": "2026-10-27",
+    "note": "1 kg"
+   },
+   "updatedAt": 1793127199660
+  },
+  "ingredients/i-ketchup": {
+   "name": "Ketchup",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 2.91,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "340 g"
+   },
+   "updatedAt": 1793127200844
+  },
+  "ingredients/i-laranja": {
+   "name": "Laranja",
+   "category": "frutas",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 1.66,
+    "unit": "kg",
+    "src": "A",
+    "date": "2026-10-27",
+    "note": "1 kg"
+   },
+   "updatedAt": 1793127189181
+  },
+  "ingredients/i-leite-condensado": {
+   "name": "Leite condensado",
+   "category": "laticinios",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 3.5,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "397 g"
+   },
+   "updatedAt": 1793127199842
+  },
+  "ingredients/i-leite-de-coco": {
+   "name": "Leite de coco",
+   "category": "laticinios",
+   "unit": "L",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 3.47,
+    "unit": "L",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "400 ml"
+   },
+   "updatedAt": 1793127199875
+  },
+  "ingredients/i-leite-evaporado": {
+   "name": "Leite evaporado",
+   "category": "laticinios",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 3.63,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "410 g"
+   },
+   "updatedAt": 1793127199858
+  },
+  "ingredients/i-leite-meio-gordo": {
+   "name": "Leite meio-gordo",
+   "category": "laticinios",
+   "unit": "L",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 0.85,
+    "unit": "L",
+    "src": "A",
+    "date": "2026-10-27",
+    "note": "UHT, embalagem 6 L"
+   },
+   "updatedAt": 1793127199581
+  },
+  "ingredients/i-lentilhas-vermelhas": {
+   "name": "Lentilhas vermelhas",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 3.98,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "500 g"
+   },
+   "updatedAt": 1793127200369
+  },
+  "ingredients/i-lima": {
+   "name": "Lima",
+   "category": "frutas",
+   "unit": "un",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 0.25,
+    "unit": "un",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "embalagem 12 un"
+   },
+   "updatedAt": 1793127189398
+  },
+  "ingredients/i-limao": {
+   "name": "Limão",
+   "category": "frutas",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 2.49,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "preço ao kg; 2 un ≈ 400 g"
+   },
+   "updatedAt": 1793127189638
+  },
+  "ingredients/i-lombo-de-porco": {
+   "name": "Lombo de porco",
+   "category": "carne",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 5.28,
+    "unit": "kg",
+    "src": "A",
+    "date": "2026-10-27",
+    "note": "1 kg"
+   },
+   "updatedAt": 1793127192297
+  },
+  "ingredients/i-lulas-limpas": {
+   "name": "Lulas limpas",
+   "category": "peixe",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 11.25,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "400 g"
+   },
+   "updatedAt": 1793127199503
+  },
+  "ingredients/i-maca": {
+   "name": "Maçã",
+   "category": "frutas",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 1.85,
+    "unit": "kg",
+    "src": "A",
+    "date": "2026-10-27",
+    "note": "maçã Gala, 1 kg"
+   },
+   "updatedAt": 1793127189887
+  },
+  "ingredients/i-maionese": {
+   "name": "Maionese",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 3.38,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "470 g"
+   },
+   "updatedAt": 1793127200810
+  },
+  "ingredients/i-malagueta-fresca": {
+   "name": "Malagueta fresca",
+   "category": "legumes",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 13.9,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "embalagem 100 g"
+   },
+   "updatedAt": 1793127187241
+  },
+  "ingredients/i-manjericao-fresco": {
+   "name": "Manjericão fresco",
+   "category": "ervas",
+   "unit": "molho",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 1.19,
+    "unit": "molho",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "embalagem 25 g"
+   },
+   "updatedAt": 1793127201109
+  },
+  "ingredients/i-manteiga": {
+   "name": "Manteiga",
+   "category": "laticinios",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 8.36,
+    "unit": "kg",
+    "src": "A",
+    "date": "2026-10-27",
+    "note": "250 g"
+   },
+   "updatedAt": 1793127199613
+  },
+  "ingredients/i-margarina": {
+   "name": "Margarina",
+   "category": "gorduras",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 3.16,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "250 g"
+   },
+   "updatedAt": 1793127201014
+  },
+  "ingredients/i-massa-aletria": {
+   "name": "Massa aletria",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 2.3,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "500 g"
+   },
+   "updatedAt": 1793127200004
+  },
+  "ingredients/i-massa-curta-penne-fusilli": {
+   "name": "Massa curta (penne, fusilli)",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 1.38,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "500 g"
+   },
+   "updatedAt": 1793127199971
+  },
+  "ingredients/i-massa-de-lasanha": {
+   "name": "Massa de lasanha",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 2.78,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "500 g"
+   },
+   "updatedAt": 1793127199987
+  },
+  "ingredients/i-massa-de-pimentao": {
+   "name": "Massa de pimentão",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 4.25,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "200 g"
+   },
+   "updatedAt": 1793127200946
+  },
+  "ingredients/i-massa-folhada": {
+   "name": "Massa folhada",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 4.13,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "230 g"
+   },
+   "updatedAt": 1793127200021
+  },
+  "ingredients/i-mel": {
+   "name": "Mel",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 9.97,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "300 g"
+   },
+   "updatedAt": 1793127200568
+  },
+  "ingredients/i-mexilhao": {
+   "name": "Mexilhão",
+   "category": "peixe",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 2.14,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "fresco, embalagem ≈ 1 kg"
+   },
+   "updatedAt": 1793127199551
+  },
+  "ingredients/i-molho-de-soja": {
+   "name": "Molho de soja",
+   "category": "mercearia",
+   "unit": "L",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 4.95,
+    "unit": "L",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "200 ml"
+   },
+   "updatedAt": 1793127200872
+  },
+  "ingredients/i-morcela": {
+   "name": "Morcela",
+   "category": "carne",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 7.95,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "200 g"
+   },
+   "updatedAt": 1793127197382
+  },
+  "ingredients/i-mostarda": {
+   "name": "Mostarda",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 5.95,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "200 g"
+   },
+   "updatedAt": 1793127200784
+  },
+  "ingredients/i-nabo": {
+   "name": "Nabo",
+   "category": "legumes",
+   "unit": "un",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 1.19,
+    "unit": "un",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": ""
+   },
+   "updatedAt": 1793127187404
+  },
+  "ingredients/i-natas-para-culinaria": {
+   "name": "Natas para culinária",
+   "category": "laticinios",
+   "unit": "L",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 3.95,
+    "unit": "L",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "200 ml"
+   },
+   "updatedAt": 1793127199597
+  },
+  "ingredients/i-oleo-alimentar": {
+   "name": "Óleo alimentar",
+   "category": "gorduras",
+   "unit": "L",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 1.74,
+    "unit": "L",
+    "src": "A",
+    "date": "2026-10-27",
+    "note": "100% vegetal, 1 L"
+   },
+   "updatedAt": 1793127200993
+  },
+  "ingredients/i-oleo-de-coco": {
+   "name": "Óleo de coco",
+   "category": "gorduras",
+   "unit": "L",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 9.98,
+    "unit": "L",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "500 ml"
+   },
+   "updatedAt": 1793127201037
+  },
+  "ingredients/i-oregaos-secos": {
+   "name": "Orégãos secos",
+   "category": "ervas",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 49.67,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "30 g"
+   },
+   "updatedAt": 1793127201365
+  },
+  "ingredients/i-ovos": {
+   "name": "Ovos",
+   "category": "laticinios",
+   "unit": "un",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 0.3,
+    "unit": "un",
+    "src": "A",
+    "date": "2026-10-27",
+    "note": "calibre M, dúzia"
+   },
+   "updatedAt": 1793127199628
+  },
+  "ingredients/i-pa-de-porco": {
+   "name": "Pá de porco",
+   "category": "carne",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 3.99,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "preço ao kg"
+   },
+   "updatedAt": 1793127193485
+  },
+  "ingredients/i-pao-de-forma": {
+   "name": "Pão de forma",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 1.81,
+    "unit": "kg",
+    "src": "A",
+    "date": "2026-10-27",
+    "note": "700 g"
+   },
+   "updatedAt": 1793127200621
+  },
+  "ingredients/i-pao-ralado": {
+   "name": "Pão ralado",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 2,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "240 g"
+   },
+   "updatedAt": 1793127200260
+  },
+  "ingredients/i-paprika-fumada": {
+   "name": "Paprika fumada",
+   "category": "ervas",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 45.43,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "35 g"
+   },
+   "updatedAt": 1793127201321
+  },
+  "ingredients/i-pato-inteiro": {
+   "name": "Pato inteiro",
+   "category": "carne",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 4.49,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "preço ao kg; 1 un ≈ 2,4 kg"
+   },
+   "updatedAt": 1793127191724
+  },
+  "ingredients/i-peito-de-frango": {
+   "name": "Peito de frango",
+   "category": "carne",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 6.89,
+    "unit": "kg",
+    "src": "A",
+    "date": "2026-10-27",
+    "note": "1 kg"
+   },
+   "updatedAt": 1793127190631
+  },
+  "ingredients/i-pescada": {
+   "name": "Pescada",
+   "category": "peixe",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 11.1,
+    "unit": "kg",
+    "src": "A",
+    "date": "2026-10-27",
+    "note": "congelada, 800 g"
+   },
+   "updatedAt": 1793127199405
+  },
+  "ingredients/i-picanha-de-vaca": {
+   "name": "Picanha de vaca",
+   "category": "carne",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 19.99,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "preço ao kg"
+   },
+   "updatedAt": 1793127195179
+  },
+  "ingredients/i-pimenta-preta-moida": {
+   "name": "Pimenta preta moída",
+   "category": "ervas",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 17.8,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "50 g"
+   },
+   "updatedAt": 1793127201206
+  },
+  "ingredients/i-pimento-verde": {
+   "name": "Pimento verde",
+   "category": "legumes",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 2.99,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "preço ao kg; 1 un ≈ 250 g"
+   },
+   "updatedAt": 1793127187580
+  },
+  "ingredients/i-pimento-vermelho": {
+   "name": "Pimento vermelho",
+   "category": "legumes",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 3.29,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "preço ao kg; 1 un ≈ 300 g"
+   },
+   "updatedAt": 1793127187761
+  },
+  "ingredients/i-pinhoes": {
+   "name": "Pinhões",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 59.8,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "50 g"
+   },
+   "updatedAt": 1793127200510
+  },
+  "ingredients/i-piri-piri-seco": {
+   "name": "Piri-piri seco",
+   "category": "ervas",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 16.83,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "41 g"
+   },
+   "updatedAt": 1793127201387
+  },
+  "ingredients/i-polpa-de-tomate": {
+   "name": "Polpa de tomate",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 1.98,
+    "unit": "kg",
+    "src": "A",
+    "date": "2026-10-27",
+    "note": "800 g"
+   },
+   "updatedAt": 1793127200298
+  },
+  "ingredients/i-polvo": {
+   "name": "Polvo",
+   "category": "peixe",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 13.99,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "preço ao kg"
+   },
+   "updatedAt": 1793127199490
+  },
+  "ingredients/i-presunto-fatiado": {
+   "name": "Presunto fatiado",
+   "category": "carne",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 19.93,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "embalagem 150 g"
+   },
+   "updatedAt": 1793127198150
+  },
+  "ingredients/i-queijo-creme": {
+   "name": "Queijo creme",
+   "category": "laticinios",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 10.6,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "150 g"
+   },
+   "updatedAt": 1793127199773
+  },
+  "ingredients/i-queijo-emmental": {
+   "name": "Queijo emmental",
+   "category": "laticinios",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 8.95,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "200 g"
+   },
+   "updatedAt": 1793127199707
+  },
+  "ingredients/i-queijo-feta": {
+   "name": "Queijo feta",
+   "category": "laticinios",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 11.93,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "150 g"
+   },
+   "updatedAt": 1793127199793
+  },
+  "ingredients/i-queijo-flamengo": {
+   "name": "Queijo flamengo",
+   "category": "laticinios",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 7.12,
+    "unit": "kg",
+    "src": "A",
+    "date": "2026-10-27",
+    "note": "400 g"
+   },
+   "updatedAt": 1793127199692
+  },
+  "ingredients/i-queijo-fresco": {
+   "name": "Queijo fresco",
+   "category": "laticinios",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 5.75,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "200 g"
+   },
+   "updatedAt": 1793127199752
+  },
+  "ingredients/i-queijo-parmesao-ralado": {
+   "name": "Queijo parmesão ralado",
+   "category": "laticinios",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 28.17,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "60 g"
+   },
+   "updatedAt": 1793127199725
+  },
+  "ingredients/i-quinoa": {
+   "name": "Quinoa",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 5.38,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "500 g"
+   },
+   "updatedAt": 1793127200387
+  },
+  "ingredients/i-requeijao": {
+   "name": "Requeijão",
+   "category": "laticinios",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 7.96,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "260 g"
+   },
+   "updatedAt": 1793127199810
+  },
+  "ingredients/i-ricotta": {
+   "name": "Ricotta",
+   "category": "laticinios",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 6.76,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "250 g"
+   },
+   "updatedAt": 1793127199826
+  },
+  "ingredients/i-robalo": {
+   "name": "Robalo",
+   "category": "peixe",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 11.99,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "fresco, preço ao kg"
+   },
+   "updatedAt": 1793127199463
+  },
+  "ingredients/i-rucula": {
+   "name": "Rúcula",
+   "category": "legumes",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 9.9,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "embalagem 100 g"
+   },
+   "updatedAt": 1793127187946
+  },
+  "ingredients/i-sal-fino": {
+   "name": "Sal fino",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 0.45,
+    "unit": "kg",
+    "src": "A",
+    "date": "2026-10-27",
+    "note": "1 kg"
+   },
+   "updatedAt": 1793127200126
+  },
+  "ingredients/i-sal-grosso": {
+   "name": "Sal grosso",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 0.25,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "1 kg"
+   },
+   "updatedAt": 1793127200145
+  },
+  "ingredients/i-salmao-lombos": {
+   "name": "Salmão (lombos)",
+   "category": "peixe",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 21.99,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "fresco, preço ao kg"
+   },
+   "updatedAt": 1793127199434
+  },
+  "ingredients/i-salsa": {
+   "name": "Salsa",
+   "category": "ervas",
+   "unit": "molho",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 0.99,
+    "unit": "molho",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "molho ≈ 50 g"
+   },
+   "updatedAt": 1793127201061
+  },
+  "ingredients/i-salsichas-tipo-frankfurt": {
+   "name": "Salsichas tipo Frankfurt",
+   "category": "carne",
+   "unit": "un",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 0.11,
+    "unit": "un",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "embalagem 8 un"
+   },
+   "updatedAt": 1793127198956
+  },
+  "ingredients/i-secretos-de-porco": {
+   "name": "Secretos de porco",
+   "category": "carne",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 6.99,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "preço ao kg"
+   },
+   "updatedAt": 1793127193806
+  },
+  "ingredients/i-sementes-de-sesamo": {
+   "name": "Sementes de sésamo",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 7.25,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "200 g"
+   },
+   "updatedAt": 1793127200548
+  },
+  "ingredients/i-tofu-firme": {
+   "name": "Tofu firme",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 4.97,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "400 g"
+   },
+   "updatedAt": 1793127200410
+  },
+  "ingredients/i-tomate": {
+   "name": "Tomate",
+   "category": "legumes",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 2.09,
+    "unit": "kg",
+    "src": "A",
+    "date": "2026-10-27",
+    "note": "tomate redondo, 1 kg"
+   },
+   "updatedAt": 1793127188135
+  },
+  "ingredients/i-tomate-cherry": {
+   "name": "Tomate cherry",
+   "category": "legumes",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 4.76,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "embalagem 250 g"
+   },
+   "updatedAt": 1793127188537
+  },
+  "ingredients/i-tomate-chucha": {
+   "name": "Tomate chucha",
+   "category": "legumes",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 2.63,
+    "unit": "kg",
+    "src": "D",
+    "date": "2026-10-07",
+    "note": ""
+   },
+   "updatedAt": 1793127188323
+  },
+  "ingredients/i-tomilho-fresco": {
+   "name": "Tomilho fresco",
+   "category": "ervas",
+   "unit": "molho",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 1.29,
+    "unit": "molho",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "embalagem 30 g"
+   },
+   "updatedAt": 1793127201155
+  },
+  "ingredients/i-toucinho-fumado": {
+   "name": "Toucinho fumado",
+   "category": "carne",
+   "unit": "kg",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 8.95,
+    "unit": "kg",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "embalagem 200 g"
+   },
+   "updatedAt": 1793127196624
+  },
+  "ingredients/i-vinagre-de-maca": {
+   "name": "Vinagre de maçã",
+   "category": "mercearia",
+   "unit": "L",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 3.14,
+    "unit": "L",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "500 ml"
+   },
+   "updatedAt": 1793127200923
+  },
+  "ingredients/i-vinagre-de-vinho": {
+   "name": "Vinagre de vinho",
+   "category": "mercearia",
+   "unit": "L",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 0.75,
+    "unit": "L",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "1 L"
+   },
+   "updatedAt": 1793127200896
+  },
+  "ingredients/i-vinho-branco": {
+   "name": "Vinho branco",
+   "category": "bebidas",
+   "unit": "L",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 2.47,
+    "unit": "L",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "garrafa 75 cl"
+   },
+   "updatedAt": 1793127201433
+  },
+  "ingredients/i-vinho-tinto": {
+   "name": "Vinho tinto",
+   "category": "bebidas",
+   "unit": "L",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "market": {
+    "country": "PT",
+    "price": 2.65,
+    "unit": "L",
+    "src": "B",
+    "date": "2026-09-08",
+    "note": "garrafa 75 cl"
+   },
+   "updatedAt": 1793127201457
+  },
   "settings/library": {
    "owner": "Alexandre Canelas Ribeiro",
    "fields": [
