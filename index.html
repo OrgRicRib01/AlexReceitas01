@@ -199,6 +199,34 @@ img{max-width:100%}
 .dlg label.f{gap:4px}
 .dlg .kvlist{display:grid;gap:6px}
 
+/* view tabs + ingredients */
+.tabs{display:inline-flex;gap:2px;background:var(--surface-2);border:1px solid var(--line);border-radius:7px;padding:2px}
+.tabs button{border:0;background:transparent;padding:6px 12px;border-radius:5px;font-size:14px;font-weight:500;cursor:pointer;color:var(--muted)}
+.tabs button[aria-current="page"]{background:var(--surface);color:var(--ink);box-shadow:var(--shadow)}
+.irow{display:grid;grid-template-columns:minmax(0,1.6fr) 150px 64px 128px 92px 140px 60px 96px;gap:12px;align-items:center;padding:10px 16px;border-top:1px solid var(--line-2);width:100%;text-align:left;background:none;border-left:0;border-right:0;border-bottom:0;cursor:pointer}
+.irow:first-child{border-top:0}
+.irow:hover,.irow[aria-expanded="true"]{background:var(--surface-2)}
+.irow.head{cursor:default;background:var(--surface-2);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding-block:8px}
+.irow .nm{font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.irow .n{font-family:var(--f-mono);font-variant-numeric:tabular-nums;text-align:right;font-size:14px;white-space:nowrap}
+.irow .mut{color:var(--muted);font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.irow .est small{display:block;font-family:var(--f-body);font-size:11px;color:var(--accent)}
+.trend-up{color:var(--bad)}.trend-down{color:var(--good)}
+.irow .mob{display:none}
+.ipanel{border-top:1px solid var(--line-2);background:var(--surface-2);padding:16px;display:grid;gap:14px}
+.ipanel .acts{display:flex;gap:8px;flex-wrap:wrap}
+.ipanel table{border-collapse:collapse;width:100%;font-size:13.5px}
+.ipanel th{font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:500;text-align:left;border-bottom:1px solid var(--line);padding:5px 6px}
+.ipanel td{border-bottom:1px solid var(--line-2);padding:6px}
+.ipanel .num{text-align:right;font-family:var(--f-mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+.ipanel a.sheetlink{color:var(--accent);cursor:pointer;text-decoration:underline;background:none;border:0;padding:0;font:inherit}
+@media (max-width:860px){
+  .irow.head{display:none}
+  .irow{grid-template-columns:minmax(0,1fr) auto;row-gap:2px}
+  .irow .cat,.irow .un,.irow .avg,.irow .rng,.irow .us,.irow .upd{display:none}
+  .irow .mob{display:block;grid-column:1/-1;color:var(--muted);font-size:12.5px}
+}
+
 /* PDF selection */
 .selbar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;background:var(--accent-soft);border-radius:8px;padding:10px 12px;margin-bottom:12px}
 .selbar .grow{margin-right:auto;font-size:14px}
@@ -223,6 +251,7 @@ img{max-width:100%}
 
 <header class="bar"><div class="wrap">
   <button class="brand" id="goHome" type="button"><b id="brandName"></b><span id="brandSub"></span></button>
+  <nav class="tabs" aria-label="Sections"><button type="button" data-nav="library"></button><button type="button" data-nav="ingredients"></button></nav>
   <div class="lang" role="group" aria-label="Language / Idioma">
     <button type="button" data-lang="pt" lang="pt-PT" title="Português (Portugal)">PT</button>
     <button type="button" data-lang="en" lang="en-GB" title="English (UK)">EN</button>
@@ -271,6 +300,17 @@ pt:{
   pvKicker:"Ficha técnica de preparação",edit:"Editar",xlsx:"Exportar Excel",origin:"Origem",scaleTo:"Escalar para",dosesWord:"doses",factor:"Fator {0} · as quantidades e custos abaixo acompanham.",reset:"Repor",unitShort:"Unid.",priceShort:"Preço unit.",costShort:"Preço custo",scaled:" (escalado)",noIng:"Sem ingredientes.",toFill:"Por preencher.",noAll:"Nenhum assinalado. Confirme antes de servir.",pvFoot:"Food cost alvo: {0} %. Valores da receita base.",aprov:"aprov.",noSale:"Sem PV",fcTip:"Food cost real (alvo {0} %)",
   dlNo:"As transferências não estão disponíveis nesta vista.",dlBusy:"Já há uma transferência a decorrer. Tente de novo dentro de momentos.",dlFail:"Não foi possível transferir o ficheiro.",xlsxFail:"O exportador de Excel não carregou. Recarregue a página.",
   impNo:"Não é possível importar nesta vista.",notJson:"O ficheiro não é um JSON válido.",notBackup:"Este ficheiro não é uma cópia de segurança desta biblioteca.",impTitle:"Importar fichas",impText:"Vão ser importadas {0} fichas. Fichas com o mesmo identificador são substituídas pela versão do ficheiro.",impOk:"Importar",impFull:"A biblioteca ficou cheia durante a importação.",impDone:"{0} fichas importadas.",lost:"Perdeu-se a ligação à biblioteca. Recarregue a página.",
+  navLib:"Biblioteca",navIng:"Ingredientes",ingTitle:"Ingredientes",ingExplain:"Lista de todos os ingredientes usados nas fichas. O preço estimado é o preço mais recente lançado numa ficha, na unidade mais usada, e atualiza-se sempre que uma ficha é criada ou alterada. Se fixar um preço de referência, passa a ser esse o sugerido nas novas fichas.",
+  ingSearch:"Procurar ingrediente",allCat:"Todas as categorias",ingSortName:"Nome",ingSortPrice:"Preço estimado",ingSortUses:"Mais usados",ingSortUpd:"Atualizados recentemente",
+  stIng:"Ingredientes",stNoPrice:"Sem preço",stManual:"Preço fixado",colIng:"Ingrediente",colCat:"Categoria",colEst:"Preço estimado",colAvg:"Média",colRange:"Mín – Máx",colUses:"Fichas",colUpd:"Atualizado",
+  srcManual:"fixado",ingEmptyH:"Ainda não há ingredientes",ingEmptyP:"A lista enche-se sozinha: cada ingrediente usado numa ficha aparece aqui com o preço mais recente. Também pode acrescentar ingredientes à mão.",
+  fIngName:"Nome do ingrediente",fRefPrice:"Preço de referência (€)",fRefPh:"Automático: {0}",fDefYield:"Aprov. % habitual",fNotes:"Notas",fNotesPh:"Fornecedor, marca, época…",
+  usedIn:"Usado em {0} ficha(s)",notUsed:"Ainda não é usado em nenhuma ficha.",applyPrice:"Aplicar {0} às fichas ({1})",applyTitle:"Atualizar preço nas fichas",applyText:"O preço de {0} passa a {1} em {2} ficha(s). Os custos dessas fichas são recalculados.",applyOk:"Atualizar",applyDone:"Preço atualizado em {0} ficha(s).",
+  removeIng:"Remover da lista",removeTitle:"Remover ingrediente",removeText:"{0} sai da lista de ingredientes e perde a categoria e o preço fixado. As fichas não são alteradas.",ingRemoved:"Ingrediente removido.",
+  mixedUnits:"Usado com unidades diferentes nas fichas; os valores usam {0}.",ingSaved:"Ingrediente guardado.",ingSaveFail:"Não foi possível guardar o ingrediente.",ingExists:"Esse ingrediente já está na lista.",newIngTitle:"Novo ingrediente",createBtn:"Criar",
+  ingCsv:"Tabela de preços de ingredientes (.csv)",ingCsvSub:"Preço estimado, média, mínimo, máximo e fichas",ingNoMatch:"Nenhum ingrediente corresponde a esta pesquisa.",unitWord:"Unidade",
+  ingFile:"precos_ingredientes",ingCsvHead:["Ingrediente","Categoria","Unidade","Preço estimado (€)","Origem do preço","Média (€)","Mínimo (€)","Máximo (€)","Nº fichas","Atualizado","Notas"],
+  cats:{legumes:"Legumes e hortícolas",frutas:"Frutas",carne:"Carne",peixe:"Peixe e marisco",laticinios:"Laticínios e ovos",mercearia:"Mercearia",gorduras:"Gorduras e óleos",ervas:"Ervas e especiarias",bebidas:"Bebidas",outros:"Outros"},
   libData:"Dados da biblioteca",editLib:"Editar dados",owner:"Proprietário",ownerPh:"Nome do proprietário da biblioteca",noOwner:"Defina o proprietário e outros dados da biblioteca",extraFields:"Campos adicionais",extraHint:"Aparecem na biblioteca, no PDF e no Excel. Ex.: Turma — CP2.",fieldLabel:"Campo",fieldValue:"Valor",addField:"+ Campo",rmField:"Remover campo",saveBtn:"Guardar",libSaved:"Dados da biblioteca guardados.",libSaveFail:"Não foi possível guardar os dados da biblioteca.",defLabel:"Turma",defValuePh:"CP2",localNote:"As fichas ficam guardadas neste browser, neste dispositivo. Faça regularmente uma cópia de segurança (.json) em Exportar / Importar para não as perder e para as passar para outro dispositivo.",memNote:"Este browser não permite guardar dados (modo privado?). As fichas desaparecem ao fechar a página: exporte uma cópia de segurança antes de sair.",
   selStart:"Exportar PDF",selHint:"Escolha as fichas a incluir no PDF.",selAll:"Selecionar todas ({0})",selNone:"Limpar seleção",selCount:"{0} selecionadas",selMake:"Criar PDF ({0})",
   pdfAll:"PDF de todas as fichas",pdfAllSub:"Capa, índice e uma ficha por página",pdfOptTitle:"Opções do PDF",pdfOptText:"{0} ficha(s) no documento, uma por página.",optCover:"Capa e índice",optCosts:"Custos, preços e resumo financeiro",optPhotos:"Fotografias do empratamento",pdfMake:"Criar PDF",
@@ -311,6 +351,17 @@ en:{
   pvKicker:"Preparation technical sheet",edit:"Edit",xlsx:"Export to Excel",origin:"Source",scaleTo:"Scale to",dosesWord:"portions",factor:"Factor {0} · quantities and costs below follow it.",reset:"Reset",unitShort:"Unit",priceShort:"Unit price",costShort:"Cost",scaled:" (scaled)",noIng:"No ingredients.",toFill:"Not filled in yet.",noAll:"None ticked. Check before serving.",pvFoot:"Target food cost: {0}%. Figures for the base recipe.",aprov:"yield",noSale:"No price",fcTip:"Actual food cost (target {0}%)",
   dlNo:"Downloads are not available in this view.",dlBusy:"A download is already in progress. Try again in a moment.",dlFail:"The file could not be downloaded.",xlsxFail:"The Excel exporter did not load. Reload the page.",
   impNo:"Importing is not available in this view.",notJson:"The file is not valid JSON.",notBackup:"This file is not a backup of this library.",impTitle:"Import sheets",impText:"{0} sheets will be imported. Sheets with the same identifier are replaced by the version in the file.",impOk:"Import",impFull:"The library filled up during the import.",impDone:"{0} sheets imported.",lost:"Lost connection to the library. Reload the page.",
+  navLib:"Library",navIng:"Ingredients",ingTitle:"Ingredients",ingExplain:"Every ingredient used on your sheets. The estimated price is the latest price entered on a sheet, in the most-used unit, and it updates whenever a sheet is created or changed. If you set a reference price, that is what new sheets will suggest.",
+  ingSearch:"Search ingredients",allCat:"All categories",ingSortName:"Name",ingSortPrice:"Estimated price",ingSortUses:"Most used",ingSortUpd:"Recently updated",
+  stIng:"Ingredients",stNoPrice:"No price",stManual:"Fixed price",colIng:"Ingredient",colCat:"Category",colEst:"Est. price",colAvg:"Average",colRange:"Min – Max",colUses:"Sheets",colUpd:"Updated",
+  srcManual:"fixed",ingEmptyH:"No ingredients yet",ingEmptyP:"The list fills itself: every ingredient used on a sheet appears here with its latest price. You can also add ingredients by hand.",
+  fIngName:"Ingredient name",fRefPrice:"Reference price (€)",fRefPh:"Automatic: {0}",fDefYield:"Usual yield %",fNotes:"Notes",fNotesPh:"Supplier, brand, season…",
+  usedIn:"Used on {0} sheet(s)",notUsed:"Not used on any sheet yet.",applyPrice:"Apply {0} to sheets ({1})",applyTitle:"Update price on sheets",applyText:"The price of {0} becomes {1} on {2} sheet(s). Their costs are recalculated.",applyOk:"Update",applyDone:"Price updated on {0} sheet(s).",
+  removeIng:"Remove from list",removeTitle:"Remove ingredient",removeText:"{0} leaves the ingredient list and loses its category and fixed price. Sheets are not changed.",ingRemoved:"Ingredient removed.",
+  mixedUnits:"Used with different units across sheets; figures use {0}.",ingSaved:"Ingredient saved.",ingSaveFail:"The ingredient could not be saved.",ingExists:"That ingredient is already on the list.",newIngTitle:"New ingredient",createBtn:"Create",
+  ingCsv:"Ingredient price table (.csv)",ingCsvSub:"Estimated price, average, minimum, maximum and sheets",ingNoMatch:"No ingredients match this search.",unitWord:"Unit",
+  ingFile:"ingredient_prices",ingCsvHead:["Ingredient","Category","Unit","Estimated price (€)","Price source","Average (€)","Minimum (€)","Maximum (€)","Sheets","Updated","Notes"],
+  cats:{legumes:"Vegetables",frutas:"Fruit",carne:"Meat",peixe:"Fish and seafood",laticinios:"Dairy and eggs",mercearia:"Dry goods",gorduras:"Fats and oils",ervas:"Herbs and spices",bebidas:"Drinks",outros:"Other"},
   libData:"Library details",editLib:"Edit details",owner:"Owner",ownerPh:"Name of the library's owner",noOwner:"Set the owner and other details of this library",extraFields:"Additional fields",extraHint:"Shown in the library, the PDF and the Excel file. e.g. Class — CP2.",fieldLabel:"Field",fieldValue:"Value",addField:"+ Field",rmField:"Remove field",saveBtn:"Save",libSaved:"Library details saved.",libSaveFail:"The library details could not be saved.",defLabel:"Class",defValuePh:"CP2",localNote:"Sheets are stored in this browser, on this device. Export a backup (.json) from Export / Import regularly so you do not lose them and can move them to another device.",memNote:"This browser does not allow saving data (private mode?). Sheets will disappear when you close the page: export a backup before leaving.",
   selStart:"Export PDF",selHint:"Choose the sheets to include in the PDF.",selAll:"Select all ({0})",selNone:"Clear selection",selCount:"{0} selected",selMake:"Create PDF ({0})",
   pdfAll:"PDF of every sheet",pdfAllSub:"Cover, contents and one sheet per page",pdfOptTitle:"PDF options",pdfOptText:"{0} sheet(s) in the document, one per page.",optCover:"Cover and contents",optCosts:"Costs, prices and financial summary",optPhotos:"Plating photos",pdfMake:"Create PDF",
@@ -351,6 +402,17 @@ es:{
   pvKicker:"Ficha técnica de elaboración",edit:"Editar",xlsx:"Exportar a Excel",origin:"Origen",scaleTo:"Escalar a",dosesWord:"raciones",factor:"Factor {0} · las cantidades y costes de abajo se ajustan.",reset:"Restablecer",unitShort:"Ud.",priceShort:"Precio unit.",costShort:"Coste",scaled:" (escalado)",noIng:"Sin ingredientes.",toFill:"Pendiente de completar.",noAll:"Ninguno marcado. Compruébalo antes de servir.",pvFoot:"Food cost objetivo: {0} %. Valores de la receta base.",aprov:"rend.",noSale:"Sin PVP",fcTip:"Food cost real (objetivo {0} %)",
   dlNo:"Las descargas no están disponibles en esta vista.",dlBusy:"Ya hay una descarga en curso. Inténtalo de nuevo en un momento.",dlFail:"No se ha podido descargar el archivo.",xlsxFail:"El exportador de Excel no se ha cargado. Recarga la página.",
   impNo:"No se puede importar en esta vista.",notJson:"El archivo no es un JSON válido.",notBackup:"Este archivo no es una copia de seguridad de esta biblioteca.",impTitle:"Importar fichas",impText:"Se importarán {0} fichas. Las fichas con el mismo identificador se sustituyen por la versión del archivo.",impOk:"Importar",impFull:"La biblioteca se ha llenado durante la importación.",impDone:"{0} fichas importadas.",lost:"Se ha perdido la conexión con la biblioteca. Recarga la página.",
+  navLib:"Biblioteca",navIng:"Ingredientes",ingTitle:"Ingredientes",ingExplain:"Todos los ingredientes usados en tus fichas. El precio estimado es el último precio introducido en una ficha, en la unidad más usada, y se actualiza cada vez que se crea o modifica una ficha. Si fijas un precio de referencia, será el que se sugiera en las fichas nuevas.",
+  ingSearch:"Buscar ingrediente",allCat:"Todas las categorías",ingSortName:"Nombre",ingSortPrice:"Precio estimado",ingSortUses:"Más usados",ingSortUpd:"Actualizados recientemente",
+  stIng:"Ingredientes",stNoPrice:"Sin precio",stManual:"Precio fijado",colIng:"Ingrediente",colCat:"Categoría",colEst:"Precio estimado",colAvg:"Media",colRange:"Mín – Máx",colUses:"Fichas",colUpd:"Actualizado",
+  srcManual:"fijado",ingEmptyH:"Todavía no hay ingredientes",ingEmptyP:"La lista se llena sola: cada ingrediente usado en una ficha aparece aquí con su último precio. También puedes añadir ingredientes a mano.",
+  fIngName:"Nombre del ingrediente",fRefPrice:"Precio de referencia (€)",fRefPh:"Automático: {0}",fDefYield:"Rend. % habitual",fNotes:"Notas",fNotesPh:"Proveedor, marca, temporada…",
+  usedIn:"Usado en {0} ficha(s)",notUsed:"Todavía no se usa en ninguna ficha.",applyPrice:"Aplicar {0} a las fichas ({1})",applyTitle:"Actualizar precio en las fichas",applyText:"El precio de {0} pasa a {1} en {2} ficha(s). Sus costes se recalculan.",applyOk:"Actualizar",applyDone:"Precio actualizado en {0} ficha(s).",
+  removeIng:"Quitar de la lista",removeTitle:"Quitar ingrediente",removeText:"{0} sale de la lista de ingredientes y pierde su categoría y precio fijado. Las fichas no cambian.",ingRemoved:"Ingrediente quitado.",
+  mixedUnits:"Usado con unidades distintas en las fichas; las cifras usan {0}.",ingSaved:"Ingrediente guardado.",ingSaveFail:"No se ha podido guardar el ingrediente.",ingExists:"Ese ingrediente ya está en la lista.",newIngTitle:"Nuevo ingrediente",createBtn:"Crear",
+  ingCsv:"Tabla de precios de ingredientes (.csv)",ingCsvSub:"Precio estimado, media, mínimo, máximo y fichas",ingNoMatch:"Ningún ingrediente coincide con esta búsqueda.",unitWord:"Unidad",
+  ingFile:"precios_ingredientes",ingCsvHead:["Ingrediente","Categoría","Unidad","Precio estimado (€)","Origen del precio","Media (€)","Mínimo (€)","Máximo (€)","Nº fichas","Actualizado","Notas"],
+  cats:{legumes:"Verduras y hortalizas",frutas:"Frutas",carne:"Carne",peixe:"Pescado y marisco",laticinios:"Lácteos y huevos",mercearia:"Ultramarinos",gorduras:"Grasas y aceites",ervas:"Hierbas y especias",bebidas:"Bebidas",outros:"Otros"},
   libData:"Datos de la biblioteca",editLib:"Editar datos",owner:"Propietario",ownerPh:"Nombre del propietario de la biblioteca",noOwner:"Indica el propietario y otros datos de la biblioteca",extraFields:"Campos adicionales",extraHint:"Aparecen en la biblioteca, en el PDF y en el Excel. Ej.: Grupo — CP2.",fieldLabel:"Campo",fieldValue:"Valor",addField:"+ Campo",rmField:"Quitar campo",saveBtn:"Guardar",libSaved:"Datos de la biblioteca guardados.",libSaveFail:"No se han podido guardar los datos de la biblioteca.",defLabel:"Grupo",defValuePh:"CP2",localNote:"Las fichas se guardan en este navegador, en este dispositivo. Exporta una copia de seguridad (.json) desde Exportar / Importar con regularidad para no perderlas y poder pasarlas a otro dispositivo.",memNote:"Este navegador no permite guardar datos (¿modo privado?). Las fichas desaparecerán al cerrar la página: exporta una copia de seguridad antes de salir.",
   selStart:"Exportar PDF",selHint:"Elige las fichas que quieres incluir en el PDF.",selAll:"Seleccionar todas ({0})",selNone:"Quitar selección",selCount:"{0} seleccionadas",selMake:"Crear PDF ({0})",
   pdfAll:"PDF de todas las fichas",pdfAllSub:"Portada, índice y una ficha por página",pdfOptTitle:"Opciones del PDF",pdfOptText:"{0} ficha(s) en el documento, una por página.",optCover:"Portada e índice",optCosts:"Costes, precios y resumen económico",optPhotos:"Fotos del emplatado",pdfMake:"Crear PDF",
@@ -422,12 +484,47 @@ function confirmBox(title,text,okLabel,danger){return new Promise(res=>{
   d.addEventListener("click",e=>{const r=e.target.closest("[data-r]");if(r||e.target===d){d.remove();res(r?.dataset.r==="1")}});
   layer.appendChild(d);d.querySelector('[data-r="1"]').focus();
 })}
-function catalog(){
-  const m=new Map();
-  const all=[...sheets.values()];if(current)all.push(current.data);
-  for(const s of all)for(const i of s.ingredients||[]){const k=i.name.trim().toLowerCase();if(!k)continue;const p=m.get(k);if(!p||(s.updatedAt||0)>=p.t)m.set(k,{name:i.name.trim(),unit:i.unit,price:i.price,yield:i.yield,t:s.updatedAt||0})}
+let ingDocs=new Map(), ingOpen=null;
+const ingFilters={q:"",cat:"",sort:"name"};
+const CAT_KEYS=["legumes","frutas","carne","peixe","laticinios","mercearia","gorduras","ervas","bebidas","outros"];
+const normKey=n=>String(n||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/\s+/g," ").trim();
+const ingDocId=k=>("i-"+k.replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"")).slice(0,120)||"i-x";
+const priceIn=v=>v==null?"":v.toLocaleString(loc(),{minimumFractionDigits:2,maximumFractionDigits:4,useGrouping:false});
+const hasVal=v=>String(v??"").trim()!=="";
+function buildCatalog(){
+  const m=new Map(),src=new Map(sheets);
+  if(current&&view==="editor")src.set(current.id,current.data);
+  for(const [sid,s] of src)for(const i of s.ingredients||[]){
+    const k=normKey(i.name);if(!k)continue;
+    const e=m.get(k)||{key:k,name:i.name.trim(),uses:[],manual:null};
+    e.uses.push({sid,code:s.code,sheet:s.name,unit:String(i.unit||"").trim(),qty:i.qty,price:num(i.price),hasPrice:hasVal(i.price)&&num(i.price)>0,yield:i.yield,t:s.updatedAt||0});
+    m.set(k,e);
+  }
+  for(const [id,d] of ingDocs){const k=normKey(d.name);if(!k)continue;const e=m.get(k)||{key:k,name:d.name.trim(),uses:[],manual:null};e.manual={id,...d};m.set(k,e)}
+  for(const e of m.values()){
+    const priced=e.uses.filter(u=>u.hasPrice).sort((a,b)=>b.t-a.t);
+    const count={};priced.forEach(u=>count[u.unit]=(count[u.unit]||0)+1);
+    const top=Object.entries(count).sort((a,b)=>b[1]-a[1]||(a[0]===priced[0]?.unit?-1:1))[0]?.[0];
+    e.unit=(e.manual&&hasVal(e.manual.unit))?e.manual.unit.trim():(top??e.uses[0]?.unit??"");
+    const same=priced.filter(u=>u.unit===e.unit),ps=same.map(u=>u.price);
+    e.mixed=priced.some(u=>u.unit!==e.unit);
+    e.last=same[0]?.price??null;e.prev=same[1]?.price??null;
+    e.avg=ps.length?ps.reduce((a,b)=>a+b,0)/ps.length:null;e.min=ps.length?Math.min(...ps):null;e.max=ps.length?Math.max(...ps):null;
+    const man=e.manual&&hasVal(e.manual.price)?num(e.manual.price):null;
+    e.est=man??e.last;e.src=man!=null?"manual":(e.last!=null?"auto":"none");
+    e.t=Math.max(same[0]?.t||0,e.manual?.updatedAt||0,e.uses[0]?e.uses.reduce((a,u)=>Math.max(a,u.t),0):0);
+    e.category=e.manual?.category||"";e.notes=e.manual?.notes||"";
+    e.yield=(e.manual&&hasVal(e.manual.yield))?e.manual.yield:(e.uses.filter(u=>hasVal(u.yield)).sort((a,b)=>b.t-a.t)[0]?.yield||"");
+    e.sheetCount=new Set(e.uses.map(u=>u.sid)).size;
+  }
   return m;
 }
+function catalog(){
+  const m=new Map();
+  for(const e of buildCatalog().values())m.set(e.key,{name:e.name,unit:e.unit,price:priceIn(e.est),yield:e.yield});
+  return m;
+}
+function syncNav(){document.querySelectorAll("[data-nav]").forEach(b=>{const on=(b.dataset.nav==="ingredients")===(view==="ingredients");b.setAttribute("aria-current",on&&(view==="library"||view==="ingredients")?"page":"false")})}
 
 const libFields=()=>(libInfo.fields||[]).filter(f=>String(f.label||"").trim()||String(f.value||"").trim());
 function libLine(){const parts=[];if(String(libInfo.owner||"").trim())parts.push(t("owner")+": "+libInfo.owner.trim());libFields().forEach(f=>parts.push((f.label?f.label.trim()+": ":"")+String(f.value||"").trim()));return parts.join(" · ")}
@@ -442,19 +539,23 @@ function renderChrome(){
   document.getElementById("morePop").innerHTML=`
     <button type="button" data-act="pdfAll">${esc(t("pdfAll"))}<small>${esc(t("pdfAllSub"))}</small></button>
     <button type="button" data-act="csv">${esc(t("csv"))}<small>${esc(t("csvSub"))}</small></button>
+    <button type="button" data-act="ingCsv">${esc(t("ingCsv"))}<small>${esc(t("ingCsvSub"))}</small></button>
     <button type="button" data-act="json">${esc(t("json"))}<small>${esc(t("jsonSub"))}</small></button>
     <button type="button" data-act="import">${esc(t("imp"))}<small>${esc(t("impSub"))}</small></button>`;
   document.querySelectorAll(".lang button").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.lang===lang)));
+  document.querySelector('[data-nav="library"]').textContent=t("navLib");
+  document.querySelector('[data-nav="ingredients"]').textContent=t("navIng");
+  syncNav();
 }
 function setLang(l){
   if(!I18N[l]||l===lang)return;lang=l;try{localStorage.setItem("ft-lang",l)}catch{}
   renderChrome();
-  if(view==="editor")renderEditor();else if(view==="preview")renderPreview();else renderLibrary();
+  if(view==="editor")renderEditor();else if(view==="preview")renderPreview();else if(view==="ingredients")renderIngredients();else renderLibrary();
 }
 
 /* ---------- library ---------- */
 function renderLibrary(){
-  view="library";current=null;
+  view="library";current=null;syncNav();
   app.innerHTML=`
   ${noticeHtml()}
   <div class="lib-head">
@@ -691,7 +792,7 @@ function onEdChange(e){
   if(el.closest("#allergens")){s.allergens=[...document.querySelectorAll("#allergens input:checked")].map(x=>x.value);touch()}
   if(el.dataset.k==="qty"){const i=s.ingredients[+el.dataset.i],f=fqIn(el.value);if(f!==el.value){el.value=f;i.qty=f;touch()}}
   if(el.dataset.k==="name"){
-    const n=+el.dataset.i,i=s.ingredients[n],c=catalog().get(el.value.trim().toLowerCase());
+    const n=+el.dataset.i,i=s.ingredients[n],c=catalog().get(normKey(el.value));
     if(c){let ch=false;
       if(!i.price&&c.price){i.price=c.price;ch=true}
       if((!i.unit||i.unit==="kg")&&c.unit&&c.unit!==i.unit){i.unit=c.unit;ch=true}
@@ -865,7 +966,7 @@ function exportCsv(){
   const rows=[...sheets.values()].sort((a,b)=>String(a.code).localeCompare(String(b.code),loc(),{numeric:true})).map(s=>{const c=calc(s);return [s.code,s.name,s.family,stLabel(s.status),s.doses,n(c.total),n(c.perDose),n(c.rec),c.sale?n(c.sale):"",n(c.margin),c.fcReal==null?"":(c.fcReal*100).toFixed(1).replace(".",dec),(s.allergens||[]).map(allergenLabel).join(", "),srcLabel(s.source),new Date(s.updatedAt||0).toLocaleDateString(loc())].map(q).join(sep)});
   save(`${L().x.file}_${today()}.csv`,"﻿"+[L().csvHead.map(q).join(sep),...rows].join("\r\n"));
 }
-function exportJson(){save(`${L().x.file}_${today()}.json`,JSON.stringify({format:"fichas-tecnicas",version:1,exportedAt:new Date().toISOString(),settings:{library:{owner:libInfo.owner||"",fields:libFields()}},sheets:Object.fromEntries(sheets)},null,2))}
+function exportJson(){save(`${L().x.file}_${today()}.json`,JSON.stringify({format:"fichas-tecnicas",version:1,exportedAt:new Date().toISOString(),settings:{library:{owner:libInfo.owner||"",fields:libFields()}},ingredients:Object.fromEntries(ingDocs),sheets:Object.fromEntries(sheets)},null,2))}
 async function importJson(file){
   if(!db||!canWrite){toast(t("impNo"));return}
   let data;try{data=JSON.parse(await file.text())}catch{toast(t("notJson"));return}
@@ -881,9 +982,131 @@ async function importJson(file){
     body.allergens=(body.allergens||[]).map(allergenKey);
     try{await db.collection("sheets").doc(safeId).set(body);ok++}catch(e){if(e?.code==="quota_exceeded"){toast(t("impFull"));break}}
   }
+  if(data.ingredients&&typeof data.ingredients==="object")for(const [id,d] of Object.entries(data.ingredients)){if(!d||typeof d!=="object"||!d.name)continue;const sid=/^[\w\-.~:@+]{1,120}$/.test(id)?id:ingDocId(normKey(d.name));try{await db.collection("ingredients").doc(sid).set({name:String(d.name),category:CAT_KEYS.includes(d.category)?d.category:"",unit:String(d.unit||""),price:String(d.price??""),yield:String(d.yield??""),notes:String(d.notes||""),updatedAt:d.updatedAt||Date.now()})}catch(e){}}
   const li=data?.settings?.library;
   if(li&&typeof li==="object"&&(li.owner||(li.fields||[]).length)){try{const next={owner:String(li.owner||""),fields:(Array.isArray(li.fields)?li.fields:[]).map(f=>({label:String(f?.label||""),value:String(f?.value||"")})),updatedAt:Date.now()};await db.collection("settings").doc("library").set(next);libInfo=next;renderLibMeta()}catch(e){}}
   toast(t("impDone",ok));
+}
+
+/* ---------- ingredients ---------- */
+function renderIngredients(){
+  view="ingredients";current=null;syncNav();
+  app.innerHTML=`${noticeHtml()}
+  <div class="lib-head"><div><h1>${esc(t("ingTitle"))}</h1><p class="hint" style="max-width:72ch">${esc(t("ingExplain"))}</p></div><div class="stats" id="ingStats"></div></div>
+  <div class="filters">
+    <input id="iq" type="search" placeholder="${esc(t("ingSearch"))}" value="${esc(ingFilters.q)}" aria-label="${esc(t("ingSearch"))}">
+    <select id="icat" aria-label="${esc(t("colCat"))}"><option value="">${esc(t("allCat"))}</option>${CAT_KEYS.map(k=>`<option value="${k}" ${k===ingFilters.cat?"selected":""}>${esc(L().cats[k])}</option>`).join("")}</select>
+    <select id="isort" aria-label="Sort"><option value="name">${esc(t("ingSortName"))}</option><option value="price">${esc(t("ingSortPrice"))}</option><option value="uses">${esc(t("ingSortUses"))}</option><option value="upd">${esc(t("ingSortUpd"))}</option></select>
+    ${canWrite&&db?`<button class="btn primary" type="button" id="ingNew">${esc(t("addIng"))}</button>`:""}
+  </div>
+  <datalist id="unitList2">${L().units.map(u=>`<option value="${esc(u)}">`).join("")}</datalist>
+  <div class="list" id="ingTable"></div>`;
+  app.querySelector("#isort").value=ingFilters.sort;
+  app.querySelector("#iq").addEventListener("input",e=>{ingFilters.q=e.target.value;renderIngList()});
+  app.querySelector("#icat").addEventListener("change",e=>{ingFilters.cat=e.target.value;renderIngList()});
+  app.querySelector("#isort").addEventListener("change",e=>{ingFilters.sort=e.target.value;renderIngList()});
+  app.querySelector("#ingNew")?.addEventListener("click",newIngDialog);
+  renderIngList();
+}
+const fdate=v=>v?new Date(v).toLocaleDateString(loc()):"—";
+function renderIngList(){
+  const box=document.getElementById("ingTable");if(!box)return;
+  const all=[...buildCatalog().values()];
+  document.getElementById("ingStats").innerHTML=`
+    <div class="stat"><small>${esc(t("stIng"))}</small><b>${all.length}</b></div>
+    <div class="stat"><small>${esc(t("stNoPrice"))}</small><b>${all.filter(e=>e.est==null).length}</b></div>
+    <div class="stat"><small>${esc(t("stManual"))}</small><b>${all.filter(e=>e.src==="manual").length}</b></div>`;
+  if(dbState==="loading"){box.innerHTML=`<div class="empty"><p>${esc(t("loading"))}</p></div>`;return}
+  if(!all.length){box.innerHTML=`<div class="empty"><h2>${esc(t("ingEmptyH"))}</h2><p>${esc(t("ingEmptyP"))}</p></div>`;return}
+  const q=normKey(ingFilters.q);
+  const rows=all.filter(e=>(!ingFilters.cat||e.category===ingFilters.cat)&&(!q||e.key.includes(q)||normKey(e.notes).includes(q)));
+  const by={name:(a,b)=>a.name.localeCompare(b.name,loc()),price:(a,b)=>(b.est??-1)-(a.est??-1),uses:(a,b)=>b.sheetCount-a.sheetCount||a.name.localeCompare(b.name,loc()),upd:(a,b)=>b.t-a.t};
+  rows.sort(by[ingFilters.sort]);
+  const trend=e=>e.src==="auto"&&e.prev!=null&&e.prev!==e.last?(e.last>e.prev?' <span class="trend-up" title="'+esc(eur(e.prev))+'">▲</span>':' <span class="trend-down" title="'+esc(eur(e.prev))+'">▼</span>'):"";
+  box.innerHTML=`<div class="irow head"><span>${esc(t("colIng"))}</span><span>${esc(t("colCat"))}</span><span>${esc(t("unitShort"))}</span><span class="n">${esc(t("colEst"))}</span><span class="n">${esc(t("colAvg"))}</span><span class="n">${esc(t("colRange"))}</span><span class="n">${esc(t("colUses"))}</span><span>${esc(t("colUpd"))}</span></div>`+
+  (rows.length?rows.map(e=>`<button type="button" class="irow" data-key="${esc(e.key)}" aria-expanded="${ingOpen===e.key}">
+      <span class="nm">${esc(e.name)}</span>
+      <span class="mut cat">${esc(e.category?L().cats[e.category]:"—")}</span>
+      <span class="mut un">${esc(e.unit||"—")}</span>
+      <span class="n est">${e.est!=null?esc(eur(e.est)):"—"}${trend(e)}${e.src==="manual"?`<small>${esc(t("srcManual"))}</small>`:""}</span>
+      <span class="n avg">${e.avg!=null?esc(eur(e.avg)):"—"}</span>
+      <span class="n rng">${e.min!=null?esc(eur(e.min))+" – "+esc(eur(e.max)):"—"}</span>
+      <span class="n us">${e.sheetCount}</span>
+      <span class="mut upd">${esc(fdate(e.t))}</span>
+      <span class="mob">${esc([e.unit,e.category?L().cats[e.category]:"",t("usedIn",e.sheetCount)].filter(Boolean).join(" · "))}</span>
+    </button>${ingOpen===e.key?ingPanel(e):""}`).join(""):`<div class="empty"><p>${esc(t("ingNoMatch"))}</p></div>`);
+  box.querySelectorAll(".irow[data-key]").forEach(r=>r.addEventListener("click",()=>{ingOpen=ingOpen===r.dataset.key?null:r.dataset.key;renderIngList()}));
+  if(ingOpen)wirePanel(all.find(e=>e.key===ingOpen));
+}
+function ingPanel(e){
+  const ro=!canWrite||!db,m=e.manual||{};
+  const toApply=e.est!=null?e.uses.filter(u=>u.unit===e.unit&&(!u.hasPrice||Math.abs(u.price-e.est)>1e-9)):[];
+  return `<div class="ipanel" id="ipanel">
+    <div class="fields">
+      <label class="f">${esc(t("colCat"))}<select id="ip-cat" ${ro?"disabled":""}><option value="">—</option>${CAT_KEYS.map(k=>`<option value="${k}" ${k===e.category?"selected":""}>${esc(L().cats[k])}</option>`).join("")}</select></label>
+      <label class="f">${esc(t("unitWord"))}<input id="ip-unit" list="unitList2" value="${esc(hasVal(m.unit)?m.unit:"")}" placeholder="${esc(e.unit||"kg")}" ${ro?"disabled":""}></label>
+      <label class="f">${esc(t("fRefPrice"))}<input id="ip-price" inputmode="decimal" value="${esc(hasVal(m.price)?m.price:"")}" placeholder="${esc(e.last!=null?t("fRefPh",eur(e.last)):"0,00")}" ${ro?"disabled":""}></label>
+      <label class="f">${esc(t("fDefYield"))}<input id="ip-yield" inputmode="decimal" value="${esc(hasVal(m.yield)?m.yield:"")}" placeholder="100" ${ro?"disabled":""}></label>
+      <label class="f wide">${esc(t("fNotes"))}<input id="ip-notes" value="${esc(m.notes||"")}" placeholder="${esc(t("fNotesPh"))}" ${ro?"disabled":""}></label>
+    </div>
+    ${e.mixed?`<p class="hint" style="margin:0">${esc(t("mixedUnits",e.unit))}</p>`:""}
+    ${ro?"":`<div class="acts">
+      <button class="btn primary" type="button" id="ip-save">${esc(t("saveBtn"))}</button>
+      ${toApply.length?`<button class="btn" type="button" id="ip-apply">${esc(t("applyPrice",eur(e.est)+"/"+e.unit,new Set(toApply.map(u=>u.sid)).size))}</button>`:""}
+      ${e.manual?`<button class="btn danger" type="button" id="ip-rm">${esc(t("removeIng"))}</button>`:""}
+    </div>`}
+    <div><div class="sec-h" style="margin:0 0 6px"><h2 style="font-size:15px">${esc(t("usedIn",e.sheetCount))}</h2></div>
+    ${e.uses.length?`<div style="overflow-x:auto"><table><thead><tr><th>${esc(t("colNo"))}</th><th>${esc(t("colDish"))}</th><th class="num">${esc(t("thQty"))}</th><th>${esc(t("unitShort"))}</th><th class="num">${esc(t("priceShort"))}</th><th>${esc(t("colUpd"))}</th></tr></thead><tbody>
+      ${e.uses.slice().sort((a,b)=>b.t-a.t).map(u=>`<tr><td>${esc(u.code)}</td><td><button type="button" class="sheetlink" data-open="${esc(u.sid)}">${esc(u.sheet||t("noName"))}</button></td><td class="num">${isQb(u.unit)?"":esc(fq(num(u.qty)))}</td><td>${esc(u.unit)}</td><td class="num">${u.hasPrice?esc(eur(u.price)):"—"}</td><td>${esc(fdate(u.t))}</td></tr>`).join("")}
+    </tbody></table></div>`:`<p class="hint" style="margin:0">${esc(t("notUsed"))}</p>`}</div>
+  </div>`;
+}
+function wirePanel(e){
+  const pn=document.getElementById("ipanel");if(!pn||!e)return;
+  pn.querySelectorAll("[data-open]").forEach(b=>b.addEventListener("click",()=>openPreview(b.dataset.open)));
+  pn.querySelector("#ip-save")?.addEventListener("click",async()=>{
+    const v=id=>pn.querySelector(id).value.trim();
+    const body={name:e.manual?.name||e.name,category:v("#ip-cat"),unit:v("#ip-unit"),price:v("#ip-price"),yield:v("#ip-yield"),notes:v("#ip-notes"),updatedAt:Date.now()};
+    try{await db.collection("ingredients").doc(e.manual?.id||ingDocId(e.key)).set(body);ingDocs.set(e.manual?.id||ingDocId(e.key),body);toast(t("ingSaved"));renderIngList()}catch(err){toast(t("ingSaveFail"))}
+  });
+  pn.querySelector("#ip-apply")?.addEventListener("click",async()=>{
+    const ids=[...new Set(e.uses.filter(u=>u.unit===e.unit&&(!u.hasPrice||Math.abs(u.price-e.est)>1e-9)).map(u=>u.sid))];
+    if(!await confirmBox(t("applyTitle"),t("applyText",e.name,eur(e.est)+"/"+e.unit,ids.length),t("applyOk")))return;
+    let n=0;
+    for(const id of ids){const s=sheets.get(id);if(!s)continue;const c=JSON.parse(JSON.stringify(s));
+      c.ingredients=(c.ingredients||[]).map(i=>normKey(i.name)===e.key&&String(i.unit||"").trim()===e.unit?{...i,price:priceIn(e.est)}:i);c.updatedAt=Date.now();
+      try{await db.collection("sheets").doc(id).set(c);sheets.set(id,c);n++}catch(err){}}
+    toast(t("applyDone",n));renderIngList();
+  });
+  pn.querySelector("#ip-rm")?.addEventListener("click",async()=>{
+    if(!await confirmBox(t("removeTitle"),t("removeText",e.name),t("removeIng"),true))return;
+    try{await db.collection("ingredients").doc(e.manual.id).delete();ingDocs.delete(e.manual.id);if(!e.uses.length)ingOpen=null;toast(t("ingRemoved"));renderIngList()}catch(err){toast(t("ingSaveFail"))}
+  });
+}
+function newIngDialog(){
+  const d=document.createElement("div");d.className="scrim";
+  d.innerHTML=`<div class="dlg" role="dialog" aria-modal="true"><h2>${esc(t("newIngTitle"))}</h2>
+    <label class="f">${esc(t("fIngName"))}<input id="ni-name" autocomplete="off"></label>
+    <div class="fields"><label class="f">${esc(t("colCat"))}<select id="ni-cat"><option value="">—</option>${CAT_KEYS.map(k=>`<option value="${k}">${esc(L().cats[k])}</option>`).join("")}</select></label>
+    <label class="f">${esc(t("unitWord"))}<input id="ni-unit" list="unitList2" value="kg"></label>
+    <label class="f">${esc(t("fRefPrice"))}<input id="ni-price" inputmode="decimal" placeholder="0,00"></label></div>
+    <div class="acts"><button class="btn" type="button" data-r="0">${esc(t("cancel"))}</button><button class="btn primary" type="button" data-r="1">${esc(t("createBtn"))}</button></div></div>`;
+  d.addEventListener("click",async ev=>{const r=ev.target.closest("[data-r]");if(!r&&ev.target!==d)return;
+    if(r?.dataset.r!=="1"){d.remove();return}
+    const name=d.querySelector("#ni-name").value.trim();if(!name){d.querySelector("#ni-name").focus();return}
+    const k=normKey(name),cat=buildCatalog();
+    if(cat.get(k)?.manual){toast(t("ingExists"));ingOpen=k;d.remove();renderIngList();return}
+    const body={name,category:d.querySelector("#ni-cat").value,unit:d.querySelector("#ni-unit").value.trim(),price:d.querySelector("#ni-price").value.trim(),yield:"",notes:"",updatedAt:Date.now()};
+    try{await db.collection("ingredients").doc(ingDocId(k)).set(body);ingDocs.set(ingDocId(k),body);ingOpen=k;d.remove();toast(t("ingSaved"));renderIngList()}catch(err){toast(t("ingSaveFail"))}
+  });
+  layer.appendChild(d);d.querySelector("#ni-name").focus();
+}
+function exportIngCsv(){
+  const q=v=>`"${String(v??"").replace(/"/g,'""')}"`;
+  const dec=lang==="en"?".":",",sep=lang==="en"?",":";";
+  const n=v=>v==null?"":v.toFixed(2).replace(".",dec);
+  const rows=[...buildCatalog().values()].sort((a,b)=>a.name.localeCompare(b.name,loc())).map(e=>[e.name,e.category?L().cats[e.category]:"",e.unit,n(e.est),e.src==="manual"?t("srcManual"):e.src==="auto"?t("colUpd")+" "+fdate(e.t):"",n(e.avg),n(e.min),n(e.max),e.sheetCount,fdate(e.t),e.notes].map(q).join(sep));
+  save(`${t("ingFile")}_${today()}.csv`,"\uFEFF"+[L().ingCsvHead.map(q).join(sep),...rows].join("\r\n"));
 }
 
 /* ---------- PDF ---------- */
@@ -1019,10 +1242,11 @@ const pop=document.getElementById("morePop"),moreBtn=document.getElementById("mo
 moreBtn.onclick=e=>{e.stopPropagation();pop.hidden=!pop.hidden;moreBtn.setAttribute("aria-expanded",String(!pop.hidden))};
 document.addEventListener("click",e=>{if(!pop.hidden&&!pop.contains(e.target)){pop.hidden=true;moreBtn.setAttribute("aria-expanded","false")}});
 pop.addEventListener("click",e=>{const a=e.target.closest("[data-act]")?.dataset.act;if(!a)return;pop.hidden=true;
-  if(a==="pdfAll")pdfFor([...sheets.keys()]);if(a==="csv")exportCsv();if(a==="json")exportJson();if(a==="import")document.getElementById("importFile").click()});
+  if(a==="pdfAll")pdfFor([...sheets.keys()]);if(a==="ingCsv")exportIngCsv();if(a==="csv")exportCsv();if(a==="json")exportJson();if(a==="import")document.getElementById("importFile").click()});
 document.getElementById("importFile").addEventListener("change",e=>{const f=e.target.files[0];e.target.value="";if(f)importJson(f)});
 document.querySelectorAll(".lang button").forEach(b=>b.addEventListener("click",()=>setLang(b.dataset.lang)));
 document.getElementById("goHome").onclick=()=>view==="editor"?leave(renderLibrary):renderLibrary();
+document.querySelectorAll("[data-nav]").forEach(b=>b.addEventListener("click",()=>{const go=b.dataset.nav==="ingredients"?renderIngredients:renderLibrary;view==="editor"?leave(go):go()}));
 document.getElementById("newBtn").onclick=()=>view==="editor"?leave(newSheet):newSheet();
 document.addEventListener("visibilitychange",()=>{if(document.hidden)flush()});
 app.addEventListener("input",onEdInput);
@@ -1042,9 +1266,14 @@ renderLibrary();
     if(current&&dirty&&view==="editor")m.set(current.id,current.data);
     sheets=m;dbState="ready";
     if(view==="library")renderList();
+    else if(view==="ingredients")renderIngList();
     else if(view==="editor")refreshIngList();
     else if(view==="preview"&&current&&sheets.has(current.id)){const fresh=sheets.get(current.id);if(fresh!==current.src){current.src=fresh;current.data=JSON.parse(JSON.stringify(fresh));renderPreview()}}
   },()=>{dbState="none";toast(t("lost"))});
+  db.collection("ingredients").onSnapshot(snap=>{
+    ingDocs=new Map(snap.docs.map(x=>[x.id,x.data()]));
+    if(view==="ingredients")renderIngList();else if(view==="editor")refreshIngList();
+  },()=>{});
   db.collection("settings").onSnapshot(snap=>{
     const doc=snap.docs.find(x=>x.id==="library");const v=doc?doc.data():null;
     libInfo=v?{owner:v.owner||"",fields:Array.isArray(v.fields)?v.fields.map(f=>({label:f.label||"",value:f.value||""})):[]}:{owner:"",fields:[]};
