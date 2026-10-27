@@ -34,6 +34,16 @@ Cada gravação cria um commit no repositório (histórico completo das alteraç
 
 A cópia de segurança (.json) em *Exportar / Importar* continua disponível.
 
+## Preços médios de mercado
+
+Em **Ingredientes → Sincronizar preços médios** escolhe-se o país e aplica-se uma tabela de referência:
+
+- **Portugal**: 167 ingredientes em português (legumes, fruta, carne, peixe, laticínios, mercearia, gorduras, ervas e especiarias, bebidas para cozinhar), com preço por kg, L, unidade ou molho. Ficheiro: `data/precos/PT.json`.
+- Fontes: [Ativos.pt — cabaz alimentar](https://www.ativos.pt/cabaz-alimentar/produtos) (mediana de 5 supermercados, 27/10/2026), [Bourmet.pt — comparador de ingredientes](https://bourmet.pt/ingredientes) (preço mais baixo entre Continente, Auchan e Pingo Doce, 08/09/2026) e o cabaz da [DECO PROteste](https://www.dnoticias.pt/2026/10/7/508079-cabaz-alimentar-volta-a-subir-para-25556-euros-na-ultima-semana/) (07/10/2026).
+- A sincronização acrescenta os ingredientes que faltam e atualiza o *preço de mercado* dos existentes. Não altera preços fixados à mão nem preços lançados nas fichas; o preço de mercado só é usado como estimativa enquanto o ingrediente não tem preço numa ficha.
+- Os preços são valores de referência convertidos a partir do preço da embalagem: confirmar antes de usar em orçamentos. Espanha e Reino Unido ainda não têm tabela.
+
+
 ## Publicar no GitHub Pages
 
 1. Coloque `index.html`, `shim.js` e `.nojekyll` na raiz do repositório (ramo `main`).

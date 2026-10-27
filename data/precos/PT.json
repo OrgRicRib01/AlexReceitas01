@@ -1,0 +1,1361 @@
+{
+ "country": "PT",
+ "currency": "EUR",
+ "collectedUntil": "2026-10-27",
+ "note": "Preços médios de referência, convertidos para €/kg, €/L, €/un ou €/molho a partir do preço da embalagem indicado em cada fonte. Confirmar antes de usar em orçamentos.",
+ "sources": {
+  "A": {
+   "name": "Ativos.pt — cabaz alimentar (mediana de Continente, Pingo Doce, Auchan, Froiz e El Corte Inglés)",
+   "url": "https://www.ativos.pt/cabaz-alimentar/produtos",
+   "date": "2026-10-27"
+  },
+  "B": {
+   "name": "Bourmet.pt — comparador de ingredientes (preço mais baixo entre Continente, Auchan e Pingo Doce)",
+   "url": "https://bourmet.pt/ingredientes",
+   "date": "2026-09-08"
+  },
+  "D": {
+   "name": "DECO PROteste — cabaz alimentar (DNoticias, 7 out 2026)",
+   "url": "https://www.dnoticias.pt/2026/10/7/508079-cabaz-alimentar-volta-a-subir-para-25556-euros-na-ultima-semana/",
+   "date": "2026-10-07"
+  }
+ },
+ "items": [
+  {
+   "name": "Abóbora",
+   "category": "legumes",
+   "unit": "kg",
+   "price": 0.99,
+   "src": "B",
+   "note": "vendida a granel"
+  },
+  {
+   "name": "Alface",
+   "category": "legumes",
+   "unit": "un",
+   "price": 1.24,
+   "src": "A",
+   "note": "embalagem de 2 un"
+  },
+  {
+   "name": "Alho-francês",
+   "category": "legumes",
+   "unit": "kg",
+   "price": 4.72,
+   "src": "B",
+   "note": "embalagem 400 g"
+  },
+  {
+   "name": "Batata",
+   "category": "legumes",
+   "unit": "kg",
+   "price": 1.17,
+   "src": "A",
+   "note": "saco 2 kg"
+  },
+  {
+   "name": "Batata-doce",
+   "category": "legumes",
+   "unit": "kg",
+   "price": 1.99,
+   "src": "B",
+   "note": "a granel"
+  },
+  {
+   "name": "Beringela",
+   "category": "legumes",
+   "unit": "kg",
+   "price": 3.88,
+   "src": "B",
+   "note": "embalagem 400 g"
+  },
+  {
+   "name": "Brócolos",
+   "category": "legumes",
+   "unit": "kg",
+   "price": 4.42,
+   "src": "B",
+   "note": "embalagem 450 g"
+  },
+  {
+   "name": "Cebola",
+   "category": "legumes",
+   "unit": "kg",
+   "price": 1.19,
+   "src": "A",
+   "note": "1 kg"
+  },
+  {
+   "name": "Cenoura",
+   "category": "legumes",
+   "unit": "kg",
+   "price": 1.19,
+   "src": "A",
+   "note": "1 kg"
+  },
+  {
+   "name": "Cogumelos frescos",
+   "category": "legumes",
+   "unit": "kg",
+   "price": 6.36,
+   "src": "B",
+   "note": "embalagem 250 g"
+  },
+  {
+   "name": "Couve-flor",
+   "category": "legumes",
+   "unit": "kg",
+   "price": 1.85,
+   "src": "B",
+   "note": "750 g"
+  },
+  {
+   "name": "Curgete",
+   "category": "legumes",
+   "unit": "kg",
+   "price": 1.99,
+   "src": "B",
+   "note": "preço ao kg; 1 un ≈ 500 g"
+  },
+  {
+   "name": "Espargos",
+   "category": "legumes",
+   "unit": "kg",
+   "price": 11.96,
+   "src": "B",
+   "note": "molho 250 g"
+  },
+  {
+   "name": "Espinafres baby",
+   "category": "legumes",
+   "unit": "kg",
+   "price": 6.6,
+   "src": "B",
+   "note": "embalagem 150 g"
+  },
+  {
+   "name": "Ervilhas congeladas",
+   "category": "legumes",
+   "unit": "kg",
+   "price": 1.49,
+   "src": "A",
+   "note": "embalagem 750 g"
+  },
+  {
+   "name": "Gengibre fresco",
+   "category": "legumes",
+   "unit": "kg",
+   "price": 4.99,
+   "src": "B",
+   "note": "preço ao kg"
+  },
+  {
+   "name": "Grelos de nabo",
+   "category": "legumes",
+   "unit": "kg",
+   "price": 3.27,
+   "src": "B",
+   "note": "embalagem 700 g"
+  },
+  {
+   "name": "Malagueta fresca",
+   "category": "legumes",
+   "unit": "kg",
+   "price": 13.9,
+   "src": "B",
+   "note": "embalagem 100 g"
+  },
+  {
+   "name": "Nabo",
+   "category": "legumes",
+   "unit": "un",
+   "price": 1.19,
+   "src": "B",
+   "note": ""
+  },
+  {
+   "name": "Pimento verde",
+   "category": "legumes",
+   "unit": "kg",
+   "price": 2.99,
+   "src": "B",
+   "note": "preço ao kg; 1 un ≈ 250 g"
+  },
+  {
+   "name": "Pimento vermelho",
+   "category": "legumes",
+   "unit": "kg",
+   "price": 3.29,
+   "src": "B",
+   "note": "preço ao kg; 1 un ≈ 300 g"
+  },
+  {
+   "name": "Rúcula",
+   "category": "legumes",
+   "unit": "kg",
+   "price": 9.9,
+   "src": "B",
+   "note": "embalagem 100 g"
+  },
+  {
+   "name": "Tomate",
+   "category": "legumes",
+   "unit": "kg",
+   "price": 2.09,
+   "src": "A",
+   "note": "tomate redondo, 1 kg"
+  },
+  {
+   "name": "Tomate chucha",
+   "category": "legumes",
+   "unit": "kg",
+   "price": 2.63,
+   "src": "D",
+   "note": ""
+  },
+  {
+   "name": "Tomate cherry",
+   "category": "legumes",
+   "unit": "kg",
+   "price": 4.76,
+   "src": "B",
+   "note": "embalagem 250 g"
+  },
+  {
+   "name": "Ananás",
+   "category": "frutas",
+   "unit": "kg",
+   "price": 1.49,
+   "src": "B",
+   "note": "a granel"
+  },
+  {
+   "name": "Banana",
+   "category": "frutas",
+   "unit": "kg",
+   "price": 1.17,
+   "src": "A",
+   "note": "1 kg"
+  },
+  {
+   "name": "Laranja",
+   "category": "frutas",
+   "unit": "kg",
+   "price": 1.66,
+   "src": "A",
+   "note": "1 kg"
+  },
+  {
+   "name": "Lima",
+   "category": "frutas",
+   "unit": "un",
+   "price": 0.25,
+   "src": "B",
+   "note": "embalagem 12 un"
+  },
+  {
+   "name": "Limão",
+   "category": "frutas",
+   "unit": "kg",
+   "price": 2.49,
+   "src": "B",
+   "note": "preço ao kg; 2 un ≈ 400 g"
+  },
+  {
+   "name": "Maçã",
+   "category": "frutas",
+   "unit": "kg",
+   "price": 1.85,
+   "src": "A",
+   "note": "maçã Gala, 1 kg"
+  },
+  {
+   "name": "Frutos vermelhos congelados",
+   "category": "frutas",
+   "unit": "kg",
+   "price": 11.09,
+   "src": "B",
+   "note": "embalagem 450 g"
+  },
+  {
+   "name": "Coco ralado",
+   "category": "frutas",
+   "unit": "kg",
+   "price": 7.95,
+   "src": "B",
+   "note": "embalagem 200 g"
+  },
+  {
+   "name": "Peito de frango",
+   "category": "carne",
+   "unit": "kg",
+   "price": 6.89,
+   "src": "A",
+   "note": "1 kg"
+  },
+  {
+   "name": "Coxas de frango",
+   "category": "carne",
+   "unit": "kg",
+   "price": 3.49,
+   "src": "B",
+   "note": "1 kg"
+  },
+  {
+   "name": "Asas de frango",
+   "category": "carne",
+   "unit": "kg",
+   "price": 2.79,
+   "src": "B",
+   "note": "preço ao kg"
+  },
+  {
+   "name": "Galinha inteira",
+   "category": "carne",
+   "unit": "kg",
+   "price": 2.99,
+   "src": "B",
+   "note": "preço ao kg"
+  },
+  {
+   "name": "Pato inteiro",
+   "category": "carne",
+   "unit": "kg",
+   "price": 4.49,
+   "src": "B",
+   "note": "preço ao kg; 1 un ≈ 2,4 kg"
+  },
+  {
+   "name": "Bife de peru",
+   "category": "carne",
+   "unit": "kg",
+   "price": 6.99,
+   "src": "B",
+   "note": "preço ao kg"
+  },
+  {
+   "name": "Lombo de porco",
+   "category": "carne",
+   "unit": "kg",
+   "price": 5.28,
+   "src": "A",
+   "note": "1 kg"
+  },
+  {
+   "name": "Febras de porco",
+   "category": "carne",
+   "unit": "kg",
+   "price": 4.49,
+   "src": "B",
+   "note": "1 kg"
+  },
+  {
+   "name": "Costeletas de porco",
+   "category": "carne",
+   "unit": "kg",
+   "price": 4.39,
+   "src": "B",
+   "note": "preço ao kg"
+  },
+  {
+   "name": "Entrecosto de porco",
+   "category": "carne",
+   "unit": "kg",
+   "price": 6.29,
+   "src": "B",
+   "note": "preço ao kg"
+  },
+  {
+   "name": "Pá de porco",
+   "category": "carne",
+   "unit": "kg",
+   "price": 3.99,
+   "src": "B",
+   "note": "preço ao kg"
+  },
+  {
+   "name": "Secretos de porco",
+   "category": "carne",
+   "unit": "kg",
+   "price": 6.99,
+   "src": "B",
+   "note": "preço ao kg"
+  },
+  {
+   "name": "Carne de novilho para cozer",
+   "category": "carne",
+   "unit": "kg",
+   "price": 12.25,
+   "src": "D",
+   "note": ""
+  },
+  {
+   "name": "Carne picada de vaca",
+   "category": "carne",
+   "unit": "kg",
+   "price": 9.98,
+   "src": "B",
+   "note": "embalagem 500 g; as fontes divergem entre ≈10 e 16 €/kg — confirmar"
+  },
+  {
+   "name": "Bife de vaca",
+   "category": "carne",
+   "unit": "kg",
+   "price": 17.49,
+   "src": "B",
+   "note": "preço ao kg"
+  },
+  {
+   "name": "Picanha de vaca",
+   "category": "carne",
+   "unit": "kg",
+   "price": 19.99,
+   "src": "B",
+   "note": "preço ao kg"
+  },
+  {
+   "name": "Borrego em pedaços",
+   "category": "carne",
+   "unit": "kg",
+   "price": 12.99,
+   "src": "B",
+   "note": "preço ao kg"
+  },
+  {
+   "name": "Cabrito em pedaços",
+   "category": "carne",
+   "unit": "kg",
+   "price": 16.99,
+   "src": "B",
+   "note": "preço ao kg"
+  },
+  {
+   "name": "Bacon",
+   "category": "carne",
+   "unit": "kg",
+   "price": 9.45,
+   "src": "B",
+   "note": "embalagem 200 g"
+  },
+  {
+   "name": "Toucinho fumado",
+   "category": "carne",
+   "unit": "kg",
+   "price": 8.95,
+   "src": "B",
+   "note": "embalagem 200 g"
+  },
+  {
+   "name": "Chouriço de carne",
+   "category": "carne",
+   "unit": "kg",
+   "price": 7.45,
+   "src": "B",
+   "note": "200 g"
+  },
+  {
+   "name": "Morcela",
+   "category": "carne",
+   "unit": "kg",
+   "price": 7.95,
+   "src": "B",
+   "note": "200 g"
+  },
+  {
+   "name": "Alheira",
+   "category": "carne",
+   "unit": "kg",
+   "price": 6.95,
+   "src": "B",
+   "note": "200 g"
+  },
+  {
+   "name": "Presunto fatiado",
+   "category": "carne",
+   "unit": "kg",
+   "price": 19.93,
+   "src": "B",
+   "note": "embalagem 150 g"
+  },
+  {
+   "name": "Fiambre fatiado",
+   "category": "carne",
+   "unit": "kg",
+   "price": 11.15,
+   "src": "A",
+   "note": "fiambre da perna, 200 g"
+  },
+  {
+   "name": "Salsichas tipo Frankfurt",
+   "category": "carne",
+   "unit": "un",
+   "price": 0.11,
+   "src": "B",
+   "note": "embalagem 8 un"
+  },
+  {
+   "name": "Bacalhau graúdo (seco)",
+   "category": "peixe",
+   "unit": "kg",
+   "price": 20.73,
+   "src": "D",
+   "note": ""
+  },
+  {
+   "name": "Bacalhau em postas demolhado",
+   "category": "peixe",
+   "unit": "kg",
+   "price": 9.11,
+   "src": "B",
+   "note": "congelado, 800 g"
+  },
+  {
+   "name": "Bacalhau desfiado demolhado",
+   "category": "peixe",
+   "unit": "kg",
+   "price": 10.58,
+   "src": "B",
+   "note": "congelado, 500 g"
+  },
+  {
+   "name": "Carapau",
+   "category": "peixe",
+   "unit": "kg",
+   "price": 5.57,
+   "src": "D",
+   "note": "fresco"
+  },
+  {
+   "name": "Pescada",
+   "category": "peixe",
+   "unit": "kg",
+   "price": 11.1,
+   "src": "A",
+   "note": "congelada, 800 g"
+  },
+  {
+   "name": "Filetes de pescada",
+   "category": "peixe",
+   "unit": "kg",
+   "price": 7.89,
+   "src": "B",
+   "note": "congelados, 1 kg"
+  },
+  {
+   "name": "Salmão (lombos)",
+   "category": "peixe",
+   "unit": "kg",
+   "price": 21.99,
+   "src": "B",
+   "note": "fresco, preço ao kg"
+  },
+  {
+   "name": "Dourada",
+   "category": "peixe",
+   "unit": "kg",
+   "price": 8.99,
+   "src": "B",
+   "note": "fresca, preço ao kg"
+  },
+  {
+   "name": "Robalo",
+   "category": "peixe",
+   "unit": "kg",
+   "price": 11.99,
+   "src": "B",
+   "note": "fresco, preço ao kg"
+  },
+  {
+   "name": "Corvina",
+   "category": "peixe",
+   "unit": "kg",
+   "price": 11.99,
+   "src": "B",
+   "note": "fresca, preço ao kg"
+  },
+  {
+   "name": "Polvo",
+   "category": "peixe",
+   "unit": "kg",
+   "price": 13.99,
+   "src": "B",
+   "note": "preço ao kg"
+  },
+  {
+   "name": "Lulas limpas",
+   "category": "peixe",
+   "unit": "kg",
+   "price": 11.25,
+   "src": "B",
+   "note": "400 g"
+  },
+  {
+   "name": "Choco limpo",
+   "category": "peixe",
+   "unit": "kg",
+   "price": 9.61,
+   "src": "B",
+   "note": "congelado, 800 g"
+  },
+  {
+   "name": "Camarão descascado",
+   "category": "peixe",
+   "unit": "kg",
+   "price": 22.95,
+   "src": "B",
+   "note": "congelado, 200 g"
+  },
+  {
+   "name": "Mexilhão",
+   "category": "peixe",
+   "unit": "kg",
+   "price": 2.14,
+   "src": "B",
+   "note": "fresco, embalagem ≈ 1 kg"
+  },
+  {
+   "name": "Atum em conserva",
+   "category": "peixe",
+   "unit": "kg",
+   "price": 8.81,
+   "src": "A",
+   "note": "atum ao natural, 480 g"
+  },
+  {
+   "name": "Leite meio-gordo",
+   "category": "laticinios",
+   "unit": "L",
+   "price": 0.85,
+   "src": "A",
+   "note": "UHT, embalagem 6 L"
+  },
+  {
+   "name": "Natas para culinária",
+   "category": "laticinios",
+   "unit": "L",
+   "price": 3.95,
+   "src": "B",
+   "note": "200 ml"
+  },
+  {
+   "name": "Manteiga",
+   "category": "laticinios",
+   "unit": "kg",
+   "price": 8.36,
+   "src": "A",
+   "note": "250 g"
+  },
+  {
+   "name": "Ovos",
+   "category": "laticinios",
+   "unit": "un",
+   "price": 0.3,
+   "src": "A",
+   "note": "calibre M, dúzia"
+  },
+  {
+   "name": "Claras de ovo",
+   "category": "laticinios",
+   "unit": "kg",
+   "price": 2.99,
+   "src": "B",
+   "note": "1 kg"
+  },
+  {
+   "name": "Iogurte natural",
+   "category": "laticinios",
+   "unit": "kg",
+   "price": 1.39,
+   "src": "A",
+   "note": "1 kg"
+  },
+  {
+   "name": "Iogurte grego",
+   "category": "laticinios",
+   "unit": "kg",
+   "price": 3.18,
+   "src": "B",
+   "note": "4 × 125 g"
+  },
+  {
+   "name": "Queijo flamengo",
+   "category": "laticinios",
+   "unit": "kg",
+   "price": 7.12,
+   "src": "A",
+   "note": "400 g"
+  },
+  {
+   "name": "Queijo emmental",
+   "category": "laticinios",
+   "unit": "kg",
+   "price": 8.95,
+   "src": "B",
+   "note": "200 g"
+  },
+  {
+   "name": "Queijo parmesão ralado",
+   "category": "laticinios",
+   "unit": "kg",
+   "price": 28.17,
+   "src": "B",
+   "note": "60 g"
+  },
+  {
+   "name": "Queijo fresco",
+   "category": "laticinios",
+   "unit": "kg",
+   "price": 5.75,
+   "src": "B",
+   "note": "200 g"
+  },
+  {
+   "name": "Queijo creme",
+   "category": "laticinios",
+   "unit": "kg",
+   "price": 10.6,
+   "src": "B",
+   "note": "150 g"
+  },
+  {
+   "name": "Queijo feta",
+   "category": "laticinios",
+   "unit": "kg",
+   "price": 11.93,
+   "src": "B",
+   "note": "150 g"
+  },
+  {
+   "name": "Requeijão",
+   "category": "laticinios",
+   "unit": "kg",
+   "price": 7.96,
+   "src": "B",
+   "note": "260 g"
+  },
+  {
+   "name": "Ricotta",
+   "category": "laticinios",
+   "unit": "kg",
+   "price": 6.76,
+   "src": "B",
+   "note": "250 g"
+  },
+  {
+   "name": "Leite condensado",
+   "category": "laticinios",
+   "unit": "kg",
+   "price": 3.5,
+   "src": "B",
+   "note": "397 g"
+  },
+  {
+   "name": "Leite evaporado",
+   "category": "laticinios",
+   "unit": "kg",
+   "price": 3.63,
+   "src": "B",
+   "note": "410 g"
+  },
+  {
+   "name": "Leite de coco",
+   "category": "laticinios",
+   "unit": "L",
+   "price": 3.47,
+   "src": "B",
+   "note": "400 ml"
+  },
+  {
+   "name": "Arroz agulha",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": 1.15,
+   "src": "A",
+   "note": "2 kg"
+  },
+  {
+   "name": "Arroz carolino",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": 1.09,
+   "src": "B",
+   "note": "1 kg"
+  },
+  {
+   "name": "Arroz arbóreo",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": 3.18,
+   "src": "B",
+   "note": "500 g"
+  },
+  {
+   "name": "Arroz basmati / jasmim",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": 1.99,
+   "src": "B",
+   "note": "1 kg"
+  },
+  {
+   "name": "Esparguete",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": 0.99,
+   "src": "A",
+   "note": "2 kg"
+  },
+  {
+   "name": "Massa curta (penne, fusilli)",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": 1.38,
+   "src": "B",
+   "note": "500 g"
+  },
+  {
+   "name": "Massa de lasanha",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": 2.78,
+   "src": "B",
+   "note": "500 g"
+  },
+  {
+   "name": "Massa aletria",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": 2.3,
+   "src": "B",
+   "note": "500 g"
+  },
+  {
+   "name": "Massa folhada",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": 4.13,
+   "src": "B",
+   "note": "230 g"
+  },
+  {
+   "name": "Farinha de trigo",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": 0.69,
+   "src": "A",
+   "note": "tipo 55, 1 kg"
+  },
+  {
+   "name": "Amido de milho (maizena)",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": 6.47,
+   "src": "B",
+   "note": "400 g"
+  },
+  {
+   "name": "Açúcar branco",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": 1.09,
+   "src": "A",
+   "note": "1 kg"
+  },
+  {
+   "name": "Açúcar em pó",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": 4.2,
+   "src": "B",
+   "note": "250 g"
+  },
+  {
+   "name": "Sal fino",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": 0.45,
+   "src": "A",
+   "note": "1 kg"
+  },
+  {
+   "name": "Sal grosso",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": 0.25,
+   "src": "B",
+   "note": "1 kg"
+  },
+  {
+   "name": "Fermento em pó",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": 8.6,
+   "src": "B",
+   "note": "150 g"
+  },
+  {
+   "name": "Fermento de padeiro seco",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": 90.55,
+   "src": "B",
+   "note": "27,5 g"
+  },
+  {
+   "name": "Gelatina em pó",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": 31.94,
+   "src": "B",
+   "note": "31 g"
+  },
+  {
+   "name": "Cacau em pó",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": 15.92,
+   "src": "B",
+   "note": "125 g"
+  },
+  {
+   "name": "Chocolate negro 70%",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": 19.9,
+   "src": "B",
+   "note": "100 g"
+  },
+  {
+   "name": "Pão ralado",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": 2.0,
+   "src": "B",
+   "note": "240 g"
+  },
+  {
+   "name": "Flocos de aveia",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": 1.98,
+   "src": "B",
+   "note": "500 g"
+  },
+  {
+   "name": "Polpa de tomate",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": 1.98,
+   "src": "A",
+   "note": "800 g"
+  },
+  {
+   "name": "Concentrado de tomate",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": 7.07,
+   "src": "B",
+   "note": "140 g"
+  },
+  {
+   "name": "Feijão seco",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": 2.42,
+   "src": "A",
+   "note": "500 g"
+  },
+  {
+   "name": "Grão-de-bico seco",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": 1.96,
+   "src": "A",
+   "note": "500 g"
+  },
+  {
+   "name": "Lentilhas vermelhas",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": 3.98,
+   "src": "B",
+   "note": "500 g"
+  },
+  {
+   "name": "Quinoa",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": 5.38,
+   "src": "B",
+   "note": "500 g"
+  },
+  {
+   "name": "Tofu firme",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": 4.97,
+   "src": "B",
+   "note": "400 g"
+  },
+  {
+   "name": "Azeitonas pretas",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": 5.48,
+   "src": "B",
+   "note": "210 g escorridas"
+  },
+  {
+   "name": "Amêndoa",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": 12.6,
+   "src": "B",
+   "note": "150 g"
+  },
+  {
+   "name": "Amêndoa moída",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": 17.52,
+   "src": "B",
+   "note": "125 g"
+  },
+  {
+   "name": "Pinhões",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": 59.8,
+   "src": "B",
+   "note": "50 g"
+  },
+  {
+   "name": "Amendoins",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": 3.98,
+   "src": "B",
+   "note": "500 g"
+  },
+  {
+   "name": "Sementes de sésamo",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": 7.25,
+   "src": "B",
+   "note": "200 g"
+  },
+  {
+   "name": "Mel",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": 9.97,
+   "src": "B",
+   "note": "300 g"
+  },
+  {
+   "name": "Bolacha Maria",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": 2.97,
+   "src": "A",
+   "note": "400 g"
+  },
+  {
+   "name": "Pão de forma",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": 1.81,
+   "src": "A",
+   "note": "700 g"
+  },
+  {
+   "name": "Carcaça",
+   "category": "mercearia",
+   "unit": "un",
+   "price": 0.17,
+   "src": "A",
+   "note": "embalagem 6 un"
+  },
+  {
+   "name": "Broa de milho",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": 3.11,
+   "src": "B",
+   "note": "800 g"
+  },
+  {
+   "name": "Café moído",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": 15.44,
+   "src": "A",
+   "note": "250 g"
+  },
+  {
+   "name": "Caldo de galinha (cubo)",
+   "category": "mercearia",
+   "unit": "un",
+   "price": 0.066,
+   "src": "B",
+   "note": "embalagem 24 un"
+  },
+  {
+   "name": "Caldo de carne (cubo)",
+   "category": "mercearia",
+   "unit": "un",
+   "price": 0.066,
+   "src": "B",
+   "note": "embalagem 24 un"
+  },
+  {
+   "name": "Caldo de legumes (cubo)",
+   "category": "mercearia",
+   "unit": "un",
+   "price": 0.083,
+   "src": "B",
+   "note": "embalagem 12 un"
+  },
+  {
+   "name": "Mostarda",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": 5.95,
+   "src": "B",
+   "note": "200 g"
+  },
+  {
+   "name": "Maionese",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": 3.38,
+   "src": "B",
+   "note": "470 g"
+  },
+  {
+   "name": "Ketchup",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": 2.91,
+   "src": "B",
+   "note": "340 g"
+  },
+  {
+   "name": "Molho de soja",
+   "category": "mercearia",
+   "unit": "L",
+   "price": 4.95,
+   "src": "B",
+   "note": "200 ml"
+  },
+  {
+   "name": "Vinagre de vinho",
+   "category": "mercearia",
+   "unit": "L",
+   "price": 0.75,
+   "src": "B",
+   "note": "1 L"
+  },
+  {
+   "name": "Vinagre de maçã",
+   "category": "mercearia",
+   "unit": "L",
+   "price": 3.14,
+   "src": "B",
+   "note": "500 ml"
+  },
+  {
+   "name": "Massa de pimentão",
+   "category": "mercearia",
+   "unit": "kg",
+   "price": 4.25,
+   "src": "B",
+   "note": "200 g"
+  },
+  {
+   "name": "Azeite virgem extra",
+   "category": "gorduras",
+   "unit": "L",
+   "price": 6.12,
+   "src": "A",
+   "note": "1 L"
+  },
+  {
+   "name": "Óleo alimentar",
+   "category": "gorduras",
+   "unit": "L",
+   "price": 1.74,
+   "src": "A",
+   "note": "100% vegetal, 1 L"
+  },
+  {
+   "name": "Margarina",
+   "category": "gorduras",
+   "unit": "kg",
+   "price": 3.16,
+   "src": "B",
+   "note": "250 g"
+  },
+  {
+   "name": "Óleo de coco",
+   "category": "gorduras",
+   "unit": "L",
+   "price": 9.98,
+   "src": "B",
+   "note": "500 ml"
+  },
+  {
+   "name": "Salsa",
+   "category": "ervas",
+   "unit": "molho",
+   "price": 0.99,
+   "src": "B",
+   "note": "molho ≈ 50 g"
+  },
+  {
+   "name": "Coentros",
+   "category": "ervas",
+   "unit": "molho",
+   "price": 0.99,
+   "src": "B",
+   "note": "molho ≈ 50 g"
+  },
+  {
+   "name": "Manjericão fresco",
+   "category": "ervas",
+   "unit": "molho",
+   "price": 1.19,
+   "src": "B",
+   "note": "embalagem 25 g"
+  },
+  {
+   "name": "Cebolinho fresco",
+   "category": "ervas",
+   "unit": "molho",
+   "price": 1.29,
+   "src": "B",
+   "note": "embalagem 30 g"
+  },
+  {
+   "name": "Tomilho fresco",
+   "category": "ervas",
+   "unit": "molho",
+   "price": 1.29,
+   "src": "B",
+   "note": "embalagem 30 g"
+  },
+  {
+   "name": "Alecrim fresco",
+   "category": "ervas",
+   "unit": "molho",
+   "price": 1.94,
+   "src": "B",
+   "note": "embalagem 23 g"
+  },
+  {
+   "name": "Pimenta preta moída",
+   "category": "ervas",
+   "unit": "kg",
+   "price": 17.8,
+   "src": "B",
+   "note": "50 g"
+  },
+  {
+   "name": "Canela em pó",
+   "category": "ervas",
+   "unit": "kg",
+   "price": 10.9,
+   "src": "B",
+   "note": "100 g"
+  },
+  {
+   "name": "Cominhos",
+   "category": "ervas",
+   "unit": "kg",
+   "price": 19.78,
+   "src": "B",
+   "note": "45 g"
+  },
+  {
+   "name": "Colorau (pimentão doce)",
+   "category": "ervas",
+   "unit": "kg",
+   "price": 11.8,
+   "src": "B",
+   "note": "50 g"
+  },
+  {
+   "name": "Paprika fumada",
+   "category": "ervas",
+   "unit": "kg",
+   "price": 45.43,
+   "src": "B",
+   "note": "35 g"
+  },
+  {
+   "name": "Caril em pó",
+   "category": "ervas",
+   "unit": "kg",
+   "price": 19.9,
+   "src": "B",
+   "note": "100 g"
+  },
+  {
+   "name": "Orégãos secos",
+   "category": "ervas",
+   "unit": "kg",
+   "price": 49.67,
+   "src": "B",
+   "note": "30 g"
+  },
+  {
+   "name": "Piri-piri seco",
+   "category": "ervas",
+   "unit": "kg",
+   "price": 16.83,
+   "src": "B",
+   "note": "41 g"
+  },
+  {
+   "name": "Essência de baunilha",
+   "category": "ervas",
+   "unit": "L",
+   "price": 22.45,
+   "src": "B",
+   "note": "200 ml"
+  },
+  {
+   "name": "Vinho branco",
+   "category": "bebidas",
+   "unit": "L",
+   "price": 2.47,
+   "src": "B",
+   "note": "garrafa 75 cl"
+  },
+  {
+   "name": "Vinho tinto",
+   "category": "bebidas",
+   "unit": "L",
+   "price": 2.65,
+   "src": "B",
+   "note": "garrafa 75 cl"
+  },
+  {
+   "name": "Cerveja",
+   "category": "bebidas",
+   "unit": "L",
+   "price": 1.94,
+   "src": "B",
+   "note": "33 cl"
+  },
+  {
+   "name": "Aguardente",
+   "category": "bebidas",
+   "unit": "L",
+   "price": 17.13,
+   "src": "B",
+   "note": "70 cl"
+  }
+ ]
+}
