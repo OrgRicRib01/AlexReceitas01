@@ -18,6 +18,7 @@
   --accent:#1e43c0; --accent-ink:#ffffff; --accent-soft:#e3e9ff; --tape:#cfdcff; --tape-ink:#13286f;
   --good:#1d7548; --good-bg:#e1f2e8; --warn:#9a5c00; --warn-bg:#fbefd9; --bad:#ae2a1f; --bad-bg:#fbe3e0;
   --shadow:0 1px 2px rgba(20,32,28,.06),0 4px 14px rgba(20,32,28,.05);
+  --tag-s:62%; --tag-bg:91%; --tag-fg:27%; --tag-dot:46%;
   --f-display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
   --f-body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
   --f-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
@@ -27,12 +28,14 @@
   --accent:#7f9cff; --accent-ink:#0b1430; --accent-soft:#1d2852; --tape:#2a3a78; --tape-ink:#dce4ff;
   --good:#6fd3a0; --good-bg:#16322a; --warn:#f1b65a; --warn-bg:#3a2c12; --bad:#ff8f84; --bad-bg:#3d1c19;
   --shadow:0 1px 2px rgba(0,0,0,.3),0 4px 14px rgba(0,0,0,.25); color-scheme:dark;
+  --tag-s:42%; --tag-bg:24%; --tag-fg:84%; --tag-dot:62%;
 }}
 :root[data-theme="dark"]{
   --bg:#101413; --surface:#181e1c; --surface-2:#1e2523; --ink:#e6ecea; --muted:#9aa8a3; --line:#2e3835; --line-2:#252e2b;
   --accent:#7f9cff; --accent-ink:#0b1430; --accent-soft:#1d2852; --tape:#2a3a78; --tape-ink:#dce4ff;
   --good:#6fd3a0; --good-bg:#16322a; --warn:#f1b65a; --warn-bg:#3a2c12; --bad:#ff8f84; --bad-bg:#3d1c19;
   --shadow:0 1px 2px rgba(0,0,0,.3),0 4px 14px rgba(0,0,0,.25); color-scheme:dark;
+  --tag-s:42%; --tag-bg:24%; --tag-fg:84%; --tag-dot:62%;
 }
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.5}
@@ -341,6 +344,13 @@ img{max-width:100%}
 .chlist .pr{font-family:var(--f-mono);font-variant-numeric:tabular-nums;white-space:nowrap;text-align:right}
 .chlist .pr s{color:var(--muted);margin-right:4px}
 .chlist .pr small{display:block;font-family:var(--f-body);font-size:11px;color:var(--accent)}
+
+/* sheet tags in the shopping list */
+.stags{display:flex;flex-wrap:wrap;gap:4px;margin-top:4px}
+.stag{display:inline-flex;align-items:center;gap:5px;max-width:100%;font-size:11.5px;font-weight:600;line-height:1.3;padding:2px 8px 2px 6px;border-radius:999px;background:hsl(var(--h) var(--tag-s) var(--tag-bg));color:hsl(var(--h) var(--tag-s) var(--tag-fg));white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.stag i,.srcdot{display:inline-block;width:7px;height:7px;border-radius:50%;background:hsl(var(--h) var(--tag-s) var(--tag-dot));flex:none}
+.stag b{font-family:var(--f-mono);font-weight:500;opacity:.85}
+.srcdot{width:10px;height:10px;margin-right:7px;vertical-align:1px}
 
 /* PDF selection */
 .selbar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;background:var(--accent-soft);border-radius:8px;padding:10px 12px;margin-bottom:12px}
@@ -1549,6 +1559,9 @@ function addToShop(sid,doses){
   if(e){e.doses=d;toast(t("updatedShop",s.name||s.code,d))}else{shop.entries.push({sid,doses:d,addedAt:Date.now()});toast(t("addedToShop",s.name||s.code,d))}
   saveShop();
 }
+const TAG_HUES=[212,148,28,280,350,186,48,250,120,320,8,90];
+function sheetHue(sid){const i=shop.entries.findIndex(e=>e.sid===sid);return TAG_HUES[(i<0?0:i)%TAG_HUES.length]}
+const shortName=(n,max)=>{n=String(n||"");return n.length>max?n.slice(0,max-1).trimEnd()+"…":n};
 function shopItems(){
   const cat=buildCatalog(),m=new Map();
   for(const e of shop.entries){
@@ -1556,12 +1569,13 @@ function shopItems(){
     for(const i of s.ingredients||[]){
       const k=normKey(i.name);if(!k)continue;const unit=String(i.unit||"").trim();const key=k+"|"+unit;
       const y=num(i.yield)||100,q=num(i.qty)*f/(y/100),pr=num(i.price);
-      const it=m.get(key)||{key,name:i.name.trim(),unit,qty:0,cost:0,priced:true,sheets:new Set(),qb:isQb(unit),category:cat.get(k)?.category||""};
+      const it=m.get(key)||{key,name:i.name.trim(),unit,qty:0,cost:0,priced:true,sheets:new Set(),parts:new Map(),qb:isQb(unit),category:cat.get(k)?.category||""};
+      const pt=it.parts.get(e.sid)||{sid:e.sid,code:s.code,name:s.name||s.code,qty:0};pt.qty+=q;it.parts.set(e.sid,pt);
       it.qty+=q;if(hasVal(i.price)&&pr>0)it.cost+=q*pr;else if(!it.qb&&num(i.qty))it.priced=false;
       it.sheets.add(s.code);m.set(key,it);
     }
   }
-  for(const x of shop.extras){const key="x|"+x.id;m.set(key,{key,name:x.name,unit:x.unit||"",qty:num(x.qty),cost:0,priced:false,sheets:new Set(),qb:false,category:"_extra",extra:x.id})}
+  for(const x of shop.extras){const key="x|"+x.id;m.set(key,{key,name:x.name,unit:x.unit||"",qty:num(x.qty),cost:0,priced:false,sheets:new Set(),parts:new Map(),qb:false,category:"_extra",extra:x.id})}
   return [...m.values()];
 }
 const shopQty=it=>it.qb?it.unit:(it.qty?fq(it.qty)+" "+it.unit:it.unit||"").trim();
@@ -1578,9 +1592,9 @@ function renderShopBody(){
   const ro=!canWrite||!db,items=shopItems(),entries=shop.entries.filter(e=>sheets.has(e.sid));
   const bought=items.filter(it=>shop.checked[it.key]).length,total=items.reduce((a,it)=>a+it.cost,0);
   document.getElementById("shopStats").innerHTML=`<div class="stat"><small>${esc(t("shopCount"))}</small><b>${items.length}</b></div><div class="stat"><small>${esc(t("shopBought"))}</small><b>${bought}</b></div><div class="stat"><small>${esc(t("shopTotal"))}</small><b>${items.length?esc(eur(total)):"—"}</b></div>`;
-  document.getElementById("shopTools").innerHTML=items.length?`<button class="btn primary" type="button" id="shCopy">${esc(t("shopCopy"))}</button><button class="btn" type="button" id="shCsv">${esc(t("shopCsv"))}</button>${ro?"":`<button class="btn" type="button" id="shClearB" ${bought?"":"disabled"}>${esc(t("shopClearBought"))}</button><button class="btn danger" type="button" id="shClear">${esc(t("shopClearAll"))}</button>`}`:"";
+  document.getElementById("shopTools").innerHTML=items.length?`<button class="btn primary" type="button" id="shCopy">${esc(t("shopCopy"))}</button><button class="btn" type="button" id="shPdf">${esc(t("pdfBtn"))}</button><button class="btn" type="button" id="shCsv">${esc(t("shopCsv"))}</button>${ro?"":`<button class="btn" type="button" id="shClearB" ${bought?"":"disabled"}>${esc(t("shopClearBought"))}</button><button class="btn danger" type="button" id="shClear">${esc(t("shopClearAll"))}</button>`}`:"";
   const src=document.getElementById("shopSrc");
-  src.innerHTML=`<div class="sec-h"><h2>${esc(t("shopFrom"))}</h2></div>`+(entries.length?`<div class="srclist">${entries.map(e=>{const s=sheets.get(e.sid);return `<div class="srcrow"><span class="nm">${esc(s.name||t("noName"))}<small>${esc(s.code)}</small></span>
+  src.innerHTML=`<div class="sec-h"><h2>${esc(t("shopFrom"))}</h2></div>`+(entries.length?`<div class="srclist">${entries.map(e=>{const s=sheets.get(e.sid);return `<div class="srcrow"><span class="nm"><i class="srcdot" style="--h:${sheetHue(e.sid)}"></i>${esc(s.name||t("noName"))}<small>${esc(s.code)}</small></span>
       <input id="sd-${esc(e.sid)}" data-sd="${esc(e.sid)}" inputmode="decimal" value="${esc(String(e.doses).replace(".",lang==="en"?".":","))}" aria-label="${esc(t("shopDosesLbl"))}" ${ro?"disabled":""}>
       ${ro?"":`<button class="x" type="button" data-srm="${esc(e.sid)}" aria-label="${esc(t("shopRemove"))}">×</button>`}</div>`}).join("")}</div>`:`<p class="hint" style="margin:0">${esc(t("shopEmptyP"))}</p>`);
   if(!items.length&&!entries.length){box.innerHTML=`<div class="empty" style="padding:32px 12px"><h2>${esc(t("shopEmptyH"))}</h2><p>${esc(t("shopEmptyP"))}</p></div>${ro?"":extraForm()}`;wireShop(items);return}
@@ -1589,7 +1603,7 @@ function renderShopBody(){
   const order=[...CAT_KEYS,"","_extra"].filter(g=>groups.has(g));
   box.innerHTML=`<div class="sec-h"><h2>${esc(t("shopItems"))}</h2></div><div class="shopgrp">${order.map(g=>`<h3>${esc(g==="_extra"?t("shopExtra"):g?L().cats[g]:t("shopUncat"))}</h3>${groups.get(g).sort((a,b)=>a.name.localeCompare(b.name,loc())).map(it=>`<label class="sitem${shop.checked[it.key]?" done":""}">
       <input type="checkbox" data-ck="${esc(it.key)}" ${shop.checked[it.key]?"checked":""} ${ro?"disabled":""} aria-label="${esc(it.name)}">
-      <span class="nm">${esc(it.name)}${it.sheets.size?`<small>${esc([...it.sheets].join(", "))}</small>`:""}</span>
+      <span class="nm">${esc(it.name)}${it.parts.size?`<span class="stags">${[...it.parts.values()].map(pt=>`<span class="stag" style="--h:${sheetHue(pt.sid)}" title="${esc(pt.code+" · "+pt.name+": "+(it.qb?it.unit:fq(pt.qty)+" "+it.unit))}"><i></i>${esc(shortName(pt.name,24))}${it.parts.size>1&&!it.qb?` <b>${esc(fq(pt.qty))}</b>`:""}</span>`).join("")}</span>`:""}</span>
       <span class="q">${esc(shopQty(it))}</span>
       ${it.extra&&!ro?`<button class="x" type="button" data-xrm="${esc(it.extra)}" aria-label="${esc(t("shopRemove"))}">×</button>`:`<span class="c">${it.qb?"":it.priced?esc(eur(it.cost)):esc(t("shopNoPrice"))}</span>`}
     </label>`).join("")}`).join("")}</div>${ro?"":extraForm()}`;
@@ -1600,7 +1614,7 @@ function shopText(items){
   const lines=[t("shopDateLine",new Date().toLocaleDateString(loc())),t("shopSheetsLine",shop.entries.filter(e=>sheets.has(e.sid)).map(e=>{const s=sheets.get(e.sid);return `${s.code} ${s.name} (${e.doses})`}).join("; ")),""];
   const groups=new Map();for(const it of items){const g=it.category||"";if(!groups.has(g))groups.set(g,[]);groups.get(g).push(it)}
   for(const g of [...CAT_KEYS,"","_extra"].filter(g=>groups.has(g))){lines.push(g==="_extra"?t("shopExtra"):g?L().cats[g]:t("shopUncat"));
-    groups.get(g).sort((a,b)=>a.name.localeCompare(b.name,loc())).forEach(it=>lines.push(`${shop.checked[it.key]?"[x]":"[ ]"} ${it.name} — ${shopQty(it)}`));lines.push("")}
+    groups.get(g).sort((a,b)=>a.name.localeCompare(b.name,loc())).forEach(it=>lines.push(`${shop.checked[it.key]?"[x]":"[ ]"} ${it.name} — ${shopQty(it)}${it.parts.size?" ("+[...it.parts.values()].map(pt=>pt.name).join(", ")+")":""}`));lines.push("")}
   lines.push(t("shopTotalLine",eur(items.reduce((a,it)=>a+it.cost,0))));
   return lines.join("\n");
 }
@@ -1614,6 +1628,7 @@ function wireShop(items){
     shop.extras.push({id:Date.now().toString(36)+Math.random().toString(36).slice(2,6),name,qty:root.querySelector("#sx-qty").value.trim(),unit:root.querySelector("#sx-unit").value.trim()});saveShop();renderShopBody();setTimeout(()=>document.getElementById("sx-name")?.focus(),0)});
   root.querySelector("#shCopy")?.addEventListener("click",()=>{const txt=shopText(items);
     try{navigator.clipboard.writeText(txt).then(()=>toast(t("shopCopied")),()=>fallbackCopy(txt))}catch(err){fallbackCopy(txt)}});
+  root.querySelector("#shPdf")?.addEventListener("click",()=>shopPdf());
   root.querySelector("#shCsv")?.addEventListener("click",()=>{
     const q=v=>`"${String(v??"").replace(/"/g,'""')}"`,dec=lang==="en"?".":",",sep=lang==="en"?",":";";
     const rows=items.map(it=>[shop.checked[it.key]?"x":"",it.category==="_extra"?t("shopExtra"):it.category?L().cats[it.category]:"",it.name,it.qb?"":(it.qty?it.qty.toFixed(3).replace(".",dec):""),it.unit,it.priced&&it.cost?it.cost.toFixed(2).replace(".",dec):"",[...it.sheets].join(" ")].map(q).join(sep));
@@ -1625,6 +1640,69 @@ function wireShop(items){
     shop.entries=shop.entries.filter(e=>{const s=sheets.get(e.sid);return s&&left.some(it=>it.sheets.has(s.code))});
     shop.checked={};saveShop();renderShopBody()});
   root.querySelector("#shClear")?.addEventListener("click",async()=>{if(!await confirmBox(t("shopClearTitle"),t("shopClearText"),t("shopClearAll"),true))return;shop={entries:[],checked:{},extras:[],updatedAt:0};saveShop();renderShopBody()});
+}
+function hslRgb(h,s,l){s/=100;l/=100;const k=n=>(n+h/30)%12,a=s*Math.min(l,1-l),f=n=>l-a*Math.max(-1,Math.min(k(n)-3,Math.min(9-k(n),1)));return [Math.round(f(0)*255),Math.round(f(8)*255),Math.round(f(4)*255)]}
+async function shopPdf(){
+  const J=window.jspdf&&window.jspdf.jsPDF;if(!J){toast(t("pdfLibFail"));return}
+  const items=shopItems();if(!items.length)return;
+  toast(t("pdfMaking"));let doc;
+  try{
+    doc=new J({unit:"mm",format:"a4",compress:true});
+    const W=210,H=297,M=15,CW=W-2*M,BOT=H-18;
+    const INK=[21,32,28],MUT=[89,103,98],LINE=[211,219,216],ACC=[30,67,192],GOOD=[29,117,72];
+    const F=(sz,st="normal",col=INK)=>{doc.setFont("helvetica",st);doc.setFontSize(sz);doc.setTextColor(...col)};
+    let y=M+2;const newPage=()=>{doc.addPage();y=M+4};const ensure=h=>{if(y+h>BOT)newPage()};
+    const total=items.reduce((a,it)=>a+it.cost,0),bought=items.filter(it=>shop.checked[it.key]).length;
+    /* header */
+    doc.setFillColor(...ACC);doc.rect(0,0,W,5,"F");
+    if(libLine()){F(8,"normal",MUT);doc.text(doc.splitTextToSize(pdfTxt(libLine()),CW)[0],M,y+4)}
+    y+=13;F(22,"bold",INK);doc.text(pdfTxt(t("shopTitle").toUpperCase()),M,y);
+    F(10,"normal",MUT);doc.text(pdfTxt(new Date().toLocaleDateString(loc(),{dateStyle:"long"})),M+CW,y,{align:"right"});
+    y+=4;doc.setDrawColor(...INK);doc.setLineWidth(.7);doc.line(M,y,M+CW,y);y+=7;
+    /* summary */
+    F(9,"normal",MUT);doc.text(pdfTxt(`${t("shopCount")}: ${items.length}   ·   ${t("shopBought")}: ${bought}   ·   ${t("shopTotal")}: ${eur(total)}`),M,y);y+=7;
+    /* sheets on the list, with their colour */
+    const entries=shop.entries.filter(e=>sheets.has(e.sid));
+    if(entries.length){
+      F(8,"bold",MUT);doc.text(pdfTxt(t("shopFrom").toUpperCase()),M,y);y+=5;
+      for(const e of entries){const sh=sheets.get(e.sid);ensure(6);
+        doc.setFillColor(...hslRgb(sheetHue(e.sid),62,46));doc.circle(M+1.6,y-1.2,1.5,"F");
+        F(9.5,"bold",INK);const nm=pdfTxt(`${sh.code}  ${sh.name||t("noName")}`);doc.text(doc.splitTextToSize(nm,CW-40)[0],M+5,y);
+        F(9.5,"normal",MUT);doc.text(pdfTxt(`${String(e.doses).replace(".",lang==="en"?".":",")} ${t("dosesWord")}`),M+CW,y,{align:"right"});y+=5.4}
+      y+=3;
+    }
+    /* items by category */
+    const groups=new Map();for(const it of items){const g=it.category||"";if(!groups.has(g))groups.set(g,[]);groups.get(g).push(it)}
+    for(const g of [...CAT_KEYS,"","_extra"].filter(g=>groups.has(g))){
+      ensure(16);y+=3;F(10,"bold",INK);doc.text(pdfTxt((g==="_extra"?t("shopExtra"):g?L().cats[g]:t("shopUncat")).toUpperCase()),M,y);
+      y+=1.8;doc.setDrawColor(...ACC);doc.setLineWidth(.5);doc.line(M,y,M+CW,y);y+=5.5;
+      for(const it of groups.get(g).sort((a,b)=>a.name.localeCompare(b.name,loc()))){
+        const done=!!shop.checked[it.key],parts=[...it.parts.values()];
+        F(10,"normal");const nameLines=doc.splitTextToSize(pdfTxt(it.name),CW-62);
+        /* tag lines: coloured dot + sheet name (+ its quantity when several sheets) */
+        F(7.5,"normal");const tagLines=[];let line=[],w=0;const maxW=CW-62;
+        for(const pt of parts){const label=pdfTxt(shortName(pt.name,30)+(parts.length>1&&!it.qb?" "+fq(pt.qty):""));const tw=doc.getTextWidth(label)+6;
+          if(w+tw>maxW&&line.length){tagLines.push(line);line=[];w=0}line.push({pt,label,tw});w+=tw}
+        if(line.length)tagLines.push(line);
+        const rowH=nameLines.length*4.3+tagLines.length*3.8+3.2;ensure(rowH);
+        /* checkbox */
+        doc.setDrawColor(...(done?GOOD:MUT));doc.setLineWidth(.35);doc.rect(M,y-3.2,3.8,3.8);
+        if(done){doc.setDrawColor(...GOOD);doc.setLineWidth(.6);doc.line(M+.8,y-1.3,M+1.7,y-.3);doc.line(M+1.7,y-.3,M+3.2,y-2.6)}
+        F(10,done?"normal":"bold",done?MUT:INK);doc.text(nameLines,M+7,y);
+        if(done){const tw=Math.min(doc.getTextWidth(nameLines[0]),CW-62);doc.setDrawColor(...MUT);doc.setLineWidth(.25);doc.line(M+7,y-1.2,M+7+tw,y-1.2)}
+        F(10,"bold",done?MUT:INK);doc.text(pdfTxt(shopQty(it)),M+CW-30,y,{align:"right"});
+        F(9,"normal",MUT);doc.text(pdfTxt(it.qb?"":it.priced&&it.cost?eur(it.cost):it.extra?"":t("shopNoPrice")),M+CW,y,{align:"right"});
+        let ty=y+nameLines.length*4.3-.6;
+        for(const ln of tagLines){let x=M+7;for(const {pt,label,tw} of ln){doc.setFillColor(...hslRgb(sheetHue(pt.sid),62,46));doc.circle(x+1,ty-1,1,"F");F(7.5,"normal",MUT);doc.text(label,x+3,ty);x+=tw}ty+=3.8}
+        y+=rowH;doc.setDrawColor(...LINE);doc.setLineWidth(.15);doc.line(M+7,y-2.4,M+CW,y-2.4);
+      }
+    }
+    ensure(12);y+=3;doc.setDrawColor(...INK);doc.setLineWidth(.5);doc.line(M+CW-70,y-3,M+CW,y-3);
+    F(11,"bold",INK);doc.text(pdfTxt(t("shopTotal")),M+CW-30,y+2,{align:"right"});doc.text(pdfTxt(eur(total)),M+CW,y+2,{align:"right"});
+    const n=doc.getNumberOfPages();
+    for(let i=1;i<=n;i++){doc.setPage(i);F(7.5,"normal",MUT);doc.setDrawColor(...LINE);doc.setLineWidth(.2);doc.line(M,H-12,M+CW,H-12);doc.text(pdfTxt(t("shopTitle")),M,H-8);doc.text(pdfTxt(t("pdfPage",i,n)),M+CW,H-8,{align:"right"})}
+  }catch(e){console.error(e);toast(t("pdfFail"));return}
+  await save(`${t("shopFile")}_${today()}.pdf`,doc.output("arraybuffer"));
 }
 function renderShopStats(items){const el=document.getElementById("shopStats");if(!el)return;const bought=items.filter(it=>shop.checked[it.key]).length;el.querySelectorAll(".stat b")[1].textContent=bought;const b=document.getElementById("shClearB");if(b)b.disabled=!bought}
 function fallbackCopy(txt){const ta=document.createElement("textarea");ta.value=txt;ta.style.cssText="position:fixed;inset:20% 10% auto;height:50%;z-index:80";layer.appendChild(ta);ta.select();let ok=false;try{ok=document.execCommand("copy")}catch(e){}if(ok){ta.remove();toast(t("shopCopied"))}else{toast(t("shopCopyFail"));ta.addEventListener("blur",()=>ta.remove())}}
