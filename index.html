@@ -257,6 +257,28 @@ img{max-width:100%}
 .lightbox figcaption{color:#fff;font-size:15px;text-align:center}
 .lightbox .btn{position:absolute;top:calc(14px + env(safe-area-inset-top,0px));right:max(14px,env(safe-area-inset-right,0px))}
 
+/* PDF photo choice + featured plating photo on screen */
+.dlg .phgroup{display:grid;gap:8px;border-top:1px solid var(--line);padding-top:10px}
+.dlg .phgroup h3{margin:0;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.dlg .phpick{display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:8px;max-height:230px;overflow:auto;padding:2px}
+.dlg .phpick label{position:relative;display:block;cursor:pointer;border-radius:6px;overflow:hidden;border:2px solid transparent;aspect-ratio:4/3;max-width:100%}
+.dlg .phpick label:has(input:checked){border-color:var(--accent)}
+.dlg .phpick label:has(input:not(:checked)) img{opacity:.35}
+.dlg .phpick img{width:100%;height:100%;object-fit:cover;display:block}
+.dlg .phpick input{position:absolute;left:5px;top:5px}
+.dlg .phpick span{position:absolute;left:0;right:0;bottom:0;background:rgba(0,0,0,.55);color:#fff;font-size:11px;padding:2px 5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.dlg .phbar{display:flex;gap:6px;align-items:center}
+.dlg .phbar small{color:var(--muted);margin-right:auto}
+.dlg .phbar .btn{padding:3px 9px;font-size:12.5px}
+.dlg{max-height:calc(100vh - 32px);overflow:auto}
+.pv-head{display:grid;grid-template-columns:minmax(0,1fr);gap:20px;align-items:start;margin-bottom:4px}
+.pv-head.has-photo{grid-template-columns:minmax(0,1fr) minmax(200px,300px)}
+.pv-plate{margin:0;display:grid;gap:6px}
+.pv-plate button{padding:0;border:1px solid var(--line);border-radius:8px;overflow:hidden;cursor:zoom-in;background:none;aspect-ratio:4/3;max-width:100%}
+.pv-plate img{width:100%;height:100%;object-fit:cover;display:block}
+.pv-plate figcaption{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-align:right}
+@media (max-width:700px){.pv-head.has-photo{grid-template-columns:minmax(0,1fr)}.pv-plate{order:-1}}
+
 /* PDF selection */
 .selbar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;background:var(--accent-soft);border-radius:8px;padding:10px 12px;margin-bottom:12px}
 .selbar .grow{margin-right:auto;font-size:14px}
@@ -330,6 +352,7 @@ pt:{
   pvKicker:"Ficha técnica de preparação",edit:"Editar",xlsx:"Exportar Excel",origin:"Origem",scaleTo:"Escalar para",dosesWord:"doses",factor:"Fator {0} · as quantidades e custos abaixo acompanham.",reset:"Repor",unitShort:"Unid.",priceShort:"Preço unit.",costShort:"Preço custo",scaled:" (escalado)",noIng:"Sem ingredientes.",toFill:"Por preencher.",noAll:"Nenhum assinalado. Confirme antes de servir.",pvFoot:"Food cost alvo: {0} %. Valores da receita base.",aprov:"aprov.",noSale:"Sem PV",fcTip:"Food cost real (alvo {0} %)",
   dlNo:"As transferências não estão disponíveis nesta vista.",dlBusy:"Já há uma transferência a decorrer. Tente de novo dentro de momentos.",dlFail:"Não foi possível transferir o ficheiro.",xlsxFail:"O exportador de Excel não carregou. Recarregue a página.",
   impNo:"Não é possível importar nesta vista.",notJson:"O ficheiro não é um JSON válido.",notBackup:"Este ficheiro não é uma cópia de segurança desta biblioteca.",impTitle:"Importar fichas",impText:"Vão ser importadas {0} fichas. Fichas com o mesmo identificador são substituídas pela versão do ficheiro.",impOk:"Importar",impFull:"A biblioteca ficou cheia durante a importação.",impDone:"{0} fichas importadas.",lost:"Perdeu-se a ligação à biblioteca. Recarregue a página.",
+  optWhich:"Fotografias a incluir",optPlate:"Foto do empratamento (em destaque no topo)",optPrep:"Fotografias da preparação",optNoPhotos:"Nenhuma ficha selecionada tem fotografias.",optPlateMissing:"sem foto",optCount:"{0} de {1}",selAllPh:"Todas",selNonePh:"Nenhuma",
   secPrep:"Fotografias da preparação",secPrepSub:"Cada foto pode ter um título",addPhotos:"+ Adicionar fotos",photoTitlePh:"Título (opcional)",photoN:"Foto {0}",movePrev:"Mover para trás",moveNext:"Mover para a frente",rmPhoto:"Remover foto",
   noPrep:"Ainda sem fotografias. Acrescente fotos dos passos, da mise en place ou do resultado final.",photosUp:"A carregar {0} foto(s)…",photosDone:"{0} foto(s) adicionada(s).",photosFail:"{0} foto(s) não foram carregadas.",closeBtn:"Fechar",
   dictStart:"Ditar por voz",dictStop:"Parar ditado",dictListening:"A ouvir… fale um passo e faça uma pausa.",dictHelp:"Cada pausa cria um novo passo. Pode corrigir o texto à mão. Diga \"novo passo\" para mudar de linha sem pausa.",
@@ -386,6 +409,7 @@ en:{
   pvKicker:"Preparation technical sheet",edit:"Edit",xlsx:"Export to Excel",origin:"Source",scaleTo:"Scale to",dosesWord:"portions",factor:"Factor {0} · quantities and costs below follow it.",reset:"Reset",unitShort:"Unit",priceShort:"Unit price",costShort:"Cost",scaled:" (scaled)",noIng:"No ingredients.",toFill:"Not filled in yet.",noAll:"None ticked. Check before serving.",pvFoot:"Target food cost: {0}%. Figures for the base recipe.",aprov:"yield",noSale:"No price",fcTip:"Actual food cost (target {0}%)",
   dlNo:"Downloads are not available in this view.",dlBusy:"A download is already in progress. Try again in a moment.",dlFail:"The file could not be downloaded.",xlsxFail:"The Excel exporter did not load. Reload the page.",
   impNo:"Importing is not available in this view.",notJson:"The file is not valid JSON.",notBackup:"This file is not a backup of this library.",impTitle:"Import sheets",impText:"{0} sheets will be imported. Sheets with the same identifier are replaced by the version in the file.",impOk:"Import",impFull:"The library filled up during the import.",impDone:"{0} sheets imported.",lost:"Lost connection to the library. Reload the page.",
+  optWhich:"Photos to include",optPlate:"Plating photo (featured at the top)",optPrep:"Preparation photos",optNoPhotos:"None of the selected sheets has photos.",optPlateMissing:"no photo",optCount:"{0} of {1}",selAllPh:"All",selNonePh:"None",
   secPrep:"Preparation photos",secPrepSub:"Each photo can have a title",addPhotos:"+ Add photos",photoTitlePh:"Title (optional)",photoN:"Photo {0}",movePrev:"Move back",moveNext:"Move forward",rmPhoto:"Remove photo",
   noPrep:"No photos yet. Add photos of the steps, the mise en place or the finished dish.",photosUp:"Uploading {0} photo(s)…",photosDone:"{0} photo(s) added.",photosFail:"{0} photo(s) could not be uploaded.",closeBtn:"Close",
   dictStart:"Dictate",dictStop:"Stop dictating",dictListening:"Listening… say a step, then pause.",dictHelp:"Each pause starts a new step. You can correct the text by hand. Say \"new step\" to start a new line without pausing.",
@@ -442,6 +466,7 @@ es:{
   pvKicker:"Ficha técnica de elaboración",edit:"Editar",xlsx:"Exportar a Excel",origin:"Origen",scaleTo:"Escalar a",dosesWord:"raciones",factor:"Factor {0} · las cantidades y costes de abajo se ajustan.",reset:"Restablecer",unitShort:"Ud.",priceShort:"Precio unit.",costShort:"Coste",scaled:" (escalado)",noIng:"Sin ingredientes.",toFill:"Pendiente de completar.",noAll:"Ninguno marcado. Compruébalo antes de servir.",pvFoot:"Food cost objetivo: {0} %. Valores de la receta base.",aprov:"rend.",noSale:"Sin PVP",fcTip:"Food cost real (objetivo {0} %)",
   dlNo:"Las descargas no están disponibles en esta vista.",dlBusy:"Ya hay una descarga en curso. Inténtalo de nuevo en un momento.",dlFail:"No se ha podido descargar el archivo.",xlsxFail:"El exportador de Excel no se ha cargado. Recarga la página.",
   impNo:"No se puede importar en esta vista.",notJson:"El archivo no es un JSON válido.",notBackup:"Este archivo no es una copia de seguridad de esta biblioteca.",impTitle:"Importar fichas",impText:"Se importarán {0} fichas. Las fichas con el mismo identificador se sustituyen por la versión del archivo.",impOk:"Importar",impFull:"La biblioteca se ha llenado durante la importación.",impDone:"{0} fichas importadas.",lost:"Se ha perdido la conexión con la biblioteca. Recarga la página.",
+  optWhich:"Fotos que incluir",optPlate:"Foto del emplatado (destacada arriba)",optPrep:"Fotos de la elaboración",optNoPhotos:"Ninguna de las fichas seleccionadas tiene fotos.",optPlateMissing:"sin foto",optCount:"{0} de {1}",selAllPh:"Todas",selNonePh:"Ninguna",
   secPrep:"Fotos de la elaboración",secPrepSub:"Cada foto puede tener un título",addPhotos:"+ Añadir fotos",photoTitlePh:"Título (opcional)",photoN:"Foto {0}",movePrev:"Mover atrás",moveNext:"Mover adelante",rmPhoto:"Quitar foto",
   noPrep:"Todavía no hay fotos. Añade fotos de los pasos, de la mise en place o del plato terminado.",photosUp:"Subiendo {0} foto(s)…",photosDone:"{0} foto(s) añadida(s).",photosFail:"{0} foto(s) no se han podido subir.",closeBtn:"Cerrar",
   dictStart:"Dictar por voz",dictStop:"Detener dictado",dictListening:"Escuchando… di un paso y haz una pausa.",dictHelp:"Cada pausa crea un paso nuevo. Puedes corregir el texto a mano. Di \"nuevo paso\" para cambiar de línea sin pausa.",
@@ -988,6 +1013,7 @@ function renderPreview(){
     <button class="btn" type="button" id="pdfOne">${esc(t("pdfBtn"))}</button>
   </div>
   <article class="sheet">
+    <div class="pv-head${s.photoUrl?" has-photo":""}"><div>
     <div class="title"><div><small>${esc(t("pvKicker"))}</small><h1>${esc(s.name||t("noName"))}</h1></div><span class="tape">${esc(s.code)}</span></div>
     <div class="meta-grid">
       <div><small>${esc(t("fFam"))}</small><b>${esc(s.family||"—")}</b></div>
@@ -996,6 +1022,8 @@ function renderPreview(){
       <div><small>${esc(t("fCook"))}</small><b>${esc(s.cookTime||"—")}</b></div>
       <div><small>${esc(t("fSt"))}</small><b>${stPill(s.status)}</b></div>
       <div><small>${esc(t("origin"))}</small><b>${esc(srcLabel(s.source))}${s.sourceNote?`<br><span class="muted" style="font-weight:400">${esc(s.sourceNote)}</span>`:""}</b></div>
+    </div></div>
+    ${s.photoUrl?`<figure class="pv-plate"><button type="button" id="plateZoom" aria-label="${esc(t("photoAlt",s.name))}"><img src="${esc(s.photoUrl)}" alt="${esc(t("photoAlt",s.name))}"></button><figcaption>${esc(t("plating"))}</figcaption></figure>`:""}
     </div>
     <div class="scale"><label for="scaleIn"><b>${esc(t("scaleTo"))}</b></label><input id="scaleIn" inputmode="decimal" value="${esc(target.toLocaleString(loc(),{maximumFractionDigits:2,useGrouping:false}))}"> ${esc(t("dosesWord"))}
       <span class="muted">${esc(t("factor",f.toLocaleString(loc(),{maximumFractionDigits:3})))}</span>
@@ -1017,15 +1045,16 @@ function renderPreview(){
     </div>
     <div class="pv-sec"><h3>${esc(t("secMethod"))}</h3>${steps.length?`<ol>${steps.map(x=>`<li>${esc(x)}</li>`).join("")}</ol>`:`<p class="muted">${esc(t("toFill"))}</p>`}</div>
     ${(s.prepPhotos||[]).length?`<div class="pv-sec"><h3>${esc(t("secPrep"))}</h3><div class="pv-gal">${s.prepPhotos.map((ph,i)=>`<figure><button type="button" data-lb="${i}" aria-label="${esc(ph.title||t("photoN",i+1))}"><img src="${esc(ph.url)}" alt="${esc(ph.title||t("photoN",i+1))}" loading="lazy"></button><figcaption><b>${i+1}</b>${esc(ph.title||"")}</figcaption></figure>`).join("")}</div></div>`:""}
-    <div class="pv-sec"><h3>${esc(t("secNotes"))}</h3>${s.photoUrl?`<img src="${esc(s.photoUrl)}" alt="${esc(t("photoAlt",s.name))}" style="max-width:420px;width:100%;border-radius:6px;margin-bottom:10px">`:""}<p>${s.notes?esc(s.notes):`<span class="muted">${esc(t("toFill"))}</span>`}</p></div>
+    <div class="pv-sec"><h3>${esc(t("secNotes"))}</h3><p>${s.notes?esc(s.notes):`<span class="muted">${esc(t("toFill"))}</span>`}</p></div>
     <div class="pv-sec"><h3>${esc(t("secAll"))}</h3>${alls.length?`<div class="chips">${alls.map(a=>`<span class="pill bad">${esc(a)}</span>`).join("")}</div>`:`<p class="muted">${esc(t("noAll"))}</p>`}</div>
     ${s.conservation?`<div class="pv-sec"><h3>${esc(t("secCons"))}</h3><p>${esc(s.conservation)}</p></div>`:""}
   </article>`;
   app.querySelector("#back").onclick=renderLibrary;
   app.querySelector("#edit")?.addEventListener("click",()=>editSheet(current.id));
   app.querySelector("#xlsx").onclick=()=>exportXlsx(s);
+  app.querySelector("#plateZoom")?.addEventListener("click",()=>lightbox(s.photoUrl,t("plating")+" — "+(s.name||"")));
   app.querySelectorAll("[data-lb]").forEach(b=>b.addEventListener("click",()=>{const ph=s.prepPhotos[+b.dataset.lb];lightbox(ph.url,[String(+b.dataset.lb+1)+".",ph.title].filter(Boolean).join(" "))}));
-  app.querySelector("#pdfOne").onclick=async()=>{const o=await pdfOptions(1);if(o)makePdf([{id:current.id,s}],o)};
+  app.querySelector("#pdfOne").onclick=async()=>{const it=[{id:current.id,s}];const o=await pdfOptions(it);if(o)makePdf(it,o)};
   const si=app.querySelector("#scaleIn");
   si.addEventListener("change",()=>{const v=num(si.value);scaleTo=v>0?v:null;renderPreview()});
   app.querySelector("#scaleReset")?.addEventListener("click",()=>{scaleTo=null;renderPreview()});
@@ -1235,21 +1264,41 @@ function exportIngCsv(){
 const PDF_MAP={"≥":">=","≤":"<=","→":"->","←":"<-","≈":"~","−":"-","✓":"v"};
 const WINANSI_EXTRA="€‚ƒ„…†‡ˆ‰Š‹ŒŽ‘’“”•–—˜™š›œžŸ";
 const pdfTxt=v=>String(v??"").replace(/[    ]/g," ").replace(/[\ud800-\udbff][\udc00-\udfff]/g,"").replace(/[\s\S]/g,ch=>{if(PDF_MAP[ch])return PDF_MAP[ch];return ch.charCodeAt(0)<256||WINANSI_EXTRA.includes(ch)?ch:"?"});
-function pdfOptions(n){return new Promise(res=>{
+function pdfOptions(items){return new Promise(res=>{
+  const n=items.length,one=n===1?items[0].s:null;
+  const withPlate=items.filter(x=>x.s.photoUrl).length,withPrep=items.filter(x=>(x.s.prepPhotos||[]).length).length;
+  const prep=one?(one.prepPhotos||[]):[];
   const d=document.createElement("div");d.className="scrim";
-  d.innerHTML=`<div class="dlg" role="dialog" aria-modal="true"><h2>${esc(t("pdfOptTitle"))}</h2><p>${esc(t("pdfOptText",n))}</p>
+  d.innerHTML=`<div class="dlg" role="dialog" aria-modal="true" style="max-width:520px"><h2>${esc(t("pdfOptTitle"))}</h2><p>${esc(t("pdfOptText",n))}</p>
     <div class="opts">${n>1?`<label><input type="checkbox" id="po-cover" checked>${esc(t("optCover"))}</label>`:""}
-    <label><input type="checkbox" id="po-costs" checked>${esc(t("optCosts"))}</label>
-    <label><input type="checkbox" id="po-photos" checked>${esc(t("optPhotos"))}</label></div>
+    <label><input type="checkbox" id="po-costs" checked>${esc(t("optCosts"))}</label></div>
+    <div class="phgroup"><h3>${esc(t("optWhich"))}</h3>
+      ${!withPlate&&!withPrep?`<p class="hint" style="margin:0">${esc(t("optNoPhotos"))}</p>`:""}
+      ${withPlate?`<div class="opts"><label><input type="checkbox" id="po-plate" checked>${esc(t("optPlate"))}${n>1?` <span class="muted">(${esc(t("optCount",withPlate,n))})</span>`:""}</label></div>`:""}
+      ${withPrep?`<div class="opts"><label><input type="checkbox" id="po-prep" checked>${esc(t("optPrep"))}${n>1?` <span class="muted">(${esc(t("optCount",withPrep,n))})</span>`:` <span class="muted" id="po-prepcount">(${esc(t("optCount",prep.length,prep.length))})</span>`}</label></div>`:""}
+      ${one&&prep.length?`<div id="po-pickwrap"><div class="phbar"><small>${esc(t("secPrep"))}</small><button class="btn" type="button" id="po-all">${esc(t("selAllPh"))}</button><button class="btn" type="button" id="po-none">${esc(t("selNonePh"))}</button></div>
+        <div class="phpick">${prep.map((ph,i)=>`<label title="${esc(ph.title||t("photoN",i+1))}"><img src="${esc(ph.url)}" alt="${esc(ph.title||t("photoN",i+1))}"><input type="checkbox" data-pi="${i}" checked aria-label="${esc(ph.title||t("photoN",i+1))}"><span>${i+1}${ph.title?". "+esc(ph.title):""}</span></label>`).join("")}</div></div>`:""}
+    </div>
     <div class="acts"><button class="btn" data-r="0" type="button">${esc(t("cancel"))}</button><button class="btn primary" data-r="1" type="button">${esc(t("pdfMake"))}</button></div></div>`;
-  d.addEventListener("click",e=>{const r=e.target.closest("[data-r]");if(!r&&e.target!==d)return;
-    const o=r?.dataset.r==="1"?{cover:!!d.querySelector("#po-cover")?.checked,costs:d.querySelector("#po-costs").checked,photos:d.querySelector("#po-photos").checked}:null;d.remove();res(o)});
+  const picks=()=>[...d.querySelectorAll("[data-pi]")];
+  const syncPrep=()=>{const pk=picks();if(!pk.length)return;const on=pk.filter(x=>x.checked).length;const master=d.querySelector("#po-prep");master.checked=on>0;master.indeterminate=on>0&&on<pk.length;const c=d.querySelector("#po-prepcount");if(c)c.textContent=`(${t("optCount",on,pk.length)})`};
+  d.addEventListener("change",e=>{if(e.target.id==="po-prep"){picks().forEach(x=>x.checked=e.target.checked);syncPrep()}else if(e.target.dataset.pi!=null)syncPrep()});
+  d.addEventListener("click",e=>{
+    if(e.target.closest("#po-all")){picks().forEach(x=>x.checked=true);syncPrep();return}
+    if(e.target.closest("#po-none")){picks().forEach(x=>x.checked=false);syncPrep();return}
+    const r=e.target.closest("[data-r]");if(!r&&e.target!==d)return;
+    let o=null;
+    if(r?.dataset.r==="1"){
+      const sel=picks().length?new Set(picks().filter(x=>x.checked).map(x=>+x.dataset.pi)):null;
+      o={cover:!!d.querySelector("#po-cover")?.checked,costs:d.querySelector("#po-costs").checked,plate:!!d.querySelector("#po-plate")?.checked,prep:!!d.querySelector("#po-prep")?.checked||(sel&&sel.size>0),prepSel:sel};
+    }
+    d.remove();res(o)});
   layer.appendChild(d);d.querySelector('[data-r="1"]').focus();
 })}
 async function pdfFor(ids){
   const items=ids.map(id=>({id,s:sheets.get(id)})).filter(x=>x.s).sort((a,b)=>String(a.s.code).localeCompare(String(b.s.code),loc(),{numeric:true}));
   if(!items.length){toast(t("pdfNone"));return}
-  const o=await pdfOptions(items.length);if(o)await makePdf(items,o);
+  const o=await pdfOptions(items);if(o)await makePdf(items,o);
 }
 function loadImg(url){return new Promise(res=>{const im=new Image();im.onload=()=>{try{const sc=Math.min(1,1400/Math.max(im.naturalWidth,im.naturalHeight));const cv=document.createElement("canvas");cv.width=Math.max(1,Math.round(im.naturalWidth*sc));cv.height=Math.max(1,Math.round(im.naturalHeight*sc));const cx=cv.getContext("2d");cx.fillStyle="#fff";cx.fillRect(0,0,cv.width,cv.height);cx.drawImage(im,0,0,cv.width,cv.height);res({data:cv.toDataURL("image/jpeg",.85),w:cv.width,h:cv.height})}catch{res(null)}};im.onerror=()=>res(null);im.src=url})}
 async function makePdf(items,opts){
@@ -1259,9 +1308,9 @@ async function makePdf(items,opts){
   let doc;
   try{
     const photos=new Map();
-    if(opts.photos)for(const {id,s} of items)if(s.photoUrl){const im=await loadImg(s.photoUrl);if(im)photos.set(id,im)}
+    if(opts.plate)for(const {id,s} of items)if(s.photoUrl){const im=await loadImg(s.photoUrl);if(im)photos.set(id,im)}
     const prepImgs=new Map();
-    if(opts.photos)for(const {id,s} of items)if((s.prepPhotos||[]).length){const arr=[];for(const ph of s.prepPhotos){const im=await loadImg(ph.url);if(im)arr.push({...im,title:ph.title||""})}if(arr.length)prepImgs.set(id,arr)}
+    if(opts.prep)for(const {id,s} of items)if((s.prepPhotos||[]).length){const arr=[];for(const [pi,ph] of s.prepPhotos.entries()){if(opts.prepSel&&!opts.prepSel.has(pi))continue;const im=await loadImg(ph.url);if(im)arr.push({...im,title:ph.title||"",n:pi+1})}if(arr.length)prepImgs.set(id,arr)}
     doc=new J({unit:"mm",format:"a4",compress:true});
     const W=210,H=297,M=15,CW=W-2*M,BOT=H-18;
     const INK=[21,32,28],MUT=[89,103,98],LINE=[211,219,216],ACC=[30,67,192],TAPE=[207,220,255],TAPEI=[19,40,111],SOFT=[243,245,244],RED=[174,42,31];
@@ -1278,20 +1327,30 @@ async function makePdf(items,opts){
       lines.forEach((ln,i)=>{ensure(lh(sz));if(i===0&&prefix){F(sz,"bold",ACC);doc.text(prefix,M,y);F(sz,"normal",col)}doc.text(ln,M+indent,y);y+=lh(sz)})};
     const drawSheet=(s,photo,prep)=>{
       const c=calc(s);
+      const y0=y,PW=64,PH=48,LW=photo?CW-PW-6:CW,nc=photo?2:3;
       F(13,"bold",TAPEI);const code=pdfTxt(s.code||"");const cw=Math.max(20,doc.getTextWidth(code)+9);
       doc.setFillColor(...TAPE);doc.rect(W-M-cw,y-1.5,cw,8.5,"F");doc.text(code,W-M-cw/2,y+4.5,{align:"center"});
       F(7.5,"bold",MUT);doc.text(pdfTxt(X.title),M,y+2.5);y+=5;
-      F(18,"bold",INK);doc.splitTextToSize(pdfTxt(s.name||t("noName")),CW-cw-4).forEach(l=>{y+=7.2;doc.text(l,M,y)});
-      y+=3.5;doc.setDrawColor(...INK);doc.setLineWidth(.7);doc.line(M,y,M+CW,y);y+=3;
+      F(18,"bold",INK);doc.splitTextToSize(pdfTxt(s.name||t("noName")),photo?LW:CW-cw-4).forEach(l=>{y+=7.2;doc.text(l,M,y)});
+      y+=3.5;doc.setDrawColor(...INK);doc.setLineWidth(.7);doc.line(M,y,M+LW,y);y+=3;
+      if(photo){
+        const px=W-M-PW,py=y0+9;
+        doc.setFillColor(...SOFT);doc.rect(px,py,PW,PH,"F");
+        let w=PW,h=PW*photo.h/photo.w;if(h>PH){h=PH;w=PH*photo.w/photo.h}
+        doc.addImage(photo.data,"JPEG",px+(PW-w)/2,py+(PH-h)/2,w,h);
+        doc.setDrawColor(...LINE);doc.setLineWidth(.3);doc.rect(px,py,PW,PH);
+        F(6.8,"bold",MUT);doc.text(pdfTxt(t("plating").toUpperCase()),px+PW,py+PH+3.6,{align:"right"});
+      }
       const meta=[[t("fFam"),s.family],[t("fDoses"),s.doses],[t("fPrep"),s.prepTime],[t("fCook"),s.cookTime],[t("fSt"),stLabel(s.status)],[t("origin"),[srcLabel(s.source),s.sourceNote].filter(Boolean).join(" — ")]];
-      const cwd=CW/3;
-      for(let r=0;r<2;r++){
-        F(9.5,"bold");const cells=meta.slice(r*3,r*3+3).map(([l,v])=>[l,doc.splitTextToSize(pdfTxt(v||"—"),cwd-5)]);
+      const cwd=LW/nc;
+      for(let r=0;r<meta.length/nc;r++){
+        F(9.5,"bold");const cells=meta.slice(r*nc,r*nc+nc).map(([l,v])=>[l,doc.splitTextToSize(pdfTxt(v||"—"),cwd-5)]);
         const rh=Math.max(...cells.map(([,v])=>v.length))*3.9+8;
         doc.setLineWidth(.2);doc.setDrawColor(...LINE);
         cells.forEach(([l,v],i)=>{const x=M+i*cwd;doc.rect(x,y,cwd,rh);F(6.8,"normal",MUT);doc.text(pdfTxt(l.toUpperCase()),x+2.5,y+4);F(9.5,"bold",INK);doc.text(v,x+2.5,y+8.6)});
         y+=rh;
       }
+      if(photo)y=Math.max(y,y0+9+PH+4);
       y+=6;
       const cols=opts.costs?[[t("thIng"),76,"left"],[t("unitShort"),18,"left"],[t("thQty"),24,"right"],[t("priceShort"),31,"right"],[t("costShort"),31,"right"]]:[[t("thIng"),118,"left"],[t("unitShort"),27,"left"],[t("thQty"),35,"right"]];
       const head=()=>{doc.setFillColor(...SOFT);doc.rect(M,y,CW,7,"F");F(7,"bold",MUT);let x=M;cols.forEach(([h,w,a])=>{doc.text(pdfTxt(h.toUpperCase()),a==="right"?x+w-2:x+2,y+4.7,{align:a});x+=w});y+=7};
@@ -1326,7 +1385,7 @@ async function makePdf(items,opts){
         const gap=5,cols=3,bw=(CW-gap*(cols-1))/cols,bh=bw*0.75;
         for(let i=0;i<prep.length;i+=cols){
           const row=prep.slice(i,i+cols);
-          F(8);const caps=row.map((im,k)=>doc.splitTextToSize(pdfTxt(im.title?`${i+k+1}. ${im.title}`:String(i+k+1)),bw).slice(0,2));
+          F(8);const caps=row.map((im,k)=>doc.splitTextToSize(pdfTxt(im.title?`${im.n||i+k+1}. ${im.title}`:String(im.n||i+k+1)),bw).slice(0,2));
           const rowH=bh+3+Math.max(...caps.map(c=>c.length))*3.4;
           ensure(rowH+2);
           row.forEach((im,k)=>{const x=M+k*(bw+gap);
@@ -1338,7 +1397,6 @@ async function makePdf(items,opts){
         }
       }
       heading(t("secNotes"));
-      if(photo){let w=80,h=w*photo.h/photo.w;if(h>62){h=62;w=h*photo.w/photo.h}ensure(h+4);doc.addImage(photo.data,"JPEG",M,y-2.5,w,h);y+=h+3}
       para(s.notes||t("toFill"),10,s.notes?INK:MUT);
       heading(t("secAll"));
       const al=(s.allergens||[]).map(allergenLabel);
