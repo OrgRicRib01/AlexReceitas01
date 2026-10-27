@@ -77,7 +77,7 @@ h1{font-family:var(--f-display);font-weight:700;font-size:38px;line-height:1;mar
 .filters input,.filters select{border:1px solid var(--line);background:var(--surface);border-radius:6px;padding:7px 10px;min-width:0}
 .filters input{flex:1 1 220px}
 .list{background:var(--surface);border:1px solid var(--line);border-radius:8px;overflow:hidden}
-.row{display:grid;grid-template-columns:88px minmax(0,1fr) 150px 64px 92px 92px 96px 98px;gap:12px;align-items:center;padding:11px 16px;border-top:1px solid var(--line-2);cursor:pointer;text-align:left;background:none;border-left:0;border-right:0;border-bottom:0;width:100%}
+.row{display:grid;grid-template-columns:56px 82px minmax(0,1fr) 140px 60px 88px 84px 94px 96px;gap:12px;align-items:center;padding:11px 16px;border-top:1px solid var(--line-2);cursor:pointer;text-align:left;background:none;border-left:0;border-right:0;border-bottom:0;width:100%}
 .row:first-child{border-top:0}
 .row:hover{background:var(--surface-2)}
 .row.head{cursor:default;background:var(--surface-2);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding-block:8px}
@@ -99,7 +99,8 @@ h1{font-family:var(--f-display);font-weight:700;font-size:38px;line-height:1;mar
 .empty p{color:var(--muted);max-width:52ch;margin:0}
 @media (max-width:860px){
   .row.head{display:none}
-  .row{grid-template-columns:1fr auto;grid-template-areas:"code st" "name name" "meta fc";row-gap:4px}
+  .row{grid-template-columns:56px minmax(0,1fr) auto;grid-template-areas:"th code st" "th name name" "th meta fc";row-gap:4px;column-gap:12px}
+  .row .th{grid-area:th;align-self:start}
   .row .code{grid-area:code}.row .name{grid-area:name;white-space:normal}.row .st{grid-area:st}.row .fcc{grid-area:fc}
   .row .fam,.row .dz,.row .cd,.row .pv{display:none}
   .row .meta{display:block!important;grid-area:meta;color:var(--muted);font-size:13px;font-family:var(--f-mono)}
@@ -352,6 +353,29 @@ img{max-width:100%}
 .stag b{font-family:var(--f-mono);font-weight:500;opacity:.85}
 .srcdot{width:10px;height:10px;margin-right:7px;vertical-align:1px}
 
+/* plating thumbnails + gallery */
+.th{display:block;width:56px;aspect-ratio:4/3;max-width:100%;border-radius:5px;overflow:hidden;background:var(--surface-2);border:1px solid var(--line-2);position:relative}
+.th img{width:100%;height:100%;object-fit:cover;display:block}
+.th svg,.gcard .ph svg{position:absolute;inset:0;margin:auto;width:46%;height:46%;color:var(--line)}
+.row.head .th{visibility:hidden;height:0;border:0}
+.viewtog{display:inline-flex;border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.viewtog button{border:0;background:var(--surface);padding:7px 11px;font-size:13.5px;font-weight:500;cursor:pointer;color:var(--muted)}
+.viewtog button+button{border-left:1px solid var(--line)}
+.viewtog button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.lgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;padding:14px}
+.gcard{display:grid;grid-template-rows:auto 1fr;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--surface);cursor:pointer;text-align:left;padding:0;font:inherit;color:inherit;position:relative;min-width:0}
+.gcard:hover{border-color:var(--muted)}
+.gcard.picked{outline:2px solid var(--accent);outline-offset:-2px}
+.gcard .ph{position:relative;aspect-ratio:4/3;max-width:100%;background:var(--surface-2);border-bottom:1px solid var(--line-2)}
+.gcard .ph img{width:100%;height:100%;object-fit:cover;display:block}
+.gcard .ph .nophoto{position:absolute;left:0;right:0;bottom:8px;text-align:center;font-size:12px;color:var(--muted)}
+.gcard .ph .code{position:absolute;left:8px;top:8px;background:var(--tape);color:var(--tape-ink);font-family:var(--f-display);font-weight:700;letter-spacing:.05em;font-size:14px;padding:1px 8px;border-radius:3px}
+.gcard .ph input{position:absolute;right:8px;top:8px;width:20px;height:20px;accent-color:var(--accent)}
+.gcard .bd{display:grid;gap:6px;padding:10px 12px 12px;align-content:start}
+.gcard .bd b{font-weight:600;line-height:1.3}
+.gcard .bd small{color:var(--muted);font-size:12.5px}
+.gcard .bd .ln{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;font-family:var(--f-mono);font-size:13px}
+
 /* PDF selection */
 .selbar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;background:var(--accent-soft);border-radius:8px;padding:10px 12px;margin-bottom:12px}
 .selbar .grow{margin-right:auto;font-size:14px}
@@ -426,7 +450,7 @@ pt:{
   copySuffix:" (cópia)",dupDone:"Ficha duplicada. Está a editar a cópia.",delTitle:"Eliminar ficha",delText:"A ficha {0} — {1} será apagada da biblioteca. Esta ação não pode ser desfeita.",cancel:"Cancelar",deleted:"Ficha eliminada.",delFail:"Não foi possível eliminar a ficha.",
   pvKicker:"Ficha técnica de preparação",edit:"Editar",xlsx:"Exportar Excel",origin:"Origem",scaleTo:"Escalar para",dosesWord:"doses",factor:"Fator {0} · as quantidades e custos abaixo acompanham.",reset:"Repor",unitShort:"Unid.",priceShort:"Preço unit.",costShort:"Preço custo",scaled:" (escalado)",noIng:"Sem ingredientes.",toFill:"Por preencher.",noAll:"Nenhum assinalado. Confirme antes de servir.",pvFoot:"Food cost alvo: {0} %. Valores da receita base.",aprov:"aprov.",noSale:"Sem PV",fcTip:"Food cost real (alvo {0} %)",
   dlNo:"As transferências não estão disponíveis nesta vista.",dlBusy:"Já há uma transferência a decorrer. Tente de novo dentro de momentos.",dlFail:"Não foi possível transferir o ficheiro.",xlsxFail:"O exportador de Excel não carregou. Recarregue a página.",
-  impNo:"Não é possível importar nesta vista.",notJson:"O ficheiro não é um JSON válido.",notBackup:"Este ficheiro não é uma cópia de segurança desta biblioteca.",impTitle:"Importar fichas",impText:"Vão ser importadas {0} fichas. Fichas com o mesmo identificador são substituídas pela versão do ficheiro.",impOk:"Importar",impFull:"A biblioteca ficou cheia durante a importação.",impDone:"{0} fichas importadas.",lost:"Perdeu-se a ligação à biblioteca. Recarregue a página.",
+  impNo:"Não é possível importar nesta vista.",notJson:"O ficheiro não é um JSON válido.",notBackup:"Este ficheiro não é uma cópia de segurança desta biblioteca.",impTitle:"Importar fichas",impText:"Vão ser importadas {0} fichas. Fichas com o mesmo identificador são substituídas pela versão do ficheiro.",impOk:"Importar",impFull:"A biblioteca ficou cheia durante a importação.",impDone:"{0} fichas importadas.",lost:"Perdeu-se a ligação à biblioteca. Recarregue a página.",viewList:"Lista",viewGrid:"Galeria",noPhoto:"Sem foto",
   spSheetsTitle:"Atualizar preços nas fichas?",spSheetsText:"{0} ingrediente(s), usados em {1} ficha(s), têm nas fichas um preço diferente do novo preço de referência. Escolha os que quer atualizar; os custos dessas fichas são recalculados.",
   spSheetsNote:"Quando fixou um preço à mão para um ingrediente, é esse o preço usado (marcado \"fixado\"); nos restantes usa-se o preço de mercado.",
   spSheetsSkip:"Não alterar as fichas",spSheetsGo:"Atualizar fichas",spSheetsBusy:"A atualizar {0} de {1} fichas…",spSheetsDone:"Preços atualizados em {0} ficha(s).",spSheetsFail:"Algumas fichas não foram atualizadas ({0} de {1}). Tente de novo.",spNoPriceYet:"sem preço",
@@ -510,7 +534,7 @@ en:{
   copySuffix:" (copy)",dupDone:"Sheet duplicated. You are editing the copy.",delTitle:"Delete sheet",delText:"Sheet {0} — {1} will be removed from the library. This cannot be undone.",cancel:"Cancel",deleted:"Sheet deleted.",delFail:"The sheet could not be deleted.",
   pvKicker:"Preparation technical sheet",edit:"Edit",xlsx:"Export to Excel",origin:"Source",scaleTo:"Scale to",dosesWord:"portions",factor:"Factor {0} · quantities and costs below follow it.",reset:"Reset",unitShort:"Unit",priceShort:"Unit price",costShort:"Cost",scaled:" (scaled)",noIng:"No ingredients.",toFill:"Not filled in yet.",noAll:"None ticked. Check before serving.",pvFoot:"Target food cost: {0}%. Figures for the base recipe.",aprov:"yield",noSale:"No price",fcTip:"Actual food cost (target {0}%)",
   dlNo:"Downloads are not available in this view.",dlBusy:"A download is already in progress. Try again in a moment.",dlFail:"The file could not be downloaded.",xlsxFail:"The Excel exporter did not load. Reload the page.",
-  impNo:"Importing is not available in this view.",notJson:"The file is not valid JSON.",notBackup:"This file is not a backup of this library.",impTitle:"Import sheets",impText:"{0} sheets will be imported. Sheets with the same identifier are replaced by the version in the file.",impOk:"Import",impFull:"The library filled up during the import.",impDone:"{0} sheets imported.",lost:"Lost connection to the library. Reload the page.",
+  impNo:"Importing is not available in this view.",notJson:"The file is not valid JSON.",notBackup:"This file is not a backup of this library.",impTitle:"Import sheets",impText:"{0} sheets will be imported. Sheets with the same identifier are replaced by the version in the file.",impOk:"Import",impFull:"The library filled up during the import.",impDone:"{0} sheets imported.",lost:"Lost connection to the library. Reload the page.",viewList:"List",viewGrid:"Gallery",noPhoto:"No photo",
   spSheetsTitle:"Update prices on sheets?",spSheetsText:"{0} ingredient(s), used on {1} sheet(s), have a price on the sheets that differs from the new reference price. Choose which to update; those sheets' costs are recalculated.",
   spSheetsNote:"Where you fixed a price by hand for an ingredient, that price is used (marked \"fixed\"); otherwise the market price is used.",
   spSheetsSkip:"Leave sheets as they are",spSheetsGo:"Update sheets",spSheetsBusy:"Updating {0} of {1} sheets…",spSheetsDone:"Prices updated on {0} sheet(s).",spSheetsFail:"Some sheets were not updated ({0} of {1}). Try again.",spNoPriceYet:"no price",
@@ -594,7 +618,7 @@ es:{
   copySuffix:" (copia)",dupDone:"Ficha duplicada. Estás editando la copia.",delTitle:"Eliminar ficha",delText:"La ficha {0} — {1} se borrará de la biblioteca. Esta acción no se puede deshacer.",cancel:"Cancelar",deleted:"Ficha eliminada.",delFail:"No se ha podido eliminar la ficha.",
   pvKicker:"Ficha técnica de elaboración",edit:"Editar",xlsx:"Exportar a Excel",origin:"Origen",scaleTo:"Escalar a",dosesWord:"raciones",factor:"Factor {0} · las cantidades y costes de abajo se ajustan.",reset:"Restablecer",unitShort:"Ud.",priceShort:"Precio unit.",costShort:"Coste",scaled:" (escalado)",noIng:"Sin ingredientes.",toFill:"Pendiente de completar.",noAll:"Ninguno marcado. Compruébalo antes de servir.",pvFoot:"Food cost objetivo: {0} %. Valores de la receta base.",aprov:"rend.",noSale:"Sin PVP",fcTip:"Food cost real (objetivo {0} %)",
   dlNo:"Las descargas no están disponibles en esta vista.",dlBusy:"Ya hay una descarga en curso. Inténtalo de nuevo en un momento.",dlFail:"No se ha podido descargar el archivo.",xlsxFail:"El exportador de Excel no se ha cargado. Recarga la página.",
-  impNo:"No se puede importar en esta vista.",notJson:"El archivo no es un JSON válido.",notBackup:"Este archivo no es una copia de seguridad de esta biblioteca.",impTitle:"Importar fichas",impText:"Se importarán {0} fichas. Las fichas con el mismo identificador se sustituyen por la versión del archivo.",impOk:"Importar",impFull:"La biblioteca se ha llenado durante la importación.",impDone:"{0} fichas importadas.",lost:"Se ha perdido la conexión con la biblioteca. Recarga la página.",
+  impNo:"No se puede importar en esta vista.",notJson:"El archivo no es un JSON válido.",notBackup:"Este archivo no es una copia de seguridad de esta biblioteca.",impTitle:"Importar fichas",impText:"Se importarán {0} fichas. Las fichas con el mismo identificador se sustituyen por la versión del archivo.",impOk:"Importar",impFull:"La biblioteca se ha llenado durante la importación.",impDone:"{0} fichas importadas.",lost:"Se ha perdido la conexión con la biblioteca. Recarga la página.",viewList:"Lista",viewGrid:"Galería",noPhoto:"Sin foto",
   spSheetsTitle:"¿Actualizar precios en las fichas?",spSheetsText:"{0} ingrediente(s), usados en {1} ficha(s), tienen en las fichas un precio distinto del nuevo precio de referencia. Elige cuáles actualizar; los costes de esas fichas se recalculan.",
   spSheetsNote:"Si fijaste un precio a mano para un ingrediente, se usa ese precio (marcado \"fijado\"); en los demás se usa el precio de mercado.",
   spSheetsSkip:"No cambiar las fichas",spSheetsGo:"Actualizar fichas",spSheetsBusy:"Actualizando {0} de {1} fichas…",spSheetsDone:"Precios actualizados en {0} ficha(s).",spSheetsFail:"Algunas fichas no se han actualizado ({0} de {1}). Inténtalo de nuevo.",spNoPriceYet:"sin precio",
@@ -674,6 +698,9 @@ let db=null, assets=null, downloads=null, canWrite=true, dbState="loading";
 let sheets=new Map();
 let view="library", current=null, scaleTo=null;
 let selecting=false, lastShown=[], lastRows=[];
+let libView=(()=>{try{return localStorage.getItem("ft-libview")==="grid"?"grid":"list"}catch(e){return "list"}})();
+const PLATE_SVG='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5.5"/></svg>';
+const thumbHtml=s=>s.photoUrl?`<img src="${esc(s.photoUrl)}" alt="" loading="lazy">`:PLATE_SVG;
 let libInfo={owner:"",fields:[]};
 const selected=new Set();
 const filters={q:"",family:"",status:"",sort:"updated"};
@@ -799,10 +826,12 @@ function renderLibrary(){
     <select id="ffam" aria-label="${esc(t("colFam"))}"><option value="">${esc(t("allFam"))}</option>${familyOptions().map(f=>`<option ${f===filters.family?"selected":""}>${esc(f)}</option>`).join("")}</select>
     <select id="fst" aria-label="${esc(t("colSt"))}"><option value="">${esc(t("allSt"))}</option>${Object.entries(L().status).map(([k,v])=>`<option value="${k}" ${k===filters.status?"selected":""}>${esc(v)}</option>`).join("")}</select>
     <select id="fsort" aria-label="Sort"><option value="updated">${esc(t("sortUpdated"))}</option><option value="code">${esc(t("sortCode"))}</option><option value="name">${esc(t("sortName"))}</option><option value="cost">${esc(t("sortCost"))}</option><option value="fc">${esc(t("sortFc"))}</option></select>
+    <span class="viewtog" role="group" aria-label="View"><button type="button" data-lv="list" aria-pressed="${libView==="list"}">${esc(t("viewList"))}</button><button type="button" data-lv="grid" aria-pressed="${libView==="grid"}">${esc(t("viewGrid"))}</button></span>
     <button class="btn" type="button" id="pdfSel" aria-pressed="${selecting}">${esc(t("selStart"))}</button>
   </div>
   <div id="selbar" hidden></div>
   <div class="list" id="list"></div>`;
+  app.querySelectorAll("[data-lv]").forEach(b=>b.addEventListener("click",()=>{libView=b.dataset.lv;try{localStorage.setItem("ft-libview",libView)}catch(e){}app.querySelectorAll("[data-lv]").forEach(x=>x.setAttribute("aria-pressed",String(x.dataset.lv===libView)));renderList()}));
   app.querySelector("#pdfSel").addEventListener("click",()=>{selecting=!selecting;app.querySelector("#pdfSel").setAttribute("aria-pressed",String(selecting));renderList()});
   app.querySelector("#fsort").value=filters.sort;
   renderLibMeta();
@@ -863,8 +892,16 @@ function renderList(){
   const by={updated:(a,b)=>(b.s.updatedAt||0)-(a.s.updatedAt||0),code:(a,b)=>String(a.s.code).localeCompare(String(b.s.code),loc(),{numeric:true}),name:(a,b)=>String(a.s.name).localeCompare(String(b.s.name),loc()),cost:(a,b)=>b.c.perDose-a.c.perDose,fc:(a,b)=>(b.c.fcReal??-1)-(a.c.fcReal??-1)};
   rows.sort(by[filters.sort]);
   lastRows=rows;renderStats();
-  list.innerHTML=`<div class="row head"><span>${esc(t("colNo"))}</span><span>${esc(t("colDish"))}</span><span>${esc(t("colFam"))}</span><span class="n">${esc(t("colDoses"))}</span><span class="n">${esc(t("colCost"))}</span><span class="n">${esc(t("colSale"))}</span><span>${esc(t("colFc"))}</span><span>${esc(t("colSt"))}</span></div>`+
+  if(libView==="grid"){
+    list.innerHTML=rows.length?`<div class="lgrid">${rows.map(({id,s,c})=>`<${selecting?"label":"button"} class="gcard${selecting&&selected.has(id)?" picked":""}" ${selecting?"":'type="button"'} data-id="${esc(id)}">
+      <span class="ph">${s.photoUrl?`<img src="${esc(s.photoUrl)}" alt="${esc(t("photoAlt",s.name||""))}" loading="lazy">`:`${PLATE_SVG}<span class="nophoto">${esc(t("noPhoto"))}</span>`}<span class="code">${esc(s.code)}</span>${selecting?`<input type="checkbox" data-sel="${esc(id)}" ${selected.has(id)?"checked":""} aria-label="${esc(s.name||s.code)}">`:""}</span>
+      <span class="bd"><b>${esc(s.name||t("noName"))}</b><small>${esc([s.family,s.doses?s.doses+" "+t("dosesWord"):""].filter(Boolean).join(" · ")||"—")}</small>
+        <span class="ln"><span>${esc(t("colCost"))} ${eur(c.perDose)}</span>${fcPill(c)}</span><span>${stPill(s.status)}</span></span>
+    </${selecting?"label":"button"}>`).join("")}</div>`:`<div class="empty"><p>${esc(t("noMatch"))}</p></div>`;
+  }else
+  list.innerHTML=`<div class="row head"><span class="th"></span><span>${esc(t("colNo"))}</span><span>${esc(t("colDish"))}</span><span>${esc(t("colFam"))}</span><span class="n">${esc(t("colDoses"))}</span><span class="n">${esc(t("colCost"))}</span><span class="n">${esc(t("colSale"))}</span><span>${esc(t("colFc"))}</span><span>${esc(t("colSt"))}</span></div>`+
   (rows.length?rows.map(({id,s,c})=>`<${selecting?"label":"button"} class="row${selecting&&selected.has(id)?" picked":""}" ${selecting?"":'type="button"'} data-id="${esc(id)}">
+    <span class="th">${thumbHtml(s)}</span>
     <span class="code">${selecting?`<input type="checkbox" data-sel="${esc(id)}" ${selected.has(id)?"checked":""} aria-label="${esc(s.name||s.code)}">`:""}${esc(s.code)}</span>
     <span class="name">${esc(s.name||t("noName"))}<small>${esc(t("nIng",(s.ingredients||[]).filter(i=>i.name).length))}${s.tags?" · "+esc(s.tags):""}</small></span>
     <span class="fam">${esc(s.family||"—")}</span>
@@ -877,8 +914,8 @@ function renderList(){
   </${selecting?"label":"button"}>`).join(""):`<div class="empty"><p>${esc(t("noMatch"))}</p></div>`);
   lastShown=rows.map(r=>r.id);
   if(selecting){
-    list.querySelectorAll("input[data-sel]").forEach(cb=>cb.addEventListener("change",()=>{const id=cb.dataset.sel;cb.checked?selected.add(id):selected.delete(id);cb.closest(".row").classList.toggle("picked",cb.checked);renderSelBar();renderStats()}));
-  }else list.querySelectorAll(".row[data-id]").forEach(r=>r.addEventListener("click",()=>openPreview(r.dataset.id)));
+    list.querySelectorAll("input[data-sel]").forEach(cb=>cb.addEventListener("change",()=>{const id=cb.dataset.sel;cb.checked?selected.add(id):selected.delete(id);cb.closest(".row,.gcard").classList.toggle("picked",cb.checked);renderSelBar();renderStats()}));
+  }else list.querySelectorAll(".row[data-id],.gcard[data-id]").forEach(r=>r.addEventListener("click",()=>openPreview(r.dataset.id)));
   renderSelBar();
 }
 function renderStats(){
