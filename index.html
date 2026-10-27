@@ -279,6 +279,22 @@ img{max-width:100%}
 .pv-plate figcaption{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-align:right}
 @media (max-width:700px){.pv-head.has-photo{grid-template-columns:minmax(0,1fr)}.pv-plate{order:-1}}
 
+/* library summary panel */
+#stats{display:grid;grid-template-columns:repeat(3,auto);gap:12px 28px;align-items:start;justify-content:end;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:12px 16px;min-width:0}
+#stats .stat-chart{grid-column:1/-1;display:grid;gap:7px;min-width:min(300px,100%)}
+#stats .stat-cap{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+#stats .stat-cap small{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+#stats .stat-cap span{font-size:12px;color:var(--accent);font-weight:600}
+.stbar{display:flex;height:12px;border-radius:999px;overflow:hidden;background:var(--line-2);gap:2px}
+.stbar span{display:block;height:100%;min-width:4px}
+.seg-rascunho{background:var(--muted)}.seg-teste{background:var(--accent)}.seg-validada{background:var(--good)}
+.stleg{display:flex;gap:14px;flex-wrap:wrap;font-size:12.5px;color:var(--muted)}
+.stleg span{display:inline-flex;align-items:center;gap:5px}
+.stleg i{display:inline-block;width:9px;height:9px;border-radius:50%}
+.stleg b{color:var(--ink);font-family:var(--f-mono);font-weight:500}
+#stats .stat .sub{font-size:11.5px;color:var(--muted)}
+@media (max-width:860px){#stats{justify-content:stretch;grid-template-columns:repeat(3,minmax(0,1fr));width:100%}}
+
 /* PDF selection */
 .selbar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;background:var(--accent-soft);border-radius:8px;padding:10px 12px;margin-bottom:12px}
 .selbar .grow{margin-right:auto;font-size:14px}
@@ -352,6 +368,7 @@ pt:{
   pvKicker:"Ficha técnica de preparação",edit:"Editar",xlsx:"Exportar Excel",origin:"Origem",scaleTo:"Escalar para",dosesWord:"doses",factor:"Fator {0} · as quantidades e custos abaixo acompanham.",reset:"Repor",unitShort:"Unid.",priceShort:"Preço unit.",costShort:"Preço custo",scaled:" (escalado)",noIng:"Sem ingredientes.",toFill:"Por preencher.",noAll:"Nenhum assinalado. Confirme antes de servir.",pvFoot:"Food cost alvo: {0} %. Valores da receita base.",aprov:"aprov.",noSale:"Sem PV",fcTip:"Food cost real (alvo {0} %)",
   dlNo:"As transferências não estão disponíveis nesta vista.",dlBusy:"Já há uma transferência a decorrer. Tente de novo dentro de momentos.",dlFail:"Não foi possível transferir o ficheiro.",xlsxFail:"O exportador de Excel não carregou. Recarregue a página.",
   impNo:"Não é possível importar nesta vista.",notJson:"O ficheiro não é um JSON válido.",notBackup:"Este ficheiro não é uma cópia de segurança desta biblioteca.",impTitle:"Importar fichas",impText:"Vão ser importadas {0} fichas. Fichas com o mesmo identificador são substituídas pela versão do ficheiro.",impOk:"Importar",impFull:"A biblioteca ficou cheia durante a importação.",impDone:"{0} fichas importadas.",lost:"Perdeu-se a ligação à biblioteca. Recarregue a página.",
+  stStatus:"Estado das fichas",stMargin:"Margem média / dose",stScopeAll:"Todas as fichas",stScopeFilter:"{0} de {1} fichas (filtro)",stScopeSel:"{0} fichas selecionadas",fcSub:"food cost {0}",stNoSale:"sem preço de venda",
   optWhich:"Fotografias a incluir",optPlate:"Foto do empratamento (em destaque no topo)",optPrep:"Fotografias da preparação",optNoPhotos:"Nenhuma ficha selecionada tem fotografias.",optPlateMissing:"sem foto",optCount:"{0} de {1}",selAllPh:"Todas",selNonePh:"Nenhuma",
   secPrep:"Fotografias da preparação",secPrepSub:"Cada foto pode ter um título",addPhotos:"+ Adicionar fotos",photoTitlePh:"Título (opcional)",photoN:"Foto {0}",movePrev:"Mover para trás",moveNext:"Mover para a frente",rmPhoto:"Remover foto",
   noPrep:"Ainda sem fotografias. Acrescente fotos dos passos, da mise en place ou do resultado final.",photosUp:"A carregar {0} foto(s)…",photosDone:"{0} foto(s) adicionada(s).",photosFail:"{0} foto(s) não foram carregadas.",closeBtn:"Fechar",
@@ -409,6 +426,7 @@ en:{
   pvKicker:"Preparation technical sheet",edit:"Edit",xlsx:"Export to Excel",origin:"Source",scaleTo:"Scale to",dosesWord:"portions",factor:"Factor {0} · quantities and costs below follow it.",reset:"Reset",unitShort:"Unit",priceShort:"Unit price",costShort:"Cost",scaled:" (scaled)",noIng:"No ingredients.",toFill:"Not filled in yet.",noAll:"None ticked. Check before serving.",pvFoot:"Target food cost: {0}%. Figures for the base recipe.",aprov:"yield",noSale:"No price",fcTip:"Actual food cost (target {0}%)",
   dlNo:"Downloads are not available in this view.",dlBusy:"A download is already in progress. Try again in a moment.",dlFail:"The file could not be downloaded.",xlsxFail:"The Excel exporter did not load. Reload the page.",
   impNo:"Importing is not available in this view.",notJson:"The file is not valid JSON.",notBackup:"This file is not a backup of this library.",impTitle:"Import sheets",impText:"{0} sheets will be imported. Sheets with the same identifier are replaced by the version in the file.",impOk:"Import",impFull:"The library filled up during the import.",impDone:"{0} sheets imported.",lost:"Lost connection to the library. Reload the page.",
+  stStatus:"Sheet status",stMargin:"Avg. margin / portion",stScopeAll:"All sheets",stScopeFilter:"{0} of {1} sheets (filtered)",stScopeSel:"{0} selected sheets",fcSub:"food cost {0}",stNoSale:"no selling price",
   optWhich:"Photos to include",optPlate:"Plating photo (featured at the top)",optPrep:"Preparation photos",optNoPhotos:"None of the selected sheets has photos.",optPlateMissing:"no photo",optCount:"{0} of {1}",selAllPh:"All",selNonePh:"None",
   secPrep:"Preparation photos",secPrepSub:"Each photo can have a title",addPhotos:"+ Add photos",photoTitlePh:"Title (optional)",photoN:"Photo {0}",movePrev:"Move back",moveNext:"Move forward",rmPhoto:"Remove photo",
   noPrep:"No photos yet. Add photos of the steps, the mise en place or the finished dish.",photosUp:"Uploading {0} photo(s)…",photosDone:"{0} photo(s) added.",photosFail:"{0} photo(s) could not be uploaded.",closeBtn:"Close",
@@ -466,6 +484,7 @@ es:{
   pvKicker:"Ficha técnica de elaboración",edit:"Editar",xlsx:"Exportar a Excel",origin:"Origen",scaleTo:"Escalar a",dosesWord:"raciones",factor:"Factor {0} · las cantidades y costes de abajo se ajustan.",reset:"Restablecer",unitShort:"Ud.",priceShort:"Precio unit.",costShort:"Coste",scaled:" (escalado)",noIng:"Sin ingredientes.",toFill:"Pendiente de completar.",noAll:"Ninguno marcado. Compruébalo antes de servir.",pvFoot:"Food cost objetivo: {0} %. Valores de la receta base.",aprov:"rend.",noSale:"Sin PVP",fcTip:"Food cost real (objetivo {0} %)",
   dlNo:"Las descargas no están disponibles en esta vista.",dlBusy:"Ya hay una descarga en curso. Inténtalo de nuevo en un momento.",dlFail:"No se ha podido descargar el archivo.",xlsxFail:"El exportador de Excel no se ha cargado. Recarga la página.",
   impNo:"No se puede importar en esta vista.",notJson:"El archivo no es un JSON válido.",notBackup:"Este archivo no es una copia de seguridad de esta biblioteca.",impTitle:"Importar fichas",impText:"Se importarán {0} fichas. Las fichas con el mismo identificador se sustituyen por la versión del archivo.",impOk:"Importar",impFull:"La biblioteca se ha llenado durante la importación.",impDone:"{0} fichas importadas.",lost:"Se ha perdido la conexión con la biblioteca. Recarga la página.",
+  stStatus:"Estado de las fichas",stMargin:"Margen medio / ración",stScopeAll:"Todas las fichas",stScopeFilter:"{0} de {1} fichas (filtro)",stScopeSel:"{0} fichas seleccionadas",fcSub:"food cost {0}",stNoSale:"sin precio de venta",
   optWhich:"Fotos que incluir",optPlate:"Foto del emplatado (destacada arriba)",optPrep:"Fotos de la elaboración",optNoPhotos:"Ninguna de las fichas seleccionadas tiene fotos.",optPlateMissing:"sin foto",optCount:"{0} de {1}",selAllPh:"Todas",selNonePh:"Ninguna",
   secPrep:"Fotos de la elaboración",secPrepSub:"Cada foto puede tener un título",addPhotos:"+ Añadir fotos",photoTitlePh:"Título (opcional)",photoN:"Foto {0}",movePrev:"Mover atrás",moveNext:"Mover adelante",rmPhoto:"Quitar foto",
   noPrep:"Todavía no hay fotos. Añade fotos de los pasos, de la mise en place o del plato terminado.",photosUp:"Subiendo {0} foto(s)…",photosDone:"{0} foto(s) añadida(s).",photosFail:"{0} foto(s) no se han podido subir.",closeBtn:"Cerrar",
@@ -515,7 +534,7 @@ const isQb=u=>QB.includes(String(u||"").trim().toLowerCase());
 let db=null, assets=null, downloads=null, canWrite=true, dbState="loading";
 let sheets=new Map();
 let view="library", current=null, scaleTo=null;
-let selecting=false, lastShown=[];
+let selecting=false, lastShown=[], lastRows=[];
 let libInfo={owner:"",fields:[]};
 const selected=new Set();
 const filters={q:"",family:"",status:"",sort:"updated"};
@@ -690,21 +709,16 @@ function noticeHtml(){
 function renderList(){
   const list=document.getElementById("list");if(!list)return;
   const all=[...sheets.entries()].map(([id,s])=>({id,s,c:calc(s)}));
-  const withSale=all.filter(x=>x.c.fcReal!=null);
-  document.getElementById("stats").innerHTML=`
-    <div class="stat"><small>${esc(t("stSheets"))}</small><b>${all.length}</b></div>
-    <div class="stat"><small>${esc(t("stValid"))}</small><b>${all.filter(x=>x.s.status==="validada").length}</b></div>
-    <div class="stat"><small>${esc(t("stAvgCost"))}</small><b>${all.length?eur(all.reduce((a,x)=>a+x.c.perDose,0)/all.length):"—"}</b></div>
-    <div class="stat"><small>${esc(t("stAvgFc"))}</small><b>${withSale.length?pct(withSale.reduce((a,x)=>a+x.c.fcReal,0)/withSale.length):"—"}</b></div>`;
-  if(dbState==="loading"){list.innerHTML=`<div class="empty"><p>${esc(t("loading"))}</p></div>`;return}
+  if(dbState==="loading"){lastRows=[];renderStats();list.innerHTML=`<div class="empty"><p>${esc(t("loading"))}</p></div>`;return}
   if(!all.length){
     list.innerHTML=`<div class="empty"><h2>${esc(t("emptyH"))}</h2><p>${esc(t("emptyP"))}</p>${canWrite&&db?`<button class="btn primary" type="button" data-new>${esc(t("createFirst"))}</button>`:""}</div>`;
-    list.querySelector("[data-new]")?.addEventListener("click",newSheet);lastShown=[];renderSelBar();return;
+    list.querySelector("[data-new]")?.addEventListener("click",newSheet);lastShown=[];lastRows=[];renderStats();renderSelBar();return;
   }
   const q=filters.q.trim().toLowerCase();
   const rows=all.filter(({s})=>(!filters.family||s.family===filters.family)&&(!filters.status||s.status===filters.status)&&(!q||[s.name,s.code,s.family,s.tags,...(s.ingredients||[]).map(i=>i.name)].join(" ").toLowerCase().includes(q)));
   const by={updated:(a,b)=>(b.s.updatedAt||0)-(a.s.updatedAt||0),code:(a,b)=>String(a.s.code).localeCompare(String(b.s.code),loc(),{numeric:true}),name:(a,b)=>String(a.s.name).localeCompare(String(b.s.name),loc()),cost:(a,b)=>b.c.perDose-a.c.perDose,fc:(a,b)=>(b.c.fcReal??-1)-(a.c.fcReal??-1)};
   rows.sort(by[filters.sort]);
+  lastRows=rows;renderStats();
   list.innerHTML=`<div class="row head"><span>${esc(t("colNo"))}</span><span>${esc(t("colDish"))}</span><span>${esc(t("colFam"))}</span><span class="n">${esc(t("colDoses"))}</span><span class="n">${esc(t("colCost"))}</span><span class="n">${esc(t("colSale"))}</span><span>${esc(t("colFc"))}</span><span>${esc(t("colSt"))}</span></div>`+
   (rows.length?rows.map(({id,s,c})=>`<${selecting?"label":"button"} class="row${selecting&&selected.has(id)?" picked":""}" ${selecting?"":'type="button"'} data-id="${esc(id)}">
     <span class="code">${selecting?`<input type="checkbox" data-sel="${esc(id)}" ${selected.has(id)?"checked":""} aria-label="${esc(s.name||s.code)}">`:""}${esc(s.code)}</span>
@@ -719,9 +733,29 @@ function renderList(){
   </${selecting?"label":"button"}>`).join(""):`<div class="empty"><p>${esc(t("noMatch"))}</p></div>`);
   lastShown=rows.map(r=>r.id);
   if(selecting){
-    list.querySelectorAll("input[data-sel]").forEach(cb=>cb.addEventListener("change",()=>{const id=cb.dataset.sel;cb.checked?selected.add(id):selected.delete(id);cb.closest(".row").classList.toggle("picked",cb.checked);renderSelBar()}));
+    list.querySelectorAll("input[data-sel]").forEach(cb=>cb.addEventListener("change",()=>{const id=cb.dataset.sel;cb.checked?selected.add(id):selected.delete(id);cb.closest(".row").classList.toggle("picked",cb.checked);renderSelBar();renderStats()}));
   }else list.querySelectorAll(".row[data-id]").forEach(r=>r.addEventListener("click",()=>openPreview(r.dataset.id)));
   renderSelBar();
+}
+function renderStats(){
+  const el=document.getElementById("stats");if(!el)return;
+  const total=sheets.size;let list,scope;
+  const sel=selecting&&selected.size?[...selected].filter(id=>sheets.has(id)):[];
+  if(sel.length){list=sel.map(id=>{const s=sheets.get(id);return {id,s,c:calc(s)}});scope=t("stScopeSel",list.length)}
+  else{list=lastRows;scope=list.length===total?t("stScopeAll"):t("stScopeFilter",list.length,total)}
+  const n=list.length,keys=["rascunho","teste","validada"],cnt={rascunho:0,teste:0,validada:0};
+  list.forEach(x=>cnt[keys.includes(x.s.status)?x.s.status:"rascunho"]++);
+  const sale=list.filter(x=>x.c.sale>0);
+  const avgCost=n?list.reduce((a,x)=>a+x.c.perDose,0)/n:null;
+  const avgMargin=sale.length?sale.reduce((a,x)=>a+x.c.margin,0)/sale.length:null;
+  const avgFc=sale.length?sale.reduce((a,x)=>a+x.c.fcReal,0)/sale.length:null;
+  const aria=keys.map(k=>`${stLabel(k)}: ${cnt[k]}`).join(", ");
+  el.innerHTML=`<div class="stat-chart"><div class="stat-cap"><small>${esc(t("stStatus"))}</small><span>${esc(scope)}</span></div>
+    <div class="stbar" role="img" aria-label="${esc(aria)}">${keys.filter(k=>cnt[k]).map(k=>`<span class="seg-${k}" style="width:${(cnt[k]/n*100).toFixed(2)}%" title="${esc(stLabel(k))}: ${cnt[k]}"></span>`).join("")}</div>
+    <div class="stleg">${keys.map(k=>`<span><i class="seg-${k}"></i>${esc(stLabel(k))} <b>${cnt[k]}</b></span>`).join("")}</div></div>
+    <div class="stat"><small>${esc(t("stSheets"))}</small><b>${n}</b></div>
+    <div class="stat"><small>${esc(t("stAvgCost"))}</small><b>${avgCost!=null?esc(eur(avgCost)):"—"}</b></div>
+    <div class="stat"><small>${esc(t("stMargin"))}</small><b>${avgMargin!=null?esc(eur(avgMargin)):"—"}</b><span class="sub">${avgFc!=null?esc(t("fcSub",pct(avgFc))):n?esc(t("stNoSale")):""}</span></div>`;
 }
 function renderSelBar(){
   const b=document.getElementById("selbar");if(!b)return;
