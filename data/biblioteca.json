@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1793127964701,
+ "updatedAt": 1793128355866,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -27,7 +27,7 @@
     "date": "2026-09-08",
     "note": "vendida a granel"
    },
-   "updatedAt": 1793127245394
+   "updatedAt": 1793128348337
   },
   "ingredients/i-acucar-branco": {
    "name": "Açúcar branco",
@@ -44,7 +44,7 @@
     "date": "2026-10-27",
     "note": "1 kg"
    },
-   "updatedAt": 1793127248441
+   "updatedAt": 1793128351115
   },
   "ingredients/i-acucar-em-po": {
    "name": "Açúcar em pó",
@@ -61,7 +61,7 @@
     "date": "2026-09-08",
     "note": "250 g"
    },
-   "updatedAt": 1793127248489
+   "updatedAt": 1793128351144
   },
   "ingredients/i-aguardente": {
    "name": "Aguardente",
@@ -78,7 +78,7 @@
     "date": "2026-09-08",
     "note": "70 cl"
    },
-   "updatedAt": 1793127250163
+   "updatedAt": 1793128352805
   },
   "ingredients/i-alecrim-fresco": {
    "name": "Alecrim fresco",
@@ -95,7 +95,7 @@
     "date": "2026-09-08",
     "note": "embalagem 23 g"
    },
-   "updatedAt": 1793127249814
+   "updatedAt": 1793128352438
   },
   "ingredients/i-alface": {
    "name": "Alface",
@@ -112,7 +112,7 @@
     "date": "2026-10-27",
     "note": "embalagem de 2 un"
    },
-   "updatedAt": 1793127245421
+   "updatedAt": 1793128348364
   },
   "ingredients/i-alheira": {
    "name": "Alheira",
@@ -129,7 +129,7 @@
     "date": "2026-09-08",
     "note": "200 g"
    },
-   "updatedAt": 1793127247069
+   "updatedAt": 1793128349817
   },
   "ingredients/i-alho-frances": {
    "name": "Alho-francês",
@@ -146,7 +146,7 @@
     "date": "2026-09-08",
     "note": "embalagem 400 g"
    },
-   "updatedAt": 1793127245458
+   "updatedAt": 1793128348400
   },
   "ingredients/i-amendoa": {
    "name": "Amêndoa",
@@ -163,7 +163,7 @@
     "date": "2026-09-08",
     "note": "150 g"
    },
-   "updatedAt": 1793127248973
+   "updatedAt": 1793128351611
   },
   "ingredients/i-amendoa-moida": {
    "name": "Amêndoa moída",
@@ -180,7 +180,7 @@
     "date": "2026-09-08",
     "note": "125 g"
    },
-   "updatedAt": 1793127249004
+   "updatedAt": 1793128351635
   },
   "ingredients/i-amendoins": {
    "name": "Amendoins",
@@ -197,7 +197,7 @@
     "date": "2026-09-08",
     "note": "500 g"
    },
-   "updatedAt": 1793127249060
+   "updatedAt": 1793128351684
   },
   "ingredients/i-amido-de-milho-maizena": {
    "name": "Amido de milho (maizena)",
@@ -214,7 +214,7 @@
     "date": "2026-09-08",
     "note": "400 g"
    },
-   "updatedAt": 1793127248414
+   "updatedAt": 1793128351087
   },
   "ingredients/i-ananas": {
    "name": "Ananás",
@@ -231,7 +231,7 @@
     "date": "2026-09-08",
     "note": "a granel"
    },
-   "updatedAt": 1793127246179
+   "updatedAt": 1793128349028
   },
   "ingredients/i-arroz-agulha": {
    "name": "Arroz agulha",
@@ -248,7 +248,7 @@
     "date": "2026-10-27",
     "note": "2 kg"
    },
-   "updatedAt": 1793127248152
+   "updatedAt": 1793128350827
   },
   "ingredients/i-arroz-arboreo": {
    "name": "Arroz arbóreo",
@@ -265,7 +265,7 @@
     "date": "2026-09-08",
     "note": "500 g"
    },
-   "updatedAt": 1793127248202
+   "updatedAt": 1793128350879
   },
   "ingredients/i-arroz-basmati-jasmim": {
    "name": "Arroz basmati / jasmim",
@@ -282,7 +282,7 @@
     "date": "2026-09-08",
     "note": "1 kg"
    },
-   "updatedAt": 1793127248228
+   "updatedAt": 1793128350904
   },
   "ingredients/i-arroz-carolino": {
    "name": "Arroz carolino",
@@ -299,7 +299,7 @@
     "date": "2026-09-08",
     "note": "1 kg"
    },
-   "updatedAt": 1793127248176
+   "updatedAt": 1793128350853
   },
   "ingredients/i-asas-de-frango": {
    "name": "Asas de frango",
@@ -316,7 +316,7 @@
     "date": "2026-09-08",
     "note": "preço ao kg"
    },
-   "updatedAt": 1793127246489
+   "updatedAt": 1793128349280
   },
   "ingredients/i-atum-em-conserva": {
    "name": "Atum em conserva",
@@ -333,7 +333,7 @@
     "date": "2026-10-27",
     "note": "atum ao natural, 480 g"
    },
-   "updatedAt": 1793127247604
+   "updatedAt": 1793128350318
   },
   "ingredients/i-azeite": {
    "name": "Azeite",
@@ -359,7 +359,7 @@
     "date": "2026-10-27",
     "note": "1 L"
    },
-   "updatedAt": 1793127249543
+   "updatedAt": 1793128352176
   },
   "ingredients/i-azeitonas-pretas": {
    "name": "Azeitonas pretas",
@@ -376,7 +376,7 @@
     "date": "2026-09-08",
     "note": "210 g escorridas"
    },
-   "updatedAt": 1793127248933
+   "updatedAt": 1793128351586
   },
   "ingredients/i-bacalhau-desfiado-demolhado": {
    "name": "Bacalhau desfiado demolhado",
@@ -393,7 +393,7 @@
     "date": "2026-09-08",
     "note": "congelado, 500 g"
    },
-   "updatedAt": 1793127247254
+   "updatedAt": 1793128349964
   },
   "ingredients/i-bacalhau-em-postas-demolhado": {
    "name": "Bacalhau em postas demolhado",
@@ -410,7 +410,7 @@
     "date": "2026-09-08",
     "note": "congelado, 800 g"
    },
-   "updatedAt": 1793127247229
+   "updatedAt": 1793128349940
   },
   "ingredients/i-bacalhau-graudo-seco": {
    "name": "Bacalhau graúdo (seco)",
@@ -427,7 +427,7 @@
     "date": "2026-10-07",
     "note": ""
    },
-   "updatedAt": 1793127247202
+   "updatedAt": 1793128349916
   },
   "ingredients/i-bacon": {
    "name": "Bacon",
@@ -444,7 +444,7 @@
     "date": "2026-09-08",
     "note": "embalagem 200 g"
    },
-   "updatedAt": 1793127246955
+   "updatedAt": 1793128349710
   },
   "ingredients/i-banana": {
    "name": "Banana",
@@ -461,7 +461,7 @@
     "date": "2026-10-27",
     "note": "1 kg"
    },
-   "updatedAt": 1793127246214
+   "updatedAt": 1793128349057
   },
   "ingredients/i-batata": {
    "name": "Batata",
@@ -478,7 +478,7 @@
     "date": "2026-10-27",
     "note": "saco 2 kg"
    },
-   "updatedAt": 1793127245483
+   "updatedAt": 1793128348433
   },
   "ingredients/i-batata-doce": {
    "name": "Batata-doce",
@@ -495,7 +495,7 @@
     "date": "2026-09-08",
     "note": "a granel"
    },
-   "updatedAt": 1793127245519
+   "updatedAt": 1793128348461
   },
   "ingredients/i-beringela": {
    "name": "Beringela",
@@ -512,7 +512,7 @@
     "date": "2026-09-08",
     "note": "embalagem 400 g"
    },
-   "updatedAt": 1793127245547
+   "updatedAt": 1793128348494
   },
   "ingredients/i-bife-de-peru": {
    "name": "Bife de peru",
@@ -529,7 +529,7 @@
     "date": "2026-09-08",
     "note": "preço ao kg"
    },
-   "updatedAt": 1793127246586
+   "updatedAt": 1793128349363
   },
   "ingredients/i-bife-de-vaca": {
    "name": "Bife de vaca",
@@ -546,7 +546,7 @@
     "date": "2026-09-08",
     "note": "preço ao kg"
    },
-   "updatedAt": 1793127246847
+   "updatedAt": 1793128349597
   },
   "ingredients/i-bolacha-maria": {
    "name": "Bolacha Maria",
@@ -563,7 +563,7 @@
     "date": "2026-10-27",
     "note": "400 g"
    },
-   "updatedAt": 1793127249144
+   "updatedAt": 1793128351767
   },
   "ingredients/i-borrego-em-pedacos": {
    "name": "Borrego em pedaços",
@@ -580,7 +580,7 @@
     "date": "2026-09-08",
     "note": "preço ao kg"
    },
-   "updatedAt": 1793127246900
+   "updatedAt": 1793128349646
   },
   "ingredients/i-broa-de-milho": {
    "name": "Broa de milho",
@@ -597,7 +597,7 @@
     "date": "2026-09-08",
     "note": "800 g"
    },
-   "updatedAt": 1793127249214
+   "updatedAt": 1793128351862
   },
   "ingredients/i-brocolos": {
    "name": "Brócolos",
@@ -614,7 +614,7 @@
     "date": "2026-09-08",
     "note": "embalagem 450 g"
    },
-   "updatedAt": 1793127245583
+   "updatedAt": 1793128348518
   },
   "ingredients/i-cabrito-em-pedacos": {
    "name": "Cabrito em pedaços",
@@ -631,7 +631,7 @@
     "date": "2026-09-08",
     "note": "preço ao kg"
    },
-   "updatedAt": 1793127246925
+   "updatedAt": 1793128349673
   },
   "ingredients/i-cacau-em-po": {
    "name": "Cacau em pó",
@@ -648,7 +648,7 @@
     "date": "2026-09-08",
     "note": "125 g"
    },
-   "updatedAt": 1793127248657
+   "updatedAt": 1793128351294
   },
   "ingredients/i-cafe-moido": {
    "name": "Café moído",
@@ -665,7 +665,7 @@
     "date": "2026-10-27",
     "note": "250 g"
    },
-   "updatedAt": 1793127249238
+   "updatedAt": 1793128351890
   },
   "ingredients/i-caldo-de-carne-cubo": {
    "name": "Caldo de carne (cubo)",
@@ -682,7 +682,7 @@
     "date": "2026-09-08",
     "note": "embalagem 24 un"
    },
-   "updatedAt": 1793127249308
+   "updatedAt": 1793128351944
   },
   "ingredients/i-caldo-de-galinha-cubo": {
    "name": "Caldo de galinha (cubo)",
@@ -699,7 +699,7 @@
     "date": "2026-09-08",
     "note": "embalagem 24 un"
    },
-   "updatedAt": 1793127249271
+   "updatedAt": 1793128351915
   },
   "ingredients/i-caldo-de-legumes-cubo": {
    "name": "Caldo de legumes (cubo)",
@@ -716,7 +716,7 @@
     "date": "2026-09-08",
     "note": "embalagem 12 un"
    },
-   "updatedAt": 1793127249338
+   "updatedAt": 1793128351970
   },
   "ingredients/i-camarao-descascado": {
    "name": "Camarão descascado",
@@ -733,7 +733,7 @@
     "date": "2026-09-08",
     "note": "congelado, 200 g"
    },
-   "updatedAt": 1793127247550
+   "updatedAt": 1793128350269
   },
   "ingredients/i-canela-em-po": {
    "name": "Canela em pó",
@@ -750,7 +750,7 @@
     "date": "2026-09-08",
     "note": "100 g"
    },
-   "updatedAt": 1793127249864
+   "updatedAt": 1793128352487
   },
   "ingredients/i-carapau": {
    "name": "Carapau",
@@ -767,7 +767,7 @@
     "date": "2026-10-07",
     "note": "fresco"
    },
-   "updatedAt": 1793127247279
+   "updatedAt": 1793128349987
   },
   "ingredients/i-carcaca": {
    "name": "Carcaça",
@@ -784,7 +784,7 @@
     "date": "2026-10-27",
     "note": "embalagem 6 un"
    },
-   "updatedAt": 1793127249191
+   "updatedAt": 1793128351833
   },
   "ingredients/i-caril-em-po": {
    "name": "Caril em pó",
@@ -801,7 +801,7 @@
     "date": "2026-09-08",
     "note": "100 g"
    },
-   "updatedAt": 1793127249961
+   "updatedAt": 1793128352600
   },
   "ingredients/i-carne-de-novilho-para-cozer": {
    "name": "Carne de novilho para cozer",
@@ -818,7 +818,7 @@
     "date": "2026-10-07",
     "note": ""
    },
-   "updatedAt": 1793127246791
+   "updatedAt": 1793128349545
   },
   "ingredients/i-carne-picada-de-vaca": {
    "name": "Carne picada de vaca",
@@ -835,7 +835,7 @@
     "date": "2026-09-08",
     "note": "embalagem 500 g; as fontes divergem entre ≈10 e 16 €/kg — confirmar"
    },
-   "updatedAt": 1793127246819
+   "updatedAt": 1793128349571
   },
   "ingredients/i-cebola": {
    "name": "Cebola",
@@ -852,7 +852,7 @@
     "date": "2026-10-27",
     "note": "1 kg"
    },
-   "updatedAt": 1793127245612
+   "updatedAt": 1793128348549
   },
   "ingredients/i-cebolinho-fresco": {
    "name": "Cebolinho fresco",
@@ -869,7 +869,7 @@
     "date": "2026-09-08",
     "note": "embalagem 30 g"
    },
-   "updatedAt": 1793127249751
+   "updatedAt": 1793128352387
   },
   "ingredients/i-cenoura": {
    "name": "Cenoura",
@@ -886,7 +886,7 @@
     "date": "2026-10-27",
     "note": "1 kg"
    },
-   "updatedAt": 1793127245651
+   "updatedAt": 1793128348583
   },
   "ingredients/i-cerveja": {
    "name": "Cerveja",
@@ -903,7 +903,7 @@
     "date": "2026-09-08",
     "note": "33 cl"
    },
-   "updatedAt": 1793127250136
+   "updatedAt": 1793128352778
   },
   "ingredients/i-choco-limpo": {
    "name": "Choco limpo",
@@ -920,7 +920,7 @@
     "date": "2026-09-08",
     "note": "congelado, 800 g"
    },
-   "updatedAt": 1793127247521
+   "updatedAt": 1793128350242
   },
   "ingredients/i-chocolate-negro-70": {
    "name": "Chocolate negro 70%",
@@ -937,7 +937,7 @@
     "date": "2026-09-08",
     "note": "100 g"
    },
-   "updatedAt": 1793127248681
+   "updatedAt": 1793128351317
   },
   "ingredients/i-chourico-de-carne": {
    "name": "Chouriço de carne",
@@ -954,7 +954,7 @@
     "date": "2026-09-08",
     "note": "200 g"
    },
-   "updatedAt": 1793127247013
+   "updatedAt": 1793128349768
   },
   "ingredients/i-claras-de-ovo": {
    "name": "Claras de ovo",
@@ -971,7 +971,7 @@
     "date": "2026-09-08",
     "note": "1 kg"
    },
-   "updatedAt": 1793127247766
+   "updatedAt": 1793128350459
   },
   "ingredients/i-coco-ralado": {
    "name": "Coco ralado",
@@ -988,7 +988,7 @@
     "date": "2026-09-08",
     "note": "embalagem 200 g"
    },
-   "updatedAt": 1793127246400
+   "updatedAt": 1793128349205
   },
   "ingredients/i-coentros": {
    "name": "Coentros",
@@ -1005,7 +1005,7 @@
     "date": "2026-09-08",
     "note": "molho ≈ 50 g"
    },
-   "updatedAt": 1793127249690
+   "updatedAt": 1793128352333
   },
   "ingredients/i-cogumelos-frescos": {
    "name": "Cogumelos frescos",
@@ -1022,7 +1022,7 @@
     "date": "2026-09-08",
     "note": "embalagem 250 g"
    },
-   "updatedAt": 1793127245681
+   "updatedAt": 1793128348607
   },
   "ingredients/i-colorau-pimentao-doce": {
    "name": "Colorau (pimentão doce)",
@@ -1039,7 +1039,7 @@
     "date": "2026-09-08",
     "note": "50 g"
    },
-   "updatedAt": 1793127249913
+   "updatedAt": 1793128352544
   },
   "ingredients/i-cominhos": {
    "name": "Cominhos",
@@ -1056,7 +1056,7 @@
     "date": "2026-09-08",
     "note": "45 g"
    },
-   "updatedAt": 1793127249888
+   "updatedAt": 1793128352517
   },
   "ingredients/i-concentrado-de-tomate": {
    "name": "Concentrado de tomate",
@@ -1073,7 +1073,7 @@
     "date": "2026-09-08",
     "note": "140 g"
    },
-   "updatedAt": 1793127248781
+   "updatedAt": 1793128351426
   },
   "ingredients/i-corvina": {
    "name": "Corvina",
@@ -1090,7 +1090,7 @@
     "date": "2026-09-08",
     "note": "fresca, preço ao kg"
    },
-   "updatedAt": 1793127247442
+   "updatedAt": 1793128350156
   },
   "ingredients/i-costeletas-de-porco": {
    "name": "Costeletas de porco",
@@ -1107,7 +1107,7 @@
     "date": "2026-09-08",
     "note": "preço ao kg"
    },
-   "updatedAt": 1793127246684
+   "updatedAt": 1793128349442
   },
   "ingredients/i-couve-flor": {
    "name": "Couve-flor",
@@ -1124,7 +1124,7 @@
     "date": "2026-09-08",
     "note": "750 g"
    },
-   "updatedAt": 1793127245719
+   "updatedAt": 1793128348634
   },
   "ingredients/i-coxas-de-frango": {
    "name": "Coxas de frango",
@@ -1141,7 +1141,7 @@
     "date": "2026-09-08",
     "note": "1 kg"
    },
-   "updatedAt": 1793127246462
+   "updatedAt": 1793128349254
   },
   "ingredients/i-curgete": {
    "name": "Curgete",
@@ -1158,7 +1158,7 @@
     "date": "2026-09-08",
     "note": "preço ao kg; 1 un ≈ 500 g"
    },
-   "updatedAt": 1793127245747
+   "updatedAt": 1793128348657
   },
   "ingredients/i-dourada": {
    "name": "Dourada",
@@ -1175,7 +1175,7 @@
     "date": "2026-09-08",
     "note": "fresca, preço ao kg"
    },
-   "updatedAt": 1793127247387
+   "updatedAt": 1793128350104
   },
   "ingredients/i-entrecosto-de-porco": {
    "name": "Entrecosto de porco",
@@ -1192,7 +1192,7 @@
     "date": "2026-09-08",
     "note": "preço ao kg"
    },
-   "updatedAt": 1793127246721
+   "updatedAt": 1793128349468
   },
   "ingredients/i-ervilhas-congeladas": {
    "name": "Ervilhas congeladas",
@@ -1209,7 +1209,7 @@
     "date": "2026-10-27",
     "note": "embalagem 750 g"
    },
-   "updatedAt": 1793127245841
+   "updatedAt": 1793128348734
   },
   "ingredients/i-espargos": {
    "name": "Espargos",
@@ -1226,7 +1226,7 @@
     "date": "2026-09-08",
     "note": "molho 250 g"
    },
-   "updatedAt": 1793127245780
+   "updatedAt": 1793128348686
   },
   "ingredients/i-esparguete": {
    "name": "Esparguete",
@@ -1243,7 +1243,7 @@
     "date": "2026-10-27",
     "note": "2 kg"
    },
-   "updatedAt": 1793127248255
+   "updatedAt": 1793128350930
   },
   "ingredients/i-espinafres-baby": {
    "name": "Espinafres baby",
@@ -1260,7 +1260,7 @@
     "date": "2026-09-08",
     "note": "embalagem 150 g"
    },
-   "updatedAt": 1793127245807
+   "updatedAt": 1793128348710
   },
   "ingredients/i-essencia-de-baunilha": {
    "name": "Essência de baunilha",
@@ -1277,7 +1277,7 @@
     "date": "2026-09-08",
     "note": "200 ml"
    },
-   "updatedAt": 1793127250042
+   "updatedAt": 1793128352678
   },
   "ingredients/i-farinha-de-trigo": {
    "name": "Farinha de trigo",
@@ -1294,7 +1294,7 @@
     "date": "2026-10-27",
     "note": "tipo 55, 1 kg"
    },
-   "updatedAt": 1793127248389
+   "updatedAt": 1793128351048
   },
   "ingredients/i-febras-de-porco": {
    "name": "Febras de porco",
@@ -1311,7 +1311,7 @@
     "date": "2026-09-08",
     "note": "1 kg"
    },
-   "updatedAt": 1793127246647
+   "updatedAt": 1793128349419
   },
   "ingredients/i-feijao-seco": {
    "name": "Feijão seco",
@@ -1328,7 +1328,7 @@
     "date": "2026-10-27",
     "note": "500 g"
    },
-   "updatedAt": 1793127248806
+   "updatedAt": 1793128351457
   },
   "ingredients/i-fermento-de-padeiro-seco": {
    "name": "Fermento de padeiro seco",
@@ -1345,7 +1345,7 @@
     "date": "2026-09-08",
     "note": "27,5 g"
    },
-   "updatedAt": 1793127248606
+   "updatedAt": 1793128351246
   },
   "ingredients/i-fermento-em-po": {
    "name": "Fermento em pó",
@@ -1362,7 +1362,7 @@
     "date": "2026-09-08",
     "note": "150 g"
    },
-   "updatedAt": 1793127248580
+   "updatedAt": 1793128351221
   },
   "ingredients/i-fiambre-fatiado": {
    "name": "Fiambre fatiado",
@@ -1379,7 +1379,7 @@
     "date": "2026-10-27",
     "note": "fiambre da perna, 200 g"
    },
-   "updatedAt": 1793127247141
+   "updatedAt": 1793128349865
   },
   "ingredients/i-filetes-de-pescada": {
    "name": "Filetes de pescada",
@@ -1396,7 +1396,7 @@
     "date": "2026-09-08",
     "note": "congelados, 1 kg"
    },
-   "updatedAt": 1793127247334
+   "updatedAt": 1793128350048
   },
   "ingredients/i-filetes-de-robalo": {
    "name": "Filetes de robalo",
@@ -1422,7 +1422,7 @@
     "date": "2026-09-08",
     "note": "500 g"
    },
-   "updatedAt": 1793127248729
+   "updatedAt": 1793128351364
   },
   "ingredients/i-frutos-vermelhos-congelados": {
    "name": "Frutos vermelhos congelados",
@@ -1439,7 +1439,7 @@
     "date": "2026-09-08",
     "note": "embalagem 450 g"
    },
-   "updatedAt": 1793127246365
+   "updatedAt": 1793128349181
   },
   "ingredients/i-galinha-inteira": {
    "name": "Galinha inteira",
@@ -1456,7 +1456,7 @@
     "date": "2026-09-08",
     "note": "preço ao kg"
    },
-   "updatedAt": 1793127246525
+   "updatedAt": 1793128349302
   },
   "ingredients/i-gelatina-em-po": {
    "name": "Gelatina em pó",
@@ -1473,7 +1473,7 @@
     "date": "2026-09-08",
     "note": "31 g"
    },
-   "updatedAt": 1793127248631
+   "updatedAt": 1793128351270
   },
   "ingredients/i-gengibre-fresco": {
    "name": "Gengibre fresco",
@@ -1490,7 +1490,7 @@
     "date": "2026-09-08",
     "note": "preço ao kg"
    },
-   "updatedAt": 1793127245868
+   "updatedAt": 1793128348759
   },
   "ingredients/i-grao-de-bico-seco": {
    "name": "Grão-de-bico seco",
@@ -1507,7 +1507,7 @@
     "date": "2026-10-27",
     "note": "500 g"
    },
-   "updatedAt": 1793127248830
+   "updatedAt": 1793128351484
   },
   "ingredients/i-grelos-de-nabo": {
    "name": "Grelos de nabo",
@@ -1524,7 +1524,7 @@
     "date": "2026-09-08",
     "note": "embalagem 700 g"
    },
-   "updatedAt": 1793127245903
+   "updatedAt": 1793128348783
   },
   "ingredients/i-iogurte-grego": {
    "name": "Iogurte grego",
@@ -1541,7 +1541,7 @@
     "date": "2026-09-08",
     "note": "4 × 125 g"
    },
-   "updatedAt": 1793127247820
+   "updatedAt": 1793128350510
   },
   "ingredients/i-iogurte-natural": {
    "name": "Iogurte natural",
@@ -1558,7 +1558,7 @@
     "date": "2026-10-27",
     "note": "1 kg"
    },
-   "updatedAt": 1793127247794
+   "updatedAt": 1793128350485
   },
   "ingredients/i-ketchup": {
    "name": "Ketchup",
@@ -1575,7 +1575,7 @@
     "date": "2026-09-08",
     "note": "340 g"
    },
-   "updatedAt": 1793127249418
+   "updatedAt": 1793128352048
   },
   "ingredients/i-laranja": {
    "name": "Laranja",
@@ -1592,7 +1592,7 @@
     "date": "2026-10-27",
     "note": "1 kg"
    },
-   "updatedAt": 1793127246240
+   "updatedAt": 1793128349084
   },
   "ingredients/i-leite-condensado": {
    "name": "Leite condensado",
@@ -1609,7 +1609,7 @@
     "date": "2026-09-08",
     "note": "397 g"
    },
-   "updatedAt": 1793127248074
+   "updatedAt": 1793128350746
   },
   "ingredients/i-leite-de-coco": {
    "name": "Leite de coco",
@@ -1626,7 +1626,7 @@
     "date": "2026-09-08",
     "note": "400 ml"
    },
-   "updatedAt": 1793127248129
+   "updatedAt": 1793128350802
   },
   "ingredients/i-leite-evaporado": {
    "name": "Leite evaporado",
@@ -1643,7 +1643,7 @@
     "date": "2026-09-08",
     "note": "410 g"
    },
-   "updatedAt": 1793127248102
+   "updatedAt": 1793128350775
   },
   "ingredients/i-leite-meio-gordo": {
    "name": "Leite meio-gordo",
@@ -1660,7 +1660,7 @@
     "date": "2026-10-27",
     "note": "UHT, embalagem 6 L"
    },
-   "updatedAt": 1793127247646
+   "updatedAt": 1793128350342
   },
   "ingredients/i-lentilhas-vermelhas": {
    "name": "Lentilhas vermelhas",
@@ -1677,7 +1677,7 @@
     "date": "2026-09-08",
     "note": "500 g"
    },
-   "updatedAt": 1793127248858
+   "updatedAt": 1793128351510
   },
   "ingredients/i-lima": {
    "name": "Lima",
@@ -1694,7 +1694,7 @@
     "date": "2026-09-08",
     "note": "embalagem 12 un"
    },
-   "updatedAt": 1793127246275
+   "updatedAt": 1793128349111
   },
   "ingredients/i-limao": {
    "name": "Limão",
@@ -1711,7 +1711,7 @@
     "date": "2026-09-08",
     "note": "preço ao kg; 2 un ≈ 400 g"
    },
-   "updatedAt": 1793127246304
+   "updatedAt": 1793128349134
   },
   "ingredients/i-lombo-de-porco": {
    "name": "Lombo de porco",
@@ -1728,7 +1728,7 @@
     "date": "2026-10-27",
     "note": "1 kg"
    },
-   "updatedAt": 1793127246613
+   "updatedAt": 1793128349391
   },
   "ingredients/i-lulas-limpas": {
    "name": "Lulas limpas",
@@ -1745,7 +1745,7 @@
     "date": "2026-09-08",
     "note": "400 g"
    },
-   "updatedAt": 1793127247495
+   "updatedAt": 1793128350216
   },
   "ingredients/i-maca": {
    "name": "Maçã",
@@ -1762,7 +1762,7 @@
     "date": "2026-10-27",
     "note": "maçã Gala, 1 kg"
    },
-   "updatedAt": 1793127246339
+   "updatedAt": 1793128349157
   },
   "ingredients/i-maionese": {
    "name": "Maionese",
@@ -1779,7 +1779,7 @@
     "date": "2026-09-08",
     "note": "470 g"
    },
-   "updatedAt": 1793127249394
+   "updatedAt": 1793128352023
   },
   "ingredients/i-malagueta-fresca": {
    "name": "Malagueta fresca",
@@ -1796,7 +1796,7 @@
     "date": "2026-09-08",
     "note": "embalagem 100 g"
    },
-   "updatedAt": 1793127245930
+   "updatedAt": 1793128348807
   },
   "ingredients/i-manjericao-fresco": {
    "name": "Manjericão fresco",
@@ -1813,7 +1813,7 @@
     "date": "2026-09-08",
     "note": "embalagem 25 g"
    },
-   "updatedAt": 1793127249722
+   "updatedAt": 1793128352361
   },
   "ingredients/i-manteiga": {
    "name": "Manteiga",
@@ -1830,7 +1830,7 @@
     "date": "2026-10-27",
     "note": "250 g"
    },
-   "updatedAt": 1793127247706
+   "updatedAt": 1793128350402
   },
   "ingredients/i-margarina": {
    "name": "Margarina",
@@ -1847,7 +1847,7 @@
     "date": "2026-09-08",
     "note": "250 g"
    },
-   "updatedAt": 1793127249598
+   "updatedAt": 1793128352236
   },
   "ingredients/i-massa-aletria": {
    "name": "Massa aletria",
@@ -1864,7 +1864,7 @@
     "date": "2026-09-08",
     "note": "500 g"
    },
-   "updatedAt": 1793127248333
+   "updatedAt": 1793128351002
   },
   "ingredients/i-massa-curta-penne-fusilli": {
    "name": "Massa curta (penne, fusilli)",
@@ -1881,7 +1881,7 @@
     "date": "2026-09-08",
     "note": "500 g"
    },
-   "updatedAt": 1793127248279
+   "updatedAt": 1793128350953
   },
   "ingredients/i-massa-de-lasanha": {
    "name": "Massa de lasanha",
@@ -1898,7 +1898,7 @@
     "date": "2026-09-08",
     "note": "500 g"
    },
-   "updatedAt": 1793127248306
+   "updatedAt": 1793128350976
   },
   "ingredients/i-massa-de-pimentao": {
    "name": "Massa de pimentão",
@@ -1915,7 +1915,7 @@
     "date": "2026-09-08",
     "note": "200 g"
    },
-   "updatedAt": 1793127249519
+   "updatedAt": 1793128352152
   },
   "ingredients/i-massa-folhada": {
    "name": "Massa folhada",
@@ -1932,7 +1932,7 @@
     "date": "2026-09-08",
     "note": "230 g"
    },
-   "updatedAt": 1793127248364
+   "updatedAt": 1793128351025
   },
   "ingredients/i-mel": {
    "name": "Mel",
@@ -1949,7 +1949,7 @@
     "date": "2026-09-08",
     "note": "300 g"
    },
-   "updatedAt": 1793127249117
+   "updatedAt": 1793128351735
   },
   "ingredients/i-mexilhao": {
    "name": "Mexilhão",
@@ -1966,7 +1966,7 @@
     "date": "2026-09-08",
     "note": "fresco, embalagem ≈ 1 kg"
    },
-   "updatedAt": 1793127247577
+   "updatedAt": 1793128350294
   },
   "ingredients/i-molho-de-soja": {
    "name": "Molho de soja",
@@ -1983,7 +1983,7 @@
     "date": "2026-09-08",
     "note": "200 ml"
    },
-   "updatedAt": 1793127249443
+   "updatedAt": 1793128352077
   },
   "ingredients/i-morcela": {
    "name": "Morcela",
@@ -2000,7 +2000,7 @@
     "date": "2026-09-08",
     "note": "200 g"
    },
-   "updatedAt": 1793127247040
+   "updatedAt": 1793128349792
   },
   "ingredients/i-mostarda": {
    "name": "Mostarda",
@@ -2017,7 +2017,7 @@
     "date": "2026-09-08",
     "note": "200 g"
    },
-   "updatedAt": 1793127249367
+   "updatedAt": 1793128351996
   },
   "ingredients/i-nabo": {
    "name": "Nabo",
@@ -2034,7 +2034,7 @@
     "date": "2026-09-08",
     "note": ""
    },
-   "updatedAt": 1793127245966
+   "updatedAt": 1793128348833
   },
   "ingredients/i-natas-para-culinaria": {
    "name": "Natas para culinária",
@@ -2051,7 +2051,7 @@
     "date": "2026-09-08",
     "note": "200 ml"
    },
-   "updatedAt": 1793127247677
+   "updatedAt": 1793128350366
   },
   "ingredients/i-oleo-alimentar": {
    "name": "Óleo alimentar",
@@ -2068,7 +2068,7 @@
     "date": "2026-10-27",
     "note": "100% vegetal, 1 L"
    },
-   "updatedAt": 1793127249573
+   "updatedAt": 1793128352203
   },
   "ingredients/i-oleo-de-coco": {
    "name": "Óleo de coco",
@@ -2085,7 +2085,7 @@
     "date": "2026-09-08",
     "note": "500 ml"
    },
-   "updatedAt": 1793127249623
+   "updatedAt": 1793128352273
   },
   "ingredients/i-oregaos-secos": {
    "name": "Orégãos secos",
@@ -2102,7 +2102,7 @@
     "date": "2026-09-08",
     "note": "30 g"
    },
-   "updatedAt": 1793127249986
+   "updatedAt": 1793128352626
   },
   "ingredients/i-ovos": {
    "name": "Ovos",
@@ -2119,7 +2119,7 @@
     "date": "2026-10-27",
     "note": "calibre M, dúzia"
    },
-   "updatedAt": 1793127247737
+   "updatedAt": 1793128350431
   },
   "ingredients/i-pa-de-porco": {
    "name": "Pá de porco",
@@ -2136,7 +2136,7 @@
     "date": "2026-09-08",
     "note": "preço ao kg"
    },
-   "updatedAt": 1793127246739
+   "updatedAt": 1793128349494
   },
   "ingredients/i-pao-de-forma": {
    "name": "Pão de forma",
@@ -2153,7 +2153,7 @@
     "date": "2026-10-27",
     "note": "700 g"
    },
-   "updatedAt": 1793127249168
+   "updatedAt": 1793128351802
   },
   "ingredients/i-pao-ralado": {
    "name": "Pão ralado",
@@ -2170,7 +2170,7 @@
     "date": "2026-09-08",
     "note": "240 g"
    },
-   "updatedAt": 1793127248705
+   "updatedAt": 1793128351340
   },
   "ingredients/i-paprika-fumada": {
    "name": "Paprika fumada",
@@ -2187,7 +2187,7 @@
     "date": "2026-09-08",
     "note": "35 g"
    },
-   "updatedAt": 1793127249937
+   "updatedAt": 1793128352574
   },
   "ingredients/i-pato-inteiro": {
    "name": "Pato inteiro",
@@ -2204,7 +2204,7 @@
     "date": "2026-09-08",
     "note": "preço ao kg; 1 un ≈ 2,4 kg"
    },
-   "updatedAt": 1793127246551
+   "updatedAt": 1793128349325
   },
   "ingredients/i-peito-de-frango": {
    "name": "Peito de frango",
@@ -2221,7 +2221,7 @@
     "date": "2026-10-27",
     "note": "1 kg"
    },
-   "updatedAt": 1793127246428
+   "updatedAt": 1793128349230
   },
   "ingredients/i-pescada": {
    "name": "Pescada",
@@ -2238,7 +2238,7 @@
     "date": "2026-10-27",
     "note": "congelada, 800 g"
    },
-   "updatedAt": 1793127247307
+   "updatedAt": 1793128350010
   },
   "ingredients/i-picanha-de-vaca": {
    "name": "Picanha de vaca",
@@ -2255,7 +2255,7 @@
     "date": "2026-09-08",
     "note": "preço ao kg"
    },
-   "updatedAt": 1793127246872
+   "updatedAt": 1793128349619
   },
   "ingredients/i-pimenta-preta-moida": {
    "name": "Pimenta preta moída",
@@ -2272,7 +2272,7 @@
     "date": "2026-09-08",
     "note": "50 g"
    },
-   "updatedAt": 1793127249839
+   "updatedAt": 1793128352463
   },
   "ingredients/i-pimento-verde": {
    "name": "Pimento verde",
@@ -2289,7 +2289,7 @@
     "date": "2026-09-08",
     "note": "preço ao kg; 1 un ≈ 250 g"
    },
-   "updatedAt": 1793127245992
+   "updatedAt": 1793128348858
   },
   "ingredients/i-pimento-vermelho": {
    "name": "Pimento vermelho",
@@ -2306,7 +2306,7 @@
     "date": "2026-09-08",
     "note": "preço ao kg; 1 un ≈ 300 g"
    },
-   "updatedAt": 1793127246029
+   "updatedAt": 1793128348886
   },
   "ingredients/i-pinhoes": {
    "name": "Pinhões",
@@ -2323,7 +2323,7 @@
     "date": "2026-09-08",
     "note": "50 g"
    },
-   "updatedAt": 1793127249033
+   "updatedAt": 1793128351659
   },
   "ingredients/i-piri-piri-seco": {
    "name": "Piri-piri seco",
@@ -2340,7 +2340,7 @@
     "date": "2026-09-08",
     "note": "41 g"
    },
-   "updatedAt": 1793127250012
+   "updatedAt": 1793128352652
   },
   "ingredients/i-polpa-de-tomate": {
    "name": "Polpa de tomate",
@@ -2357,7 +2357,7 @@
     "date": "2026-10-27",
     "note": "800 g"
    },
-   "updatedAt": 1793127248755
+   "updatedAt": 1793128351387
   },
   "ingredients/i-polvo": {
    "name": "Polvo",
@@ -2374,7 +2374,7 @@
     "date": "2026-09-08",
     "note": "preço ao kg"
    },
-   "updatedAt": 1793127247469
+   "updatedAt": 1793128350186
   },
   "ingredients/i-presunto-fatiado": {
    "name": "Presunto fatiado",
@@ -2391,7 +2391,7 @@
     "date": "2026-09-08",
     "note": "embalagem 150 g"
    },
-   "updatedAt": 1793127247095
+   "updatedAt": 1793128349841
   },
   "ingredients/i-queijo-creme": {
    "name": "Queijo creme",
@@ -2408,7 +2408,7 @@
     "date": "2026-09-08",
     "note": "150 g"
    },
-   "updatedAt": 1793127247950
+   "updatedAt": 1793128350632
   },
   "ingredients/i-queijo-emmental": {
    "name": "Queijo emmental",
@@ -2425,7 +2425,7 @@
     "date": "2026-09-08",
     "note": "200 g"
    },
-   "updatedAt": 1793127247875
+   "updatedAt": 1793128350559
   },
   "ingredients/i-queijo-feta": {
    "name": "Queijo feta",
@@ -2442,7 +2442,7 @@
     "date": "2026-09-08",
     "note": "150 g"
    },
-   "updatedAt": 1793127247979
+   "updatedAt": 1793128350661
   },
   "ingredients/i-queijo-flamengo": {
    "name": "Queijo flamengo",
@@ -2459,7 +2459,7 @@
     "date": "2026-10-27",
     "note": "400 g"
    },
-   "updatedAt": 1793127247846
+   "updatedAt": 1793128350534
   },
   "ingredients/i-queijo-fresco": {
    "name": "Queijo fresco",
@@ -2476,7 +2476,7 @@
     "date": "2026-09-08",
     "note": "200 g"
    },
-   "updatedAt": 1793127247923
+   "updatedAt": 1793128350609
   },
   "ingredients/i-queijo-parmesao-ralado": {
    "name": "Queijo parmesão ralado",
@@ -2493,7 +2493,7 @@
     "date": "2026-09-08",
     "note": "60 g"
    },
-   "updatedAt": 1793127247899
+   "updatedAt": 1793128350585
   },
   "ingredients/i-quinoa": {
    "name": "Quinoa",
@@ -2510,7 +2510,7 @@
     "date": "2026-09-08",
     "note": "500 g"
    },
-   "updatedAt": 1793127248885
+   "updatedAt": 1793128351535
   },
   "ingredients/i-requeijao": {
    "name": "Requeijão",
@@ -2527,7 +2527,7 @@
     "date": "2026-09-08",
     "note": "260 g"
    },
-   "updatedAt": 1793127248009
+   "updatedAt": 1793128350687
   },
   "ingredients/i-ricotta": {
    "name": "Ricotta",
@@ -2544,7 +2544,7 @@
     "date": "2026-09-08",
     "note": "250 g"
    },
-   "updatedAt": 1793127248044
+   "updatedAt": 1793128350711
   },
   "ingredients/i-robalo": {
    "name": "Robalo",
@@ -2561,7 +2561,7 @@
     "date": "2026-09-08",
     "note": "fresco, preço ao kg"
    },
-   "updatedAt": 1793127247416
+   "updatedAt": 1793128350132
   },
   "ingredients/i-rucula": {
    "name": "Rúcula",
@@ -2578,7 +2578,7 @@
     "date": "2026-09-08",
     "note": "embalagem 100 g"
    },
-   "updatedAt": 1793127246057
+   "updatedAt": 1793128348911
   },
   "ingredients/i-sal": {
    "name": "Sal",
@@ -2604,7 +2604,7 @@
     "date": "2026-10-27",
     "note": "1 kg"
    },
-   "updatedAt": 1793127248522
+   "updatedAt": 1793128351172
   },
   "ingredients/i-sal-grosso": {
    "name": "Sal grosso",
@@ -2621,7 +2621,7 @@
     "date": "2026-09-08",
     "note": "1 kg"
    },
-   "updatedAt": 1793127248551
+   "updatedAt": 1793128351195
   },
   "ingredients/i-salmao-lombos": {
    "name": "Salmão (lombos)",
@@ -2638,7 +2638,7 @@
     "date": "2026-09-08",
     "note": "fresco, preço ao kg"
    },
-   "updatedAt": 1793127247359
+   "updatedAt": 1793128350077
   },
   "ingredients/i-salsa": {
    "name": "Salsa",
@@ -2655,7 +2655,7 @@
     "date": "2026-09-08",
     "note": "molho ≈ 50 g"
    },
-   "updatedAt": 1793127249654
+   "updatedAt": 1793128352303
   },
   "ingredients/i-salsichas-tipo-frankfurt": {
    "name": "Salsichas tipo Frankfurt",
@@ -2672,7 +2672,7 @@
     "date": "2026-09-08",
     "note": "embalagem 8 un"
    },
-   "updatedAt": 1793127247172
+   "updatedAt": 1793128349890
   },
   "ingredients/i-secretos-de-porco": {
    "name": "Secretos de porco",
@@ -2689,7 +2689,7 @@
     "date": "2026-09-08",
     "note": "preço ao kg"
    },
-   "updatedAt": 1793127246765
+   "updatedAt": 1793128349520
   },
   "ingredients/i-sementes-de-sesamo": {
    "name": "Sementes de sésamo",
@@ -2706,7 +2706,7 @@
     "date": "2026-09-08",
     "note": "200 g"
    },
-   "updatedAt": 1793127249088
+   "updatedAt": 1793128351710
   },
   "ingredients/i-tofu-firme": {
    "name": "Tofu firme",
@@ -2723,7 +2723,7 @@
     "date": "2026-09-08",
     "note": "400 g"
    },
-   "updatedAt": 1793127248909
+   "updatedAt": 1793128351560
   },
   "ingredients/i-tomate": {
    "name": "Tomate",
@@ -2740,7 +2740,7 @@
     "date": "2026-10-27",
     "note": "tomate redondo, 1 kg"
    },
-   "updatedAt": 1793127246091
+   "updatedAt": 1793128348936
   },
   "ingredients/i-tomate-cherry": {
    "name": "Tomate cherry",
@@ -2757,7 +2757,7 @@
     "date": "2026-09-08",
     "note": "embalagem 250 g"
    },
-   "updatedAt": 1793127246152
+   "updatedAt": 1793128348989
   },
   "ingredients/i-tomate-chucha": {
    "name": "Tomate chucha",
@@ -2774,7 +2774,7 @@
     "date": "2026-10-07",
     "note": ""
    },
-   "updatedAt": 1793127246118
+   "updatedAt": 1793128348962
   },
   "ingredients/i-tomilho-fresco": {
    "name": "Tomilho fresco",
@@ -2791,7 +2791,7 @@
     "date": "2026-09-08",
     "note": "embalagem 30 g"
    },
-   "updatedAt": 1793127249785
+   "updatedAt": 1793128352413
   },
   "ingredients/i-toucinho-fumado": {
    "name": "Toucinho fumado",
@@ -2808,7 +2808,7 @@
     "date": "2026-09-08",
     "note": "embalagem 200 g"
    },
-   "updatedAt": 1793127246983
+   "updatedAt": 1793128349739
   },
   "ingredients/i-vinagre-de-maca": {
    "name": "Vinagre de maçã",
@@ -2825,7 +2825,7 @@
     "date": "2026-09-08",
     "note": "500 ml"
    },
-   "updatedAt": 1793127249494
+   "updatedAt": 1793128352129
   },
   "ingredients/i-vinagre-de-vinho": {
    "name": "Vinagre de vinho",
@@ -2842,7 +2842,7 @@
     "date": "2026-09-08",
     "note": "1 L"
    },
-   "updatedAt": 1793127249469
+   "updatedAt": 1793128352102
   },
   "ingredients/i-vinho-branco": {
    "name": "Vinho branco",
@@ -2859,7 +2859,7 @@
     "date": "2026-09-08",
     "note": "garrafa 75 cl"
    },
-   "updatedAt": 1793127250078
+   "updatedAt": 1793128352708
   },
   "ingredients/i-vinho-tinto": {
    "name": "Vinho tinto",
@@ -2876,7 +2876,7 @@
     "date": "2026-09-08",
     "note": "garrafa 75 cl"
    },
-   "updatedAt": 1793127250108
+   "updatedAt": 1793128352747
   },
   "settings/library": {
    "owner": "Alexandre Canelas Ribeiro",
