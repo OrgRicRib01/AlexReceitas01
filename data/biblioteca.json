@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1793128526366,
+ "updatedAt": 1793128537713,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -2952,7 +2952,14 @@
    "photoId": "data/fotos/mvr2f8x82o2e1rma.jpg",
    "photoUrl": "https://raw.githubusercontent.com/OrgRicRib01/AlexReceitas01/main/data/fotos/mvr2f8x82o2e1rma.jpg",
    "createdAt": 1793110000000,
-   "updatedAt": 1793128522080
+   "updatedAt": 1793128533454,
+   "prepPhotos": [
+    {
+     "id": "data/fotos/mvr2fi4di00hzx09.jpg",
+     "url": "https://raw.githubusercontent.com/OrgRicRib01/AlexReceitas01/main/data/fotos/mvr2fi4di00hzx09.jpg",
+     "title": ""
+    }
+   ]
   },
   "sheets/mvqzpm24zbpip767": {
    "name": "Ceviche Robalo",
