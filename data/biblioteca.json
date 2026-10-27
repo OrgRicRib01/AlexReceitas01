@@ -1,8 +1,17 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1793127204775,
+ "updatedAt": 1793127244821,
  "docs": {
+  "ingredients/i-abacate": {
+   "name": "Abacate",
+   "category": "",
+   "unit": "",
+   "price": "",
+   "yield": "",
+   "notes": "",
+   "updatedAt": 1793127241651
+  },
   "ingredients/i-abobora": {
    "name": "Abóbora",
    "category": "legumes",
