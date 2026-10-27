@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1793124000000,
+ "updatedAt": 1793127055834,
  "docs": {
   "settings/library": {
    "owner": "Alexandre Canelas Ribeiro",
@@ -11,7 +11,7 @@
      "value": "CP2"
     }
    ],
-   "updatedAt": 1793124000000
+   "updatedAt": 1793125537269
   },
   "sheets/exemplo-creme-abobora": {
    "name": "Creme de abóbora com sementes tostadas (EXEMPLO)",
