@@ -1,0 +1,84 @@
+{
+ "format": "fichas-tecnicas-store",
+ "version": 1,
+ "updatedAt": 1793124000000,
+ "docs": {
+  "settings/library": {
+   "owner": "Alexandre Canelas Ribeiro",
+   "fields": [
+    {
+     "label": "Turma",
+     "value": "CP2"
+    }
+   ],
+   "updatedAt": 1793124000000
+  },
+  "sheets/exemplo-creme-abobora": {
+   "name": "Creme de abóbora com sementes tostadas (EXEMPLO)",
+   "code": "FT-001",
+   "family": "Sopa",
+   "doses": "4",
+   "prepTime": "15 min",
+   "cookTime": "30 min",
+   "ingredients": [
+    {
+     "name": "Abóbora",
+     "unit": "kg",
+     "qty": "0,8",
+     "price": "1,49",
+     "yield": "75"
+    },
+    {
+     "name": "Cebola",
+     "unit": "kg",
+     "qty": "0,15",
+     "price": "1,19",
+     "yield": "90"
+    },
+    {
+     "name": "Batata",
+     "unit": "kg",
+     "qty": "0,2",
+     "price": "0,99",
+     "yield": "85"
+    },
+    {
+     "name": "Azeite",
+     "unit": "L",
+     "qty": "0,03",
+     "price": "8,50",
+     "yield": ""
+    },
+    {
+     "name": "Sementes de abóbora",
+     "unit": "kg",
+     "qty": "0,02",
+     "price": "14,00",
+     "yield": ""
+    },
+    {
+     "name": "Sal",
+     "unit": "q.b.",
+     "qty": "",
+     "price": "",
+     "yield": ""
+    }
+   ],
+   "method": "Descascar e cortar a abóbora, a cebola e a batata em cubos regulares.\nAlourar a cebola em azeite, em lume brando, sem ganhar cor.\nJuntar a abóbora e a batata, cobrir com água e cozer cerca de 25 minutos.\nTriturar até obter um creme liso e retificar o sal.\nTostar as sementes a seco numa frigideira.",
+   "notes": "EXEMPLO de demonstração: quantidades e preços inventados para mostrar a ferramenta. Substitua pelos valores do curso ou elimine esta ficha.\nServir em prato fundo aquecido, com as sementes por cima e um fio de azeite.",
+   "conservation": "Arrefecer rapidamente; conservar a 0–4 °C até 3 dias. Regenerar acima de 75 °C.",
+   "allergens": [],
+   "status": "rascunho",
+   "source": "propria",
+   "sourceNote": "Exemplo gerado — não é receita do curso",
+   "tags": "exemplo",
+   "targetFc": 30,
+   "salePrice": "4,50",
+   "photoId": null,
+   "photoUrl": null,
+   "createdAt": 1793110000000,
+   "updatedAt": 1793110000000
+  }
+ },
+ "deleted": {}
+}

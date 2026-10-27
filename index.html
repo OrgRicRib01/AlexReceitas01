@@ -295,6 +295,19 @@ img{max-width:100%}
 #stats .stat .sub{font-size:11.5px;color:var(--muted)}
 @media (max-width:860px){#stats{justify-content:stretch;grid-template-columns:repeat(3,minmax(0,1fr));width:100%}}
 
+/* sync status */
+.sync{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:5px 11px;font-size:13px;font-weight:500;cursor:pointer;white-space:nowrap}
+.sync i{width:8px;height:8px;border-radius:50%;background:var(--muted);flex:none}
+.sync[data-st="ok"] i{background:var(--good)}
+.sync[data-st="busy"] i,.sync[data-st="pending"] i{background:var(--warn)}
+.sync[data-st="error"] i,.sync[data-st="offline"] i{background:var(--bad)}
+.sync[data-st="ro"] i{background:var(--accent)}
+@media (prefers-reduced-motion:no-preference){.sync[data-st="busy"] i{animation:pulse 1s ease-in-out infinite}}
+.notice .btn{margin-left:8px;padding:3px 10px;font-size:13px}
+.dlg code{font-family:var(--f-mono);font-size:12.5px;background:var(--surface-2);padding:1px 5px;border-radius:4px}
+.syncmsg{font-size:13.5px;margin:0}
+.syncmsg.err{color:var(--bad)}.syncmsg.ok{color:var(--good)}
+
 /* PDF selection */
 .selbar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;background:var(--accent-soft);border-radius:8px;padding:10px 12px;margin-bottom:12px}
 .selbar .grow{margin-right:auto;font-size:14px}
@@ -319,6 +332,7 @@ img{max-width:100%}
 
 <header class="bar"><div class="wrap">
   <button class="brand" id="goHome" type="button"><b id="brandName"></b><span id="brandSub"></span></button>
+  <button class="sync" id="syncChip" type="button" hidden><i></i><span></span></button>
   <nav class="tabs" aria-label="Sections"><button type="button" data-nav="library"></button><button type="button" data-nav="ingredients"></button></nav>
   <div class="lang" role="group" aria-label="Language / Idioma">
     <button type="button" data-lang="pt" lang="pt-PT" title="Português (Portugal)">PT</button>
@@ -338,6 +352,7 @@ img{max-width:100%}
 
 <script>window.FT_EXAMPLE={"name": "Creme de abóbora com sementes tostadas (EXEMPLO)", "code": "FT-001", "family": "Sopa", "doses": "4", "prepTime": "15 min", "cookTime": "30 min", "ingredients": [{"name": "Abóbora", "unit": "kg", "qty": "0,8", "price": "1,49", "yield": "75"}, {"name": "Cebola", "unit": "kg", "qty": "0,15", "price": "1,19", "yield": "90"}, {"name": "Batata", "unit": "kg", "qty": "0,2", "price": "0,99", "yield": "85"}, {"name": "Azeite", "unit": "L", "qty": "0,03", "price": "8,50", "yield": ""}, {"name": "Sementes de abóbora", "unit": "kg", "qty": "0,02", "price": "14,00", "yield": ""}, {"name": "Sal", "unit": "q.b.", "qty": "", "price": "", "yield": ""}], "method": "Descascar e cortar a abóbora, a cebola e a batata em cubos regulares.\nAlourar a cebola em azeite, em lume brando, sem ganhar cor.\nJuntar a abóbora e a batata, cobrir com água e cozer cerca de 25 minutos.\nTriturar até obter um creme liso e retificar o sal.\nTostar as sementes a seco numa frigideira.", "notes": "EXEMPLO de demonstração: quantidades e preços inventados para mostrar a ferramenta. Substitua pelos valores do curso ou elimine esta ficha.\nServir em prato fundo aquecido, com as sementes por cima e um fio de azeite.", "conservation": "Arrefecer rapidamente; conservar a 0–4 °C até 3 dias. Regenerar acima de 75 °C.", "allergens": [], "status": "rascunho", "source": "propria", "sourceNote": "Exemplo gerado — não é receita do curso", "tags": "exemplo", "targetFc": 30, "salePrice": "4,50", "photoId": null, "photoUrl": null, "createdAt": 1793110000000, "updatedAt": 1793110000000};</script>
 <script>window.FT_LIBRARY={"owner":"Alexandre Canelas Ribeiro","fields":[{"label":"Turma","value":"CP2"}],"updatedAt":1793124000000};</script>
+<script>window.FT_REMOTE={"owner":"OrgRicRib01","repo":"AlexReceitas01","branch":"main","path":"data/biblioteca.json"};</script>
 <script src="shim.js"></script>
 <script>
 /* ---------- languages ---------- */
@@ -368,6 +383,13 @@ pt:{
   pvKicker:"Ficha técnica de preparação",edit:"Editar",xlsx:"Exportar Excel",origin:"Origem",scaleTo:"Escalar para",dosesWord:"doses",factor:"Fator {0} · as quantidades e custos abaixo acompanham.",reset:"Repor",unitShort:"Unid.",priceShort:"Preço unit.",costShort:"Preço custo",scaled:" (escalado)",noIng:"Sem ingredientes.",toFill:"Por preencher.",noAll:"Nenhum assinalado. Confirme antes de servir.",pvFoot:"Food cost alvo: {0} %. Valores da receita base.",aprov:"aprov.",noSale:"Sem PV",fcTip:"Food cost real (alvo {0} %)",
   dlNo:"As transferências não estão disponíveis nesta vista.",dlBusy:"Já há uma transferência a decorrer. Tente de novo dentro de momentos.",dlFail:"Não foi possível transferir o ficheiro.",xlsxFail:"O exportador de Excel não carregou. Recarregue a página.",
   impNo:"Não é possível importar nesta vista.",notJson:"O ficheiro não é um JSON válido.",notBackup:"Este ficheiro não é uma cópia de segurança desta biblioteca.",impTitle:"Importar fichas",impText:"Vão ser importadas {0} fichas. Fichas com o mesmo identificador são substituídas pela versão do ficheiro.",impOk:"Importar",impFull:"A biblioteca ficou cheia durante a importação.",impDone:"{0} fichas importadas.",lost:"Perdeu-se a ligação à biblioteca. Recarregue a página.",
+  syncOk:"Sincronizado",syncBusy:"A sincronizar…",syncPending:"Por enviar",syncRO:"Só leitura",syncErr:"Erro de sincronização",syncOffline:"Sem ligação",syncLocal:"Só neste dispositivo",
+  syncTitle:"Biblioteca partilhada",syncIntro:"As fichas, os ingredientes e os dados da biblioteca ficam no ficheiro {0} do repositório {1}. Todos os dispositivos veem os mesmos dados; as fotos ficam na pasta data/fotos.",
+  syncPublic:"O repositório é público: qualquer pessoa com o endereço pode ler as fichas.",syncLast:"Última sincronização: {0}",syncNever:"Ainda não sincronizado",syncNow:"Sincronizar agora",
+  tokenLabel:"Token do GitHub",tokenPh:"github_pat_…",tokenHelp:"Para editar neste dispositivo, crie um token: GitHub → Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token. Resource owner: {0}. Repository access: só {1}. Permissions → Contents: Read and write. Cole-o aqui; fica guardado só neste browser.",
+  tokenSave:"Ligar este dispositivo",tokenRemove:"Desligar este dispositivo",tokenChecking:"A verificar o token…",tokenBad:"Este token não tem permissão de escrita no repositório. Confirme o repositório e a permissão Contents: Read and write.",tokenFail:"Não foi possível verificar o token (HTTP {0}).",
+  tokenConnected:"Este dispositivo pode editar a biblioteca.",syncAuthErr:"O GitHub recusou o token guardado (expirou ou perdeu permissões). Desligue e volte a ligar com um token novo.",
+  roNote:"Está a ver a biblioteca partilhada só para leitura. Ligue este dispositivo ao GitHub para criar e editar fichas.",roBtn:"Ligar ao GitHub",
   stStatus:"Estado das fichas",stMargin:"Margem média / dose",stScopeAll:"Todas as fichas",stScopeFilter:"{0} de {1} fichas (filtro)",stScopeSel:"{0} fichas selecionadas",fcSub:"food cost {0}",stNoSale:"sem preço de venda",
   optWhich:"Fotografias a incluir",optPlate:"Foto do empratamento (em destaque no topo)",optPrep:"Fotografias da preparação",optNoPhotos:"Nenhuma ficha selecionada tem fotografias.",optPlateMissing:"sem foto",optCount:"{0} de {1}",selAllPh:"Todas",selNonePh:"Nenhuma",
   secPrep:"Fotografias da preparação",secPrepSub:"Cada foto pode ter um título",addPhotos:"+ Adicionar fotos",photoTitlePh:"Título (opcional)",photoN:"Foto {0}",movePrev:"Mover para trás",moveNext:"Mover para a frente",rmPhoto:"Remover foto",
@@ -426,6 +448,13 @@ en:{
   pvKicker:"Preparation technical sheet",edit:"Edit",xlsx:"Export to Excel",origin:"Source",scaleTo:"Scale to",dosesWord:"portions",factor:"Factor {0} · quantities and costs below follow it.",reset:"Reset",unitShort:"Unit",priceShort:"Unit price",costShort:"Cost",scaled:" (scaled)",noIng:"No ingredients.",toFill:"Not filled in yet.",noAll:"None ticked. Check before serving.",pvFoot:"Target food cost: {0}%. Figures for the base recipe.",aprov:"yield",noSale:"No price",fcTip:"Actual food cost (target {0}%)",
   dlNo:"Downloads are not available in this view.",dlBusy:"A download is already in progress. Try again in a moment.",dlFail:"The file could not be downloaded.",xlsxFail:"The Excel exporter did not load. Reload the page.",
   impNo:"Importing is not available in this view.",notJson:"The file is not valid JSON.",notBackup:"This file is not a backup of this library.",impTitle:"Import sheets",impText:"{0} sheets will be imported. Sheets with the same identifier are replaced by the version in the file.",impOk:"Import",impFull:"The library filled up during the import.",impDone:"{0} sheets imported.",lost:"Lost connection to the library. Reload the page.",
+  syncOk:"Synced",syncBusy:"Syncing…",syncPending:"Not sent yet",syncRO:"Read-only",syncErr:"Sync error",syncOffline:"Offline",syncLocal:"This device only",
+  syncTitle:"Shared library",syncIntro:"Sheets, ingredients and library details are stored in {0} in the {1} repository. Every device sees the same data; photos go in the data/fotos folder.",
+  syncPublic:"The repository is public: anyone with the address can read the sheets.",syncLast:"Last synced: {0}",syncNever:"Not synced yet",syncNow:"Sync now",
+  tokenLabel:"GitHub token",tokenPh:"github_pat_…",tokenHelp:"To edit on this device, create a token: GitHub → Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token. Resource owner: {0}. Repository access: only {1}. Permissions → Contents: Read and write. Paste it here; it is kept in this browser only.",
+  tokenSave:"Connect this device",tokenRemove:"Disconnect this device",tokenChecking:"Checking the token…",tokenBad:"This token cannot write to the repository. Check the repository and the Contents: Read and write permission.",tokenFail:"The token could not be checked (HTTP {0}).",
+  tokenConnected:"This device can edit the library.",syncAuthErr:"GitHub refused the saved token (it expired or lost permissions). Disconnect and connect again with a new token.",
+  roNote:"You are viewing the shared library read-only. Connect this device to GitHub to create and edit sheets.",roBtn:"Connect to GitHub",
   stStatus:"Sheet status",stMargin:"Avg. margin / portion",stScopeAll:"All sheets",stScopeFilter:"{0} of {1} sheets (filtered)",stScopeSel:"{0} selected sheets",fcSub:"food cost {0}",stNoSale:"no selling price",
   optWhich:"Photos to include",optPlate:"Plating photo (featured at the top)",optPrep:"Preparation photos",optNoPhotos:"None of the selected sheets has photos.",optPlateMissing:"no photo",optCount:"{0} of {1}",selAllPh:"All",selNonePh:"None",
   secPrep:"Preparation photos",secPrepSub:"Each photo can have a title",addPhotos:"+ Add photos",photoTitlePh:"Title (optional)",photoN:"Photo {0}",movePrev:"Move back",moveNext:"Move forward",rmPhoto:"Remove photo",
@@ -484,6 +513,13 @@ es:{
   pvKicker:"Ficha técnica de elaboración",edit:"Editar",xlsx:"Exportar a Excel",origin:"Origen",scaleTo:"Escalar a",dosesWord:"raciones",factor:"Factor {0} · las cantidades y costes de abajo se ajustan.",reset:"Restablecer",unitShort:"Ud.",priceShort:"Precio unit.",costShort:"Coste",scaled:" (escalado)",noIng:"Sin ingredientes.",toFill:"Pendiente de completar.",noAll:"Ninguno marcado. Compruébalo antes de servir.",pvFoot:"Food cost objetivo: {0} %. Valores de la receta base.",aprov:"rend.",noSale:"Sin PVP",fcTip:"Food cost real (objetivo {0} %)",
   dlNo:"Las descargas no están disponibles en esta vista.",dlBusy:"Ya hay una descarga en curso. Inténtalo de nuevo en un momento.",dlFail:"No se ha podido descargar el archivo.",xlsxFail:"El exportador de Excel no se ha cargado. Recarga la página.",
   impNo:"No se puede importar en esta vista.",notJson:"El archivo no es un JSON válido.",notBackup:"Este archivo no es una copia de seguridad de esta biblioteca.",impTitle:"Importar fichas",impText:"Se importarán {0} fichas. Las fichas con el mismo identificador se sustituyen por la versión del archivo.",impOk:"Importar",impFull:"La biblioteca se ha llenado durante la importación.",impDone:"{0} fichas importadas.",lost:"Se ha perdido la conexión con la biblioteca. Recarga la página.",
+  syncOk:"Sincronizado",syncBusy:"Sincronizando…",syncPending:"Pendiente de enviar",syncRO:"Solo lectura",syncErr:"Error de sincronización",syncOffline:"Sin conexión",syncLocal:"Solo en este dispositivo",
+  syncTitle:"Biblioteca compartida",syncIntro:"Las fichas, los ingredientes y los datos de la biblioteca se guardan en {0} del repositorio {1}. Todos los dispositivos ven los mismos datos; las fotos van a la carpeta data/fotos.",
+  syncPublic:"El repositorio es público: cualquiera con la dirección puede leer las fichas.",syncLast:"Última sincronización: {0}",syncNever:"Todavía sin sincronizar",syncNow:"Sincronizar ahora",
+  tokenLabel:"Token de GitHub",tokenPh:"github_pat_…",tokenHelp:"Para editar en este dispositivo, crea un token: GitHub → Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token. Resource owner: {0}. Repository access: solo {1}. Permissions → Contents: Read and write. Pégalo aquí; se guarda solo en este navegador.",
+  tokenSave:"Conectar este dispositivo",tokenRemove:"Desconectar este dispositivo",tokenChecking:"Comprobando el token…",tokenBad:"Este token no puede escribir en el repositorio. Revisa el repositorio y el permiso Contents: Read and write.",tokenFail:"No se ha podido comprobar el token (HTTP {0}).",
+  tokenConnected:"Este dispositivo puede editar la biblioteca.",syncAuthErr:"GitHub ha rechazado el token guardado (caducado o sin permisos). Desconecta y vuelve a conectar con un token nuevo.",
+  roNote:"Estás viendo la biblioteca compartida en solo lectura. Conecta este dispositivo a GitHub para crear y editar fichas.",roBtn:"Conectar a GitHub",
   stStatus:"Estado de las fichas",stMargin:"Margen medio / ración",stScopeAll:"Todas las fichas",stScopeFilter:"{0} de {1} fichas (filtro)",stScopeSel:"{0} fichas seleccionadas",fcSub:"food cost {0}",stNoSale:"sin precio de venta",
   optWhich:"Fotos que incluir",optPlate:"Foto del emplatado (destacada arriba)",optPrep:"Fotos de la elaboración",optNoPhotos:"Ninguna de las fichas seleccionadas tiene fotos.",optPlateMissing:"sin foto",optCount:"{0} de {1}",selAllPh:"Todas",selNonePh:"Ninguna",
   secPrep:"Fotos de la elaboración",secPrepSub:"Cada foto puede tener un título",addPhotos:"+ Añadir fotos",photoTitlePh:"Título (opcional)",photoN:"Foto {0}",movePrev:"Mover atrás",moveNext:"Mover adelante",rmPhoto:"Quitar foto",
@@ -633,6 +669,7 @@ function renderChrome(){
     <button type="button" data-act="import">${esc(t("imp"))}<small>${esc(t("impSub"))}</small></button>`;
   document.querySelectorAll(".lang button").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.lang===lang)));
   document.querySelector('[data-nav="library"]').textContent=t("navLib");
+  if(typeof renderSyncChip==="function")renderSyncChip();
   document.querySelector('[data-nav="ingredients"]').textContent=t("navIng");
   syncNav();
 }
@@ -702,6 +739,7 @@ function editLibDialog(){
 }
 function noticeHtml(){
   if(dbState==="none")return `<div class="notice">${esc(t("noticeNone"))}</div>`;
+  if(window.FT_SYNC){if(!canWrite)return `<div class="notice">${esc(t("roNote"))}<button class="btn" type="button" data-connect>${esc(t("roBtn"))}</button></div>`;return ""}
   if(!canWrite)return `<div class="notice">${esc(t("noticeRO"))}</div>`;
   if(window.FT_STANDALONE){const b=window.FT_BACKEND&&window.FT_BACKEND();return b==="memory"?`<div class="notice">${esc(t("memNote"))}</div>`:`<div class="localnote">${esc(t("localNote"))}</div>`}
   return "";
@@ -1334,7 +1372,7 @@ async function pdfFor(ids){
   if(!items.length){toast(t("pdfNone"));return}
   const o=await pdfOptions(items);if(o)await makePdf(items,o);
 }
-function loadImg(url){return new Promise(res=>{const im=new Image();im.onload=()=>{try{const sc=Math.min(1,1400/Math.max(im.naturalWidth,im.naturalHeight));const cv=document.createElement("canvas");cv.width=Math.max(1,Math.round(im.naturalWidth*sc));cv.height=Math.max(1,Math.round(im.naturalHeight*sc));const cx=cv.getContext("2d");cx.fillStyle="#fff";cx.fillRect(0,0,cv.width,cv.height);cx.drawImage(im,0,0,cv.width,cv.height);res({data:cv.toDataURL("image/jpeg",.85),w:cv.width,h:cv.height})}catch{res(null)}};im.onerror=()=>res(null);im.src=url})}
+function loadImg(url){return new Promise(res=>{const im=new Image();if(/^https?:/.test(url))im.crossOrigin="anonymous";im.onload=()=>{try{const sc=Math.min(1,1400/Math.max(im.naturalWidth,im.naturalHeight));const cv=document.createElement("canvas");cv.width=Math.max(1,Math.round(im.naturalWidth*sc));cv.height=Math.max(1,Math.round(im.naturalHeight*sc));const cx=cv.getContext("2d");cx.fillStyle="#fff";cx.fillRect(0,0,cv.width,cv.height);cx.drawImage(im,0,0,cv.width,cv.height);res({data:cv.toDataURL("image/jpeg",.85),w:cv.width,h:cv.height})}catch{res(null)}};im.onerror=()=>res(null);im.src=url})}
 async function makePdf(items,opts){
   const J=window.jspdf&&window.jspdf.jsPDF;if(!J){toast(t("pdfLibFail"));return}
   if(!items.length){toast(t("pdfNone"));return}
@@ -1482,6 +1520,47 @@ document.querySelectorAll("[data-nav]").forEach(b=>b.addEventListener("click",()
 document.getElementById("newBtn").onclick=()=>view==="editor"?leave(newSheet):newSheet();
 document.addEventListener("visibilitychange",()=>{if(document.hidden)flush()});
 app.addEventListener("input",onEdInput);
+app.addEventListener("click",e=>{if(e.target.closest("[data-connect]"))syncDialog()});
+
+/* ---------- shared library (GitHub) ---------- */
+function syncLabel(st){return {ok:t("syncOk"),busy:t("syncBusy"),pending:t("syncPending"),ro:t("syncRO"),error:t("syncErr"),offline:t("syncOffline"),local:t("syncLocal")}[st.status]||""}
+function renderSyncChip(){
+  const c=document.getElementById("syncChip");if(!c||!window.FT_SYNC)return;
+  const st=FT_SYNC.state();c.hidden=false;c.dataset.st=st.status;c.querySelector("span").textContent=syncLabel(st);
+  c.title=st.lastSync?t("syncLast",new Date(st.lastSync).toLocaleString(loc())):t("syncNever");
+}
+function syncDialog(){
+  if(!window.FT_SYNC)return;
+  const [owner,repo]=FT_SYNC.repo.split("/");const st=FT_SYNC.state();
+  const d=document.createElement("div");d.className="scrim";
+  d.innerHTML=`<div class="dlg" role="dialog" aria-modal="true" style="max-width:540px"><h2>${esc(t("syncTitle"))}</h2>
+    <p>${esc(t("syncIntro","\u0001","\u0002")).replace("\u0001",`<code>${esc(FT_SYNC.path)}</code>`).replace("\u0002",`<code>${esc(FT_SYNC.repo)}</code>`)}</p>
+    <p class="hint" style="margin:0">${esc(t("syncPublic"))}</p>
+    <p class="syncmsg">${esc(syncLabel(st))} · ${esc(st.lastSync?t("syncLast",new Date(st.lastSync).toLocaleString(loc())):t("syncNever"))}</p>
+    ${st.error==="auth"?`<p class="syncmsg err">${esc(t("syncAuthErr"))}</p>`:""}
+    ${FT_SYNC.hasToken()?`<p class="syncmsg ok">${esc(t("tokenConnected"))}</p>
+      <div class="acts"><button class="btn danger" type="button" id="tkOff">${esc(t("tokenRemove"))}</button><button class="btn" type="button" id="syNow">${esc(t("syncNow"))}</button><button class="btn primary" type="button" data-close>${esc(t("closeBtn"))}</button></div>`
+    :`<label class="f">${esc(t("tokenLabel"))}<input id="tkIn" type="password" autocomplete="off" spellcheck="false" placeholder="${esc(t("tokenPh"))}"></label>
+      <p class="hint" style="margin:0">${esc(t("tokenHelp",owner,repo))}</p><p class="syncmsg" id="tkMsg"></p>
+      <div class="acts"><button class="btn" type="button" data-close>${esc(t("cancel"))}</button><button class="btn primary" type="button" id="tkSave">${esc(t("tokenSave"))}</button></div>`}
+  </div>`;
+  const close=()=>d.remove();
+  d.addEventListener("click",async e=>{
+    if(e.target===d||e.target.closest("[data-close]")){close();return}
+    if(e.target.closest("#syNow")){FT_SYNC.syncNow();close();return}
+    if(e.target.closest("#tkOff")){FT_SYNC.clearToken();return}
+    if(e.target.closest("#tkSave")){
+      const tk=d.querySelector("#tkIn").value.trim(),msg=d.querySelector("#tkMsg");if(!tk){d.querySelector("#tkIn").focus();return}
+      msg.className="syncmsg";msg.textContent=t("tokenChecking");
+      try{const r=await FT_SYNC.testToken(tk);
+        if(r.ok){FT_SYNC.setToken(tk);return}
+        msg.className="syncmsg err";msg.textContent=r.status===200?t("tokenBad"):t("tokenFail",r.status);
+      }catch(err){msg.className="syncmsg err";msg.textContent=t("tokenFail","—")}
+    }
+  });
+  layer.appendChild(d);(d.querySelector("#tkIn")||d.querySelector("[data-close]")).focus();
+}
+if(window.FT_SYNC){FT_SYNC.on(renderSyncChip);document.getElementById("syncChip").addEventListener("click",syncDialog)}
 app.addEventListener("change",onEdChange);
 
 renderChrome();
