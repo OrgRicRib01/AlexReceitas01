@@ -236,6 +236,27 @@ img{max-width:100%}
 @media (prefers-reduced-motion:no-preference){.dictlive .dot{animation:pulse 1.2s ease-in-out infinite}@keyframes pulse{50%{opacity:.25}}}
 .dictlive i{color:var(--muted)}
 
+/* preparation photo gallery */
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:12px}
+.pcard{display:grid;gap:6px;min-width:0}
+.pcard .ph{position:relative;aspect-ratio:4/3;max-width:100%;border-radius:6px;overflow:hidden;border:1px solid var(--line);background:var(--surface-2)}
+.pcard .ph img{width:100%;height:100%;object-fit:cover;display:block}
+.pcard .ph .no{position:absolute;left:6px;top:6px;background:var(--ink);color:var(--bg);font-family:var(--f-mono);font-size:11px;padding:1px 6px;border-radius:4px}
+.pcard .cellin{font-size:13.5px;padding:6px 8px}
+.pcard .tools{display:flex;gap:4px;justify-content:flex-end}
+.pcard .tools .x{font-size:15px}
+.pv-gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px}
+.pv-gal figure{margin:0;display:grid;gap:5px;min-width:0}
+.pv-gal button{padding:0;border:1px solid var(--line);border-radius:6px;overflow:hidden;cursor:zoom-in;background:none;aspect-ratio:4/3;max-width:100%}
+.pv-gal img{width:100%;height:100%;object-fit:cover;display:block}
+.pv-gal figcaption{font-size:13.5px}
+.pv-gal figcaption b{font-family:var(--f-mono);font-weight:500;color:var(--muted);margin-right:6px}
+.lightbox{position:fixed;inset:0;z-index:70;background:rgba(8,12,11,.88);display:grid;place-items:center;padding:calc(16px + env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) calc(16px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.lightbox figure{margin:0;display:grid;gap:10px;justify-items:center;max-width:100%}
+.lightbox img{max-width:min(1100px,100%);max-height:78vh;border-radius:6px;object-fit:contain}
+.lightbox figcaption{color:#fff;font-size:15px;text-align:center}
+.lightbox .btn{position:absolute;top:calc(14px + env(safe-area-inset-top,0px));right:max(14px,env(safe-area-inset-right,0px))}
+
 /* PDF selection */
 .selbar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;background:var(--accent-soft);border-radius:8px;padding:10px 12px;margin-bottom:12px}
 .selbar .grow{margin-right:auto;font-size:14px}
@@ -309,6 +330,8 @@ pt:{
   pvKicker:"Ficha técnica de preparação",edit:"Editar",xlsx:"Exportar Excel",origin:"Origem",scaleTo:"Escalar para",dosesWord:"doses",factor:"Fator {0} · as quantidades e custos abaixo acompanham.",reset:"Repor",unitShort:"Unid.",priceShort:"Preço unit.",costShort:"Preço custo",scaled:" (escalado)",noIng:"Sem ingredientes.",toFill:"Por preencher.",noAll:"Nenhum assinalado. Confirme antes de servir.",pvFoot:"Food cost alvo: {0} %. Valores da receita base.",aprov:"aprov.",noSale:"Sem PV",fcTip:"Food cost real (alvo {0} %)",
   dlNo:"As transferências não estão disponíveis nesta vista.",dlBusy:"Já há uma transferência a decorrer. Tente de novo dentro de momentos.",dlFail:"Não foi possível transferir o ficheiro.",xlsxFail:"O exportador de Excel não carregou. Recarregue a página.",
   impNo:"Não é possível importar nesta vista.",notJson:"O ficheiro não é um JSON válido.",notBackup:"Este ficheiro não é uma cópia de segurança desta biblioteca.",impTitle:"Importar fichas",impText:"Vão ser importadas {0} fichas. Fichas com o mesmo identificador são substituídas pela versão do ficheiro.",impOk:"Importar",impFull:"A biblioteca ficou cheia durante a importação.",impDone:"{0} fichas importadas.",lost:"Perdeu-se a ligação à biblioteca. Recarregue a página.",
+  secPrep:"Fotografias da preparação",secPrepSub:"Cada foto pode ter um título",addPhotos:"+ Adicionar fotos",photoTitlePh:"Título (opcional)",photoN:"Foto {0}",movePrev:"Mover para trás",moveNext:"Mover para a frente",rmPhoto:"Remover foto",
+  noPrep:"Ainda sem fotografias. Acrescente fotos dos passos, da mise en place ou do resultado final.",photosUp:"A carregar {0} foto(s)…",photosDone:"{0} foto(s) adicionada(s).",photosFail:"{0} foto(s) não foram carregadas.",closeBtn:"Fechar",
   dictStart:"Ditar por voz",dictStop:"Parar ditado",dictListening:"A ouvir… fale um passo e faça uma pausa.",dictHelp:"Cada pausa cria um novo passo. Pode corrigir o texto à mão. Diga \"novo passo\" para mudar de linha sem pausa.",
   dictDenied:"O acesso ao microfone foi recusado. Autorize o microfone para este site nas definições do browser.",dictError:"O ditado parou devido a um erro. Tente de novo.",dictNoMic:"Não foi encontrado nenhum microfone.",
   dictUnavail:"O ditado por voz funciona no site do GitHub; esta pré-visualização no claude.ai não tem acesso ao microfone.",dictNoBrowser:"Este browser não suporta ditado por voz. Use Chrome, Edge ou Safari.",dictWords:["novo passo","próximo passo","passo seguinte"],
@@ -363,6 +386,8 @@ en:{
   pvKicker:"Preparation technical sheet",edit:"Edit",xlsx:"Export to Excel",origin:"Source",scaleTo:"Scale to",dosesWord:"portions",factor:"Factor {0} · quantities and costs below follow it.",reset:"Reset",unitShort:"Unit",priceShort:"Unit price",costShort:"Cost",scaled:" (scaled)",noIng:"No ingredients.",toFill:"Not filled in yet.",noAll:"None ticked. Check before serving.",pvFoot:"Target food cost: {0}%. Figures for the base recipe.",aprov:"yield",noSale:"No price",fcTip:"Actual food cost (target {0}%)",
   dlNo:"Downloads are not available in this view.",dlBusy:"A download is already in progress. Try again in a moment.",dlFail:"The file could not be downloaded.",xlsxFail:"The Excel exporter did not load. Reload the page.",
   impNo:"Importing is not available in this view.",notJson:"The file is not valid JSON.",notBackup:"This file is not a backup of this library.",impTitle:"Import sheets",impText:"{0} sheets will be imported. Sheets with the same identifier are replaced by the version in the file.",impOk:"Import",impFull:"The library filled up during the import.",impDone:"{0} sheets imported.",lost:"Lost connection to the library. Reload the page.",
+  secPrep:"Preparation photos",secPrepSub:"Each photo can have a title",addPhotos:"+ Add photos",photoTitlePh:"Title (optional)",photoN:"Photo {0}",movePrev:"Move back",moveNext:"Move forward",rmPhoto:"Remove photo",
+  noPrep:"No photos yet. Add photos of the steps, the mise en place or the finished dish.",photosUp:"Uploading {0} photo(s)…",photosDone:"{0} photo(s) added.",photosFail:"{0} photo(s) could not be uploaded.",closeBtn:"Close",
   dictStart:"Dictate",dictStop:"Stop dictating",dictListening:"Listening… say a step, then pause.",dictHelp:"Each pause starts a new step. You can correct the text by hand. Say \"new step\" to start a new line without pausing.",
   dictDenied:"Microphone access was refused. Allow the microphone for this site in your browser settings.",dictError:"Dictation stopped because of an error. Try again.",dictNoMic:"No microphone was found.",
   dictUnavail:"Voice dictation works on the GitHub site; this claude.ai preview has no microphone access.",dictNoBrowser:"This browser does not support voice dictation. Use Chrome, Edge or Safari.",dictWords:["new step","next step"],
@@ -417,6 +442,8 @@ es:{
   pvKicker:"Ficha técnica de elaboración",edit:"Editar",xlsx:"Exportar a Excel",origin:"Origen",scaleTo:"Escalar a",dosesWord:"raciones",factor:"Factor {0} · las cantidades y costes de abajo se ajustan.",reset:"Restablecer",unitShort:"Ud.",priceShort:"Precio unit.",costShort:"Coste",scaled:" (escalado)",noIng:"Sin ingredientes.",toFill:"Pendiente de completar.",noAll:"Ninguno marcado. Compruébalo antes de servir.",pvFoot:"Food cost objetivo: {0} %. Valores de la receta base.",aprov:"rend.",noSale:"Sin PVP",fcTip:"Food cost real (objetivo {0} %)",
   dlNo:"Las descargas no están disponibles en esta vista.",dlBusy:"Ya hay una descarga en curso. Inténtalo de nuevo en un momento.",dlFail:"No se ha podido descargar el archivo.",xlsxFail:"El exportador de Excel no se ha cargado. Recarga la página.",
   impNo:"No se puede importar en esta vista.",notJson:"El archivo no es un JSON válido.",notBackup:"Este archivo no es una copia de seguridad de esta biblioteca.",impTitle:"Importar fichas",impText:"Se importarán {0} fichas. Las fichas con el mismo identificador se sustituyen por la versión del archivo.",impOk:"Importar",impFull:"La biblioteca se ha llenado durante la importación.",impDone:"{0} fichas importadas.",lost:"Se ha perdido la conexión con la biblioteca. Recarga la página.",
+  secPrep:"Fotos de la elaboración",secPrepSub:"Cada foto puede tener un título",addPhotos:"+ Añadir fotos",photoTitlePh:"Título (opcional)",photoN:"Foto {0}",movePrev:"Mover atrás",moveNext:"Mover adelante",rmPhoto:"Quitar foto",
+  noPrep:"Todavía no hay fotos. Añade fotos de los pasos, de la mise en place o del plato terminado.",photosUp:"Subiendo {0} foto(s)…",photosDone:"{0} foto(s) añadida(s).",photosFail:"{0} foto(s) no se han podido subir.",closeBtn:"Cerrar",
   dictStart:"Dictar por voz",dictStop:"Detener dictado",dictListening:"Escuchando… di un paso y haz una pausa.",dictHelp:"Cada pausa crea un paso nuevo. Puedes corregir el texto a mano. Di \"nuevo paso\" para cambiar de línea sin pausa.",
   dictDenied:"Se ha denegado el acceso al micrófono. Permite el micrófono para este sitio en los ajustes del navegador.",dictError:"El dictado se ha detenido por un error. Inténtalo de nuevo.",dictNoMic:"No se ha encontrado ningún micrófono.",
   dictUnavail:"El dictado por voz funciona en el sitio de GitHub; esta vista previa de claude.ai no tiene acceso al micrófono.",dictNoBrowser:"Este navegador no admite el dictado por voz. Usa Chrome, Edge o Safari.",dictWords:["nuevo paso","siguiente paso","próximo paso"],
@@ -745,6 +772,11 @@ function renderEditor(){
     </section>
 
     <section class="card">
+      <div class="sec-h"><h2>${esc(t("secPrep"))}</h2><span style="display:flex;align-items:center;gap:10px;flex-wrap:wrap"><small>${esc(t("secPrepSub"))}</small>${!ro&&assets?`<label class="btn" for="prepIn">${esc(t("addPhotos"))}</label><input type="file" id="prepIn" accept="image/*" multiple hidden>`:""}</span></div>
+      <div id="prepGrid"></div>
+    </section>
+
+    <section class="card">
       <div class="sec-h"><h2>${esc(t("secNotes"))}</h2></div>
       <label class="f"><textarea id="e-notes" data-f="notes" rows="5" aria-label="${esc(t("secNotes"))}" placeholder="${esc(t("notesPh"))}">${esc(s.notes)}</textarea></label>
     </section>
@@ -777,7 +809,8 @@ function renderEditor(){
     <div class="card photo" id="photoBox"></div>
   </aside></div>`;
 
-  renderIngRows();updSummary();renderPhoto();refreshIngList();
+  renderIngRows();updSummary();renderPhoto();renderPrepPhotos();refreshIngList();
+  app.querySelector("#prepIn")?.addEventListener("change",e=>{const fs=[...e.target.files];e.target.value="";if(fs.length)addPrepPhotos(fs)});
   if(ro)app.querySelectorAll("input,select,textarea,#addIng,#dup,#del").forEach(el=>el.disabled=true);
 
   app.querySelector("#back").onclick=()=>leave(renderLibrary);
@@ -804,6 +837,7 @@ function refreshIngList(){const dl=document.getElementById("ingList");if(dl)dl.i
 function onEdInput(e){
   const el=e.target;if(!current||view!=="editor")return;const s=current.data;
   if(el.dataset.f){s[el.dataset.f]=el.value;if(el.dataset.f==="code")document.getElementById("codeTape").textContent=el.value;updSummary();touch()}
+  else if(el.dataset.pt!=null){const ph=(s.prepPhotos||[])[+el.dataset.pt];if(ph){ph.title=el.value;touch()}}
   else if(el.dataset.k){const i=s.ingredients[+el.dataset.i];i[el.dataset.k]=el.value;document.getElementById(`i-${el.dataset.i}-cost`).textContent=eur(lineCost(i));updSummary();touch()}
 }
 function onEdChange(e){
@@ -840,6 +874,33 @@ function renderPhoto(){
     catch(err){toast(t("photoFail"))}
   });
   box.querySelector("#photoRm")?.addEventListener("click",()=>{const old=s.photoId;s.photoId=null;s.photoUrl=null;renderPhoto();touch();if(old)assets.delete(old).catch(()=>{})});
+}
+
+function renderPrepPhotos(){
+  const box=document.getElementById("prepGrid");if(!box||!current)return;const s=current.data;const list=s.prepPhotos||[];const ro=!canWrite||!db;
+  if(!list.length){box.innerHTML=`<p class="hint" style="margin:0">${esc(t("noPrep"))}</p>`;return}
+  box.innerHTML=`<div class="pgrid">${list.map((ph,i)=>`<div class="pcard">
+    <div class="ph"><img src="${esc(ph.url)}" alt="${esc(ph.title||t("photoN",i+1))}" loading="lazy"><span class="no">${i+1}</span></div>
+    <input class="cellin" id="pt-${i}" data-pt="${i}" value="${esc(ph.title||"")}" placeholder="${esc(t("photoTitlePh"))}" aria-label="${esc(t("photoTitlePh"))}" ${ro?"disabled":""}>
+    ${ro?"":`<div class="tools"><button class="x" type="button" data-pm="${i}" data-d="-1" aria-label="${esc(t("movePrev"))}" ${i===0?"disabled":""}>‹</button><button class="x" type="button" data-pm="${i}" data-d="1" aria-label="${esc(t("moveNext"))}" ${i===list.length-1?"disabled":""}>›</button><button class="x" type="button" data-prm="${i}" aria-label="${esc(t("rmPhoto"))}">×</button></div>`}
+  </div>`).join("")}</div>`;
+  box.querySelectorAll("[data-pm]").forEach(b=>b.addEventListener("click",()=>{const i=+b.dataset.pm,j=i+(+b.dataset.d);if(j<0||j>=list.length)return;[list[i],list[j]]=[list[j],list[i]];renderPrepPhotos();touch()}));
+  box.querySelectorAll("[data-prm]").forEach(b=>b.addEventListener("click",()=>{list.splice(+b.dataset.prm,1);renderPrepPhotos();touch()}));
+}
+async function addPrepPhotos(files){
+  if(!assets||!current)return;
+  if(current.isNew&&!current.data.name.trim()){toast(t("photoNameFirst"));return}
+  const s=current.data;if(!Array.isArray(s.prepPhotos))s.prepPhotos=[];
+  toast(t("photosUp",files.length));let ok=0,bad=0;
+  for(const f of files){try{const r=await assets.upload(f);s.prepPhotos.push({id:r.id||null,url:r.url,title:""});ok++;if(current&&current.data===s)renderPrepPhotos()}catch(err){bad++}}
+  touch();toast(bad?t("photosFail",bad):t("photosDone",ok));
+}
+function lightbox(url,caption){
+  const d=document.createElement("div");d.className="lightbox";d.setAttribute("role","dialog");d.setAttribute("aria-modal","true");
+  d.innerHTML=`<button class="btn" type="button">${esc(t("closeBtn"))}</button><figure><img src="${esc(url)}" alt="${esc(caption)}"><figcaption>${esc(caption)}</figcaption></figure>`;
+  const close=()=>{d.remove();document.removeEventListener("keydown",onKey)};const onKey=e=>{if(e.key==="Escape")close()};
+  d.addEventListener("click",e=>{if(e.target===d||e.target.closest(".btn"))close()});document.addEventListener("keydown",onKey);
+  layer.appendChild(d);d.querySelector(".btn").focus();
 }
 
 /* ---------- saving ---------- */
@@ -904,7 +965,9 @@ async function removeSheet(){
   const s=current.data;
   if(!await confirmBox(t("delTitle"),t("delText",s.code,s.name||t("noName")),t("del"),true))return;
   clearTimeout(saveTimer);dirty=false;
-  try{await db.collection("sheets").doc(current.id).delete();sheets.delete(current.id);if(s.photoId&&assets)assets.delete(s.photoId).catch(()=>{});toast(t("deleted"));renderLibrary()}
+  try{await db.collection("sheets").doc(current.id).delete();sheets.delete(current.id);if(s.photoId&&assets)assets.delete(s.photoId).catch(()=>{});
+    if(assets){const used=new Set();for(const o of sheets.values())(o.prepPhotos||[]).forEach(ph=>used.add(ph.url));(s.prepPhotos||[]).forEach(ph=>{if(ph.id&&!used.has(ph.url))assets.delete(ph.id).catch(()=>{})})}
+    toast(t("deleted"));renderLibrary()}
   catch(e){toast(t("delFail"))}
 }
 
@@ -953,6 +1016,7 @@ function renderPreview(){
         <p class="foot">${esc(t("pvFoot",c.fc))}</p></div>
     </div>
     <div class="pv-sec"><h3>${esc(t("secMethod"))}</h3>${steps.length?`<ol>${steps.map(x=>`<li>${esc(x)}</li>`).join("")}</ol>`:`<p class="muted">${esc(t("toFill"))}</p>`}</div>
+    ${(s.prepPhotos||[]).length?`<div class="pv-sec"><h3>${esc(t("secPrep"))}</h3><div class="pv-gal">${s.prepPhotos.map((ph,i)=>`<figure><button type="button" data-lb="${i}" aria-label="${esc(ph.title||t("photoN",i+1))}"><img src="${esc(ph.url)}" alt="${esc(ph.title||t("photoN",i+1))}" loading="lazy"></button><figcaption><b>${i+1}</b>${esc(ph.title||"")}</figcaption></figure>`).join("")}</div></div>`:""}
     <div class="pv-sec"><h3>${esc(t("secNotes"))}</h3>${s.photoUrl?`<img src="${esc(s.photoUrl)}" alt="${esc(t("photoAlt",s.name))}" style="max-width:420px;width:100%;border-radius:6px;margin-bottom:10px">`:""}<p>${s.notes?esc(s.notes):`<span class="muted">${esc(t("toFill"))}</span>`}</p></div>
     <div class="pv-sec"><h3>${esc(t("secAll"))}</h3>${alls.length?`<div class="chips">${alls.map(a=>`<span class="pill bad">${esc(a)}</span>`).join("")}</div>`:`<p class="muted">${esc(t("noAll"))}</p>`}</div>
     ${s.conservation?`<div class="pv-sec"><h3>${esc(t("secCons"))}</h3><p>${esc(s.conservation)}</p></div>`:""}
@@ -960,6 +1024,7 @@ function renderPreview(){
   app.querySelector("#back").onclick=renderLibrary;
   app.querySelector("#edit")?.addEventListener("click",()=>editSheet(current.id));
   app.querySelector("#xlsx").onclick=()=>exportXlsx(s);
+  app.querySelectorAll("[data-lb]").forEach(b=>b.addEventListener("click",()=>{const ph=s.prepPhotos[+b.dataset.lb];lightbox(ph.url,[String(+b.dataset.lb+1)+".",ph.title].filter(Boolean).join(" "))}));
   app.querySelector("#pdfOne").onclick=async()=>{const o=await pdfOptions(1);if(o)makePdf([{id:current.id,s}],o)};
   const si=app.querySelector("#scaleIn");
   si.addEventListener("change",()=>{const v=num(si.value);scaleTo=v>0?v:null;renderPreview()});
@@ -1004,6 +1069,7 @@ function exportXlsx(s){
   let y=Math.max(r,7+X.rows.length)+1;
   const block=(title,text)=>{put("B"+y,title);y++;for(const line of String(text||"").split(/\n/)){if(line.trim()){put("B"+y,line.trim());y++}}y++};
   block(X.method,(s.method||"").split(/\n+/).filter(x=>x.trim()).map((x,k)=>`${k+1}. ${x.trim()}`).join("\n"));
+  if((s.prepPhotos||[]).length)block(t("secPrep"),s.prepPhotos.map((ph,i)=>`${i+1}. ${ph.title||t("photoN",i+1)}`).join("\n"));
   block(X.notes,s.notes);
   block(X.all,(s.allergens||[]).map(allergenLabel).join(", ")||X.allNone);
   if(s.conservation)block(X.cons,s.conservation);
@@ -1035,6 +1101,7 @@ async function importJson(file){
     const safeId=/^[\w\-.~:@+]{1,120}$/.test(id)?id:db.collection("sheets").doc().id;
     const body={...blank(s.code||nextCode()),...s,photoId:null,photoUrl:s.photoUrl&&(String(s.photoUrl).startsWith("/_blob/")||String(s.photoUrl).startsWith("data:image/"))?s.photoUrl:null};
     body.allergens=(body.allergens||[]).map(allergenKey);
+    body.prepPhotos=(Array.isArray(s.prepPhotos)?s.prepPhotos:[]).filter(ph=>ph&&typeof ph.url==="string"&&(ph.url.startsWith("/_blob/")||ph.url.startsWith("data:image/"))).map(ph=>({id:ph.id||null,url:ph.url,title:String(ph.title||"")}));
     try{await db.collection("sheets").doc(safeId).set(body);ok++}catch(e){if(e?.code==="quota_exceeded"){toast(t("impFull"));break}}
   }
   if(data.ingredients&&typeof data.ingredients==="object")for(const [id,d] of Object.entries(data.ingredients)){if(!d||typeof d!=="object"||!d.name)continue;const sid=/^[\w\-.~:@+]{1,120}$/.test(id)?id:ingDocId(normKey(d.name));try{await db.collection("ingredients").doc(sid).set({name:String(d.name),category:CAT_KEYS.includes(d.category)?d.category:"",unit:String(d.unit||""),price:String(d.price??""),yield:String(d.yield??""),notes:String(d.notes||""),updatedAt:d.updatedAt||Date.now()})}catch(e){}}
@@ -1193,6 +1260,8 @@ async function makePdf(items,opts){
   try{
     const photos=new Map();
     if(opts.photos)for(const {id,s} of items)if(s.photoUrl){const im=await loadImg(s.photoUrl);if(im)photos.set(id,im)}
+    const prepImgs=new Map();
+    if(opts.photos)for(const {id,s} of items)if((s.prepPhotos||[]).length){const arr=[];for(const ph of s.prepPhotos){const im=await loadImg(ph.url);if(im)arr.push({...im,title:ph.title||""})}if(arr.length)prepImgs.set(id,arr)}
     doc=new J({unit:"mm",format:"a4",compress:true});
     const W=210,H=297,M=15,CW=W-2*M,BOT=H-18;
     const INK=[21,32,28],MUT=[89,103,98],LINE=[211,219,216],ACC=[30,67,192],TAPE=[207,220,255],TAPEI=[19,40,111],SOFT=[243,245,244],RED=[174,42,31];
@@ -1207,7 +1276,7 @@ async function makePdf(items,opts){
     const heading=txt=>{ensure(16);y+=4;F(10.5,"bold",INK);doc.text(pdfTxt(txt.toUpperCase()),M,y);y+=1.8;doc.setDrawColor(...ACC);doc.setLineWidth(.5);doc.line(M,y,M+CW,y);y+=5.2};
     const para=(txt,sz=10,col=INK,indent=0,prefix="")=>{F(sz,"normal",col);const lines=doc.splitTextToSize(pdfTxt(txt),CW-indent);
       lines.forEach((ln,i)=>{ensure(lh(sz));if(i===0&&prefix){F(sz,"bold",ACC);doc.text(prefix,M,y);F(sz,"normal",col)}doc.text(ln,M+indent,y);y+=lh(sz)})};
-    const drawSheet=(s,photo)=>{
+    const drawSheet=(s,photo,prep)=>{
       const c=calc(s);
       F(13,"bold",TAPEI);const code=pdfTxt(s.code||"");const cw=Math.max(20,doc.getTextWidth(code)+9);
       doc.setFillColor(...TAPE);doc.rect(W-M-cw,y-1.5,cw,8.5,"F");doc.text(code,W-M-cw/2,y+4.5,{align:"center"});
@@ -1252,6 +1321,22 @@ async function makePdf(items,opts){
       heading(t("secMethod"));
       const steps=(s.method||"").split(/\n+/).map(x=>x.trim()).filter(Boolean);
       if(steps.length)steps.forEach((st,k)=>{para(st,10,INK,7,(k+1)+".");y+=1});else para(t("toFill"),10,MUT);
+      if(prep&&prep.length){
+        heading(t("secPrep"));
+        const gap=5,cols=3,bw=(CW-gap*(cols-1))/cols,bh=bw*0.75;
+        for(let i=0;i<prep.length;i+=cols){
+          const row=prep.slice(i,i+cols);
+          F(8);const caps=row.map((im,k)=>doc.splitTextToSize(pdfTxt(im.title?`${i+k+1}. ${im.title}`:String(i+k+1)),bw).slice(0,2));
+          const rowH=bh+3+Math.max(...caps.map(c=>c.length))*3.4;
+          ensure(rowH+2);
+          row.forEach((im,k)=>{const x=M+k*(bw+gap);
+            let w=bw,h=bw*im.h/im.w;if(h>bh){h=bh;w=bh*im.w/im.h}
+            doc.setFillColor(...SOFT);doc.rect(x,y-2.5,bw,bh,"F");
+            doc.addImage(im.data,"JPEG",x+(bw-w)/2,y-2.5+(bh-h)/2,w,h);
+            F(8,"normal",INK);doc.text(caps[k],x,y-2.5+bh+3.6)});
+          y+=rowH+2;
+        }
+      }
       heading(t("secNotes"));
       if(photo){let w=80,h=w*photo.h/photo.w;if(h>62){h=62;w=h*photo.w/photo.h}ensure(h+4);doc.addImage(photo.data,"JPEG",M,y-2.5,w,h);y+=h+3}
       para(s.notes||t("toFill"),10,s.notes?INK:MUT);
@@ -1261,7 +1346,7 @@ async function makePdf(items,opts){
       if(s.conservation){heading(t("secCons"));para(s.conservation)}
     };
     const starts=[];
-    items.forEach(({id,s},k)=>{if(multi||k>0)newPage();else y=M+2;starts.push(doc.getNumberOfPages());drawSheet(s,photos.get(id))});
+    items.forEach(({id,s},k)=>{if(multi||k>0)newPage();else y=M+2;starts.push(doc.getNumberOfPages());drawSheet(s,photos.get(id),prepImgs.get(id))});
     if(multi){
       doc.setPage(1);
       doc.setFillColor(...ACC);doc.rect(0,0,W,6,"F");
