@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1793127602192,
+ "updatedAt": 1793127839335,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -2989,10 +2989,16 @@
    ]
   },
   "shopping/list": {
-   "entries": [],
+   "entries": [
+    {
+     "sid": "mvqzpm24zbpip767",
+     "doses": 1,
+     "addedAt": 1793127835970
+    }
+   ],
    "checked": {},
    "extras": [],
-   "updatedAt": 1793127598340
+   "updatedAt": 1793127835970
   }
  },
  "deleted": {
