@@ -190,6 +190,15 @@ img{max-width:100%}
 [hidden]{display:none!important}
 .localnote{color:var(--muted);font-size:13px;border:1px dashed var(--line);border-radius:6px;padding:8px 12px;margin-bottom:16px}
 
+/* library details */
+.libmeta{display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;margin-top:8px;font-size:14px}
+.libmeta span b{font-weight:600}
+.libmeta span small{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-right:6px}
+.libmeta .btn{padding:3px 10px;font-size:13px}
+.kv{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr) auto;gap:6px;align-items:center}
+.dlg label.f{gap:4px}
+.dlg .kvlist{display:grid;gap:6px}
+
 /* PDF selection */
 .selbar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;background:var(--accent-soft);border-radius:8px;padding:10px 12px;margin-bottom:12px}
 .selbar .grow{margin-right:auto;font-size:14px}
@@ -231,6 +240,7 @@ img{max-width:100%}
 <div id="layer"></div>
 
 <script>window.FT_EXAMPLE={"name": "Creme de abóbora com sementes tostadas (EXEMPLO)", "code": "FT-001", "family": "Sopa", "doses": "4", "prepTime": "15 min", "cookTime": "30 min", "ingredients": [{"name": "Abóbora", "unit": "kg", "qty": "0,8", "price": "1,49", "yield": "75"}, {"name": "Cebola", "unit": "kg", "qty": "0,15", "price": "1,19", "yield": "90"}, {"name": "Batata", "unit": "kg", "qty": "0,2", "price": "0,99", "yield": "85"}, {"name": "Azeite", "unit": "L", "qty": "0,03", "price": "8,50", "yield": ""}, {"name": "Sementes de abóbora", "unit": "kg", "qty": "0,02", "price": "14,00", "yield": ""}, {"name": "Sal", "unit": "q.b.", "qty": "", "price": "", "yield": ""}], "method": "Descascar e cortar a abóbora, a cebola e a batata em cubos regulares.\nAlourar a cebola em azeite, em lume brando, sem ganhar cor.\nJuntar a abóbora e a batata, cobrir com água e cozer cerca de 25 minutos.\nTriturar até obter um creme liso e retificar o sal.\nTostar as sementes a seco numa frigideira.", "notes": "EXEMPLO de demonstração: quantidades e preços inventados para mostrar a ferramenta. Substitua pelos valores do curso ou elimine esta ficha.\nServir em prato fundo aquecido, com as sementes por cima e um fio de azeite.", "conservation": "Arrefecer rapidamente; conservar a 0–4 °C até 3 dias. Regenerar acima de 75 °C.", "allergens": [], "status": "rascunho", "source": "propria", "sourceNote": "Exemplo gerado — não é receita do curso", "tags": "exemplo", "targetFc": 30, "salePrice": "4,50", "photoId": null, "photoUrl": null, "createdAt": 1793110000000, "updatedAt": 1793110000000};</script>
+<script>window.FT_LIBRARY={"owner":"Alexandre Canelas Ribeiro","fields":[{"label":"Turma","value":"CP2"}],"updatedAt":1793124000000};</script>
 <script src="shim.js"></script>
 <script>
 /* ---------- languages ---------- */
@@ -260,7 +270,8 @@ pt:{
   copySuffix:" (cópia)",dupDone:"Ficha duplicada. Está a editar a cópia.",delTitle:"Eliminar ficha",delText:"A ficha {0} — {1} será apagada da biblioteca. Esta ação não pode ser desfeita.",cancel:"Cancelar",deleted:"Ficha eliminada.",delFail:"Não foi possível eliminar a ficha.",
   pvKicker:"Ficha técnica de preparação",edit:"Editar",xlsx:"Exportar Excel",origin:"Origem",scaleTo:"Escalar para",dosesWord:"doses",factor:"Fator {0} · as quantidades e custos abaixo acompanham.",reset:"Repor",unitShort:"Unid.",priceShort:"Preço unit.",costShort:"Preço custo",scaled:" (escalado)",noIng:"Sem ingredientes.",toFill:"Por preencher.",noAll:"Nenhum assinalado. Confirme antes de servir.",pvFoot:"Food cost alvo: {0} %. Valores da receita base.",aprov:"aprov.",noSale:"Sem PV",fcTip:"Food cost real (alvo {0} %)",
   dlNo:"As transferências não estão disponíveis nesta vista.",dlBusy:"Já há uma transferência a decorrer. Tente de novo dentro de momentos.",dlFail:"Não foi possível transferir o ficheiro.",xlsxFail:"O exportador de Excel não carregou. Recarregue a página.",
-  impNo:"Não é possível importar nesta vista.",notJson:"O ficheiro não é um JSON válido.",notBackup:"Este ficheiro não é uma cópia de segurança desta biblioteca.",impTitle:"Importar fichas",impText:"Vão ser importadas {0} fichas. Fichas com o mesmo identificador são substituídas pela versão do ficheiro.",impOk:"Importar",impFull:"A biblioteca ficou cheia durante a importação.",impDone:"{0} fichas importadas.",lost:"Perdeu-se a ligação à biblioteca. Recarregue a página.",localNote:"As fichas ficam guardadas neste browser, neste dispositivo. Faça regularmente uma cópia de segurança (.json) em Exportar / Importar para não as perder e para as passar para outro dispositivo.",memNote:"Este browser não permite guardar dados (modo privado?). As fichas desaparecem ao fechar a página: exporte uma cópia de segurança antes de sair.",
+  impNo:"Não é possível importar nesta vista.",notJson:"O ficheiro não é um JSON válido.",notBackup:"Este ficheiro não é uma cópia de segurança desta biblioteca.",impTitle:"Importar fichas",impText:"Vão ser importadas {0} fichas. Fichas com o mesmo identificador são substituídas pela versão do ficheiro.",impOk:"Importar",impFull:"A biblioteca ficou cheia durante a importação.",impDone:"{0} fichas importadas.",lost:"Perdeu-se a ligação à biblioteca. Recarregue a página.",
+  libData:"Dados da biblioteca",editLib:"Editar dados",owner:"Proprietário",ownerPh:"Nome do proprietário da biblioteca",noOwner:"Defina o proprietário e outros dados da biblioteca",extraFields:"Campos adicionais",extraHint:"Aparecem na biblioteca, no PDF e no Excel. Ex.: Turma — CP2.",fieldLabel:"Campo",fieldValue:"Valor",addField:"+ Campo",rmField:"Remover campo",saveBtn:"Guardar",libSaved:"Dados da biblioteca guardados.",libSaveFail:"Não foi possível guardar os dados da biblioteca.",defLabel:"Turma",defValuePh:"CP2",localNote:"As fichas ficam guardadas neste browser, neste dispositivo. Faça regularmente uma cópia de segurança (.json) em Exportar / Importar para não as perder e para as passar para outro dispositivo.",memNote:"Este browser não permite guardar dados (modo privado?). As fichas desaparecem ao fechar a página: exporte uma cópia de segurança antes de sair.",
   selStart:"Exportar PDF",selHint:"Escolha as fichas a incluir no PDF.",selAll:"Selecionar todas ({0})",selNone:"Limpar seleção",selCount:"{0} selecionadas",selMake:"Criar PDF ({0})",
   pdfAll:"PDF de todas as fichas",pdfAllSub:"Capa, índice e uma ficha por página",pdfOptTitle:"Opções do PDF",pdfOptText:"{0} ficha(s) no documento, uma por página.",optCover:"Capa e índice",optCosts:"Custos, preços e resumo financeiro",optPhotos:"Fotografias do empratamento",pdfMake:"Criar PDF",
   pdfMaking:"A criar o PDF…",pdfFail:"Não foi possível criar o PDF.",pdfNone:"Selecione pelo menos uma ficha.",pdfLibFail:"O gerador de PDF não carregou. Recarregue a página.",pdfDocTitle:"Fichas Técnicas",pdfCoverSub:"{0} fichas · {1}",pdfIndex:"Índice",pdfPage:"Página {0} de {1}",pdfPageCol:"Pág.",pdfBtn:"Exportar PDF",
@@ -299,7 +310,8 @@ en:{
   copySuffix:" (copy)",dupDone:"Sheet duplicated. You are editing the copy.",delTitle:"Delete sheet",delText:"Sheet {0} — {1} will be removed from the library. This cannot be undone.",cancel:"Cancel",deleted:"Sheet deleted.",delFail:"The sheet could not be deleted.",
   pvKicker:"Preparation technical sheet",edit:"Edit",xlsx:"Export to Excel",origin:"Source",scaleTo:"Scale to",dosesWord:"portions",factor:"Factor {0} · quantities and costs below follow it.",reset:"Reset",unitShort:"Unit",priceShort:"Unit price",costShort:"Cost",scaled:" (scaled)",noIng:"No ingredients.",toFill:"Not filled in yet.",noAll:"None ticked. Check before serving.",pvFoot:"Target food cost: {0}%. Figures for the base recipe.",aprov:"yield",noSale:"No price",fcTip:"Actual food cost (target {0}%)",
   dlNo:"Downloads are not available in this view.",dlBusy:"A download is already in progress. Try again in a moment.",dlFail:"The file could not be downloaded.",xlsxFail:"The Excel exporter did not load. Reload the page.",
-  impNo:"Importing is not available in this view.",notJson:"The file is not valid JSON.",notBackup:"This file is not a backup of this library.",impTitle:"Import sheets",impText:"{0} sheets will be imported. Sheets with the same identifier are replaced by the version in the file.",impOk:"Import",impFull:"The library filled up during the import.",impDone:"{0} sheets imported.",lost:"Lost connection to the library. Reload the page.",localNote:"Sheets are stored in this browser, on this device. Export a backup (.json) from Export / Import regularly so you do not lose them and can move them to another device.",memNote:"This browser does not allow saving data (private mode?). Sheets will disappear when you close the page: export a backup before leaving.",
+  impNo:"Importing is not available in this view.",notJson:"The file is not valid JSON.",notBackup:"This file is not a backup of this library.",impTitle:"Import sheets",impText:"{0} sheets will be imported. Sheets with the same identifier are replaced by the version in the file.",impOk:"Import",impFull:"The library filled up during the import.",impDone:"{0} sheets imported.",lost:"Lost connection to the library. Reload the page.",
+  libData:"Library details",editLib:"Edit details",owner:"Owner",ownerPh:"Name of the library's owner",noOwner:"Set the owner and other details of this library",extraFields:"Additional fields",extraHint:"Shown in the library, the PDF and the Excel file. e.g. Class — CP2.",fieldLabel:"Field",fieldValue:"Value",addField:"+ Field",rmField:"Remove field",saveBtn:"Save",libSaved:"Library details saved.",libSaveFail:"The library details could not be saved.",defLabel:"Class",defValuePh:"CP2",localNote:"Sheets are stored in this browser, on this device. Export a backup (.json) from Export / Import regularly so you do not lose them and can move them to another device.",memNote:"This browser does not allow saving data (private mode?). Sheets will disappear when you close the page: export a backup before leaving.",
   selStart:"Export PDF",selHint:"Choose the sheets to include in the PDF.",selAll:"Select all ({0})",selNone:"Clear selection",selCount:"{0} selected",selMake:"Create PDF ({0})",
   pdfAll:"PDF of every sheet",pdfAllSub:"Cover, contents and one sheet per page",pdfOptTitle:"PDF options",pdfOptText:"{0} sheet(s) in the document, one per page.",optCover:"Cover and contents",optCosts:"Costs, prices and financial summary",optPhotos:"Plating photos",pdfMake:"Create PDF",
   pdfMaking:"Creating the PDF…",pdfFail:"The PDF could not be created.",pdfNone:"Select at least one sheet.",pdfLibFail:"The PDF generator did not load. Reload the page.",pdfDocTitle:"Technical Sheets",pdfCoverSub:"{0} sheets · {1}",pdfIndex:"Contents",pdfPage:"Page {0} of {1}",pdfPageCol:"Page",pdfBtn:"Export PDF",
@@ -338,7 +350,8 @@ es:{
   copySuffix:" (copia)",dupDone:"Ficha duplicada. Estás editando la copia.",delTitle:"Eliminar ficha",delText:"La ficha {0} — {1} se borrará de la biblioteca. Esta acción no se puede deshacer.",cancel:"Cancelar",deleted:"Ficha eliminada.",delFail:"No se ha podido eliminar la ficha.",
   pvKicker:"Ficha técnica de elaboración",edit:"Editar",xlsx:"Exportar a Excel",origin:"Origen",scaleTo:"Escalar a",dosesWord:"raciones",factor:"Factor {0} · las cantidades y costes de abajo se ajustan.",reset:"Restablecer",unitShort:"Ud.",priceShort:"Precio unit.",costShort:"Coste",scaled:" (escalado)",noIng:"Sin ingredientes.",toFill:"Pendiente de completar.",noAll:"Ninguno marcado. Compruébalo antes de servir.",pvFoot:"Food cost objetivo: {0} %. Valores de la receta base.",aprov:"rend.",noSale:"Sin PVP",fcTip:"Food cost real (objetivo {0} %)",
   dlNo:"Las descargas no están disponibles en esta vista.",dlBusy:"Ya hay una descarga en curso. Inténtalo de nuevo en un momento.",dlFail:"No se ha podido descargar el archivo.",xlsxFail:"El exportador de Excel no se ha cargado. Recarga la página.",
-  impNo:"No se puede importar en esta vista.",notJson:"El archivo no es un JSON válido.",notBackup:"Este archivo no es una copia de seguridad de esta biblioteca.",impTitle:"Importar fichas",impText:"Se importarán {0} fichas. Las fichas con el mismo identificador se sustituyen por la versión del archivo.",impOk:"Importar",impFull:"La biblioteca se ha llenado durante la importación.",impDone:"{0} fichas importadas.",lost:"Se ha perdido la conexión con la biblioteca. Recarga la página.",localNote:"Las fichas se guardan en este navegador, en este dispositivo. Exporta una copia de seguridad (.json) desde Exportar / Importar con regularidad para no perderlas y poder pasarlas a otro dispositivo.",memNote:"Este navegador no permite guardar datos (¿modo privado?). Las fichas desaparecerán al cerrar la página: exporta una copia de seguridad antes de salir.",
+  impNo:"No se puede importar en esta vista.",notJson:"El archivo no es un JSON válido.",notBackup:"Este archivo no es una copia de seguridad de esta biblioteca.",impTitle:"Importar fichas",impText:"Se importarán {0} fichas. Las fichas con el mismo identificador se sustituyen por la versión del archivo.",impOk:"Importar",impFull:"La biblioteca se ha llenado durante la importación.",impDone:"{0} fichas importadas.",lost:"Se ha perdido la conexión con la biblioteca. Recarga la página.",
+  libData:"Datos de la biblioteca",editLib:"Editar datos",owner:"Propietario",ownerPh:"Nombre del propietario de la biblioteca",noOwner:"Indica el propietario y otros datos de la biblioteca",extraFields:"Campos adicionales",extraHint:"Aparecen en la biblioteca, en el PDF y en el Excel. Ej.: Grupo — CP2.",fieldLabel:"Campo",fieldValue:"Valor",addField:"+ Campo",rmField:"Quitar campo",saveBtn:"Guardar",libSaved:"Datos de la biblioteca guardados.",libSaveFail:"No se han podido guardar los datos de la biblioteca.",defLabel:"Grupo",defValuePh:"CP2",localNote:"Las fichas se guardan en este navegador, en este dispositivo. Exporta una copia de seguridad (.json) desde Exportar / Importar con regularidad para no perderlas y poder pasarlas a otro dispositivo.",memNote:"Este navegador no permite guardar datos (¿modo privado?). Las fichas desaparecerán al cerrar la página: exporta una copia de seguridad antes de salir.",
   selStart:"Exportar PDF",selHint:"Elige las fichas que quieres incluir en el PDF.",selAll:"Seleccionar todas ({0})",selNone:"Quitar selección",selCount:"{0} seleccionadas",selMake:"Crear PDF ({0})",
   pdfAll:"PDF de todas las fichas",pdfAllSub:"Portada, índice y una ficha por página",pdfOptTitle:"Opciones del PDF",pdfOptText:"{0} ficha(s) en el documento, una por página.",optCover:"Portada e índice",optCosts:"Costes, precios y resumen económico",optPhotos:"Fotos del emplatado",pdfMake:"Crear PDF",
   pdfMaking:"Creando el PDF…",pdfFail:"No se ha podido crear el PDF.",pdfNone:"Selecciona al menos una ficha.",pdfLibFail:"El generador de PDF no se ha cargado. Recarga la página.",pdfDocTitle:"Fichas Técnicas",pdfCoverSub:"{0} fichas · {1}",pdfIndex:"Índice",pdfPage:"Página {0} de {1}",pdfPageCol:"Pág.",pdfBtn:"Exportar PDF",
@@ -371,6 +384,7 @@ let db=null, assets=null, downloads=null, canWrite=true, dbState="loading";
 let sheets=new Map();
 let view="library", current=null, scaleTo=null;
 let selecting=false, lastShown=[];
+let libInfo={owner:"",fields:[]};
 const selected=new Set();
 const filters={q:"",family:"",status:"",sort:"updated"};
 const app=document.getElementById("app"), layer=document.getElementById("layer");
@@ -415,6 +429,9 @@ function catalog(){
   return m;
 }
 
+const libFields=()=>(libInfo.fields||[]).filter(f=>String(f.label||"").trim()||String(f.value||"").trim());
+function libLine(){const parts=[];if(String(libInfo.owner||"").trim())parts.push(t("owner")+": "+libInfo.owner.trim());libFields().forEach(f=>parts.push((f.label?f.label.trim()+": ":"")+String(f.value||"").trim()));return parts.join(" · ")}
+
 /* ---------- chrome text ---------- */
 function renderChrome(){
   document.documentElement.lang=loc();
@@ -441,7 +458,7 @@ function renderLibrary(){
   app.innerHTML=`
   ${noticeHtml()}
   <div class="lib-head">
-    <h1>${esc(t("library"))}</h1>
+    <div><h1>${esc(t("library"))}</h1><div class="libmeta" id="libmeta"></div></div>
     <div class="stats" id="stats"></div>
   </div>
   <div class="filters">
@@ -455,11 +472,43 @@ function renderLibrary(){
   <div class="list" id="list"></div>`;
   app.querySelector("#pdfSel").addEventListener("click",()=>{selecting=!selecting;app.querySelector("#pdfSel").setAttribute("aria-pressed",String(selecting));renderList()});
   app.querySelector("#fsort").value=filters.sort;
+  renderLibMeta();
   app.querySelector("#fq").addEventListener("input",e=>{filters.q=e.target.value;renderList()});
   app.querySelector("#ffam").addEventListener("change",e=>{filters.family=e.target.value;renderList()});
   app.querySelector("#fst").addEventListener("change",e=>{filters.status=e.target.value;renderList()});
   app.querySelector("#fsort").addEventListener("change",e=>{filters.sort=e.target.value;renderList()});
   renderList();
+}
+function renderLibMeta(){
+  const el=document.getElementById("libmeta");if(!el)return;
+  const owner=String(libInfo.owner||"").trim(),fs=libFields();
+  el.innerHTML=(owner?`<span><small>${esc(t("owner"))}</small><b>${esc(owner)}</b></span>`:"")+
+    fs.map(f=>`<span><small>${esc(f.label||"")}</small><b>${esc(f.value||"")}</b></span>`).join("")+
+    (!owner&&!fs.length?`<span class="muted">${esc(t("noOwner"))}</span>`:"")+
+    (canWrite&&db?`<button class="btn" type="button" id="editLib">${esc(t("editLib"))}</button>`:"");
+  el.querySelector("#editLib")?.addEventListener("click",editLibDialog);
+}
+function editLibDialog(){
+  const fields=(libInfo.fields&&libInfo.fields.length?libInfo.fields:[{label:t("defLabel"),value:""}]).map(f=>({...f}));
+  const d=document.createElement("div");d.className="scrim";
+  const rows=()=>fields.map((f,i)=>`<div class="kv"><input class="cellin" id="lf-l-${i}" data-l="${i}" value="${esc(f.label)}" placeholder="${esc(t("fieldLabel"))}" aria-label="${esc(t("fieldLabel"))}"><input class="cellin" id="lf-v-${i}" data-v="${i}" value="${esc(f.value)}" placeholder="${esc(i===0?t("defValuePh"):t("fieldValue"))}" aria-label="${esc(t("fieldValue"))}"><button class="x" type="button" data-rmf="${i}" aria-label="${esc(t("rmField"))}">×</button></div>`).join("");
+  const draw=()=>{d.innerHTML=`<div class="dlg" role="dialog" aria-modal="true" style="max-width:520px"><h2>${esc(t("libData"))}</h2>
+    <label class="f">${esc(t("owner"))}<input id="lib-owner" value="${esc(libInfo._draftOwner??libInfo.owner??"")}" placeholder="${esc(t("ownerPh"))}" autocomplete="name"></label>
+    <div><div class="sec-h" style="margin:4px 0 6px"><h2 style="font-size:15px">${esc(t("extraFields"))}</h2></div><div class="kvlist">${rows()}</div>
+    <button class="btn" type="button" id="addF" style="margin-top:8px">${esc(t("addField"))}</button><p class="hint">${esc(t("extraHint"))}</p></div>
+    <div class="acts"><button class="btn" type="button" data-r="0">${esc(t("cancel"))}</button><button class="btn primary" type="button" data-r="1">${esc(t("saveBtn"))}</button></div></div>`};
+  draw();
+  d.addEventListener("input",e=>{const el=e.target;if(el.id==="lib-owner")libInfo._draftOwner=el.value;if(el.dataset.l!=null)fields[+el.dataset.l].label=el.value;if(el.dataset.v!=null)fields[+el.dataset.v].value=el.value});
+  d.addEventListener("click",async e=>{
+    if(e.target.closest("#addF")){fields.push({label:"",value:""});draw();d.querySelector(`#lf-l-${fields.length-1}`)?.focus();return}
+    const rm=e.target.closest("[data-rmf]");if(rm){fields.splice(+rm.dataset.rmf,1);draw();return}
+    const r=e.target.closest("[data-r]");if(!r&&e.target!==d)return;
+    const owner=d.querySelector("#lib-owner")?.value??"";delete libInfo._draftOwner;d.remove();
+    if(r?.dataset.r!=="1")return;
+    const next={owner:owner.trim(),fields:fields.map(f=>({label:String(f.label||"").trim(),value:String(f.value||"").trim()})).filter(f=>f.label||f.value),updatedAt:Date.now()};
+    try{await db.collection("settings").doc("library").set(next);libInfo=next;renderLibMeta();toast(t("libSaved"))}catch(err){toast(t("libSaveFail"))}
+  });
+  layer.appendChild(d);d.querySelector("#lib-owner").focus();
 }
 function noticeHtml(){
   if(dbState==="none")return `<div class="notice">${esc(t("noticeNone"))}</div>`;
@@ -774,6 +823,7 @@ function exportXlsx(s){
   const useY=ings.some(i=>num(i.yield)&&num(i.yield)!==100);
   const ws={};const put=(a,v)=>{if(v==null||v==="")return;ws[a]=typeof v==="object"?v:(typeof v==="number"?{t:"n",v}:{t:"s",v:String(v)})};
   const N=(v,z)=>({t:"n",v,z:z||"0.00"});
+  if(libLine())put("B1",libLine());
   put("B2",X.title);
   put("B3",X.name);put("C3",s.name);put("F3",X.code);put("G3",s.code);
   put("B4",X.fam);put("C4",s.family);put("F4",X.doses);put("G4",num(s.doses)||"");
@@ -815,7 +865,7 @@ function exportCsv(){
   const rows=[...sheets.values()].sort((a,b)=>String(a.code).localeCompare(String(b.code),loc(),{numeric:true})).map(s=>{const c=calc(s);return [s.code,s.name,s.family,stLabel(s.status),s.doses,n(c.total),n(c.perDose),n(c.rec),c.sale?n(c.sale):"",n(c.margin),c.fcReal==null?"":(c.fcReal*100).toFixed(1).replace(".",dec),(s.allergens||[]).map(allergenLabel).join(", "),srcLabel(s.source),new Date(s.updatedAt||0).toLocaleDateString(loc())].map(q).join(sep)});
   save(`${L().x.file}_${today()}.csv`,"﻿"+[L().csvHead.map(q).join(sep),...rows].join("\r\n"));
 }
-function exportJson(){save(`${L().x.file}_${today()}.json`,JSON.stringify({format:"fichas-tecnicas",version:1,exportedAt:new Date().toISOString(),sheets:Object.fromEntries(sheets)},null,2))}
+function exportJson(){save(`${L().x.file}_${today()}.json`,JSON.stringify({format:"fichas-tecnicas",version:1,exportedAt:new Date().toISOString(),settings:{library:{owner:libInfo.owner||"",fields:libFields()}},sheets:Object.fromEntries(sheets)},null,2))}
 async function importJson(file){
   if(!db||!canWrite){toast(t("impNo"));return}
   let data;try{data=JSON.parse(await file.text())}catch{toast(t("notJson"));return}
@@ -831,6 +881,8 @@ async function importJson(file){
     body.allergens=(body.allergens||[]).map(allergenKey);
     try{await db.collection("sheets").doc(safeId).set(body);ok++}catch(e){if(e?.code==="quota_exceeded"){toast(t("impFull"));break}}
   }
+  const li=data?.settings?.library;
+  if(li&&typeof li==="object"&&(li.owner||(li.fields||[]).length)){try{const next={owner:String(li.owner||""),fields:(Array.isArray(li.fields)?li.fields:[]).map(f=>({label:String(f?.label||""),value:String(f?.value||"")})),updatedAt:Date.now()};await db.collection("settings").doc("library").set(next);libInfo=next;renderLibMeta()}catch(e){}}
   toast(t("impDone",ok));
 }
 
@@ -937,6 +989,9 @@ async function makePdf(items,opts){
       doc.setFillColor(...ACC);doc.rect(0,0,W,6,"F");
       F(30,"bold",INK);doc.text(pdfTxt(t("pdfDocTitle").toUpperCase()),M,42);
       F(11,"normal",MUT);doc.text(pdfTxt(t("pdfCoverSub",items.length,new Date().toLocaleDateString(loc(),{dateStyle:"long"}))),M,51);
+      {let yy0=26;const own=String(libInfo.owner||"").trim();const fs=libFields();
+       if(own||fs.length){F(10,"normal",MUT);const parts=[];if(own)parts.push(t("owner")+": "+own);fs.forEach(f=>parts.push((f.label?f.label+": ":"")+f.value));
+         doc.splitTextToSize(pdfTxt(parts.join("   ·   ")),CW).slice(0,2).forEach((l,i)=>doc.text(l,M,yy0-4+i*4.6))}}
       doc.setDrawColor(...INK);doc.setLineWidth(.7);doc.line(M,58,M+CW,58);
       F(12,"bold",INK);doc.text(pdfTxt(t("pdfIndex").toUpperCase()),M,70);
       let p=1,yy=79;
@@ -953,7 +1008,7 @@ async function makePdf(items,opts){
       });
     }
     const n=doc.getNumberOfPages();
-    for(let i=1;i<=n;i++){doc.setPage(i);F(7.5,"normal",MUT);doc.setDrawColor(...LINE);doc.setLineWidth(.2);doc.line(M,H-12,M+CW,H-12);doc.text(pdfTxt(t("pdfDocTitle")),M,H-8);doc.text(pdfTxt(t("pdfPage",i,n)),M+CW,H-8,{align:"right"})}
+    for(let i=1;i<=n;i++){doc.setPage(i);F(7.5,"normal",MUT);doc.setDrawColor(...LINE);doc.setLineWidth(.2);doc.line(M,H-12,M+CW,H-12);doc.text(doc.splitTextToSize(pdfTxt([t("pdfDocTitle"),libLine()].filter(Boolean).join("  ·  ")),CW-40)[0],M,H-8);doc.text(pdfTxt(t("pdfPage",i,n)),M+CW,H-8,{align:"right"})}
   }catch(e){console.error(e);toast(t("pdfFail"));return}
   const one=items.length===1?items[0].s:null;
   await save(one?`${safeName(one.code)}_${safeName(one.name)}.pdf`:`${L().x.file}_${today()}.pdf`,doc.output("arraybuffer"));
@@ -990,6 +1045,11 @@ renderLibrary();
     else if(view==="editor")refreshIngList();
     else if(view==="preview"&&current&&sheets.has(current.id)){const fresh=sheets.get(current.id);if(fresh!==current.src){current.src=fresh;current.data=JSON.parse(JSON.stringify(fresh));renderPreview()}}
   },()=>{dbState="none";toast(t("lost"))});
+  db.collection("settings").onSnapshot(snap=>{
+    const doc=snap.docs.find(x=>x.id==="library");const v=doc?doc.data():null;
+    libInfo=v?{owner:v.owner||"",fields:Array.isArray(v.fields)?v.fields.map(f=>({label:f.label||"",value:f.value||""})):[]}:{owner:"",fields:[]};
+    renderLibMeta();
+  },()=>{});
   if(view==="library")renderLibrary();
 })();
 </script>

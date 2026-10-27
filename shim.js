@@ -3,7 +3,7 @@
    backed by IndexedDB in this browser, with localStorage / memory as fallbacks. */
 (function(){
   const DB_NAME="fichas-tecnicas", STORE="sheets";
-  const listeners=new Set(); let cache=new Map(); let backend="memory";
+  const listeners=new Map(); /* collection -> Set of callbacks */ let cache=new Map(); let backend="memory";
   const bc=("BroadcastChannel" in window)?new BroadcastChannel("fichas-tecnicas"):null;
 
   function openIdb(){return new Promise((res,rej)=>{
@@ -21,9 +21,10 @@
       const m=new Map();
       await new Promise((res,rej)=>{const t=idb.transaction(STORE,"readonly");const c=t.objectStore(STORE).openCursor();
         c.onsuccess=()=>{const cur=c.result;if(cur){m.set(cur.key,cur.value);cur.continue()}else res()};c.onerror=()=>rej(c.error)});
+      for(const [k,v] of [...m]){if(!k.includes("/")){m.delete(k);m.set("sheets/"+k,v);await tx("readwrite",st=>{st.delete(k);return st.put(v,"sheets/"+k)})}}
       cache=m;return;
     }catch(e){idb=null}
-    try{const raw=localStorage.getItem(DB_NAME);cache=new Map(Object.entries(raw?JSON.parse(raw):{}));backend="local";}
+    try{const raw=localStorage.getItem(DB_NAME);cache=new Map(Object.entries(raw?JSON.parse(raw):{}).map(([k,v])=>[k.includes("/")?k:"sheets/"+k,v]));backend="local";}
     catch(e){cache=new Map();backend="memory"}
   }
   async function persist(id,val){
@@ -33,32 +34,35 @@
       catch(e){const err=new Error("quota");err.code="quota_exceeded";throw err}
     }
   }
-  function snapshot(){
-    const docs=[...cache.entries()].sort((a,b)=>a[0]<b[0]?-1:1).map(([id,v])=>({id,exists:true,data:()=>v}));
+  function snapshot(coll){
+    const pre=coll+"/";
+    const docs=[...cache.entries()].filter(([k])=>k.startsWith(pre)).sort((a,b)=>a[0]<b[0]?-1:1).map(([k,v])=>({id:k.slice(pre.length),exists:true,data:()=>v}));
     return {docs,size:docs.length,empty:!docs.length};
   }
-  function emit(){const s=snapshot();listeners.forEach(fn=>{try{fn(s)}catch(e){console.error(e)}})}
+  function emit(coll){const colls=coll?[coll]:[...listeners.keys()];colls.forEach(c=>{const s=snapshot(c);(listeners.get(c)||[]).forEach(fn=>{try{fn(s)}catch(e){console.error(e)}})})}
   const newId=()=>Date.now().toString(36)+Math.random().toString(36).slice(2,10);
   const clone=o=>JSON.parse(JSON.stringify(o));
 
   const ready=loadAll().then(async()=>{
     // First visit: add one clearly marked example sheet.
     let seeded=false;try{seeded=localStorage.getItem(DB_NAME+"-seeded")==="1"}catch(e){}
-    if(!seeded&&!cache.size&&window.FT_EXAMPLE){cache.set("exemplo-creme-abobora",clone(window.FT_EXAMPLE));await persist("exemplo-creme-abobora",clone(window.FT_EXAMPLE)).catch(()=>{})}
+    if(!seeded&&!cache.size&&window.FT_EXAMPLE){cache.set("sheets/exemplo-creme-abobora",clone(window.FT_EXAMPLE));await persist("sheets/exemplo-creme-abobora",clone(window.FT_EXAMPLE)).catch(()=>{})}
+    // Default library details, only when none have been saved on this device yet.
+    if(window.FT_LIBRARY&&!cache.has("settings/library")){const v=clone(window.FT_LIBRARY);cache.set("settings/library",v);await persist("settings/library",v).catch(()=>{})}
     try{localStorage.setItem(DB_NAME+"-seeded","1")}catch(e){}
   });
 
   if(bc)bc.onmessage=async()=>{await loadAll();emit()};
 
-  function docRef(id){return {
+  function docRef(coll,id){const key=coll+"/"+id;return {
     id,
-    async set(data){await ready;const v=clone(data);cache.set(id,v);await persist(id,v);emit();bc&&bc.postMessage("changed")},
-    async delete(){await ready;cache.delete(id);await persist(id,undefined);emit();bc&&bc.postMessage("changed")},
-    async get(){await ready;const v=cache.get(id);return {id,exists:!!v,data:()=>v}}
+    async set(data){await ready;const v=clone(data);cache.set(key,v);await persist(key,v);emit(coll);bc&&bc.postMessage("changed")},
+    async delete(){await ready;cache.delete(key);await persist(key,undefined);emit(coll);bc&&bc.postMessage("changed")},
+    async get(){await ready;const v=cache.get(key);return {id,exists:!!v,data:()=>v}}
   }}
   const db={collection(name){return {
-    doc:(id)=>docRef(id||newId()),
-    onSnapshot(next){listeners.add(next);ready.then(()=>next(snapshot()));return ()=>listeners.delete(next)}
+    doc:(id)=>docRef(name,id||newId()),
+    onSnapshot(next){if(!listeners.has(name))listeners.set(name,new Set());listeners.get(name).add(next);ready.then(()=>next(snapshot(name)));return ()=>listeners.get(name).delete(next)}
   }}};
 
   function resizeToDataUrl(file){return new Promise((res,rej)=>{
