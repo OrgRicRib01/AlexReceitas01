@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1793128537713,
+ "updatedAt": 1793136146055,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3031,13 +3031,13 @@
     },
     {
      "sid": "exemplo-creme-abobora",
-     "doses": 5,
+     "doses": 10,
      "addedAt": 1793127855141
     }
    ],
    "checked": {},
    "extras": [],
-   "updatedAt": 1793127855141
+   "updatedAt": 1793136142987
   }
  },
  "deleted": {
