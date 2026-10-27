@@ -308,6 +308,30 @@ img{max-width:100%}
 .syncmsg{font-size:13.5px;margin:0}
 .syncmsg.err{color:var(--bad)}.syncmsg.ok{color:var(--good)}
 
+/* shopping list */
+.shop-layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:20px;align-items:start}
+@media (max-width:980px){.shop-layout{grid-template-columns:minmax(0,1fr)}}
+.shop-tools{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.srclist{display:grid;gap:8px}
+.srcrow{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:10px;align-items:center;padding:8px 0;border-bottom:1px dashed var(--line)}
+.srcrow:last-child{border-bottom:0}
+.srcrow .nm{font-weight:600;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.srcrow .nm small{display:block;font-weight:400;color:var(--muted);font-family:var(--f-mono);font-size:12px}
+.srcrow input{width:74px;text-align:right;border:1px solid var(--line);background:var(--surface-2);border-radius:5px;padding:5px 7px;font-family:var(--f-mono)}
+.shopgrp{margin-top:6px}
+.shopgrp h3{margin:14px 0 4px;font-family:var(--f-display);font-weight:600;text-transform:uppercase;letter-spacing:.05em;font-size:15px;color:var(--muted)}
+.shopgrp h3:first-child{margin-top:0}
+.sitem{display:grid;grid-template-columns:22px minmax(0,1fr) auto auto;gap:10px;align-items:center;padding:8px 2px;border-bottom:1px solid var(--line-2);cursor:pointer}
+.sitem input{width:18px;height:18px;accent-color:var(--good);margin:0}
+.sitem .nm{min-width:0}
+.sitem .nm small{display:block;color:var(--muted);font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sitem .q{font-family:var(--f-mono);font-variant-numeric:tabular-nums;white-space:nowrap;text-align:right;font-weight:500}
+.sitem .c{font-family:var(--f-mono);font-variant-numeric:tabular-nums;white-space:nowrap;text-align:right;color:var(--muted);font-size:13px;min-width:64px}
+.sitem.done .nm,.sitem.done .q{text-decoration:line-through;color:var(--muted)}
+.sitem .x{padding:2px 6px}
+.extraform{display:grid;grid-template-columns:minmax(0,1fr) 80px 84px auto;gap:6px;margin-top:12px}
+@media (max-width:520px){.extraform{grid-template-columns:minmax(0,1fr) 70px 70px}.extraform .btn{grid-column:1/-1}}
+
 /* PDF selection */
 .selbar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;background:var(--accent-soft);border-radius:8px;padding:10px 12px;margin-bottom:12px}
 .selbar .grow{margin-right:auto;font-size:14px}
@@ -333,7 +357,7 @@ img{max-width:100%}
 <header class="bar"><div class="wrap">
   <button class="brand" id="goHome" type="button"><b id="brandName"></b><span id="brandSub"></span></button>
   <button class="sync" id="syncChip" type="button" hidden><i></i><span></span></button>
-  <nav class="tabs" aria-label="Sections"><button type="button" data-nav="library"></button><button type="button" data-nav="ingredients"></button></nav>
+  <nav class="tabs" aria-label="Sections"><button type="button" data-nav="library"></button><button type="button" data-nav="ingredients"></button><button type="button" data-nav="shopping"></button></nav>
   <div class="lang" role="group" aria-label="Language / Idioma">
     <button type="button" data-lang="pt" lang="pt-PT" title="Português (Portugal)">PT</button>
     <button type="button" data-lang="en" lang="en-GB" title="English (UK)">EN</button>
@@ -383,6 +407,15 @@ pt:{
   pvKicker:"Ficha técnica de preparação",edit:"Editar",xlsx:"Exportar Excel",origin:"Origem",scaleTo:"Escalar para",dosesWord:"doses",factor:"Fator {0} · as quantidades e custos abaixo acompanham.",reset:"Repor",unitShort:"Unid.",priceShort:"Preço unit.",costShort:"Preço custo",scaled:" (escalado)",noIng:"Sem ingredientes.",toFill:"Por preencher.",noAll:"Nenhum assinalado. Confirme antes de servir.",pvFoot:"Food cost alvo: {0} %. Valores da receita base.",aprov:"aprov.",noSale:"Sem PV",fcTip:"Food cost real (alvo {0} %)",
   dlNo:"As transferências não estão disponíveis nesta vista.",dlBusy:"Já há uma transferência a decorrer. Tente de novo dentro de momentos.",dlFail:"Não foi possível transferir o ficheiro.",xlsxFail:"O exportador de Excel não carregou. Recarregue a página.",
   impNo:"Não é possível importar nesta vista.",notJson:"O ficheiro não é um JSON válido.",notBackup:"Este ficheiro não é uma cópia de segurança desta biblioteca.",impTitle:"Importar fichas",impText:"Vão ser importadas {0} fichas. Fichas com o mesmo identificador são substituídas pela versão do ficheiro.",impOk:"Importar",impFull:"A biblioteca ficou cheia durante a importação.",impDone:"{0} fichas importadas.",lost:"Perdeu-se a ligação à biblioteca. Recarregue a página.",
+  navShop:"Compras",addToShop:"Adicionar à lista de compras",addedToShop:"{0} adicionada à lista de compras ({1} doses).",updatedShop:"{0} já estava na lista: passou a {1} doses.",
+  shopTitle:"Lista de compras",shopIntro:"Junte fichas a partir de \"Ver ficha\". As quantidades somam-se por ingrediente e já incluem as perdas indicadas no aproveitamento.",
+  shopEmptyH:"A lista está vazia",shopEmptyP:"Abra uma ficha, escolha o número de doses e carregue em \"Adicionar à lista de compras\".",
+  shopFrom:"Fichas na lista",shopRemove:"Tirar da lista",shopItems:"A comprar",shopTotal:"Custo estimado",shopBought:"Comprados",shopCount:"Artigos",
+  shopClearBought:"Limpar comprados",shopClearAll:"Esvaziar lista",shopCopy:"Copiar lista",shopCopied:"Lista copiada.",shopCopyFail:"Não foi possível copiar. Selecione o texto à mão.",shopCsv:"Exportar CSV",
+  shopClearTitle:"Esvaziar lista de compras",shopClearText:"Tira todas as fichas e artigos da lista. As fichas não são alteradas.",
+  shopUncat:"Sem categoria",shopExtra:"Outros artigos",shopAddItem:"+ Artigo",shopItemPh:"Artigo (ex.: papel vegetal)",shopQtyPh:"Qtd.",shopNoPrice:"sem preço",shopDosesLbl:"Doses",
+  shopDateLine:"Lista de compras — {0}",shopSheetsLine:"Fichas: {0}",shopTotalLine:"Custo estimado: {0}",shopSaveFail:"Não foi possível guardar a lista de compras.",
+  shopFile:"lista_compras",shopCsvHead:["Comprado","Categoria","Artigo","Quantidade","Unidade","Custo estimado (€)","Fichas"],
   syncOk:"Sincronizado",syncBusy:"A sincronizar…",syncPending:"Por enviar",syncRO:"Só leitura",syncErr:"Erro de sincronização",syncOffline:"Sem ligação",syncLocal:"Só neste dispositivo",
   syncTitle:"Biblioteca partilhada",syncIntro:"As fichas, os ingredientes e os dados da biblioteca ficam no ficheiro {0} do repositório {1}. Todos os dispositivos veem os mesmos dados; as fotos ficam na pasta data/fotos.",
   syncPublic:"O repositório é público: qualquer pessoa com o endereço pode ler as fichas.",syncLast:"Última sincronização: {0}",syncNever:"Ainda não sincronizado",syncNow:"Sincronizar agora",
@@ -448,6 +481,15 @@ en:{
   pvKicker:"Preparation technical sheet",edit:"Edit",xlsx:"Export to Excel",origin:"Source",scaleTo:"Scale to",dosesWord:"portions",factor:"Factor {0} · quantities and costs below follow it.",reset:"Reset",unitShort:"Unit",priceShort:"Unit price",costShort:"Cost",scaled:" (scaled)",noIng:"No ingredients.",toFill:"Not filled in yet.",noAll:"None ticked. Check before serving.",pvFoot:"Target food cost: {0}%. Figures for the base recipe.",aprov:"yield",noSale:"No price",fcTip:"Actual food cost (target {0}%)",
   dlNo:"Downloads are not available in this view.",dlBusy:"A download is already in progress. Try again in a moment.",dlFail:"The file could not be downloaded.",xlsxFail:"The Excel exporter did not load. Reload the page.",
   impNo:"Importing is not available in this view.",notJson:"The file is not valid JSON.",notBackup:"This file is not a backup of this library.",impTitle:"Import sheets",impText:"{0} sheets will be imported. Sheets with the same identifier are replaced by the version in the file.",impOk:"Import",impFull:"The library filled up during the import.",impDone:"{0} sheets imported.",lost:"Lost connection to the library. Reload the page.",
+  navShop:"Shopping",addToShop:"Add to shopping list",addedToShop:"{0} added to the shopping list ({1} portions).",updatedShop:"{0} was already on the list: now {1} portions.",
+  shopTitle:"Shopping list",shopIntro:"Add sheets from \"View sheet\". Quantities are totalled per ingredient and already include the trim loss set in the yield.",
+  shopEmptyH:"The list is empty",shopEmptyP:"Open a sheet, choose the number of portions and press \"Add to shopping list\".",
+  shopFrom:"Sheets on the list",shopRemove:"Remove from list",shopItems:"To buy",shopTotal:"Estimated cost",shopBought:"Bought",shopCount:"Items",
+  shopClearBought:"Clear bought",shopClearAll:"Empty list",shopCopy:"Copy list",shopCopied:"List copied.",shopCopyFail:"Could not copy. Select the text by hand.",shopCsv:"Export CSV",
+  shopClearTitle:"Empty shopping list",shopClearText:"Removes every sheet and item from the list. Sheets are not changed.",
+  shopUncat:"Uncategorised",shopExtra:"Other items",shopAddItem:"+ Item",shopItemPh:"Item (e.g. baking paper)",shopQtyPh:"Qty",shopNoPrice:"no price",shopDosesLbl:"Portions",
+  shopDateLine:"Shopping list — {0}",shopSheetsLine:"Sheets: {0}",shopTotalLine:"Estimated cost: {0}",shopSaveFail:"The shopping list could not be saved.",
+  shopFile:"shopping_list",shopCsvHead:["Bought","Category","Item","Quantity","Unit","Estimated cost (€)","Sheets"],
   syncOk:"Synced",syncBusy:"Syncing…",syncPending:"Not sent yet",syncRO:"Read-only",syncErr:"Sync error",syncOffline:"Offline",syncLocal:"This device only",
   syncTitle:"Shared library",syncIntro:"Sheets, ingredients and library details are stored in {0} in the {1} repository. Every device sees the same data; photos go in the data/fotos folder.",
   syncPublic:"The repository is public: anyone with the address can read the sheets.",syncLast:"Last synced: {0}",syncNever:"Not synced yet",syncNow:"Sync now",
@@ -513,6 +555,15 @@ es:{
   pvKicker:"Ficha técnica de elaboración",edit:"Editar",xlsx:"Exportar a Excel",origin:"Origen",scaleTo:"Escalar a",dosesWord:"raciones",factor:"Factor {0} · las cantidades y costes de abajo se ajustan.",reset:"Restablecer",unitShort:"Ud.",priceShort:"Precio unit.",costShort:"Coste",scaled:" (escalado)",noIng:"Sin ingredientes.",toFill:"Pendiente de completar.",noAll:"Ninguno marcado. Compruébalo antes de servir.",pvFoot:"Food cost objetivo: {0} %. Valores de la receta base.",aprov:"rend.",noSale:"Sin PVP",fcTip:"Food cost real (objetivo {0} %)",
   dlNo:"Las descargas no están disponibles en esta vista.",dlBusy:"Ya hay una descarga en curso. Inténtalo de nuevo en un momento.",dlFail:"No se ha podido descargar el archivo.",xlsxFail:"El exportador de Excel no se ha cargado. Recarga la página.",
   impNo:"No se puede importar en esta vista.",notJson:"El archivo no es un JSON válido.",notBackup:"Este archivo no es una copia de seguridad de esta biblioteca.",impTitle:"Importar fichas",impText:"Se importarán {0} fichas. Las fichas con el mismo identificador se sustituyen por la versión del archivo.",impOk:"Importar",impFull:"La biblioteca se ha llenado durante la importación.",impDone:"{0} fichas importadas.",lost:"Se ha perdido la conexión con la biblioteca. Recarga la página.",
+  navShop:"Compra",addToShop:"Añadir a la lista de la compra",addedToShop:"{0} añadida a la lista de la compra ({1} raciones).",updatedShop:"{0} ya estaba en la lista: ahora {1} raciones.",
+  shopTitle:"Lista de la compra",shopIntro:"Añade fichas desde \"Ver ficha\". Las cantidades se suman por ingrediente e incluyen ya las mermas indicadas en el rendimiento.",
+  shopEmptyH:"La lista está vacía",shopEmptyP:"Abre una ficha, elige el número de raciones y pulsa \"Añadir a la lista de la compra\".",
+  shopFrom:"Fichas en la lista",shopRemove:"Quitar de la lista",shopItems:"Para comprar",shopTotal:"Coste estimado",shopBought:"Comprados",shopCount:"Artículos",
+  shopClearBought:"Quitar comprados",shopClearAll:"Vaciar lista",shopCopy:"Copiar lista",shopCopied:"Lista copiada.",shopCopyFail:"No se ha podido copiar. Selecciona el texto a mano.",shopCsv:"Exportar CSV",
+  shopClearTitle:"Vaciar la lista de la compra",shopClearText:"Quita todas las fichas y artículos de la lista. Las fichas no cambian.",
+  shopUncat:"Sin categoría",shopExtra:"Otros artículos",shopAddItem:"+ Artículo",shopItemPh:"Artículo (p. ej., papel de horno)",shopQtyPh:"Cant.",shopNoPrice:"sin precio",shopDosesLbl:"Raciones",
+  shopDateLine:"Lista de la compra — {0}",shopSheetsLine:"Fichas: {0}",shopTotalLine:"Coste estimado: {0}",shopSaveFail:"No se ha podido guardar la lista de la compra.",
+  shopFile:"lista_compra",shopCsvHead:["Comprado","Categoría","Artículo","Cantidad","Unidad","Coste estimado (€)","Fichas"],
   syncOk:"Sincronizado",syncBusy:"Sincronizando…",syncPending:"Pendiente de enviar",syncRO:"Solo lectura",syncErr:"Error de sincronización",syncOffline:"Sin conexión",syncLocal:"Solo en este dispositivo",
   syncTitle:"Biblioteca compartida",syncIntro:"Las fichas, los ingredientes y los datos de la biblioteca se guardan en {0} del repositorio {1}. Todos los dispositivos ven los mismos datos; las fotos van a la carpeta data/fotos.",
   syncPublic:"El repositorio es público: cualquiera con la dirección puede leer las fichas.",syncLast:"Última sincronización: {0}",syncNever:"Todavía sin sincronizar",syncNow:"Sincronizar ahora",
@@ -649,7 +700,7 @@ function catalog(){
   for(const e of buildCatalog().values())m.set(e.key,{name:e.name,unit:e.unit,price:priceIn(e.est),yield:e.yield});
   return m;
 }
-function syncNav(){document.querySelectorAll("[data-nav]").forEach(b=>{const on=(b.dataset.nav==="ingredients")===(view==="ingredients");b.setAttribute("aria-current",on&&(view==="library"||view==="ingredients")?"page":"false")})}
+function syncNav(){document.querySelectorAll("[data-nav]").forEach(b=>b.setAttribute("aria-current",b.dataset.nav===view?"page":"false"))}
 
 const libFields=()=>(libInfo.fields||[]).filter(f=>String(f.label||"").trim()||String(f.value||"").trim());
 function libLine(){const parts=[];if(String(libInfo.owner||"").trim())parts.push(t("owner")+": "+libInfo.owner.trim());libFields().forEach(f=>parts.push((f.label?f.label.trim()+": ":"")+String(f.value||"").trim()));return parts.join(" · ")}
@@ -671,12 +722,13 @@ function renderChrome(){
   document.querySelector('[data-nav="library"]').textContent=t("navLib");
   if(typeof renderSyncChip==="function")renderSyncChip();
   document.querySelector('[data-nav="ingredients"]').textContent=t("navIng");
+  document.querySelector('[data-nav="shopping"]').textContent=t("navShop");
   syncNav();
 }
 function setLang(l){
   if(!I18N[l]||l===lang)return;stopDictation();lang=l;try{localStorage.setItem("ft-lang",l)}catch{}
   renderChrome();
-  if(view==="editor")renderEditor();else if(view==="preview")renderPreview();else if(view==="ingredients")renderIngredients();else renderLibrary();
+  if(view==="editor")renderEditor();else if(view==="preview")renderPreview();else if(view==="ingredients")renderIngredients();else if(view==="shopping")renderShop();else renderLibrary();
 }
 
 /* ---------- library ---------- */
@@ -1083,6 +1135,7 @@ function renderPreview(){
     ${canWrite&&db?`<button class="btn primary" type="button" id="edit">${esc(t("edit"))}</button>`:""}
     <button class="btn" type="button" id="xlsx">${esc(t("xlsx"))}</button>
     <button class="btn" type="button" id="pdfOne">${esc(t("pdfBtn"))}</button>
+    ${canWrite&&db&&sheets.has(current.id)?`<button class="btn" type="button" id="toShop">${esc(t("addToShop"))}</button>`:""}
   </div>
   <article class="sheet">
     <div class="pv-head${s.photoUrl?" has-photo":""}"><div>
@@ -1124,6 +1177,7 @@ function renderPreview(){
   app.querySelector("#back").onclick=renderLibrary;
   app.querySelector("#edit")?.addEventListener("click",()=>editSheet(current.id));
   app.querySelector("#xlsx").onclick=()=>exportXlsx(s);
+  app.querySelector("#toShop")?.addEventListener("click",()=>addToShop(current.id,target));
   app.querySelector("#plateZoom")?.addEventListener("click",()=>lightbox(s.photoUrl,t("plating")+" — "+(s.name||"")));
   app.querySelectorAll("[data-lb]").forEach(b=>b.addEventListener("click",()=>{const ph=s.prepPhotos[+b.dataset.lb];lightbox(ph.url,[String(+b.dataset.lb+1)+".",ph.title].filter(Boolean).join(" "))}));
   app.querySelector("#pdfOne").onclick=async()=>{const it=[{id:current.id,s}];const o=await pdfOptions(it);if(o)makePdf(it,o)};
@@ -1332,6 +1386,99 @@ function exportIngCsv(){
   save(`${t("ingFile")}_${today()}.csv`,"\uFEFF"+[L().ingCsvHead.map(q).join(sep),...rows].join("\r\n"));
 }
 
+/* ---------- shopping list ---------- */
+let shop={entries:[],checked:{},extras:[],updatedAt:0},shopSaving=0,shopChain=Promise.resolve();
+function saveShop(){
+  if(!db||!canWrite)return;
+  shop.updatedAt=Date.now();const body=JSON.parse(JSON.stringify(shop));shopSaving++;
+  shopChain=shopChain.then(()=>db.collection("shopping").doc("list").set(body)).catch(()=>toast(t("shopSaveFail"))).finally(()=>{shopSaving--});
+}
+function addToShop(sid,doses){
+  const s=sheets.get(sid);if(!s)return;const d=Math.round(num(doses)*100)/100||num(s.doses)||1;
+  const e=shop.entries.find(x=>x.sid===sid);
+  if(e){e.doses=d;toast(t("updatedShop",s.name||s.code,d))}else{shop.entries.push({sid,doses:d,addedAt:Date.now()});toast(t("addedToShop",s.name||s.code,d))}
+  saveShop();
+}
+function shopItems(){
+  const cat=buildCatalog(),m=new Map();
+  for(const e of shop.entries){
+    const s=sheets.get(e.sid);if(!s)continue;const base=num(s.doses);const f=base>0?num(e.doses)/base:1;
+    for(const i of s.ingredients||[]){
+      const k=normKey(i.name);if(!k)continue;const unit=String(i.unit||"").trim();const key=k+"|"+unit;
+      const y=num(i.yield)||100,q=num(i.qty)*f/(y/100),pr=num(i.price);
+      const it=m.get(key)||{key,name:i.name.trim(),unit,qty:0,cost:0,priced:true,sheets:new Set(),qb:isQb(unit),category:cat.get(k)?.category||""};
+      it.qty+=q;if(hasVal(i.price)&&pr>0)it.cost+=q*pr;else if(!it.qb&&num(i.qty))it.priced=false;
+      it.sheets.add(s.code);m.set(key,it);
+    }
+  }
+  for(const x of shop.extras){const key="x|"+x.id;m.set(key,{key,name:x.name,unit:x.unit||"",qty:num(x.qty),cost:0,priced:false,sheets:new Set(),qb:false,category:"_extra",extra:x.id})}
+  return [...m.values()];
+}
+const shopQty=it=>it.qb?it.unit:(it.qty?fq(it.qty)+" "+it.unit:it.unit||"").trim();
+function renderShop(){
+  view="shopping";current=null;syncNav();
+  app.innerHTML=`${noticeHtml()}
+  <div class="lib-head"><div><h1>${esc(t("shopTitle"))}</h1><p class="hint" style="max-width:72ch">${esc(t("shopIntro"))}</p></div><div class="stats" id="shopStats"></div></div>
+  <div class="shop-tools" id="shopTools"></div>
+  <div class="shop-layout"><div class="card" id="shopItemsBox"></div><aside class="card" id="shopSrc"></aside></div>`;
+  renderShopBody();
+}
+function renderShopBody(){
+  const box=document.getElementById("shopItemsBox");if(!box)return;
+  const ro=!canWrite||!db,items=shopItems(),entries=shop.entries.filter(e=>sheets.has(e.sid));
+  const bought=items.filter(it=>shop.checked[it.key]).length,total=items.reduce((a,it)=>a+it.cost,0);
+  document.getElementById("shopStats").innerHTML=`<div class="stat"><small>${esc(t("shopCount"))}</small><b>${items.length}</b></div><div class="stat"><small>${esc(t("shopBought"))}</small><b>${bought}</b></div><div class="stat"><small>${esc(t("shopTotal"))}</small><b>${items.length?esc(eur(total)):"—"}</b></div>`;
+  document.getElementById("shopTools").innerHTML=items.length?`<button class="btn primary" type="button" id="shCopy">${esc(t("shopCopy"))}</button><button class="btn" type="button" id="shCsv">${esc(t("shopCsv"))}</button>${ro?"":`<button class="btn" type="button" id="shClearB" ${bought?"":"disabled"}>${esc(t("shopClearBought"))}</button><button class="btn danger" type="button" id="shClear">${esc(t("shopClearAll"))}</button>`}`:"";
+  const src=document.getElementById("shopSrc");
+  src.innerHTML=`<div class="sec-h"><h2>${esc(t("shopFrom"))}</h2></div>`+(entries.length?`<div class="srclist">${entries.map(e=>{const s=sheets.get(e.sid);return `<div class="srcrow"><span class="nm">${esc(s.name||t("noName"))}<small>${esc(s.code)}</small></span>
+      <input id="sd-${esc(e.sid)}" data-sd="${esc(e.sid)}" inputmode="decimal" value="${esc(String(e.doses).replace(".",lang==="en"?".":","))}" aria-label="${esc(t("shopDosesLbl"))}" ${ro?"disabled":""}>
+      ${ro?"":`<button class="x" type="button" data-srm="${esc(e.sid)}" aria-label="${esc(t("shopRemove"))}">×</button>`}</div>`}).join("")}</div>`:`<p class="hint" style="margin:0">${esc(t("shopEmptyP"))}</p>`);
+  if(!items.length&&!entries.length){box.innerHTML=`<div class="empty" style="padding:32px 12px"><h2>${esc(t("shopEmptyH"))}</h2><p>${esc(t("shopEmptyP"))}</p></div>${ro?"":extraForm()}`;wireShop(items);return}
+  const groups=new Map();
+  for(const it of items){const g=it.category||"";if(!groups.has(g))groups.set(g,[]);groups.get(g).push(it)}
+  const order=[...CAT_KEYS,"","_extra"].filter(g=>groups.has(g));
+  box.innerHTML=`<div class="sec-h"><h2>${esc(t("shopItems"))}</h2></div><div class="shopgrp">${order.map(g=>`<h3>${esc(g==="_extra"?t("shopExtra"):g?L().cats[g]:t("shopUncat"))}</h3>${groups.get(g).sort((a,b)=>a.name.localeCompare(b.name,loc())).map(it=>`<label class="sitem${shop.checked[it.key]?" done":""}">
+      <input type="checkbox" data-ck="${esc(it.key)}" ${shop.checked[it.key]?"checked":""} ${ro?"disabled":""} aria-label="${esc(it.name)}">
+      <span class="nm">${esc(it.name)}${it.sheets.size?`<small>${esc([...it.sheets].join(", "))}</small>`:""}</span>
+      <span class="q">${esc(shopQty(it))}</span>
+      ${it.extra&&!ro?`<button class="x" type="button" data-xrm="${esc(it.extra)}" aria-label="${esc(t("shopRemove"))}">×</button>`:`<span class="c">${it.qb?"":it.priced?esc(eur(it.cost)):esc(t("shopNoPrice"))}</span>`}
+    </label>`).join("")}`).join("")}</div>${ro?"":extraForm()}`;
+  wireShop(items);
+}
+function extraForm(){return `<form class="extraform" id="shExtra"><input class="cellin" id="sx-name" placeholder="${esc(t("shopItemPh"))}" aria-label="${esc(t("shopItemPh"))}"><input class="cellin num" id="sx-qty" inputmode="decimal" placeholder="${esc(t("shopQtyPh"))}" aria-label="${esc(t("shopQtyPh"))}"><input class="cellin" id="sx-unit" list="unitList3" placeholder="un" aria-label="${esc(t("unitWord"))}"><button class="btn" type="submit">${esc(t("shopAddItem"))}</button><datalist id="unitList3">${L().units.map(u=>`<option value="${esc(u)}">`).join("")}</datalist></form>`}
+function shopText(items){
+  const lines=[t("shopDateLine",new Date().toLocaleDateString(loc())),t("shopSheetsLine",shop.entries.filter(e=>sheets.has(e.sid)).map(e=>{const s=sheets.get(e.sid);return `${s.code} ${s.name} (${e.doses})`}).join("; ")),""];
+  const groups=new Map();for(const it of items){const g=it.category||"";if(!groups.has(g))groups.set(g,[]);groups.get(g).push(it)}
+  for(const g of [...CAT_KEYS,"","_extra"].filter(g=>groups.has(g))){lines.push(g==="_extra"?t("shopExtra"):g?L().cats[g]:t("shopUncat"));
+    groups.get(g).sort((a,b)=>a.name.localeCompare(b.name,loc())).forEach(it=>lines.push(`${shop.checked[it.key]?"[x]":"[ ]"} ${it.name} — ${shopQty(it)}`));lines.push("")}
+  lines.push(t("shopTotalLine",eur(items.reduce((a,it)=>a+it.cost,0))));
+  return lines.join("\n");
+}
+function wireShop(items){
+  const root=app;
+  root.querySelectorAll("[data-ck]").forEach(cb=>cb.addEventListener("change",()=>{if(cb.checked)shop.checked[cb.dataset.ck]=true;else delete shop.checked[cb.dataset.ck];cb.closest(".sitem").classList.toggle("done",cb.checked);saveShop();renderShopStats(items)}));
+  root.querySelectorAll("[data-sd]").forEach(inp=>inp.addEventListener("change",()=>{const e=shop.entries.find(x=>x.sid===inp.dataset.sd);const v=num(inp.value);if(e&&v>0){e.doses=Math.round(v*100)/100;saveShop();renderShopBody()}}));
+  root.querySelectorAll("[data-srm]").forEach(b=>b.addEventListener("click",()=>{shop.entries=shop.entries.filter(x=>x.sid!==b.dataset.srm);saveShop();renderShopBody()}));
+  root.querySelectorAll("[data-xrm]").forEach(b=>b.addEventListener("click",e=>{e.preventDefault();shop.extras=shop.extras.filter(x=>x.id!==b.dataset.xrm);delete shop.checked["x|"+b.dataset.xrm];saveShop();renderShopBody()}));
+  root.querySelector("#shExtra")?.addEventListener("submit",e=>{e.preventDefault();const name=root.querySelector("#sx-name").value.trim();if(!name){root.querySelector("#sx-name").focus();return}
+    shop.extras.push({id:Date.now().toString(36)+Math.random().toString(36).slice(2,6),name,qty:root.querySelector("#sx-qty").value.trim(),unit:root.querySelector("#sx-unit").value.trim()});saveShop();renderShopBody();setTimeout(()=>document.getElementById("sx-name")?.focus(),0)});
+  root.querySelector("#shCopy")?.addEventListener("click",()=>{const txt=shopText(items);
+    try{navigator.clipboard.writeText(txt).then(()=>toast(t("shopCopied")),()=>fallbackCopy(txt))}catch(err){fallbackCopy(txt)}});
+  root.querySelector("#shCsv")?.addEventListener("click",()=>{
+    const q=v=>`"${String(v??"").replace(/"/g,'""')}"`,dec=lang==="en"?".":",",sep=lang==="en"?",":";";
+    const rows=items.map(it=>[shop.checked[it.key]?"x":"",it.category==="_extra"?t("shopExtra"):it.category?L().cats[it.category]:"",it.name,it.qb?"":(it.qty?it.qty.toFixed(3).replace(".",dec):""),it.unit,it.priced&&it.cost?it.cost.toFixed(2).replace(".",dec):"",[...it.sheets].join(" ")].map(q).join(sep));
+    save(`${t("shopFile")}_${today()}.csv`,"\uFEFF"+[L().shopCsvHead.map(q).join(sep),...rows].join("\r\n"))});
+  root.querySelector("#shClearB")?.addEventListener("click",()=>{
+    const done=new Set(Object.keys(shop.checked));shop.extras=shop.extras.filter(x=>!done.has("x|"+x.id));
+    const left=items.filter(it=>!done.has(it.key)&&!it.extra);
+    /* a sheet stays on the list while any of its ingredients is still to buy */
+    shop.entries=shop.entries.filter(e=>{const s=sheets.get(e.sid);return s&&left.some(it=>it.sheets.has(s.code))});
+    shop.checked={};saveShop();renderShopBody()});
+  root.querySelector("#shClear")?.addEventListener("click",async()=>{if(!await confirmBox(t("shopClearTitle"),t("shopClearText"),t("shopClearAll"),true))return;shop={entries:[],checked:{},extras:[],updatedAt:0};saveShop();renderShopBody()});
+}
+function renderShopStats(items){const el=document.getElementById("shopStats");if(!el)return;const bought=items.filter(it=>shop.checked[it.key]).length;el.querySelectorAll(".stat b")[1].textContent=bought;const b=document.getElementById("shClearB");if(b)b.disabled=!bought}
+function fallbackCopy(txt){const ta=document.createElement("textarea");ta.value=txt;ta.style.cssText="position:fixed;inset:20% 10% auto;height:50%;z-index:80";layer.appendChild(ta);ta.select();let ok=false;try{ok=document.execCommand("copy")}catch(e){}if(ok){ta.remove();toast(t("shopCopied"))}else{toast(t("shopCopyFail"));ta.addEventListener("blur",()=>ta.remove())}}
+
 /* ---------- PDF ---------- */
 const PDF_MAP={"≥":">=","≤":"<=","→":"->","←":"<-","≈":"~","−":"-","✓":"v"};
 const WINANSI_EXTRA="€‚ƒ„…†‡ˆ‰Š‹ŒŽ‘’“”•–—˜™š›œžŸ";
@@ -1516,7 +1663,7 @@ pop.addEventListener("click",e=>{const a=e.target.closest("[data-act]")?.dataset
 document.getElementById("importFile").addEventListener("change",e=>{const f=e.target.files[0];e.target.value="";if(f)importJson(f)});
 document.querySelectorAll(".lang button").forEach(b=>b.addEventListener("click",()=>setLang(b.dataset.lang)));
 document.getElementById("goHome").onclick=()=>view==="editor"?leave(renderLibrary):renderLibrary();
-document.querySelectorAll("[data-nav]").forEach(b=>b.addEventListener("click",()=>{const go=b.dataset.nav==="ingredients"?renderIngredients:renderLibrary;view==="editor"?leave(go):go()}));
+document.querySelectorAll("[data-nav]").forEach(b=>b.addEventListener("click",()=>{const go={ingredients:renderIngredients,shopping:renderShop}[b.dataset.nav]||renderLibrary;view==="editor"?leave(go):go()}));
 document.getElementById("newBtn").onclick=()=>view==="editor"?leave(newSheet):newSheet();
 document.addEventListener("visibilitychange",()=>{if(document.hidden)flush()});
 app.addEventListener("input",onEdInput);
@@ -1578,9 +1725,16 @@ renderLibrary();
     sheets=m;dbState="ready";
     if(view==="library")renderList();
     else if(view==="ingredients")renderIngList();
+    else if(view==="shopping")renderShopBody();
     else if(view==="editor")refreshIngList();
     else if(view==="preview"&&current&&sheets.has(current.id)){const fresh=sheets.get(current.id);if(fresh!==current.src){current.src=fresh;current.data=JSON.parse(JSON.stringify(fresh));renderPreview()}}
   },()=>{dbState="none";toast(t("lost"))});
+  db.collection("shopping").onSnapshot(snap=>{
+    const d=snap.docs.find(x=>x.id==="list");const v=d?d.data():null;
+    if(shopSaving)return;
+    shop=v?{entries:Array.isArray(v.entries)?v.entries.map(e=>({...e})):[],checked:{...(v.checked||{})},extras:Array.isArray(v.extras)?v.extras.map(e=>({...e})):[],updatedAt:v.updatedAt||0}:{entries:[],checked:{},extras:[],updatedAt:0};
+    if(view==="shopping")renderShopBody();
+  },()=>{});
   db.collection("ingredients").onSnapshot(snap=>{
     ingDocs=new Map(snap.docs.map(x=>[x.id,x.data()]));
     if(view==="ingredients")renderIngList();else if(view==="editor")refreshIngList();
