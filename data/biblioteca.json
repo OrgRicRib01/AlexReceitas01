@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1793136231901,
+ "updatedAt": 1793136249674,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -2900,7 +2900,7 @@
      "name": "Abóbora",
      "unit": "kg",
      "qty": "0,8",
-     "price": "1,49",
+     "price": "0,99",
      "yield": "75"
     },
     {
@@ -2914,7 +2914,7 @@
      "name": "Batata",
      "unit": "kg",
      "qty": "0,2",
-     "price": "0,99",
+     "price": "1,17",
      "yield": "85"
     },
     {
@@ -2952,7 +2952,7 @@
    "photoId": "data/fotos/mvr2f8x82o2e1rma.jpg",
    "photoUrl": "https://raw.githubusercontent.com/OrgRicRib01/AlexReceitas01/main/data/fotos/mvr2f8x82o2e1rma.jpg",
    "createdAt": 1793110000000,
-   "updatedAt": 1793128533454,
+   "updatedAt": 1793136248115,
    "prepPhotos": [
     {
      "id": "data/fotos/mvr2fi4di00hzx09.jpg",
