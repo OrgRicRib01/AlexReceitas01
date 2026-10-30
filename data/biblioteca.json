@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1793371088675,
+ "updatedAt": 1793371107139,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3143,7 +3143,7 @@
    "family": "molhos",
    "doses": "1",
    "prepTime": "10",
-   "cookTime": "",
+   "cookTime": "0",
    "ingredients": [
     {
      "name": "",
@@ -3180,7 +3180,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1793371019084,
-   "updatedAt": 1793371084215
+   "updatedAt": 1793371102582
   },
   "shopping/list": {
    "entries": [
