@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1793370801551,
+ "updatedAt": 1793370806561,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3118,7 +3118,7 @@
      "yield": "100"
     }
    ],
-   "method": "Mix ingredientes e deixar descansar 10 minutos \n\nderreter a manteiga a derreter na frigideira e ",
+   "method": "Mix ingredientes e deixar descansar 10 minutos \n\nderreter a manteiga a derreter na frigideira e fazer ",
    "notes": "",
    "conservation": "",
    "allergens": [],
@@ -3131,7 +3131,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1793370165983,
-   "updatedAt": 1793370797233
+   "updatedAt": 1793370801989
   },
   "shopping/list": {
    "entries": [
