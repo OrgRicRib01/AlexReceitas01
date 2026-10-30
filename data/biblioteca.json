@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1793371311627,
+ "updatedAt": 1793392164713,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3022,51 +3022,6 @@
     }
    ]
   },
-  "sheets/mvup6k82vxudcer5": {
-   "name": "bacalhau á braz",
-   "code": "FT-002",
-   "family": "peixe",
-   "doses": "5",
-   "prepTime": "15",
-   "cookTime": "20",
-   "ingredients": [
-    {
-     "name": "",
-     "unit": "kg",
-     "qty": "",
-     "price": "",
-     "yield": ""
-    },
-    {
-     "name": "",
-     "unit": "kg",
-     "qty": "",
-     "price": "",
-     "yield": ""
-    },
-    {
-     "name": "",
-     "unit": "kg",
-     "qty": "",
-     "price": "",
-     "yield": ""
-    }
-   ],
-   "method": "",
-   "notes": "",
-   "conservation": "",
-   "allergens": [],
-   "status": "rascunho",
-   "source": "propria",
-   "sourceNote": "",
-   "tags": "bacalhau ",
-   "targetFc": 30,
-   "salePrice": "",
-   "photoId": null,
-   "photoUrl": null,
-   "createdAt": 1793348144355,
-   "updatedAt": 1793348216875
-  },
   "sheets/mvv2ak7mrgslioi1": {
    "name": "Blinis",
    "code": "FT-003",
@@ -3208,6 +3163,7 @@
   }
  },
  "deleted": {
-  "sheets/mvr0qwb3xpxkzsev": 1793127380378
+  "sheets/mvr0qwb3xpxkzsev": 1793127380378,
+  "sheets/mvup6k82vxudcer5": 1793392161479
  }
 }
