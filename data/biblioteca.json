@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1793187106620,
+ "updatedAt": 1793348182684,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3021,6 +3021,51 @@
      "title": "preparar abacate"
     }
    ]
+  },
+  "sheets/mvup6k82vxudcer5": {
+   "name": "bacalhau á braz",
+   "code": "FT-002",
+   "family": "peixe",
+   "doses": "",
+   "prepTime": "",
+   "cookTime": "",
+   "ingredients": [
+    {
+     "name": "",
+     "unit": "kg",
+     "qty": "",
+     "price": "",
+     "yield": ""
+    },
+    {
+     "name": "",
+     "unit": "kg",
+     "qty": "",
+     "price": "",
+     "yield": ""
+    },
+    {
+     "name": "",
+     "unit": "kg",
+     "qty": "",
+     "price": "",
+     "yield": ""
+    }
+   ],
+   "method": "",
+   "notes": "",
+   "conservation": "",
+   "allergens": [],
+   "status": "rascunho",
+   "source": "curso",
+   "sourceNote": "",
+   "tags": "",
+   "targetFc": 30,
+   "salePrice": "",
+   "photoId": null,
+   "photoUrl": null,
+   "createdAt": 1793348144355,
+   "updatedAt": 1793348180970
   },
   "shopping/list": {
    "entries": [
