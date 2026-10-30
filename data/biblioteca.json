@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1793370896129,
+ "updatedAt": 1793370902175,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3131,11 +3131,11 @@
    "sourceNote": "",
    "tags": "blinis",
    "targetFc": 30,
-   "salePrice": "25",
+   "salePrice": "0,40",
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1793370165983,
-   "updatedAt": 1793370891582
+   "updatedAt": 1793370897746
   },
   "shopping/list": {
    "entries": [
