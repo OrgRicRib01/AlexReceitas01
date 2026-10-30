@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1793370861899,
+ "updatedAt": 1793370871700,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3121,7 +3121,11 @@
    "method": "Mix ingredientes e deixar descansar 10 minutos \n\nderreter a manteiga a derreter na frigideira e fazer circulos preenchidos com a massa \ncozinhar ate dourar",
    "notes": "",
    "conservation": "",
-   "allergens": [],
+   "allergens": [
+    "gluten",
+    "ovos",
+    "leite"
+   ],
    "status": "rascunho",
    "source": "curso",
    "sourceNote": "",
@@ -3131,7 +3135,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1793370165983,
-   "updatedAt": 1793370857509
+   "updatedAt": 1793370870494
   },
   "shopping/list": {
    "entries": [
