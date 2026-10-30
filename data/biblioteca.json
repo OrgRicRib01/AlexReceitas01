@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1793371077890,
+ "updatedAt": 1793371085698,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3141,8 +3141,8 @@
    "name": "Leche de tigre ",
    "code": "FT-004",
    "family": "molhos",
-   "doses": "",
-   "prepTime": "",
+   "doses": "1",
+   "prepTime": "10",
    "cookTime": "",
    "ingredients": [
     {
@@ -3180,7 +3180,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1793371019084,
-   "updatedAt": 1793371073517
+   "updatedAt": 1793371084215
   },
   "shopping/list": {
    "entries": [
