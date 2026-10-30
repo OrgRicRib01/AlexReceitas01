@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1793371222298,
+ "updatedAt": 1793371227439,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3155,7 +3155,7 @@
     {
      "name": "Lima",
      "unit": "L",
-     "qty": "",
+     "qty": "0,100",
      "price": "0,25",
      "yield": ""
     },
@@ -3180,7 +3180,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1793371019084,
-   "updatedAt": 1793371218009
+   "updatedAt": 1793371222932
   },
   "shopping/list": {
    "entries": [
