@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1793371134186,
+ "updatedAt": 1793371143764,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3146,7 +3146,7 @@
    "cookTime": "15m",
    "ingredients": [
     {
-     "name": "",
+     "name": "caldo de peixe",
      "unit": "kg",
      "qty": "",
      "price": "",
@@ -3180,7 +3180,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1793371019084,
-   "updatedAt": 1793371129834
+   "updatedAt": 1793371139335
   },
   "shopping/list": {
    "entries": [
