@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1793370738746,
+ "updatedAt": 1793370744620,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3118,7 +3118,7 @@
      "yield": "100"
     }
    ],
-   "method": "Mix ingredientes e deixar descansar 10minutos",
+   "method": "Mix ingredientes e deixar descansar 10 minutos ",
    "notes": "",
    "conservation": "",
    "allergens": [],
@@ -3131,7 +3131,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1793370165983,
-   "updatedAt": 1793370734302
+   "updatedAt": 1793370740086
   },
   "shopping/list": {
    "entries": [
