@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1793348212668,
+ "updatedAt": 1793348221250,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3059,13 +3059,13 @@
    "status": "rascunho",
    "source": "propria",
    "sourceNote": "",
-   "tags": "",
+   "tags": "bacalhau ",
    "targetFc": 30,
    "salePrice": "",
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1793348144355,
-   "updatedAt": 1793348208251
+   "updatedAt": 1793348216875
   },
   "shopping/list": {
    "entries": [
