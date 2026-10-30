@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1793348182684,
+ "updatedAt": 1793348187264,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3026,7 +3026,7 @@
    "name": "bacalhau á braz",
    "code": "FT-002",
    "family": "peixe",
-   "doses": "",
+   "doses": "5",
    "prepTime": "",
    "cookTime": "",
    "ingredients": [
@@ -3065,7 +3065,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1793348144355,
-   "updatedAt": 1793348180970
+   "updatedAt": 1793348182537
   },
   "shopping/list": {
    "entries": [
