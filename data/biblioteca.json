@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1793370194215,
+ "updatedAt": 1793370215235,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3073,7 +3073,7 @@
    "family": "entrada",
    "doses": "10",
    "prepTime": "5",
-   "cookTime": "",
+   "cookTime": "10",
    "ingredients": [
     {
      "name": "",
@@ -3104,13 +3104,13 @@
    "status": "rascunho",
    "source": "curso",
    "sourceNote": "",
-   "tags": "",
+   "tags": "blinis",
    "targetFc": 30,
    "salePrice": "",
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1793370165983,
-   "updatedAt": 1793370189815
+   "updatedAt": 1793370210155
   },
   "shopping/list": {
    "entries": [
