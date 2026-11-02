@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1793642441277,
+ "updatedAt": 1793642446507,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3145,7 +3145,7 @@
    "updatedAt": 1793371307394
   },
   "sheets/mvzkc96rouityfh2": {
-   "name": "Salada composta Alexandre e ",
+   "name": "Salada composta Alexandre e Nicolly",
    "code": "FT-005",
    "family": "",
    "doses": "",
@@ -3187,7 +3187,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1793642342788,
-   "updatedAt": 1793642436628
+   "updatedAt": 1793642441816
   },
   "shopping/list": {
    "entries": [
