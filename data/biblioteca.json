@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1793644423466,
+ "updatedAt": 1793644438997,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3176,8 +3176,15 @@
     {
      "name": "Requeijão",
      "unit": "kg",
-     "qty": "",
+     "qty": "0,020",
      "price": "7,96",
+     "yield": "100"
+    },
+    {
+     "name": "",
+     "unit": "kg",
+     "qty": "",
+     "price": "",
      "yield": ""
     }
    ],
@@ -3194,7 +3201,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1793642342788,
-   "updatedAt": 1793644418779
+   "updatedAt": 1793644437687
   },
   "shopping/list": {
    "entries": [
