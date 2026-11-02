@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1793642453489,
+ "updatedAt": 1793642466386,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3150,7 +3150,7 @@
    "family": "",
    "doses": "",
    "prepTime": "20m",
-   "cookTime": "",
+   "cookTime": "10m",
    "ingredients": [
     {
      "name": "",
@@ -3181,13 +3181,13 @@
    "status": "rascunho",
    "source": "curso",
    "sourceNote": "",
-   "tags": "",
+   "tags": "salada",
    "targetFc": 30,
    "salePrice": "",
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1793642342788,
-   "updatedAt": 1793642448906
+   "updatedAt": 1793642463149
   },
   "shopping/list": {
    "entries": [
