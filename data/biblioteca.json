@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1793644508063,
+ "updatedAt": 1793644517405,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3183,7 +3183,7 @@
     {
      "name": "Rúcula",
      "unit": "kg",
-     "qty": "",
+     "qty": "0,030",
      "price": "9,90",
      "yield": ""
     }
@@ -3201,7 +3201,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1793642342788,
-   "updatedAt": 1793644503492
+   "updatedAt": 1793644512935
   },
   "shopping/list": {
    "entries": [
