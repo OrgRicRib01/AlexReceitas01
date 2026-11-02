@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1793644142882,
+ "updatedAt": 1793644149774,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3163,7 +3163,7 @@
      "name": "Pêsego",
      "unit": "kg",
      "qty": "0,050",
-     "price": "",
+     "price": "1,99",
      "yield": ""
     },
     {
@@ -3187,7 +3187,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1793642342788,
-   "updatedAt": 1793644138256
+   "updatedAt": 1793644145115
   },
   "shopping/list": {
    "entries": [
