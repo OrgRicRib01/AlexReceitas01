@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1793643501107,
+ "updatedAt": 1793643505812,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3153,10 +3153,10 @@
    "cookTime": "10m",
    "ingredients": [
     {
-     "name": "Presunto",
+     "name": "Presunto fatiado",
      "unit": "Kg",
      "qty": "",
-     "price": "",
+     "price": "19,93",
      "yield": ""
     },
     {
@@ -3187,7 +3187,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1793642342788,
-   "updatedAt": 1793643496792
+   "updatedAt": 1793643501336
   },
   "shopping/list": {
    "entries": [
