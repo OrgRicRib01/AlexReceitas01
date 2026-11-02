@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1793642466386,
+ "updatedAt": 1793643456730,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3153,8 +3153,8 @@
    "cookTime": "10m",
    "ingredients": [
     {
-     "name": "",
-     "unit": "kg",
+     "name": "Sal",
+     "unit": "q.b.",
      "qty": "",
      "price": "",
      "yield": ""
@@ -3181,13 +3181,13 @@
    "status": "rascunho",
    "source": "curso",
    "sourceNote": "",
-   "tags": "salada",
+   "tags": "salada composta alexandre e niccolly",
    "targetFc": 30,
    "salePrice": "",
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1793642342788,
-   "updatedAt": 1793642463149
+   "updatedAt": 1793643452309
   },
   "shopping/list": {
    "entries": [
