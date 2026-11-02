@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1793643472626,
+ "updatedAt": 1793643480032,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3153,7 +3153,7 @@
    "cookTime": "10m",
    "ingredients": [
     {
-     "name": "presunto",
+     "name": "Presunto",
      "unit": "Kg",
      "qty": "",
      "price": "",
@@ -3187,7 +3187,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1793642342788,
-   "updatedAt": 1793643468271
+   "updatedAt": 1793643475661
   },
   "shopping/list": {
    "entries": [
