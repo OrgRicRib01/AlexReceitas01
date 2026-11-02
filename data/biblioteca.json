@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1793644295976,
+ "updatedAt": 1793644299388,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3169,7 +3169,7 @@
     {
      "name": "tomate seco",
      "unit": "kg",
-     "qty": "0,15",
+     "qty": "0,015",
      "price": "",
      "yield": ""
     }
@@ -3187,7 +3187,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1793642342788,
-   "updatedAt": 1793644291486
+   "updatedAt": 1793644294980
   },
   "shopping/list": {
    "entries": [
