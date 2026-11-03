@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1793693085339,
+ "updatedAt": 1793693104086,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3243,7 +3243,9 @@
    "method": "Cramelizar cebolas roxas durante 50m ou até ficarem bem escuras\nLevar o camembert ao forno com mel e oregãos. 15m 180°C\ndesfazer as nozes até ficarem pedaços mais pequenos\nNum saute levar as nozes  até torrarem\nmontar tudo num blinis com esta ordem, camembert, cebola caramelizada e por último as nozes",
    "notes": "",
    "conservation": "",
-   "allergens": [],
+   "allergens": [
+    "gluten"
+   ],
    "status": "rascunho",
    "source": "curso",
    "sourceNote": "",
@@ -3253,7 +3255,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1793692302822,
-   "updatedAt": 1793693080998
+   "updatedAt": 1793693099722
   },
   "shopping/list": {
    "entries": [
