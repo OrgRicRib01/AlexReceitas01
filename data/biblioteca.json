@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1793692833078,
+ "updatedAt": 1793692841798,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3240,7 +3240,7 @@
      "yield": "100"
     }
    ],
-   "method": "Levar o camembert ao forno com mel e oregãos.\n",
+   "method": "Levar o camembert ao forno com mel e oregãos.\nNum saute levar as nozes picadas",
    "notes": "",
    "conservation": "",
    "allergens": [],
@@ -3253,7 +3253,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1793692302822,
-   "updatedAt": 1793692828701
+   "updatedAt": 1793692837508
   },
   "shopping/list": {
    "entries": [
