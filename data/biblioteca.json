@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1793692388988,
+ "updatedAt": 1793692395994,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3221,9 +3221,9 @@
     {
      "name": "Cebola Roxa",
      "unit": "kg",
-     "qty": "25",
+     "qty": "0,200",
      "price": "2,49",
-     "yield": ""
+     "yield": "100"
     },
     {
      "name": "",
@@ -3253,7 +3253,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1793692302822,
-   "updatedAt": 1793692384684
+   "updatedAt": 1793692394459
   },
   "shopping/list": {
    "entries": [
