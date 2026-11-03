@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1793729517113,
+ "updatedAt": 1793729522671,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3192,7 +3192,7 @@
      "unit": "kg",
      "qty": "0,050",
      "price": "16,49",
-     "yield": ""
+     "yield": "100"
     }
    ],
    "method": "",
@@ -3208,7 +3208,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1793642342788,
-   "updatedAt": 1793729512381
+   "updatedAt": 1793729517930
   },
   "sheets/mw0e32lh4fly68h1": {
    "name": "Canapé Rijo e Bruna",
