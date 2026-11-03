@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1793692369399,
+ "updatedAt": 1793692378320,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3219,10 +3219,10 @@
    "cookTime": "60m",
    "ingredients": [
     {
-     "name": "",
+     "name": "Cebola Roxa",
      "unit": "kg",
      "qty": "",
-     "price": "",
+     "price": "2,49",
      "yield": ""
     },
     {
@@ -3253,7 +3253,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1793692302822,
-   "updatedAt": 1793692364980
+   "updatedAt": 1793692374051
   },
   "shopping/list": {
    "entries": [
