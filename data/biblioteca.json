@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1793730290450,
+ "updatedAt": 1793732228798,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3147,7 +3147,7 @@
   "sheets/mvzkc96rouityfh2": {
    "name": "Salada composta Alexandre e Nicolly",
    "code": "FT-005",
-   "family": "",
+   "family": "Saladas",
    "doses": "",
    "prepTime": "20m",
    "cookTime": "10m",
@@ -3210,7 +3210,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1793642342788,
-   "updatedAt": 1793730285867
+   "updatedAt": 1793732224021
   },
   "sheets/mw0e32lh4fly68h1": {
    "name": "Canapé Rijo e Bruna",
