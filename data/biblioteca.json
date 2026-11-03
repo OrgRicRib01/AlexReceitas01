@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1793692328218,
+ "updatedAt": 1793692336424,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3214,7 +3214,7 @@
    "name": "Canapé Rijo e Bruna",
    "code": "FT-006",
    "family": "entradas",
-   "doses": "",
+   "doses": "10",
    "prepTime": "",
    "cookTime": "",
    "ingredients": [
@@ -3253,7 +3253,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1793692302822,
-   "updatedAt": 1793692323651
+   "updatedAt": 1793692332104
   },
   "shopping/list": {
    "entries": [
