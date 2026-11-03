@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1793730274322,
+ "updatedAt": 1793730290450,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3198,7 +3198,9 @@
    "method": "mix ingredientes, e servir fria a salada\n\ngrelhar pêssego e juntar á salada frio",
    "notes": "",
    "conservation": "",
-   "allergens": [],
+   "allergens": [
+    "gluten"
+   ],
    "status": "rascunho",
    "source": "curso",
    "sourceNote": "",
@@ -3208,7 +3210,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1793642342788,
-   "updatedAt": 1793730269738
+   "updatedAt": 1793730285867
   },
   "sheets/mw0e32lh4fly68h1": {
    "name": "Canapé Rijo e Bruna",
