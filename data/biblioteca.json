@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1793692736504,
+ "updatedAt": 1793692741882,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3235,7 +3235,7 @@
     {
      "name": "nozes",
      "unit": "kg",
-     "qty": "",
+     "qty": "0,",
      "price": "13,45",
      "yield": ""
     }
@@ -3253,7 +3253,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1793692302822,
-   "updatedAt": 1793692734521
+   "updatedAt": 1793692737288
   },
   "shopping/list": {
    "entries": [
