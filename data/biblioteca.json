@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1793692518526,
+ "updatedAt": 1793692534762,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3226,7 +3226,7 @@
      "yield": "100"
     },
     {
-     "name": "camambert",
+     "name": "camembert",
      "unit": "kg",
      "qty": "0,200",
      "price": "8",
@@ -3253,7 +3253,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1793692302822,
-   "updatedAt": 1793692514339
+   "updatedAt": 1793692530385
   },
   "shopping/list": {
    "entries": [
