@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1793729238021,
+ "updatedAt": 1793729251150,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3142,7 +3142,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1793371019084,
-   "updatedAt": 1793729233520
+   "updatedAt": 1793729246599
   },
   "sheets/mvzkc96rouityfh2": {
    "name": "Salada composta Alexandre e Nicolly",
