@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1793729282680,
+ "updatedAt": 1793729411625,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3188,7 +3188,7 @@
      "yield": "100"
     },
     {
-     "name": "pistac",
+     "name": "pistachio",
      "unit": "kg",
      "qty": "",
      "price": "",
@@ -3208,7 +3208,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1793642342788,
-   "updatedAt": 1793644526734
+   "updatedAt": 1793729406884
   },
   "sheets/mw0e32lh4fly68h1": {
    "name": "Canapé Rijo e Bruna",
