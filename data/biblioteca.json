@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1793692398882,
+ "updatedAt": 1793692409591,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3226,7 +3226,7 @@
      "yield": "100"
     },
     {
-     "name": "",
+     "name": "cam",
      "unit": "kg",
      "qty": "",
      "price": "",
@@ -3253,7 +3253,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1793692302822,
-   "updatedAt": 1793692394459
+   "updatedAt": 1793692405155
   },
   "shopping/list": {
    "entries": [
