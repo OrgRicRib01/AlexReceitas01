@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1793644531394,
+ "updatedAt": 1793692313909,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3209,6 +3209,51 @@
    "photoUrl": null,
    "createdAt": 1793642342788,
    "updatedAt": 1793644526734
+  },
+  "sheets/mw0e32lh4fly68h1": {
+   "name": "Canap",
+   "code": "FT-006",
+   "family": "",
+   "doses": "",
+   "prepTime": "",
+   "cookTime": "",
+   "ingredients": [
+    {
+     "name": "",
+     "unit": "kg",
+     "qty": "",
+     "price": "",
+     "yield": ""
+    },
+    {
+     "name": "",
+     "unit": "kg",
+     "qty": "",
+     "price": "",
+     "yield": ""
+    },
+    {
+     "name": "",
+     "unit": "kg",
+     "qty": "",
+     "price": "",
+     "yield": ""
+    }
+   ],
+   "method": "",
+   "notes": "",
+   "conservation": "",
+   "allergens": [],
+   "status": "rascunho",
+   "source": "curso",
+   "sourceNote": "",
+   "tags": "",
+   "targetFc": 30,
+   "salePrice": "",
+   "photoId": null,
+   "photoUrl": null,
+   "createdAt": 1793692302822,
+   "updatedAt": 1793692309522
   },
   "shopping/list": {
    "entries": [
