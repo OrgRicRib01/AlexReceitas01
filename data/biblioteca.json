@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1794985270473,
+ "updatedAt": 1794985278451,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3131,7 +3131,7 @@
     {
      "name": "gengibre",
      "unit": "kg",
-     "qty": "",
+     "qty": "0,020",
      "price": "",
      "yield": ""
     }
@@ -3149,7 +3149,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1793371019084,
-   "updatedAt": 1794985265969
+   "updatedAt": 1794985277166
   },
   "sheets/mvzkc96rouityfh2": {
    "name": "Salada composta Alexandre e Nicolly",
