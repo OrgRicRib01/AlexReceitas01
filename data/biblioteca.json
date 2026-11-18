@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1794985423319,
+ "updatedAt": 1794985430667,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3143,11 +3143,11 @@
      "yield": ""
     },
     {
-     "name": "c",
+     "name": "Cebola Roxa",
      "unit": "kg",
      "qty": "",
-     "price": "",
-     "yield": ""
+     "price": "2,49",
+     "yield": "100"
     }
    ],
    "method": "juntar caldo e sumo de lima e o sal.\nRalar e adocionar o gengibre.\ncortar a malagueta tirar as sementes e cortar  brunesa fina",
@@ -3163,7 +3163,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1793371019084,
-   "updatedAt": 1794985418855
+   "updatedAt": 1794985426303
   },
   "sheets/mvzkc96rouityfh2": {
    "name": "Salada composta Alexandre e Nicolly",
