@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1794985510007,
+ "updatedAt": 1794985538164,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3153,7 +3153,9 @@
    "method": "juntar caldo e sumo de lima e o sal.\nDe seguida Cortar e juntar os ingredientes das seguintes formas.\nRalar e adocionar o gengibre.\nPicar a cebola roxa e juntar ao resto\ncortar a malagueta tirar as sementes e cortar  brunesa fina",
    "notes": "",
    "conservation": "",
-   "allergens": [],
+   "allergens": [
+    "peixe"
+   ],
    "status": "rascunho",
    "source": "curso",
    "sourceNote": "",
@@ -3163,7 +3165,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1793371019084,
-   "updatedAt": 1794985505604
+   "updatedAt": 1794985533819
   },
   "sheets/mvzkc96rouityfh2": {
    "name": "Salada composta Alexandre e Nicolly",
