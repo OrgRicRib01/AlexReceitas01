@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1794985336812,
+ "updatedAt": 1794985352426,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3136,7 +3136,7 @@
      "yield": "100"
     }
    ],
-   "method": "juntar caldo e sumo de lima e o sal.\ncortar a malagueta tirar as sementes e cortar  brunesa fina",
+   "method": "juntar caldo e sumo de lima e o sal\ncortar a malagueta tirar as sementes e cortar  brunesa fina",
    "notes": "",
    "conservation": "",
    "allergens": [],
@@ -3149,7 +3149,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1793371019084,
-   "updatedAt": 1794985332368
+   "updatedAt": 1794985348044
   },
   "sheets/mvzkc96rouityfh2": {
    "name": "Salada composta Alexandre e Nicolly",
