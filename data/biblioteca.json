@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795541717238,
+ "updatedAt": 1795541729874,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3480,7 +3480,7 @@
   },
   "sheets/mwuz6499yloym28s": {
    "name": "Bolachas de aveia",
-   "code": "FT-010",
+   "code": "FT-03",
    "family": "",
    "doses": "",
    "prepTime": "",
@@ -3521,7 +3521,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795541702158,
-   "updatedAt": 1795541712661
+   "updatedAt": 1795541725468
   },
   "shopping/list": {
    "entries": [
