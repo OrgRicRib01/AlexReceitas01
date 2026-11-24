@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795542783172,
+ "updatedAt": 1795542793374,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3694,7 +3694,7 @@
      "yield": "100"
     }
    ],
-   "method": "mater a manteiga amolecida com o açúcar e as raspas de limão.\naos poucos juntar a farinha",
+   "method": "mater a manteiga amolecida com o açúcar e as raspas de limão.\naos poucos juntar a farinha.\nmoldar a massa em bolinhas e mandar 15",
    "notes": "",
    "conservation": "",
    "allergens": [],
@@ -3707,7 +3707,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795542549341,
-   "updatedAt": 1795542778946
+   "updatedAt": 1795542789138
   },
   "sheets/mwuzrrfxc66v5sfz": {
    "name": "financiers",
