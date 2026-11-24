@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795543107805,
+ "updatedAt": 1795543111123,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3739,11 +3739,11 @@
      "yield": "100"
     },
     {
-     "name": "nma",
+     "name": "manteiga",
      "unit": "kg",
      "qty": "",
-     "price": "",
-     "yield": ""
+     "price": "8.36",
+     "yield": "100"
     },
     {
      "name": "",
@@ -3780,7 +3780,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795542711981,
-   "updatedAt": 1795543103612
+   "updatedAt": 1795543109812
   },
   "sheets/mwuztwqkf1uv9ojx": {
    "name": "Austriecos de limão",
