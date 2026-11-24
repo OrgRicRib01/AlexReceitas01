@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795542029374,
+ "updatedAt": 1795542041891,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3545,7 +3545,7 @@
      "yield": "100"
     }
    ],
-   "method": "Barer manteiga com o açúcar, \nAdicionar ovos ",
+   "method": "Barer manteiga com o açúcar, \nAdicionar ovos \nadicionar",
    "notes": "",
    "conservation": "",
    "allergens": [],
@@ -3558,7 +3558,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795541702158,
-   "updatedAt": 1795542027254
+   "updatedAt": 1795542037627
   },
   "shopping/list": {
    "entries": [
