@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795543446292,
+ "updatedAt": 1795543450354,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3865,14 +3865,14 @@
     {
      "name": "Fermento em pó",
      "unit": "kg",
-     "qty": "0.000",
+     "qty": "0.005",
      "price": "14.00",
      "yield": "100"
     },
     {
      "name": "manteiga",
      "unit": "kg",
-     "qty": "",
+     "qty": "1,",
      "price": "8.36",
      "yield": "100"
     },
@@ -3904,7 +3904,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795543268318,
-   "updatedAt": 1795543441949
+   "updatedAt": 1795543448572
   },
   "sheets/mwv06nb5migfbufe": {
    "name": "cookies red velvet",
