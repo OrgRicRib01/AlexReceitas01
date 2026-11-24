@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795541016613,
+ "updatedAt": 1795541022155,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3339,7 +3339,7 @@
     {
      "name": "Ovos",
      "unit": "un",
-     "qty": "0.125",
+     "qty": "5",
      "price": "0,30",
      "yield": ""
     },
@@ -3406,7 +3406,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795539551868,
-   "updatedAt": 1795541012386
+   "updatedAt": 1795541017933
   },
   "sheets/mwuypnzwyzylco57": {
    "name": "Petit de coco",
