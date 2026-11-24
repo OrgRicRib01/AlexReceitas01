@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795542845275,
+ "updatedAt": 1795542851229,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3757,8 +3757,8 @@
   "sheets/mwuztwqkf1uv9ojx": {
    "name": "Austriecos de limão",
    "code": "FT-06",
-   "family": "",
-   "doses": "",
+   "family": "Sobremesa",
+   "doses": "1",
    "prepTime": "",
    "cookTime": "",
    "ingredients": [
@@ -3797,7 +3797,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795542812156,
-   "updatedAt": 1795542840928
+   "updatedAt": 1795542847029
   },
   "shopping/list": {
    "entries": [
