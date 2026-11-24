@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795542765866,
+ "updatedAt": 1795542772860,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3694,7 +3694,7 @@
      "yield": "100"
     }
    ],
-   "method": "mater a manteiga amolecida com o açúcar e as raspas de fa",
+   "method": "mater a manteiga amolecida com o açúcar e as raspas de limão",
    "notes": "",
    "conservation": "",
    "allergens": [],
@@ -3707,7 +3707,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795542549341,
-   "updatedAt": 1795542761568
+   "updatedAt": 1795542768605
   },
   "sheets/mwuzrrfxc66v5sfz": {
    "name": "financiers",
