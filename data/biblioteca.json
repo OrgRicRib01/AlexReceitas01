@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795541593284,
+ "updatedAt": 1795541599947,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3459,7 +3459,7 @@
      "yield": "100"
     }
    ],
-   "method": "ferver a água e a manteiga e add secos.\npor fim com o saco de pasteleiro fazer bolinhas e",
+   "method": "ferver a água e a manteiga e add secos.\npor fim com o saco de pasteleiro fazer bolinhas e mandar ao forno 180",
    "notes": "",
    "conservation": "",
    "allergens": [],
@@ -3472,7 +3472,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795540934588,
-   "updatedAt": 1795541588956
+   "updatedAt": 1795541595554
   },
   "shopping/list": {
    "entries": [
