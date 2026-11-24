@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795540674347,
+ "updatedAt": 1795540678291,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3372,7 +3372,7 @@
      "yield": "100"
     },
     {
-     "name": "",
+     "name": "choco",
      "unit": "kg",
      "qty": "",
      "price": "",
@@ -3392,7 +3392,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795539551868,
-   "updatedAt": 1795540669871
+   "updatedAt": 1795540674092
   },
   "shopping/list": {
    "entries": [
