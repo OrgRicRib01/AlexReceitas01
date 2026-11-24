@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1794985538164,
+ "updatedAt": 1795536468259,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -2879,14 +2879,14 @@
    "updatedAt": 1793136228473
   },
   "settings/library": {
-   "owner": "Alexandre Canelas Ribeiro",
+   "owner": "Iris Antunes",
    "fields": [
     {
      "label": "Turma",
      "value": "CP2"
     }
    ],
-   "updatedAt": 1793125537269
+   "updatedAt": 1795536465100
   },
   "sheets/exemplo-creme-abobora": {
    "name": "Creme de abóbora com sementes tostadas (EXEMPLO)",
