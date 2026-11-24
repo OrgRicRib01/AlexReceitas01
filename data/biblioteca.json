@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795542563333,
+ "updatedAt": 1795542570618,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3655,8 +3655,8 @@
    "updatedAt": 1795542459659
   },
   "sheets/mwuzo9y5zlqvry8d": {
-   "name": "A",
-   "code": "FT-011",
+   "name": "Areias",
+   "code": "FT-05",
    "family": "",
    "doses": "",
    "prepTime": "",
@@ -3697,7 +3697,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795542549341,
-   "updatedAt": 1795542559135
+   "updatedAt": 1795542566419
   },
   "shopping/list": {
    "entries": [
