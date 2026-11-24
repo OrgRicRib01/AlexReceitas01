@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795543656792,
+ "updatedAt": 1795543766163,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3964,7 +3964,7 @@
      "yield": "100"
     }
    ],
-   "method": "",
+   "method": "Bater manteiga.\nCom açúcar.",
    "notes": "",
    "conservation": "",
    "allergens": [],
@@ -3977,7 +3977,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795543406465,
-   "updatedAt": 1795543652525
+   "updatedAt": 1795543764946
   },
   "shopping/list": {
    "entries": [
