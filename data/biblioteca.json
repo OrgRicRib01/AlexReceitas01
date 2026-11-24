@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795542210406,
+ "updatedAt": 1795542251110,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3564,6 +3564,51 @@
    "photoUrl": null,
    "createdAt": 1795541702158,
    "updatedAt": 1795542169684
+  },
+  "sheets/mwuzhk9h5j6n0853": {
+   "name": "Bolinho de Cardamomo",
+   "code": "FT-010",
+   "family": "",
+   "doses": "",
+   "prepTime": "",
+   "cookTime": "",
+   "ingredients": [
+    {
+     "name": "",
+     "unit": "kg",
+     "qty": "",
+     "price": "",
+     "yield": ""
+    },
+    {
+     "name": "",
+     "unit": "kg",
+     "qty": "",
+     "price": "",
+     "yield": ""
+    },
+    {
+     "name": "",
+     "unit": "kg",
+     "qty": "",
+     "price": "",
+     "yield": ""
+    }
+   ],
+   "method": "",
+   "notes": "",
+   "conservation": "",
+   "allergens": [],
+   "status": "rascunho",
+   "source": "curso",
+   "sourceNote": "",
+   "tags": "",
+   "targetFc": 30,
+   "salePrice": "",
+   "photoId": null,
+   "photoUrl": null,
+   "createdAt": 1795542236117,
+   "updatedAt": 1795542246646
   },
   "shopping/list": {
    "entries": [
