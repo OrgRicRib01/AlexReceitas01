@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795543025304,
+ "updatedAt": 1795543030434,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3777,11 +3777,11 @@
      "yield": "100"
     },
     {
-     "name": "ras",
+     "name": "raspas de limão",
      "unit": "kg",
      "qty": "",
      "price": "",
-     "yield": ""
+     "yield": "100"
     }
    ],
    "method": "",
@@ -3797,7 +3797,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795542812156,
-   "updatedAt": 1795543020979
+   "updatedAt": 1795543026196
   },
   "shopping/list": {
    "entries": [
