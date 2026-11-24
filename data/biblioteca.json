@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795544435840,
+ "updatedAt": 1795544439337,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3333,7 +3333,7 @@
     {
      "name": "Canela em pó",
      "unit": "kg",
-     "qty": "",
+     "qty": "0,003",
      "price": "10,90",
      "yield": ""
     },
@@ -3358,7 +3358,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795536483000,
-   "updatedAt": 1795544431355
+   "updatedAt": 1795544435114
   },
   "sheets/mwuxw130b8l99ljt": {
    "name": "Madalenas cobertas de Chocolate",
