@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795541232646,
+ "updatedAt": 1795541234181,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3393,7 +3393,7 @@
      "yield": ""
     }
    ],
-   "method": "derreter a manteiga e reservar ",
+   "method": "derreter a manteiga e reservar \nbater",
    "notes": "",
    "conservation": "",
    "allergens": [],
@@ -3406,7 +3406,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795539551868,
-   "updatedAt": 1795541153210
+   "updatedAt": 1795541229921
   },
   "sheets/mwuypnzwyzylco57": {
    "name": "Petit de coco",
