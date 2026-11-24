@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795542105765,
+ "updatedAt": 1795542106013,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3388,10 +3388,10 @@
      "yield": ""
     },
     {
-     "name": "Ch",
+     "name": "Chocolate Branco",
      "unit": "kg",
      "qty": "0.125",
-     "price": "",
+     "price": "9.90",
      "yield": ""
     },
     {
@@ -3402,7 +3402,7 @@
      "yield": ""
     }
    ],
-   "method": "derreter a manteiga e reservar \nbater ovos com açúcar ate branquear \n",
+   "method": "",
    "notes": "",
    "conservation": "",
    "allergens": [],
@@ -3415,7 +3415,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795539551868,
-   "updatedAt": 1795542096143
+   "updatedAt": 1795542104703
   },
   "sheets/mwuypnzwyzylco57": {
    "name": "Petit de coco",
