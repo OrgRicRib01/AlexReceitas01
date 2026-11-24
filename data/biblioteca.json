@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795543369812,
+ "updatedAt": 1795543375006,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3822,7 +3822,7 @@
      "yield": "100"
     }
    ],
-   "method": "bater a manteiga com o açúcar e as raspas.\njuntar o resto dos igredientes.\nmoldar em bolinhas e mandar ao forno a 180º por 10m ",
+   "method": "bater a manteiga com o açúcar e as raspas.\njuntar o resto dos igredientes.\nmoldar em bolinhas e mandar ao forno a 180º por 10m. ",
    "notes": "",
    "conservation": "",
    "allergens": [],
@@ -3835,7 +3835,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795542812156,
-   "updatedAt": 1795543365609
+   "updatedAt": 1795543370823
   },
   "sheets/mwv03opq6z8e19da": {
    "name": "Queques de Cacau",
