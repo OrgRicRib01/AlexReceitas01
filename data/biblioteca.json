@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795543432653,
+ "updatedAt": 1795543438795,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3904,8 +3904,8 @@
    "code": "FT-07",
    "family": "Sobremesa",
    "doses": "1",
-   "prepTime": "",
-   "cookTime": "",
+   "prepTime": "15m",
+   "cookTime": "10",
    "ingredients": [
     {
      "name": "",
@@ -3936,13 +3936,13 @@
    "status": "rascunho",
    "source": "curso",
    "sourceNote": "",
-   "tags": "",
+   "tags": "cookie",
    "targetFc": 30,
    "salePrice": "",
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795543406465,
-   "updatedAt": 1795543425139
+   "updatedAt": 1795543437480
   },
   "shopping/list": {
    "entries": [
