@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795542570618,
+ "updatedAt": 1795542576772,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3657,8 +3657,8 @@
   "sheets/mwuzo9y5zlqvry8d": {
    "name": "Areias",
    "code": "FT-05",
-   "family": "",
-   "doses": "",
+   "family": "Sobremesa",
+   "doses": "1",
    "prepTime": "",
    "cookTime": "",
    "ingredients": [
@@ -3697,7 +3697,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795542549341,
-   "updatedAt": 1795542566419
+   "updatedAt": 1795542574980
   },
   "shopping/list": {
    "entries": [
