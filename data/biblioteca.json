@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795541538916,
+ "updatedAt": 1795541543150,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3452,10 +3452,10 @@
      "yield": "100"
     },
     {
-     "name": "açúca",
+     "name": "Açúcar branco",
      "unit": "kg",
      "qty": "",
-     "price": "",
+     "price": "1,09",
      "yield": ""
     }
    ],
@@ -3472,7 +3472,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795540934588,
-   "updatedAt": 1795541534662
+   "updatedAt": 1795541538945
   },
   "shopping/list": {
    "entries": [
