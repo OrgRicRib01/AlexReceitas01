@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795542862484,
+ "updatedAt": 1795542870550,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3763,7 +3763,7 @@
    "cookTime": "15",
    "ingredients": [
     {
-     "name": "",
+     "name": "m",
      "unit": "kg",
      "qty": "",
      "price": "",
@@ -3797,7 +3797,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795542812156,
-   "updatedAt": 1795542858208
+   "updatedAt": 1795542866140
   },
   "shopping/list": {
    "entries": [
