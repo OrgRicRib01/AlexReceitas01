@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795541737365,
+ "updatedAt": 1795541743904,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3483,7 +3483,7 @@
    "code": "FT-03",
    "family": "",
    "doses": "",
-   "prepTime": "",
+   "prepTime": "15",
    "cookTime": "15",
    "ingredients": [
     {
@@ -3521,7 +3521,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795541702158,
-   "updatedAt": 1795541732880
+   "updatedAt": 1795541739649
   },
   "shopping/list": {
    "entries": [
