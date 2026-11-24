@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795540608868,
+ "updatedAt": 1795540617274,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3329,7 +3329,7 @@
    "updatedAt": 1795536521376
   },
   "sheets/mwuxw130b8l99ljt": {
-   "name": "Madalenas cobertas de a",
+   "name": "Madalenas cobertas de Choco",
    "code": "FT-008",
    "family": "Pastelaria",
    "doses": "",
@@ -3371,7 +3371,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795539551868,
-   "updatedAt": 1795540604543
+   "updatedAt": 1795540612951
   },
   "shopping/list": {
    "entries": [
