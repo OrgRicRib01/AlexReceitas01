@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795544450286,
+ "updatedAt": 1795544459469,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3338,11 +3338,11 @@
      "yield": ""
     },
     {
-     "name": "aç",
+     "name": "Açúcar branco",
      "unit": "kg",
      "qty": "",
-     "price": "",
-     "yield": ""
+     "price": "1,09",
+     "yield": "100"
     }
    ],
    "method": "",
@@ -3358,7 +3358,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795536483000,
-   "updatedAt": 1795544446079
+   "updatedAt": 1795544454946
   },
   "sheets/mwuxw130b8l99ljt": {
    "name": "Madalenas cobertas de Chocolate",
