@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795542831590,
+ "updatedAt": 1795542834848,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3755,7 +3755,7 @@
    "updatedAt": 1795542742288
   },
   "sheets/mwuztwqkf1uv9ojx": {
-   "name": "autriecos de limão",
+   "name": "austriecos de limão",
    "code": "FT-012",
    "family": "",
    "doses": "",
@@ -3797,7 +3797,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795542812156,
-   "updatedAt": 1795542827373
+   "updatedAt": 1795542830454
   },
   "shopping/list": {
    "entries": [
