@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795540953922,
+ "updatedAt": 1795540958103,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3409,7 +3409,7 @@
    "updatedAt": 1795540879784
   },
   "sheets/mwuypnzwyzylco57": {
-   "name": "petit de coco",
+   "name": "Petit de coco",
    "code": "FT-009",
    "family": "",
    "doses": "",
@@ -3451,7 +3451,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795540934588,
-   "updatedAt": 1795540949609
+   "updatedAt": 1795540953086
   },
   "shopping/list": {
    "entries": [
