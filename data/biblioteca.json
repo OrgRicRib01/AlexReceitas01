@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795544274848,
+ "updatedAt": 1795544313185,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3310,7 +3310,7 @@
    "cookTime": "15m",
    "ingredients": [
     {
-     "name": "",
+     "name": "farinha",
      "unit": "kg",
      "qty": "",
      "price": "",
@@ -3344,7 +3344,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795536483000,
-   "updatedAt": 1795544270273
+   "updatedAt": 1795544308891
   },
   "sheets/mwuxw130b8l99ljt": {
    "name": "Madalenas cobertas de Chocolate",
