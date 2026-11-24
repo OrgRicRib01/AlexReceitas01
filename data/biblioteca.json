@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795541109651,
+ "updatedAt": 1795541120388,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3419,15 +3419,15 @@
     {
      "name": "Coco ralado",
      "unit": "kg",
-     "qty": "0,25",
+     "qty": "0,250",
      "price": "7,95",
      "yield": ""
     },
     {
-     "name": "",
+     "name": "água",
      "unit": "kg",
      "qty": "",
-     "price": "",
+     "price": "0",
      "yield": ""
     },
     {
@@ -3451,7 +3451,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795540934588,
-   "updatedAt": 1795541105470
+   "updatedAt": 1795541116160
   },
   "shopping/list": {
    "entries": [
