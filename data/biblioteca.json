@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795544237218,
+ "updatedAt": 1795544267838,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3304,8 +3304,8 @@
   "sheets/mwuw294oa89srrk2": {
    "name": "Amor e canela",
    "code": "FT-007",
-   "family": "",
-   "doses": "",
+   "family": "Sobremesa",
+   "doses": "1",
    "prepTime": "",
    "cookTime": "",
    "ingredients": [
@@ -3344,7 +3344,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795536483000,
-   "updatedAt": 1795544232285
+   "updatedAt": 1795544263356
   },
   "sheets/mwuxw130b8l99ljt": {
    "name": "Madalenas cobertas de Chocolate",
