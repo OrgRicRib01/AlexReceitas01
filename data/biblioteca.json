@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795541086792,
+ "updatedAt": 1795541093453,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3417,10 +3417,10 @@
    "cookTime": "25",
    "ingredients": [
     {
-     "name": "coc",
+     "name": "Coco ralado",
      "unit": "kg",
      "qty": "",
-     "price": "",
+     "price": "7,95",
      "yield": ""
     },
     {
@@ -3451,7 +3451,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795540934588,
-   "updatedAt": 1795541082331
+   "updatedAt": 1795541089275
   },
   "shopping/list": {
    "entries": [
