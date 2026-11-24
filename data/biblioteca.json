@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795543135818,
+ "updatedAt": 1795543172921,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3746,10 +3746,10 @@
      "yield": "100"
     },
     {
-     "name": "",
+     "name": "Frutos vermelhos congelados",
      "unit": "kg",
      "qty": "",
-     "price": "",
+     "price": "11.09",
      "yield": ""
     },
     {
@@ -3780,7 +3780,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795542711981,
-   "updatedAt": 1795543131359
+   "updatedAt": 1795543171322
   },
   "sheets/mwuztwqkf1uv9ojx": {
    "name": "Austriecos de limão",
