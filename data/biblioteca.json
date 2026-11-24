@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795541552304,
+ "updatedAt": 1795541561007,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3459,7 +3459,7 @@
      "yield": "100"
     }
    ],
-   "method": "",
+   "method": "ferver a água ",
    "notes": "",
    "conservation": "",
    "allergens": [],
@@ -3472,7 +3472,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795540934588,
-   "updatedAt": 1795541547880
+   "updatedAt": 1795541556823
   },
   "shopping/list": {
    "entries": [
