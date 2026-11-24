@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795542650256,
+ "updatedAt": 1795542652197,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3639,7 +3639,7 @@
      "yield": ""
     }
    ],
-   "method": "",
+   "method": "Mix amêndoa com o cardamomo   Bater a manteiga com as natas add os ovos   Mix f. trigo add a´ mistura  ",
    "notes": "",
    "conservation": "",
    "allergens": [],
@@ -3652,7 +3652,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795542236117,
-   "updatedAt": 1795542459659
+   "updatedAt": 1795542647923
   },
   "sheets/mwuzo9y5zlqvry8d": {
    "name": "Areias",
