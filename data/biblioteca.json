@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795542635724,
+ "updatedAt": 1795542650256,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3677,11 +3677,11 @@
      "yield": "100"
     },
     {
-     "name": "",
+     "name": "Farinha de trigo",
      "unit": "kg",
      "qty": "",
-     "price": "",
-     "yield": ""
+     "price": "0,69",
+     "yield": "100"
     }
    ],
    "method": "",
@@ -3697,7 +3697,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795542549341,
-   "updatedAt": 1795542631507
+   "updatedAt": 1795542645981
   },
   "shopping/list": {
    "entries": [
