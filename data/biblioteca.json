@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795541057553,
+ "updatedAt": 1795541060396,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3413,7 +3413,7 @@
    "code": "FT-009",
    "family": "Sobremesa",
    "doses": "",
-   "prepTime": "",
+   "prepTime": "20",
    "cookTime": "",
    "ingredients": [
     {
@@ -3451,7 +3451,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795540934588,
-   "updatedAt": 1795541056035
+   "updatedAt": 1795541059043
   },
   "shopping/list": {
    "entries": [
