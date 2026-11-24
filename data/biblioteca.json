@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795542466438,
+ "updatedAt": 1795542563333,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3653,6 +3653,51 @@
    "photoUrl": null,
    "createdAt": 1795542236117,
    "updatedAt": 1795542459659
+  },
+  "sheets/mwuzo9y5zlqvry8d": {
+   "name": "A",
+   "code": "FT-011",
+   "family": "",
+   "doses": "",
+   "prepTime": "",
+   "cookTime": "",
+   "ingredients": [
+    {
+     "name": "",
+     "unit": "kg",
+     "qty": "",
+     "price": "",
+     "yield": ""
+    },
+    {
+     "name": "",
+     "unit": "kg",
+     "qty": "",
+     "price": "",
+     "yield": ""
+    },
+    {
+     "name": "",
+     "unit": "kg",
+     "qty": "",
+     "price": "",
+     "yield": ""
+    }
+   ],
+   "method": "",
+   "notes": "",
+   "conservation": "",
+   "allergens": [],
+   "status": "rascunho",
+   "source": "curso",
+   "sourceNote": "",
+   "tags": "",
+   "targetFc": 30,
+   "salePrice": "",
+   "photoId": null,
+   "photoUrl": null,
+   "createdAt": 1795542549341,
+   "updatedAt": 1795542559135
   },
   "shopping/list": {
    "entries": [
