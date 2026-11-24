@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795541652562,
+ "updatedAt": 1795541665353,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3412,9 +3412,9 @@
    "name": "Petit de coco",
    "code": "FT-009",
    "family": "Sobremesa",
-   "doses": "",
+   "doses": "1",
    "prepTime": "20",
-   "cookTime": "25",
+   "cookTime": "",
    "ingredients": [
     {
      "name": "Coco ralado",
@@ -3476,7 +3476,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795540934588,
-   "updatedAt": 1795541648169
+   "updatedAt": 1795541663673
   },
   "shopping/list": {
    "entries": [
