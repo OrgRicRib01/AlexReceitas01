@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795542455666,
+ "updatedAt": 1795542460766,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3652,7 +3652,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795542236117,
-   "updatedAt": 1795542451468
+   "updatedAt": 1795542456561
   },
   "shopping/list": {
    "entries": [
