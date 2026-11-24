@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795541676536,
+ "updatedAt": 1795541688562,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3470,13 +3470,13 @@
    "status": "rascunho",
    "source": "curso",
    "sourceNote": "",
-   "tags": "",
+   "tags": "pastelaria",
    "targetFc": 30,
    "salePrice": "",
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795540934588,
-   "updatedAt": 1795541671961
+   "updatedAt": 1795541683591
   },
   "shopping/list": {
    "entries": [
