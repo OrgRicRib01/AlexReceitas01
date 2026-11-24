@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795543549261,
+ "updatedAt": 1795543552401,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3938,7 +3938,7 @@
     {
      "name": "Cacau em pó",
      "unit": "kg",
-     "qty": "",
+     "qty": "0,015",
      "price": "15,92",
      "yield": ""
     }
@@ -3956,7 +3956,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795543406465,
-   "updatedAt": 1795543545032
+   "updatedAt": 1795543551081
   },
   "shopping/list": {
    "entries": [
