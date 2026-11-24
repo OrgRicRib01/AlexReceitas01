@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795542117688,
+ "updatedAt": 1795542150946,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3402,7 +3402,7 @@
      "yield": ""
     }
    ],
-   "method": "",
+   "method": "Derreter manteiga e reservar   Bater ovos com açúcar até branquear   Juntar os secos e envolver à mistura dos ovos   Raspa de limão e por fim a manteiga tépida   Coloca a frio a prender por 10–15 min   Preparar as formas untadas com desmoldante   Derreter chocolate e meter nas formas de silicone   Reaplicar cada madalena no congelador a prender  ",
    "notes": "",
    "conservation": "",
    "allergens": [],
@@ -3415,7 +3415,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795539551868,
-   "updatedAt": 1795542104703
+   "updatedAt": 1795542146753
   },
   "sheets/mwuypnzwyzylco57": {
    "name": "Petit de coco",
