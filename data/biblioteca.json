@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795544687332,
+ "updatedAt": 1795544696434,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3352,7 +3352,7 @@
      "yield": "100"
     }
    ],
-   "method": "Bater o açúcar com manteiga.\nAdicionar os ovos e os secos.\nFazer bolinhas.\nPincelar metade com gema.\nE o resto com a canela?\nMandar para o forno no centro da.",
+   "method": "Bater o açúcar com manteiga.\nAdicionar os ovos e os secos.\nFazer bolinhas.\nPincelar metade com gema.\nE o resto com a canela?\n",
    "notes": "",
    "conservation": "",
    "allergens": [],
@@ -3365,7 +3365,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795536483000,
-   "updatedAt": 1795544683065
+   "updatedAt": 1795544692208
   },
   "sheets/mwuxw130b8l99ljt": {
    "name": "Madalenas cobertas de Chocolate",
