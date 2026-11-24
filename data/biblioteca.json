@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795543050202,
+ "updatedAt": 1795543058479,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3720,7 +3720,7 @@
     {
      "name": "Açúcar branco",
      "unit": "kg",
-     "qty": "",
+     "qty": "0,180",
      "price": "1.09",
      "yield": "100"
     },
@@ -3752,7 +3752,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795542711981,
-   "updatedAt": 1795543047094
+   "updatedAt": 1795543054264
   },
   "sheets/mwuztwqkf1uv9ojx": {
    "name": "Austriecos de limão",
