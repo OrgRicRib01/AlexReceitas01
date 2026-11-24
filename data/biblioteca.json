@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795542017761,
+ "updatedAt": 1795542024290,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -921,6 +921,15 @@
     "note": "congelado, 800 g"
    },
    "updatedAt": 1793136222909
+  },
+  "ingredients/i-chocolate-branco": {
+   "name": "Chocolate Branco",
+   "category": "outros",
+   "unit": "kg",
+   "price": "9,90",
+   "yield": "",
+   "notes": "",
+   "updatedAt": 1795542021226
   },
   "ingredients/i-chocolate-negro-70": {
    "name": "Chocolate negro 70%",
