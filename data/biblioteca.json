@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795543187936,
+ "updatedAt": 1795543194637,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3755,14 +3755,7 @@
     {
      "name": "claras de ovos",
      "unit": "kg",
-     "qty": "0.125",
-     "price": "",
-     "yield": ""
-    },
-    {
-     "name": "",
-     "unit": "kg",
-     "qty": "",
+     "qty": "0.180",
      "price": "",
      "yield": ""
     }
@@ -3780,7 +3773,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795542711981,
-   "updatedAt": 1795543183668
+   "updatedAt": 1795543190170
   },
   "sheets/mwuztwqkf1uv9ojx": {
    "name": "Austriecos de limão",
