@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795541011106,
+ "updatedAt": 1795541016613,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3387,7 +3387,7 @@
     },
     {
      "name": "limão",
-     "unit": "kg",
+     "unit": "un",
      "qty": "",
      "price": "2,49",
      "yield": ""
@@ -3406,7 +3406,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795539551868,
-   "updatedAt": 1795541006907
+   "updatedAt": 1795541012386
   },
   "sheets/mwuypnzwyzylco57": {
    "name": "Petit de coco",
