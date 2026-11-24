@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795541993632,
+ "updatedAt": 1795542003072,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3531,7 +3531,7 @@
     {
      "name": "Sal fino",
      "unit": "kg",
-     "qty": "",
+     "qty": "0,002",
      "price": "0,45",
      "yield": "100"
     }
@@ -3549,7 +3549,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795541702158,
-   "updatedAt": 1795541989318
+   "updatedAt": 1795541998783
   },
   "shopping/list": {
    "entries": [
