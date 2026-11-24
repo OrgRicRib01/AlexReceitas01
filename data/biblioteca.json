@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795543030434,
+ "updatedAt": 1795543030988,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3718,7 +3718,7 @@
    "cookTime": "",
    "ingredients": [
     {
-     "name": "Acucar",
+     "name": "Açh",
      "unit": "kg",
      "qty": "",
      "price": "",
@@ -3752,7 +3752,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795542711981,
-   "updatedAt": 1795542742288
+   "updatedAt": 1795543028089
   },
   "sheets/mwuztwqkf1uv9ojx": {
    "name": "Austriecos de limão",
