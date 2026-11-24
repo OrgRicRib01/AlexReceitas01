@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795543089162,
+ "updatedAt": 1795543093441,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3732,11 +3732,11 @@
      "yield": ""
     },
     {
-     "name": "fa",
+     "name": "Farinha de trigo",
      "unit": "kg",
      "qty": "",
-     "price": "",
-     "yield": ""
+     "price": "0.69",
+     "yield": "100"
     }
    ],
    "method": "",
@@ -3752,7 +3752,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795542711981,
-   "updatedAt": 1795543084931
+   "updatedAt": 1795543088972
   },
   "sheets/mwuztwqkf1uv9ojx": {
    "name": "Austriecos de limão",
