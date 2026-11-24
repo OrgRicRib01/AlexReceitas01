@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795543575111,
+ "updatedAt": 1795543583542,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3950,7 +3950,7 @@
      "yield": "100"
     },
     {
-     "name": "",
+     "name": "corante vermelho",
      "unit": "kg",
      "qty": "",
      "price": "",
@@ -3970,7 +3970,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795543406465,
-   "updatedAt": 1795543570650
+   "updatedAt": 1795543579360
   },
   "shopping/list": {
    "entries": [
