@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795542167656,
+ "updatedAt": 1795542173873,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3549,7 +3549,6 @@
    "notes": "",
    "conservation": "",
    "allergens": [
-    "gluten",
     "ovos"
    ],
    "status": "rascunho",
@@ -3561,7 +3560,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795541702158,
-   "updatedAt": 1795542163315
+   "updatedAt": 1795542169684
   },
   "shopping/list": {
    "entries": [
