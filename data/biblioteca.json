@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795543402807,
+ "updatedAt": 1795543408782,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3877,10 +3877,10 @@
      "yield": "100"
     },
     {
-     "name": "",
+     "name": "limão",
      "unit": "kg",
-     "qty": "",
-     "price": "",
+     "qty": "1.000",
+     "price": "2.49",
      "yield": ""
     }
    ],
@@ -3897,7 +3897,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795543268318,
-   "updatedAt": 1795543398615
+   "updatedAt": 1795543407350
   },
   "shopping/list": {
    "entries": [
