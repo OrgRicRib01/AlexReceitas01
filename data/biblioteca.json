@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795543238324,
+ "updatedAt": 1795543238542,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3760,7 +3760,7 @@
      "yield": ""
     }
    ],
-   "method": "Aqui tens a transcrição desta imagem (rotada e lida da esquerda para a direita tal como está escrita no caderno):\n\n### Continuação da receita anterior (em cima)\n\n* ...anteriores e por fim envolver a mistura de amêndoa.\n\n\n* Coloca em formas untadas.\n\n\n* 200ºC 15 min.\n\n\n\n---\n\n### Nova receita: **Financiers** (em baixo)\n\n#### Ingredientes\n\n* Açúcar: 180\n\n\n* F. amêndoa: 75\n\n\n* F. trigo: 40\n\n\n* manteiga: 135\n\n\n* f. vermelhos: 9.5\n\n\n* claras: 180\n\n\n\n#### Preparação\n\n* Mix secos\n\n\n* Mix claras\n\n\n* Mix manteiga noisette\n\n\n* Coloca no frio 30 min\n\n\n* Coloca mais formas com manteiga\n\n\n* Coloca f. vermelhos 200ºC ",
+   "method": "Aqui tens a transcrição desta imagem (rotada e lida da esquerda para a direita tal como está escrita no caderno):\n\n### Continuação da receita anterior (em cima)\n\n* ...anteriores e por fim envolver a mistura de amêndoa.\n\n\n* Coloca em formas untadas.\n\n\n* 200ºC 15 min.\n\n\n\n---\n\n### Nova receita: **Financiers** (em baixo)\n\n#### Ingredientes\n\n* Açúcar: 180\n\n\n* F. amêndoa: 75\n\n\n* F. trigo: 40\n\n\n* manteiga: 135\n\n\n* f. vermelhos: 9.5\n\n\n* claras: 180\n\n\n\n#### Preparação\n\n* Mix secos\n\n\n* Mix claras\n\n\n* Mix manteiga noisette\n\n\n* Coloca no frio 30 min\n\n\n* Coloca mais formas com manteiga\n\n\n* Coloca f. vermelhos 200ºC 15 min",
    "notes": "",
    "conservation": "",
    "allergens": [],
@@ -3773,7 +3773,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795542711981,
-   "updatedAt": 1795543226414
+   "updatedAt": 1795543232899
   },
   "sheets/mwuztwqkf1uv9ojx": {
    "name": "Austriecos de limão",
