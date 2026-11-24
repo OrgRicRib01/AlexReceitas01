@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795542460766,
+ "updatedAt": 1795542464030,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3632,10 +3632,10 @@
      "yield": "100"
     },
     {
-     "name": "",
-     "unit": "kg",
+     "name": "Natas para culinária",
+     "unit": "L",
      "qty": "",
-     "price": "",
+     "price": "3.95",
      "yield": ""
     }
    ],
@@ -3652,7 +3652,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795542236117,
-   "updatedAt": 1795542456561
+   "updatedAt": 1795542459659
   },
   "shopping/list": {
    "entries": [
