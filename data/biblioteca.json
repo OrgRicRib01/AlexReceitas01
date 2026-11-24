@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795544482663,
+ "updatedAt": 1795544487919,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3345,11 +3345,11 @@
      "yield": "100"
     },
     {
-     "name": "man",
+     "name": "manteiga",
      "unit": "kg",
      "qty": "",
-     "price": "",
-     "yield": ""
+     "price": "8,36",
+     "yield": "100"
     }
    ],
    "method": "",
@@ -3365,7 +3365,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795536483000,
-   "updatedAt": 1795544481087
+   "updatedAt": 1795544483498
   },
   "sheets/mwuxw130b8l99ljt": {
    "name": "Madalenas cobertas de Chocolate",
