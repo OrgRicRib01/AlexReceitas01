@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795542450672,
+ "updatedAt": 1795542455666,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3625,11 +3625,11 @@
      "yield": ""
     },
     {
-     "name": "",
+     "name": "Fermento em pó",
      "unit": "kg",
      "qty": "",
-     "price": "",
-     "yield": ""
+     "price": "14.00",
+     "yield": "100"
     },
     {
      "name": "",
@@ -3652,7 +3652,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795542236117,
-   "updatedAt": 1795542446487
+   "updatedAt": 1795542451468
   },
   "shopping/list": {
    "entries": [
