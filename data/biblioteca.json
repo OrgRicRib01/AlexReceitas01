@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795543050392,
+ "updatedAt": 1795543050202,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3725,10 +3725,10 @@
      "yield": "100"
     },
     {
-     "name": "",
+     "name": "Farinha de Amêndoa",
      "unit": "kg",
      "qty": "",
-     "price": "",
+     "price": "21.95",
      "yield": ""
     },
     {
@@ -3752,7 +3752,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795542711981,
-   "updatedAt": 1795543031775
+   "updatedAt": 1795543047094
   },
   "sheets/mwuztwqkf1uv9ojx": {
    "name": "Austriecos de limão",
