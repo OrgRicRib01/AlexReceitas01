@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795543422694,
+ "updatedAt": 1795543426257,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3858,14 +3858,14 @@
     {
      "name": "Farinha de trigo",
      "unit": "kg",
-     "qty": "0,125",
+     "qty": "0.125",
      "price": "0.69",
      "yield": "100"
     },
     {
      "name": "Fermento em pó",
      "unit": "kg",
-     "qty": "",
+     "qty": "0.125",
      "price": "14.00",
      "yield": "100"
     },
@@ -3897,7 +3897,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795543268318,
-   "updatedAt": 1795543416331
+   "updatedAt": 1795543421566
   },
   "sheets/mwv06nb5migfbufe": {
    "name": "cookies red velvet",
