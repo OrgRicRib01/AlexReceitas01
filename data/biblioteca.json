@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795543420432,
+ "updatedAt": 1795543422917,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3902,7 +3902,7 @@
   "sheets/mwv06nb5migfbufe": {
    "name": "cookies red velvet",
    "code": "FT-07",
-   "family": "",
+   "family": "sobre",
    "doses": "",
    "prepTime": "",
    "cookTime": "",
@@ -3942,7 +3942,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795543406465,
-   "updatedAt": 1795543418727
+   "updatedAt": 1795543421611
   },
   "shopping/list": {
    "entries": [
