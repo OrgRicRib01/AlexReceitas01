@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795543794785,
+ "updatedAt": 1795543799039,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3964,7 +3964,7 @@
      "yield": "100"
     }
    ],
-   "method": "Bater manteiga com o açúcar.\nAdicionar ovos corante.\nMix secos.",
+   "method": "Bater manteiga com o açúcar.\nAdicionar ovos corante.\nMix secos.\nAdicionar o chocolate.",
    "notes": "",
    "conservation": "",
    "allergens": [],
@@ -3977,7 +3977,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795543406465,
-   "updatedAt": 1795543790535
+   "updatedAt": 1795543794661
   },
   "shopping/list": {
    "entries": [
