@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795543083599,
+ "updatedAt": 1795543089162,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3732,7 +3732,7 @@
      "yield": ""
     },
     {
-     "name": "",
+     "name": "fa",
      "unit": "kg",
      "qty": "",
      "price": "",
@@ -3752,7 +3752,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795542711981,
-   "updatedAt": 1795543079293
+   "updatedAt": 1795543084931
   },
   "sheets/mwuztwqkf1uv9ojx": {
    "name": "Austriecos de limão",
