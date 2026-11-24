@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795542744663,
+ "updatedAt": 1795542749596,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3694,7 +3694,7 @@
      "yield": "100"
     }
    ],
-   "method": "",
+   "method": "mater a manteiga amolecida ",
    "notes": "",
    "conservation": "",
    "allergens": [],
@@ -3707,7 +3707,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795542549341,
-   "updatedAt": 1795542735402
+   "updatedAt": 1795542745298
   },
   "sheets/mwuzrrfxc66v5sfz": {
    "name": "financiers",
