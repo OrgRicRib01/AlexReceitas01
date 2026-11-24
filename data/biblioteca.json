@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795544385123,
+ "updatedAt": 1795544402322,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3324,11 +3324,11 @@
      "yield": "100"
     },
     {
-     "name": "",
+     "name": "Fermento em pó",
      "unit": "kg",
      "qty": "",
-     "price": "",
-     "yield": ""
+     "price": "14,00",
+     "yield": "100"
     }
    ],
    "method": "",
@@ -3344,7 +3344,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795536483000,
-   "updatedAt": 1795544380878
+   "updatedAt": 1795544400649
   },
   "sheets/mwuxw130b8l99ljt": {
    "name": "Madalenas cobertas de Chocolate",
