@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795541758154,
+ "updatedAt": 1795541761456,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3487,10 +3487,10 @@
    "cookTime": "15",
    "ingredients": [
     {
-     "name": "ave",
+     "name": "Flocos de aveia",
      "unit": "kg",
      "qty": "",
-     "price": "",
+     "price": "1,98",
      "yield": ""
     },
     {
@@ -3521,7 +3521,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795541702158,
-   "updatedAt": 1795541753829
+   "updatedAt": 1795541757042
   },
   "shopping/list": {
    "entries": [
