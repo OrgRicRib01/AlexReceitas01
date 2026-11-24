@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795543233018,
+ "updatedAt": 1795543238324,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3819,7 +3819,7 @@
      "yield": "100"
     }
    ],
-   "method": "bater a manteiga com o açi",
+   "method": "bater a manteiga com o aç",
    "notes": "",
    "conservation": "",
    "allergens": [],
@@ -3832,7 +3832,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795542812156,
-   "updatedAt": 1795543230864
+   "updatedAt": 1795543232408
   },
   "shopping/list": {
    "entries": [
