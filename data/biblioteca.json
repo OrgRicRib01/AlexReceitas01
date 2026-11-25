@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795636700876,
+ "updatedAt": 1795636712797,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4044,7 +4044,7 @@
      "yield": ""
     }
    ],
-   "method": "",
+   "method": "Mix tudo ",
    "notes": "",
    "conservation": "",
    "allergens": [],
@@ -4057,7 +4057,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795636615328,
-   "updatedAt": 1795636696659
+   "updatedAt": 1795636710297
   },
   "shopping/list": {
    "entries": [
