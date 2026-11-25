@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795638312653,
+ "updatedAt": 1795638317679,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4160,7 +4160,7 @@
     {
      "name": "Cenoura",
      "unit": "kg",
-     "qty": "",
+     "qty": "0.350",
      "price": "1.19",
      "yield": ""
     },
@@ -4213,7 +4213,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795638247823,
-   "updatedAt": 1795638308271
+   "updatedAt": 1795638313395
   },
   "shopping/list": {
    "entries": [
