@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795638017565,
+ "updatedAt": 1795638020665,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4113,7 +4113,7 @@
      "yield": "100"
     },
     {
-     "name": "",
+     "name": "clara",
      "unit": "kg",
      "qty": "",
      "price": "",
@@ -4133,7 +4133,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795637488351,
-   "updatedAt": 1795638013340
+   "updatedAt": 1795638016468
   },
   "shopping/list": {
    "entries": [
