@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795638258928,
+ "updatedAt": 1795638275918,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4158,14 +4158,14 @@
    "cookTime": "",
    "ingredients": [
     {
-     "name": "",
+     "name": "Cenoura",
      "unit": "kg",
      "qty": "",
-     "price": "",
+     "price": "1.19",
      "yield": ""
     },
     {
-     "name": "",
+     "name": "ovos",
      "unit": "kg",
      "qty": "",
      "price": "",
@@ -4192,7 +4192,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795638247823,
-   "updatedAt": 1795638254761
+   "updatedAt": 1795638274412
   },
   "shopping/list": {
    "entries": [
