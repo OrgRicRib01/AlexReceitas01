@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795637048141,
+ "updatedAt": 1795637054408,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4042,6 +4042,13 @@
      "qty": "0.001",
      "price": "",
      "yield": ""
+    },
+    {
+     "name": "Frutos vermelhos congelados",
+     "unit": "kg",
+     "qty": "0,",
+     "price": "11.09",
+     "yield": ""
     }
    ],
    "method": "Mix tudo ",
@@ -4057,7 +4064,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795636615328,
-   "updatedAt": 1795637043934
+   "updatedAt": 1795637052923
   },
   "shopping/list": {
    "entries": [
