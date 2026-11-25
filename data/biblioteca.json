@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795637016946,
+ "updatedAt": 1795637031350,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4001,7 +4001,7 @@
    "updatedAt": 1795543804800
   },
   "sheets/mwwjofq81p1q1s69": {
-   "name": " Crumble Muffins De frutos vermelhos ",
+   "name": " Muffins De frutos vermelhos ",
    "code": "FT-013",
    "family": "",
    "doses": "",
@@ -4057,7 +4057,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795636615328,
-   "updatedAt": 1795637012578
+   "updatedAt": 1795637026970
   },
   "shopping/list": {
    "entries": [
