@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795637986911,
+ "updatedAt": 1795638017565,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4099,7 +4099,7 @@
      "yield": "100"
     },
     {
-     "name": "ovo",
+     "name": "gema",
      "unit": "uni",
      "qty": "0.060",
      "price": "0.27",
@@ -4111,6 +4111,13 @@
      "qty": "",
      "price": "1.09",
      "yield": "100"
+    },
+    {
+     "name": "",
+     "unit": "kg",
+     "qty": "",
+     "price": "",
+     "yield": ""
     }
    ],
    "method": "",
@@ -4126,7 +4133,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795637488351,
-   "updatedAt": 1795637982342
+   "updatedAt": 1795638013340
   },
   "shopping/list": {
    "entries": [
