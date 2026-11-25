@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795638321225,
+ "updatedAt": 1795638327494,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4167,14 +4167,14 @@
     {
      "name": "ovos",
      "unit": "un",
-     "qty": "0,200",
+     "qty": "0.200",
      "price": "6.00",
      "yield": "100"
     },
     {
      "name": "oleo",
      "unit": "kg",
-     "qty": "",
+     "qty": "0.150",
      "price": "",
      "yield": ""
     },
@@ -4213,7 +4213,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795638247823,
-   "updatedAt": 1795638316790
+   "updatedAt": 1795638322922
   },
   "shopping/list": {
    "entries": [
