@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795638337139,
+ "updatedAt": 1795638349188,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4188,14 +4188,14 @@
     {
      "name": "Farinha de trigo",
      "unit": "kg",
-     "qty": "",
+     "qty": "0.300",
      "price": "0.69",
      "yield": "100"
     },
     {
      "name": "Fermento em pó",
      "unit": "kg",
-     "qty": "",
+     "qty": "0,",
      "price": "14.00",
      "yield": "100"
     }
@@ -4213,7 +4213,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795638247823,
-   "updatedAt": 1795638333438
+   "updatedAt": 1795638347730
   },
   "shopping/list": {
    "entries": [
