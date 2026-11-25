@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795638367617,
+ "updatedAt": 1795638374301,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4200,10 +4200,13 @@
      "yield": "100"
     }
    ],
-   "method": "Ralar a cenoura\n\nMisturar ovos + óleo + açúcar\n\nAdicionar secos\n\nEnvolver a cenoura\n\nCozer: 180 °C durante 30 min",
+   "method": "Ralar a cenoura\nMisturar ovos + óleo + açúcar\nAdicionar secos\nEnvolver a cenoura\nCozer: 180 °C durante 30 min",
    "notes": "",
    "conservation": "",
-   "allergens": [],
+   "allergens": [
+    "gluten",
+    "ovos"
+   ],
    "status": "rascunho",
    "source": "curso",
    "sourceNote": "",
@@ -4213,7 +4216,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795638247823,
-   "updatedAt": 1795638363435
+   "updatedAt": 1795638370053
   },
   "shopping/list": {
    "entries": [
