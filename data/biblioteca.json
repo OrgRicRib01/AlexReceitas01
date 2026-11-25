@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795637400496,
+ "updatedAt": 1795637404156,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4058,7 +4058,7 @@
      "yield": "100"
     }
    ],
-   "method": "Mix secos\nmix liquidos \nlevar ao forno ",
+   "method": "Mix secos\nmix líquidos \nlevar ao forno ",
    "notes": "",
    "conservation": "",
    "allergens": [],
@@ -4071,7 +4071,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795636615328,
-   "updatedAt": 1795637396008
+   "updatedAt": 1795637399948
   },
   "shopping/list": {
    "entries": [
