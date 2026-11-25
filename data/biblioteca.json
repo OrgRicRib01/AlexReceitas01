@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795638165699,
+ "updatedAt": 1795638171192,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4134,7 +4134,7 @@
      "yield": "100"
     }
    ],
-   "method": "Caramelo: caramelizar 100 g de açúcar e adicionar leite + manteiga \n\nBater manteiga e açúcar até ficar cremoso\n\nAdicionar gemas 1 a 1\n\nAdicionar caramelo\n\nAdicionar secos\n\n\nCozer: 180 °C durante 30 min",
+   "method": "Caramelo: caramelizar 100 g de açúcar e adicionar leite + manteiga \nBater manteiga e açúcar até ficar cremoso\nAdicionar gemas 1 a 1\nAdicionar caramelo\nAdicionar secos\nCozer: 180 °C durante 30 min",
    "notes": "",
    "conservation": "",
    "allergens": [],
@@ -4147,7 +4147,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795637488351,
-   "updatedAt": 1795638161556
+   "updatedAt": 1795638167232
   },
   "shopping/list": {
    "entries": [
