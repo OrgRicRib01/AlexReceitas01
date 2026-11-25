@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795636666584,
+ "updatedAt": 1795636675106,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4011,14 +4011,14 @@
     {
      "name": "Açúcar branco",
      "unit": "kg",
-     "qty": "",
+     "qty": "0.025",
      "price": "1.09",
      "yield": "100"
     },
     {
      "name": "manteiga",
      "unit": "kg",
-     "qty": "",
+     "qty": "0",
      "price": "8.36",
      "yield": "100"
     },
@@ -4057,7 +4057,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795636615328,
-   "updatedAt": 1795636662392
+   "updatedAt": 1795636673544
   },
   "shopping/list": {
    "entries": [
