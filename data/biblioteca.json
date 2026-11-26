@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795712590716,
+ "updatedAt": 1795712600578,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4432,7 +4432,7 @@
      "yield": ""
     }
    ],
-   "method": "",
+   "method": "Levar 400 g de leite ao lume com a casca de limão e ferver.\nMisturar o açúcar, as gemas, o amido e o restante leite.\nAdicionar o leite quente em fio à mistura anterior e misturar.\nLevar ao lume, sempre a mexer, até engrossar.\nColocar película em contacto e repousar no frio.",
    "notes": "",
    "conservation": "",
    "allergens": [],
@@ -4445,7 +4445,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795712396645,
-   "updatedAt": 1795712586446
+   "updatedAt": 1795712596331
   },
   "shopping/list": {
    "entries": [
