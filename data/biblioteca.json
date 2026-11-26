@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795715287676,
+ "updatedAt": 1795715295036,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4890,7 +4890,7 @@
      "yield": "100"
     }
    ],
-   "method": "fazer uma calda com a primeira medida de água e o açúcar até 105ºC.\nmisturar a farinha com as gemas e a segunda ",
+   "method": "fazer uma calda com a primeira medida de água e o açúcar até 105ºC.\nmisturar a farinha com as gemas e a segunda medida de água",
    "notes": "",
    "conservation": "",
    "allergens": [],
@@ -4903,7 +4903,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795713119950,
-   "updatedAt": 1795715283478
+   "updatedAt": 1795715290778
   },
   "sheets/mwxtas76tt4q4jo2": {
    "name": "Recheio cinnamon roll",
