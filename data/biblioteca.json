@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795712831896,
+ "updatedAt": 1795712838034,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4517,7 +4517,7 @@
     {
      "name": "Açúcar branco",
      "unit": "kg",
-     "qty": "",
+     "qty": "0.125",
      "price": "1,09",
      "yield": "100"
     }
@@ -4535,7 +4535,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795712681508,
-   "updatedAt": 1795712827617
+   "updatedAt": 1795712833845
   },
   "sheets/mwxszathu2y2p6uj": {
    "name": "Merengue suiço",
