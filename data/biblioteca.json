@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795712699587,
+ "updatedAt": 1795712701863,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4477,7 +4477,7 @@
      "yield": ""
     }
    ],
-   "method": "",
+   "method": "Esticar a massa e espalhar açúcar.\nEnrolar de extremidade para dentro até ao meio.\nPolvilhar com canela e açúcar.\nAssar a 180°C durante 10 a 15 minutos.",
    "notes": "",
    "conservation": "",
    "allergens": [],
@@ -4490,7 +4490,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795712671092,
-   "updatedAt": 1795712679373
+   "updatedAt": 1795712697608
   },
   "sheets/mwxsysroi8rycunu": {
    "name": "creme de pasteleiro",
