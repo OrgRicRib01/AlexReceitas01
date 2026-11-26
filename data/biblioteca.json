@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795713465203,
+ "updatedAt": 1795713469552,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4944,7 +4944,7 @@
    "updatedAt": 1795713356898
   },
   "sheets/mwxteluyyuwe0q9t": {
-   "name": "Q",
+   "name": "Queijadas de ",
    "code": "FT-028",
    "family": "",
    "doses": "",
@@ -4986,7 +4986,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795713419050,
-   "updatedAt": 1795713460838
+   "updatedAt": 1795713465163
   },
   "shopping/list": {
    "entries": [
