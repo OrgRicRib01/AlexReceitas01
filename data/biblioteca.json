@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795712744615,
+ "updatedAt": 1795712749383,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4546,7 +4546,7 @@
    "cookTime": "",
    "ingredients": [
     {
-     "name": "Claras de ovoa",
+     "name": "Claras de ovo",
      "unit": "kg",
      "qty": "",
      "price": "2,99",
@@ -4573,7 +4573,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795712704901,
-   "updatedAt": 1795712743194
+   "updatedAt": 1795712745101
   },
   "shopping/list": {
    "entries": [
