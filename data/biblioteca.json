@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795712845276,
+ "updatedAt": 1795712848644,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4520,6 +4520,13 @@
      "qty": "0,125",
      "price": "1,09",
      "yield": "100"
+    },
+    {
+     "name": "",
+     "unit": "kg",
+     "qty": "",
+     "price": "",
+     "yield": ""
     }
    ],
    "method": "",
@@ -4535,7 +4542,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795712681508,
-   "updatedAt": 1795712840991
+   "updatedAt": 1795712844370
   },
   "sheets/mwxszathu2y2p6uj": {
    "name": "Merengue suiço",
