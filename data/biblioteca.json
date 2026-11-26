@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795712179944,
+ "updatedAt": 1795712185324,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4302,7 +4302,7 @@
     {
      "name": "Fermento em pó",
      "unit": "kg",
-     "qty": "5,000",
+     "qty": "0,005",
      "price": "14,00",
      "yield": "100"
     }
@@ -4320,7 +4320,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795711668126,
-   "updatedAt": 1795712175517
+   "updatedAt": 1795712180889
   },
   "sheets/mwxsh40m76arqe9f": {
    "name": "Massa folhada inversa",
