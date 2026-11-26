@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795712229198,
+ "updatedAt": 1795712234072,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4274,7 +4274,7 @@
     {
      "name": "ovo",
      "unit": "un",
-     "qty": "",
+     "qty": "4,000",
      "price": "6,00",
      "yield": "100"
     },
@@ -4320,7 +4320,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795711668126,
-   "updatedAt": 1795712224589
+   "updatedAt": 1795712229672
   },
   "sheets/mwxsh40m76arqe9f": {
    "name": "Massa folhada inversa",
