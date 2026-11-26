@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795713694400,
+ "updatedAt": 1795713700023,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -5031,7 +5031,7 @@
     {
      "name": "manteiga",
      "unit": "kg",
-     "qty": "",
+     "qty": "0,060",
      "price": "8,36",
      "yield": "100"
     }
@@ -5049,7 +5049,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795713419050,
-   "updatedAt": 1795713689905
+   "updatedAt": 1795713695543
   },
   "shopping/list": {
    "entries": [
