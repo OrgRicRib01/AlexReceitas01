@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795712194105,
+ "updatedAt": 1795712229198,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4272,7 +4272,7 @@
    "cookTime": "",
    "ingredients": [
     {
-     "name": "ovos",
+     "name": "ovo",
      "unit": "un",
      "qty": "",
      "price": "6,00",
@@ -4320,7 +4320,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795711668126,
-   "updatedAt": 1795712189544
+   "updatedAt": 1795712224589
   },
   "sheets/mwxsh40m76arqe9f": {
    "name": "Massa folhada inversa",
