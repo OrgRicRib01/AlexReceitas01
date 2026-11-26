@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795711779841,
+ "updatedAt": 1795711785255,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4266,7 +4266,7 @@
   "sheets/mwxsd2u621zefrhg": {
    "name": "Pão de Ló ",
    "code": "FT-017",
-   "family": "s",
+   "family": "Pastelaria",
    "doses": "",
    "prepTime": "",
    "cookTime": "",
@@ -4320,7 +4320,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795711668126,
-   "updatedAt": 1795711778367
+   "updatedAt": 1795711780848
   },
   "shopping/list": {
    "entries": [
