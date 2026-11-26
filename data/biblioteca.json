@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795712701863,
+ "updatedAt": 1795712705465,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4493,9 +4493,9 @@
    "updatedAt": 1795712697608
   },
   "sheets/mwxsysroi8rycunu": {
-   "name": "creme de pasteleiro",
+   "name": "Creme de pasteleiro",
    "code": "FT-020",
-   "family": "",
+   "family": "creme",
    "doses": "",
    "prepTime": "",
    "cookTime": "",
@@ -4535,7 +4535,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795712681508,
-   "updatedAt": 1795712695213
+   "updatedAt": 1795712702708
   },
   "shopping/list": {
    "entries": [
