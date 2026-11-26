@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795713065001,
+ "updatedAt": 1795713089417,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4751,7 +4751,7 @@
      "yield": ""
     }
    ],
-   "method": "",
+   "method": "Juntar tudo e amassar até dar liga.",
    "notes": "",
    "conservation": "",
    "allergens": [],
@@ -4764,7 +4764,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795712914739,
-   "updatedAt": 1795713054191
+   "updatedAt": 1795713085129
   },
   "shopping/list": {
    "entries": [
