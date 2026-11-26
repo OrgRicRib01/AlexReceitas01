@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795714814931,
+ "updatedAt": 1795714837998,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4848,7 +4848,7 @@
      "yield": "100"
     },
     {
-     "name": "",
+     "name": "açúcar",
      "unit": "kg",
      "qty": "",
      "price": "",
@@ -4875,7 +4875,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795713119950,
-   "updatedAt": 1795714810686
+   "updatedAt": 1795714836018
   },
   "sheets/mwxtas76tt4q4jo2": {
    "name": "Recheio cinnamon roll",
