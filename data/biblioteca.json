@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795711749104,
+ "updatedAt": 1795711767478,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4307,7 +4307,7 @@
      "yield": "100"
     }
    ],
-   "method": "",
+   "method": "Bater os ovos com o açúcar em relevo.\nMisturar os secos.\nPeneirar para a mistura anterior e envolver.\nLevar ao forno a 180°C durante 20 minutos.\n",
    "notes": "",
    "conservation": "",
    "allergens": [],
@@ -4320,7 +4320,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795711668126,
-   "updatedAt": 1795711744699
+   "updatedAt": 1795711763068
   },
   "shopping/list": {
    "entries": [
