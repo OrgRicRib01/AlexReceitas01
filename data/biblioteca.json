@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795712855643,
+ "updatedAt": 1795712857505,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4612,7 +4612,7 @@
      "yield": ""
     }
    ],
-   "method": "",
+   "method": "Picar alho.\nEsticar a massa.\nEspalhar manteiga com alho picado.\nDobrar a massa ao meio.\nCortar em tiras e entrelaçar.\nAssar a 180°C durante 10 a 15 minutos.\n",
    "notes": "",
    "conservation": "",
    "allergens": [],
@@ -4625,7 +4625,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795712817308,
-   "updatedAt": 1795712837071
+   "updatedAt": 1795712851456
   },
   "shopping/list": {
    "entries": [
