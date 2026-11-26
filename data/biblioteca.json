@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795712155547,
+ "updatedAt": 1795712166360,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4281,7 +4281,7 @@
     {
      "name": "Açúcar branco",
      "unit": "kg",
-     "qty": "0,8",
+     "qty": "0,080",
      "price": "1,09",
      "yield": "100"
     },
@@ -4320,7 +4320,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795711668126,
-   "updatedAt": 1795712150619
+   "updatedAt": 1795712161775
   },
   "sheets/mwxsh40m76arqe9f": {
    "name": "Massa folhada inversa",
