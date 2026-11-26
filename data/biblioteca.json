@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795712392185,
+ "updatedAt": 1795712404873,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4387,6 +4387,51 @@
    "photoUrl": null,
    "createdAt": 1795711856278,
    "updatedAt": 1795712387773
+  },
+  "sheets/mwxssoysm5v9xm0n": {
+   "name": "Mil folhas ",
+   "code": "FT-019",
+   "family": "",
+   "doses": "",
+   "prepTime": "",
+   "cookTime": "",
+   "ingredients": [
+    {
+     "name": "",
+     "unit": "kg",
+     "qty": "",
+     "price": "",
+     "yield": ""
+    },
+    {
+     "name": "",
+     "unit": "kg",
+     "qty": "",
+     "price": "",
+     "yield": ""
+    },
+    {
+     "name": "",
+     "unit": "kg",
+     "qty": "",
+     "price": "",
+     "yield": ""
+    }
+   ],
+   "method": "",
+   "notes": "",
+   "conservation": "",
+   "allergens": [],
+   "status": "rascunho",
+   "source": "curso",
+   "sourceNote": "",
+   "tags": "",
+   "targetFc": 30,
+   "salePrice": "",
+   "photoId": null,
+   "photoUrl": null,
+   "createdAt": 1795712396645,
+   "updatedAt": 1795712400540
   },
   "shopping/list": {
    "entries": [
