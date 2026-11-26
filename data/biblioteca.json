@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795712891198,
+ "updatedAt": 1795712897333,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4664,7 +4664,7 @@
      "yield": ""
     }
    ],
-   "method": "",
+   "method": "Picar os legumes.\nSaltear com um refogado de alho e cebola.\nTemperar.\nEsticar a massa e fazer retângulos.\nColocar os legumes e fechar.\nTrincar a massa, dar golpes e pincelar com ovo.\nAssar a 200°C durante 15 a 20 minutos.",
    "notes": "",
    "conservation": "",
    "allergens": [],
@@ -4677,7 +4677,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795712872483,
-   "updatedAt": 1795712881103
+   "updatedAt": 1795712892905
   },
   "shopping/list": {
    "entries": [
