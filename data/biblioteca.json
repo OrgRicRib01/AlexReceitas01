@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795712431803,
+ "updatedAt": 1795712443136,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4411,11 +4411,25 @@
      "yield": "100"
     },
     {
-     "name": "Açúcar em pó",
+     "name": "Açúcar branco",
      "unit": "kg",
      "qty": "",
      "price": "1,09",
      "yield": "100"
+    },
+    {
+     "name": "Amido de milho (maizena)",
+     "unit": "kg",
+     "qty": "",
+     "price": "6,47",
+     "yield": ""
+    },
+    {
+     "name": "",
+     "unit": "kg",
+     "qty": "",
+     "price": "",
+     "yield": ""
     }
    ],
    "method": "",
@@ -4431,7 +4445,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795712396645,
-   "updatedAt": 1795712427361
+   "updatedAt": 1795712441578
   },
   "shopping/list": {
    "entries": [
