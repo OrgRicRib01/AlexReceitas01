@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795713688387,
+ "updatedAt": 1795713694400,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -5024,7 +5024,7 @@
     {
      "name": "Canela em pó",
      "unit": "kg",
-     "qty": "",
+     "qty": "0,001",
      "price": "10,90",
      "yield": ""
     },
@@ -5049,7 +5049,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795713419050,
-   "updatedAt": 1795713683751
+   "updatedAt": 1795713689905
   },
   "shopping/list": {
    "entries": [
