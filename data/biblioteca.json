@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795713267764,
+ "updatedAt": 1795713275890,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4886,10 +4886,10 @@
    "cookTime": "",
    "ingredients": [
     {
-     "name": "",
+     "name": "Farinha de Amêndoa ",
      "unit": "kg",
      "qty": "",
-     "price": "",
+     "price": "21,95",
      "yield": ""
     },
     {
@@ -4941,7 +4941,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795713240642,
-   "updatedAt": 1795713263259
+   "updatedAt": 1795713270463
   },
   "shopping/list": {
    "entries": [
