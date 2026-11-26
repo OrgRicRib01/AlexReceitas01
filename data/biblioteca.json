@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795718176992,
+ "updatedAt": 1795718179981,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -5130,7 +5130,7 @@
      "yield": ""
     }
    ],
-   "method": "1 - Bater ovos + açúcar\n2 - Derreter a manteiga\n3- Mix secos aos ovos + raspas de limão e manteiga\n4 - Colocar nas formas com manteiga 180º",
+   "method": "1 - Bater ovos + açúcar\n2 - Derreter a manteiga\n3- Mix secos aos ovos + raspas de limão e manteiga\n4 - Colocar nas formas com manteiga 180ºC ",
    "notes": "",
    "conservation": "",
    "allergens": [],
@@ -5143,7 +5143,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795717845733,
-   "updatedAt": 1795718175652
+   "updatedAt": 1795718178285
   },
   "shopping/list": {
    "entries": [
