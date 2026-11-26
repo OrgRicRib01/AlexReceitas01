@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795713047329,
+ "updatedAt": 1795713050552,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4739,7 +4739,7 @@
     {
      "name": "gema",
      "unit": "uni",
-     "qty": "",
+     "qty": "0,001",
      "price": "0,27",
      "yield": "100"
     },
@@ -4764,7 +4764,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795712914739,
-   "updatedAt": 1795713043065
+   "updatedAt": 1795713048967
   },
   "shopping/list": {
    "entries": [
