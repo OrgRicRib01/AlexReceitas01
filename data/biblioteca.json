@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795712990215,
+ "updatedAt": 1795712998446,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4696,7 +4696,7 @@
     },
     {
      "name": "leite",
-     "unit": "L",
+     "unit": "kg",
      "qty": "",
      "price": "0,85",
      "yield": "100"
@@ -4764,7 +4764,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795712914739,
-   "updatedAt": 1795712987385
+   "updatedAt": 1795712994259
   },
   "shopping/list": {
    "entries": [
