@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795714842465,
+ "updatedAt": 1795714847636,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4850,7 +4850,7 @@
     {
      "name": "Açúcar branco",
      "unit": "kg",
-     "qty": "",
+     "qty": "0,125",
      "price": "1,09",
      "yield": "100"
     },
@@ -4875,7 +4875,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795713119950,
-   "updatedAt": 1795714838263
+   "updatedAt": 1795714843469
   },
   "sheets/mwxtas76tt4q4jo2": {
    "name": "Recheio cinnamon roll",
