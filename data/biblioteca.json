@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795713609860,
+ "updatedAt": 1795713617352,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4974,7 +4974,7 @@
     },
     {
      "name": "sal",
-     "unit": "q.b.",
+     "unit": "kg",
      "qty": "0,001",
      "price": "",
      "yield": ""
@@ -5049,7 +5049,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795713419050,
-   "updatedAt": 1795713605286
+   "updatedAt": 1795713612858
   },
   "shopping/list": {
    "entries": [
