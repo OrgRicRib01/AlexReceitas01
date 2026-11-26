@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795713212007,
+ "updatedAt": 1795713221430,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4817,7 +4817,7 @@
      "yield": "100"
     }
    ],
-   "method": "",
+   "method": "Juntar tudo",
    "notes": "",
    "conservation": "",
    "allergens": [],
@@ -4830,7 +4830,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795713096891,
-   "updatedAt": 1795713207709
+   "updatedAt": 1795713217080
   },
   "sheets/mwxt872m37xi4cpf": {
    "name": "Creme de bola de berlim",
