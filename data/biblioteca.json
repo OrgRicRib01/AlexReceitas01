@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795711702378,
+ "updatedAt": 1795711706898,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4286,7 +4286,7 @@
      "yield": "100"
     },
     {
-     "name": "",
+     "name": "fa",
      "unit": "kg",
      "qty": "",
      "price": "",
@@ -4306,7 +4306,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795711668126,
-   "updatedAt": 1795711698149
+   "updatedAt": 1795711702346
   },
   "shopping/list": {
    "entries": [
