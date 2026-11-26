@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795712988010,
+ "updatedAt": 1795712990215,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4737,17 +4737,17 @@
      "yield": "100"
     },
     {
-     "name": "ge",
-     "unit": "kg",
+     "name": "gema",
+     "unit": "uni",
      "qty": "",
-     "price": "",
-     "yield": ""
+     "price": "0,27",
+     "yield": "100"
     },
     {
-     "name": "",
+     "name": "Fermento de padeiro seco",
      "unit": "kg",
      "qty": "",
-     "price": "",
+     "price": "90,55",
      "yield": ""
     }
    ],
@@ -4764,7 +4764,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795712914739,
-   "updatedAt": 1795712980551
+   "updatedAt": 1795712987385
   },
   "shopping/list": {
    "entries": [
