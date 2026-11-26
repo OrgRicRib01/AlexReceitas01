@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795712848644,
+ "updatedAt": 1795712855643,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4522,10 +4522,10 @@
      "yield": "100"
     },
     {
-     "name": "",
+     "name": "Amido de milho (maizena)",
      "unit": "kg",
      "qty": "",
-     "price": "",
+     "price": "6,47",
      "yield": ""
     }
    ],
@@ -4542,7 +4542,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795712681508,
-   "updatedAt": 1795712844370
+   "updatedAt": 1795712851093
   },
   "sheets/mwxszathu2y2p6uj": {
    "name": "Merengue suiço",
