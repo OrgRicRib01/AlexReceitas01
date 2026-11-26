@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795713183266,
+ "updatedAt": 1795713185904,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4784,7 +4784,7 @@
     {
      "name": "Açúcar branco",
      "unit": "kg",
-     "qty": "",
+     "qty": "0,100",
      "price": "1,09",
      "yield": "100"
     },
@@ -4830,7 +4830,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795713096891,
-   "updatedAt": 1795713176265
+   "updatedAt": 1795713181320
   },
   "sheets/mwxt872m37xi4cpf": {
    "name": "Creme de bola de berlim",
