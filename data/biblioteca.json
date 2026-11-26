@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795713028751,
+ "updatedAt": 1795713031273,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4711,7 +4711,7 @@
     {
      "name": "vagem",
      "unit": "kg",
-     "qty": "",
+     "qty": "0,001",
      "price": "",
      "yield": ""
     },
@@ -4764,7 +4764,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795712914739,
-   "updatedAt": 1795713020958
+   "updatedAt": 1795713024451
   },
   "shopping/list": {
    "entries": [
