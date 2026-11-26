@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795713180656,
+ "updatedAt": 1795713183266,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4833,7 +4833,7 @@
    "updatedAt": 1795713176265
   },
   "sheets/mwxt872m37xi4cpf": {
-   "name": "creme de bola de berlim",
+   "name": "Creme de bola de berlim",
    "code": "FT-026",
    "family": "",
    "doses": "",
@@ -4875,7 +4875,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795713119950,
-   "updatedAt": 1795713171603
+   "updatedAt": 1795713177535
   },
   "shopping/list": {
    "entries": [
