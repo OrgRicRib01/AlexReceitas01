@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795715002299,
+ "updatedAt": 1795715008638,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4878,7 +4878,7 @@
     {
      "name": "folhas de gelatina",
      "unit": "uni",
-     "qty": "1,000",
+     "qty": "0,",
      "price": "0,56",
      "yield": ""
     }
@@ -4896,7 +4896,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795713119950,
-   "updatedAt": 1795714998131
+   "updatedAt": 1795715004353
   },
   "sheets/mwxtas76tt4q4jo2": {
    "name": "Recheio cinnamon roll",
