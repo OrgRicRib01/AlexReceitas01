@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795713772426,
+ "updatedAt": 1795713779707,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -5036,7 +5036,7 @@
      "yield": "100"
     }
    ],
-   "method": "Mix a manteiga derretida com a farinha. Add o ovo, a água, o sal e descansar. ()",
+   "method": "Mix a manteiga derretida com a farinha. Add o ovo, a água, o sal e descansar. (Massa)\n",
    "notes": "",
    "conservation": "",
    "allergens": [],
@@ -5049,7 +5049,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795713419050,
-   "updatedAt": 1795713770451
+   "updatedAt": 1795713775245
   },
   "shopping/list": {
    "entries": [
