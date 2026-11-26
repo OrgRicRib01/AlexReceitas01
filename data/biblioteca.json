@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795712884019,
+ "updatedAt": 1795712887141,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4633,6 +4633,51 @@
    "photoUrl": null,
    "createdAt": 1795712817308,
    "updatedAt": 1795712851456
+  },
+  "sheets/mwxt2w4jobjb7op0": {
+   "name": "Folhados de legumes ",
+   "code": "FT-023",
+   "family": "",
+   "doses": "",
+   "prepTime": "",
+   "cookTime": "",
+   "ingredients": [
+    {
+     "name": "",
+     "unit": "kg",
+     "qty": "",
+     "price": "",
+     "yield": ""
+    },
+    {
+     "name": "",
+     "unit": "kg",
+     "qty": "",
+     "price": "",
+     "yield": ""
+    },
+    {
+     "name": "",
+     "unit": "kg",
+     "qty": "",
+     "price": "",
+     "yield": ""
+    }
+   ],
+   "method": "",
+   "notes": "",
+   "conservation": "",
+   "allergens": [],
+   "status": "rascunho",
+   "source": "curso",
+   "sourceNote": "",
+   "tags": "",
+   "targetFc": 30,
+   "salePrice": "",
+   "photoId": null,
+   "photoUrl": null,
+   "createdAt": 1795712872483,
+   "updatedAt": 1795712881103
   },
   "shopping/list": {
    "entries": [
