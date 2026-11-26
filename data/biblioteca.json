@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795713198673,
+ "updatedAt": 1795713201972,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4798,7 +4798,7 @@
     {
      "name": "manteiga",
      "unit": "kg",
-     "qty": "0,00",
+     "qty": "0,024",
      "price": "8,36",
      "yield": "100"
     },
@@ -4830,7 +4830,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795713096891,
-   "updatedAt": 1795713194295
+   "updatedAt": 1795713197648
   },
   "sheets/mwxt872m37xi4cpf": {
    "name": "Creme de bola de berlim",
