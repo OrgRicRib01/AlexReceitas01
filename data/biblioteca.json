@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795713555244,
+ "updatedAt": 1795713569570,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -5022,18 +5022,18 @@
      "yield": "100"
     },
     {
-     "name": "",
+     "name": "Canela em pó",
      "unit": "kg",
      "qty": "",
-     "price": "",
+     "price": "10,90",
      "yield": ""
     },
     {
-     "name": "",
+     "name": "manteiga",
      "unit": "kg",
      "qty": "",
-     "price": "",
-     "yield": ""
+     "price": "8,36",
+     "yield": "100"
     }
    ],
    "method": "",
@@ -5049,7 +5049,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795713419050,
-   "updatedAt": 1795713550780
+   "updatedAt": 1795713564984
   },
   "shopping/list": {
    "entries": [
