@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795711743317,
+ "updatedAt": 1795711749104,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4295,14 +4295,14 @@
     {
      "name": "Amido de milho (maizena)",
      "unit": "kg",
-     "qty": "",
+     "qty": "20,000",
      "price": "6,47",
      "yield": ""
     },
     {
      "name": "Fermento em pó",
      "unit": "kg",
-     "qty": "",
+     "qty": "5,000",
      "price": "14,00",
      "yield": "100"
     }
@@ -4320,7 +4320,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795711668126,
-   "updatedAt": 1795711739023
+   "updatedAt": 1795711744699
   },
   "shopping/list": {
    "entries": [
