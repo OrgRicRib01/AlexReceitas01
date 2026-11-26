@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795717854425,
+ "updatedAt": 1795717860577,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -5080,7 +5080,7 @@
    "updatedAt": 1795713905238
   },
   "sheets/mwxw1hidg6im2971": {
-   "name": "Madalenqas",
+   "name": "Madalenas",
    "code": "FT-029",
    "family": "",
    "doses": "",
@@ -5122,7 +5122,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795717845733,
-   "updatedAt": 1795717849995
+   "updatedAt": 1795717856211
   },
   "shopping/list": {
    "entries": [
