@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795713890307,
+ "updatedAt": 1795713894617,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -5036,7 +5036,7 @@
      "yield": "100"
     }
    ],
-   "method": "Mix a manteiga derretida com a farinha. Add o ovo, a água, o sal e descansar. (Massa)\nMix queijo, ovos, açúcar e gemas \nAdd farinha e canela e envolver a manteiga derretida. \nEsticar a massa, colocar nas formas untadas. Recear",
+   "method": "Mix a manteiga derretida com a farinha. Add o ovo, a água, o sal e descansar. (Massa)\nMix queijo, ovos, açúcar e gemas \nAdd farinha e canela e envolver a manteiga derretida. \nEsticar a massa, colocar nas formas untadas. Rechear",
    "notes": "",
    "conservation": "",
    "allergens": [],
@@ -5049,7 +5049,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795713419050,
-   "updatedAt": 1795713885860
+   "updatedAt": 1795713890217
   },
   "shopping/list": {
    "entries": [
