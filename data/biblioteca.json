@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795712445967,
+ "updatedAt": 1795712448863,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4425,7 +4425,7 @@
      "yield": ""
     },
     {
-     "name": "cas",
+     "name": "casca ",
      "unit": "kg",
      "qty": "",
      "price": "",
@@ -4445,7 +4445,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795712396645,
-   "updatedAt": 1795712444298
+   "updatedAt": 1795712447164
   },
   "shopping/list": {
    "entries": [
