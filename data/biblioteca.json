@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795712705465,
+ "updatedAt": 1795712731120,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4536,6 +4536,44 @@
    "photoUrl": null,
    "createdAt": 1795712681508,
    "updatedAt": 1795712702708
+  },
+  "sheets/mwxszathu2y2p6uj": {
+   "name": "merengue suiço",
+   "code": "FT-021",
+   "family": "",
+   "doses": "",
+   "prepTime": "",
+   "cookTime": "",
+   "ingredients": [
+    {
+     "name": "",
+     "unit": "kg",
+     "qty": "",
+     "price": "",
+     "yield": ""
+    },
+    {
+     "name": "",
+     "unit": "kg",
+     "qty": "",
+     "price": "",
+     "yield": ""
+    }
+   ],
+   "method": "",
+   "notes": "",
+   "conservation": "",
+   "allergens": [],
+   "status": "rascunho",
+   "source": "curso",
+   "sourceNote": "",
+   "tags": "",
+   "targetFc": 30,
+   "salePrice": "",
+   "photoId": null,
+   "photoUrl": null,
+   "createdAt": 1795712704901,
+   "updatedAt": 1795712726861
   },
   "shopping/list": {
    "entries": [
