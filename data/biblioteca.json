@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795713167803,
+ "updatedAt": 1795713170598,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4810,7 +4810,7 @@
      "yield": "100"
     },
     {
-     "name": "",
+     "name": "ras",
      "unit": "kg",
      "qty": "",
      "price": "",
@@ -4830,7 +4830,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795713096891,
-   "updatedAt": 1795713166197
+   "updatedAt": 1795713169224
   },
   "sheets/mwxt872m37xi4cpf": {
    "name": "",
