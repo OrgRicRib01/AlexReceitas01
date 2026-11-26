@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795712500991,
+ "updatedAt": 1795712504475,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4427,7 +4427,7 @@
     {
      "name": "casca de limão",
      "unit": "kg",
-     "qty": "0,",
+     "qty": "0,001",
      "price": "",
      "yield": ""
     }
@@ -4445,7 +4445,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795712396645,
-   "updatedAt": 1795712496616
+   "updatedAt": 1795712499983
   },
   "shopping/list": {
    "entries": [
