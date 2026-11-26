@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795712771935,
+ "updatedAt": 1795712783639,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4497,8 +4497,8 @@
    "code": "FT-020",
    "family": "creme",
    "doses": "1",
-   "prepTime": "",
-   "cookTime": "",
+   "prepTime": "10m",
+   "cookTime": "1",
    "ingredients": [
     {
      "name": "",
@@ -4535,7 +4535,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795712681508,
-   "updatedAt": 1795712765140
+   "updatedAt": 1795712779280
   },
   "sheets/mwxszathu2y2p6uj": {
    "name": "Merengue suiço",
