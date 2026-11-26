@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795712984729,
+ "updatedAt": 1795712988010,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4536,7 +4536,7 @@
      "yield": "100"
     }
    ],
-   "method": "ferver o leite com a casca de limão.\ná parte juntar ",
+   "method": "ferver o leite com a casca de limão.\ná parte juntar as gemas,açúcar e o amido de milho",
    "notes": "",
    "conservation": "",
    "allergens": [],
@@ -4549,7 +4549,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795712681508,
-   "updatedAt": 1795712965966
+   "updatedAt": 1795712982267
   },
   "sheets/mwxszathu2y2p6uj": {
    "name": "Merengue suiço",
