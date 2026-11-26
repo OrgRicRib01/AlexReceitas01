@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795712426461,
+ "updatedAt": 1795712431803,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4411,11 +4411,11 @@
      "yield": "100"
     },
     {
-     "name": "aç",
+     "name": "Açúcar em pó",
      "unit": "kg",
      "qty": "",
-     "price": "",
-     "yield": ""
+     "price": "1,09",
+     "yield": "100"
     }
    ],
    "method": "",
@@ -4431,7 +4431,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795712396645,
-   "updatedAt": 1795712421777
+   "updatedAt": 1795712427361
   },
   "shopping/list": {
    "entries": [
