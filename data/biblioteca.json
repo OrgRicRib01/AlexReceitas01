@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795711711377,
+ "updatedAt": 1795711719379,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4293,6 +4293,13 @@
      "yield": "100"
     },
     {
+     "name": "Amido de milho (maizena)",
+     "unit": "kg",
+     "qty": "",
+     "price": "6,47",
+     "yield": ""
+    },
+    {
      "name": "",
      "unit": "kg",
      "qty": "",
@@ -4313,7 +4320,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795711668126,
-   "updatedAt": 1795711707200
+   "updatedAt": 1795711718057
   },
   "shopping/list": {
    "entries": [
