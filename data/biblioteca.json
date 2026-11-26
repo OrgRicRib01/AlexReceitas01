@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795713250890,
+ "updatedAt": 1795713256854,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4878,7 +4878,7 @@
    "updatedAt": 1795713177535
   },
   "sheets/mwxtas76tt4q4jo2": {
-   "name": "Recheio cina",
+   "name": "Recheio cinnamon roll",
    "code": "FT-027",
    "family": "",
    "doses": "",
@@ -4920,7 +4920,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795713240642,
-   "updatedAt": 1795713246250
+   "updatedAt": 1795713252413
   },
   "shopping/list": {
    "entries": [
