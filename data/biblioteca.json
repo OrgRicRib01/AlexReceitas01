@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795715153720,
+ "updatedAt": 1795715158191,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4890,7 +4890,7 @@
      "yield": "100"
     }
    ],
-   "method": "fazer uma calda com a primeira medida de açucar ",
+   "method": "fazer uma calda com a primeira medida de açucar e a ",
    "notes": "",
    "conservation": "",
    "allergens": [],
@@ -4903,7 +4903,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795713119950,
-   "updatedAt": 1795715149187
+   "updatedAt": 1795715153592
   },
   "sheets/mwxtas76tt4q4jo2": {
    "name": "Recheio cinnamon roll",
