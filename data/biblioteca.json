@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795715016582,
+ "updatedAt": 1795715081317,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4881,6 +4881,13 @@
      "qty": "0,200",
      "price": "0,56",
      "yield": ""
+    },
+    {
+     "name": "manteiga",
+     "unit": "kg",
+     "qty": "",
+     "price": "8,36",
+     "yield": "100"
     }
    ],
    "method": "",
@@ -4896,7 +4903,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795713119950,
-   "updatedAt": 1795715012388
+   "updatedAt": 1795715077132
   },
   "sheets/mwxtas76tt4q4jo2": {
    "name": "Recheio cinnamon roll",
