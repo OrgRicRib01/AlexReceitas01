@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795713623319,
+ "updatedAt": 1795713630940,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4989,7 +4989,7 @@
     {
      "name": "Queijo fresco",
      "unit": "kg",
-     "qty": "",
+     "qty": "0,500",
      "price": "5,75",
      "yield": ""
     },
@@ -5049,7 +5049,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795713419050,
-   "updatedAt": 1795713618678
+   "updatedAt": 1795713626181
   },
   "shopping/list": {
    "entries": [
