@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795712873089,
+ "updatedAt": 1795712878622,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4529,7 +4529,7 @@
      "yield": "100"
     },
     {
-     "name": "",
+     "name": "casca de limão",
      "unit": "kg",
      "qty": "",
      "price": "",
@@ -4549,7 +4549,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795712681508,
-   "updatedAt": 1795712868780
+   "updatedAt": 1795712877129
   },
   "sheets/mwxszathu2y2p6uj": {
    "name": "Merengue suiço",
