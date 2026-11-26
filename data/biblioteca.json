@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795712166360,
+ "updatedAt": 1795712174158,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4288,14 +4288,14 @@
     {
      "name": "farinha",
      "unit": "kg",
-     "qty": "60,000",
+     "qty": "0,060",
      "price": "0,69",
      "yield": "100"
     },
     {
      "name": "Amido de milho (maizena)",
      "unit": "kg",
-     "qty": "20,000",
+     "qty": "0.0",
      "price": "6,47",
      "yield": ""
     },
@@ -4320,7 +4320,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795711668126,
-   "updatedAt": 1795712161775
+   "updatedAt": 1795712172469
   },
   "sheets/mwxsh40m76arqe9f": {
    "name": "Massa folhada inversa",
