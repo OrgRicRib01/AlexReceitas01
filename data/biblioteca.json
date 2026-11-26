@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795712791161,
+ "updatedAt": 1795712798309,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4501,7 +4501,7 @@
    "cookTime": "15m",
    "ingredients": [
     {
-     "name": "",
+     "name": "leit",
      "unit": "kg",
      "qty": "",
      "price": "",
@@ -4535,7 +4535,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795712681508,
-   "updatedAt": 1795712786731
+   "updatedAt": 1795712793942
   },
   "sheets/mwxszathu2y2p6uj": {
    "name": "Merengue suiço",
