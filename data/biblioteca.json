@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795712504475,
+ "updatedAt": 1795712552554,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4373,7 +4373,7 @@
      "yield": ""
     }
    ],
-   "method": "",
+   "method": "Misturar tudo com a manteiga amolecida até fazer uma massa homogénea.\nEsticar.\nColocar a manteiga no meio e fazer 3 voltas simples, com descanso de 15 minutos entre voltas no frio.\n",
    "notes": "",
    "conservation": "",
    "allergens": [],
@@ -4386,7 +4386,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795711856278,
-   "updatedAt": 1795712387773
+   "updatedAt": 1795712548358
   },
   "sheets/mwxssoysm5v9xm0n": {
    "name": "Mil folhas ",
