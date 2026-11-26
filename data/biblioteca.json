@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795712327527,
+ "updatedAt": 1795712331907,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4340,7 +4340,7 @@
     {
      "name": "farinha",
      "unit": "kg",
-     "qty": "0.17",
+     "qty": "0,150",
      "price": "0,69",
      "yield": "100"
     },
@@ -4386,7 +4386,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795711856278,
-   "updatedAt": 1795712323207
+   "updatedAt": 1795712327559
   },
   "shopping/list": {
    "entries": [
