@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795712798309,
+ "updatedAt": 1795712803117,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4501,10 +4501,10 @@
    "cookTime": "15m",
    "ingredients": [
     {
-     "name": "leit",
-     "unit": "kg",
+     "name": "Leite meio-gordo",
+     "unit": "L",
      "qty": "",
-     "price": "",
+     "price": "0,85",
      "yield": ""
     },
     {
@@ -4535,7 +4535,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795712681508,
-   "updatedAt": 1795712793942
+   "updatedAt": 1795712798934
   },
   "sheets/mwxszathu2y2p6uj": {
    "name": "Merengue suiço",
