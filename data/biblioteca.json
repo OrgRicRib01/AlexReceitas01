@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795712818355,
+ "updatedAt": 1795712819937,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4560,7 +4560,7 @@
      "yield": "100"
     }
    ],
-   "method": "",
+   "method": "Fazer merengue em banho-maria.\nQuando não tiver um grão de açúcar, retirar do lume e bater até firme.\nColocar por cima do mil-folhas e polvilhar cacau.",
    "notes": "",
    "conservation": "",
    "allergens": [],
@@ -4573,7 +4573,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795712704901,
-   "updatedAt": 1795712765967
+   "updatedAt": 1795712812411
   },
   "shopping/list": {
    "entries": [
