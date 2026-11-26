@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795712552554,
+ "updatedAt": 1795712582923,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4432,7 +4432,7 @@
      "yield": ""
     }
    ],
-   "method": "",
+   "method": "Esticar a massa, picar e passar açúcar em pó.\nVirar a massa, picar e passar mais açúcar em pó.\nAssar entre tabuleiros com papel vegetal a 200°C durante 20 a 25 minutos.\nApós frio, cortar em retângulos iguais.\nCom saco de pasteleiro, colocar o creme de pasteleiro e montar.",
    "notes": "",
    "conservation": "",
    "allergens": [],
@@ -4445,7 +4445,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795712396645,
-   "updatedAt": 1795712499983
+   "updatedAt": 1795712578505
   },
   "shopping/list": {
    "entries": [
