@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795711889931,
+ "updatedAt": 1795711896924,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4323,7 +4323,7 @@
    "updatedAt": 1795711849426
   },
   "sheets/mwxsh40m76arqe9f": {
-   "name": "Massa ",
+   "name": "Massa folhada inversa",
    "code": "FT-018",
    "family": "",
    "doses": "",
@@ -4365,7 +4365,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795711856278,
-   "updatedAt": 1795711885557
+   "updatedAt": 1795711892667
   },
   "shopping/list": {
    "entries": [
