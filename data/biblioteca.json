@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795803225413,
+ "updatedAt": 1795803229970,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4224,7 +4224,7 @@
    "family": "Sobremesa",
    "doses": "",
    "prepTime": "20",
-   "cookTime": " ",
+   "cookTime": " 25",
    "ingredients": [
     {
      "name": "Açúcar branco",
@@ -4292,7 +4292,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795638374756,
-   "updatedAt": 1795803224017
+   "updatedAt": 1795803225696
   },
   "sheets/mwxsd2u621zefrhg": {
    "name": "Pão de Ló ",
