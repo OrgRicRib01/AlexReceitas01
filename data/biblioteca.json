@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795718364400,
+ "updatedAt": 1795801552002,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4246,6 +4246,27 @@
      "qty": "",
      "price": "",
      "yield": ""
+    },
+    {
+     "name": "",
+     "unit": "kg",
+     "qty": "",
+     "price": "",
+     "yield": ""
+    },
+    {
+     "name": "",
+     "unit": "kg",
+     "qty": "",
+     "price": "",
+     "yield": ""
+    },
+    {
+     "name": "",
+     "unit": "kg",
+     "qty": "",
+     "price": "",
+     "yield": ""
     }
    ],
    "method": "",
@@ -4261,7 +4282,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795638374756,
-   "updatedAt": 1795638396938
+   "updatedAt": 1795801547740
   },
   "sheets/mwxsd2u621zefrhg": {
    "name": "Pão de Ló ",
