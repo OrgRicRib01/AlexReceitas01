@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795803417360,
+ "updatedAt": 1795803427608,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4356,7 +4356,7 @@
   "sheets/mwxsh40m76arqe9f": {
    "name": "Massa folhada inversa",
    "code": "FT-018",
-   "family": "",
+   "family": "Pastelaria",
    "doses": "",
    "prepTime": "",
    "cookTime": "",
@@ -4417,7 +4417,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795711856278,
-   "updatedAt": 1795712548358
+   "updatedAt": 1795803423179
   },
   "sheets/mwxssoysm5v9xm0n": {
    "name": "Mil folhas ",
