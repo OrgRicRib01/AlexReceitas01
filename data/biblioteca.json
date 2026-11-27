@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795803619516,
+ "updatedAt": 1795803623135,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4868,8 +4868,8 @@
    "code": "FT-026",
    "family": "creme",
    "doses": "10+",
-   "prepTime": "",
-   "cookTime": "",
+   "prepTime": "5",
+   "cookTime": " 25",
    "ingredients": [
     {
      "name": "água",
@@ -4934,7 +4934,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795713119950,
-   "updatedAt": 1795803615202
+   "updatedAt": 1795803618680
   },
   "sheets/mwxtas76tt4q4jo2": {
    "name": "Recheio cinnamon roll",
