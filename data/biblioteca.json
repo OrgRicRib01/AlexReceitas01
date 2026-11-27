@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795803413370,
+ "updatedAt": 1795803417360,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4300,7 +4300,7 @@
    "family": "Sobremesa",
    "doses": "10",
    "prepTime": "",
-   "cookTime": "",
+   "cookTime": " 25",
    "ingredients": [
     {
      "name": "ovo",
@@ -4351,7 +4351,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795711668126,
-   "updatedAt": 1795803409145
+   "updatedAt": 1795803412835
   },
   "sheets/mwxsh40m76arqe9f": {
    "name": "Massa folhada inversa",
