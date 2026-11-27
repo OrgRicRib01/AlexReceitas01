@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795803279134,
+ "updatedAt": 1795803296736,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4080,9 +4080,9 @@
    "name": "Bolo de Caramelo",
    "code": "FT-014",
    "family": "",
-   "doses": "",
-   "prepTime": "",
-   "cookTime": "",
+   "doses": "10",
+   "prepTime": "20",
+   "cookTime": " 25",
    "ingredients": [
     {
      "name": "leite",
@@ -4147,7 +4147,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795637488351,
-   "updatedAt": 1795638167232
+   "updatedAt": 1795803295342
   },
   "sheets/mwwknfdbpbbpru7b": {
    "name": "Bolo de Cenoura",
