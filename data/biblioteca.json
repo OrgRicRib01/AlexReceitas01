@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795803403095,
+ "updatedAt": 1795803413370,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4297,8 +4297,8 @@
   "sheets/mwxsd2u621zefrhg": {
    "name": "Pão de Ló ",
    "code": "FT-017",
-   "family": "",
-   "doses": "",
+   "family": "Sobremesa",
+   "doses": "10",
    "prepTime": "",
    "cookTime": "",
    "ingredients": [
@@ -4351,7 +4351,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795711668126,
-   "updatedAt": 1795712298269
+   "updatedAt": 1795803409145
   },
   "sheets/mwxsh40m76arqe9f": {
    "name": "Massa folhada inversa",
