@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795803377055,
+ "updatedAt": 1795803403095,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4152,10 +4152,10 @@
   "sheets/mwwknfdbpbbpru7b": {
    "name": "Bolo de Cenoura",
    "code": "FT-015",
-   "family": "",
+   "family": "Sobremesa",
    "doses": "",
-   "prepTime": "",
-   "cookTime": "",
+   "prepTime": "20",
+   "cookTime": " 25",
    "ingredients": [
     {
      "name": "Cenoura",
@@ -4216,7 +4216,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795638247823,
-   "updatedAt": 1795638454266
+   "updatedAt": 1795803398770
   },
   "sheets/mwwkq5b8v2c5zgxf": {
    "name": "Bolo de laranja ",
