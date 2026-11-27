@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795803596811,
+ "updatedAt": 1795803605879,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4481,9 +4481,9 @@
   "sheets/mwxsykqcvyqy5a4b": {
    "name": "Palmiers ",
    "code": "FT-020",
-   "family": "",
+   "family": "Pastelaria",
    "doses": "",
-   "prepTime": "",
+   "prepTime": "5",
    "cookTime": "",
    "ingredients": [
     {
@@ -4521,7 +4521,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795712671092,
-   "updatedAt": 1795803105796
+   "updatedAt": 1795803604474
   },
   "sheets/mwxsysroi8rycunu": {
    "name": "Creme de pasteleiro",
