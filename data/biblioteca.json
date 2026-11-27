@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795803469812,
+ "updatedAt": 1795803475642,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4585,7 +4585,7 @@
   "sheets/mwxszathu2y2p6uj": {
    "name": "Merengue suiço",
    "code": "FT-021",
-   "family": "Sobremesa",
+   "family": "Pastelaria",
    "doses": "",
    "prepTime": "",
    "cookTime": "",
@@ -4618,7 +4618,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795712704901,
-   "updatedAt": 1795803465621
+   "updatedAt": 1795803471075
   },
   "sheets/mwxt1pjve01xb6dt": {
    "name": "Entrelaçados de manteiga de alho ",
