@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795802784747,
+ "updatedAt": 1795802788882,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4243,7 +4243,7 @@
     {
      "name": "Farinha de trigo",
      "unit": "kg",
-     "qty": "",
+     "qty": "0.200",
      "price": "0.69",
      "yield": "100"
     },
@@ -4282,7 +4282,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795638374756,
-   "updatedAt": 1795802780563
+   "updatedAt": 1795802784653
   },
   "sheets/mwxsd2u621zefrhg": {
    "name": "Pão de Ló ",
