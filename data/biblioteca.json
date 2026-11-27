@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795803605879,
+ "updatedAt": 1795803610593,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4484,7 +4484,7 @@
    "family": "Pastelaria",
    "doses": "",
    "prepTime": "5",
-   "cookTime": "",
+   "cookTime": " 25",
    "ingredients": [
     {
      "name": "Massa Folhada",
@@ -4521,7 +4521,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795712671092,
-   "updatedAt": 1795803604474
+   "updatedAt": 1795803606042
   },
   "sheets/mwxsysroi8rycunu": {
    "name": "Creme de pasteleiro",
