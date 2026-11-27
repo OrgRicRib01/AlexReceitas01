@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795803229970,
+ "updatedAt": 1795803243904,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -5114,9 +5114,9 @@
    "name": "Madalenas",
    "code": "FT-029",
    "family": "Pastelaria",
-   "doses": "",
-   "prepTime": "",
-   "cookTime": "",
+   "doses": "10",
+   "prepTime": "15",
+   "cookTime": "20",
    "ingredients": [
     {
      "name": "ovos",
@@ -5177,7 +5177,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795717845733,
-   "updatedAt": 1795718360145
+   "updatedAt": 1795803239689
   },
   "shopping/list": {
    "entries": [
