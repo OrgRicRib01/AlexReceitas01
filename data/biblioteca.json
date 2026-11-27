@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795803560653,
+ "updatedAt": 1795803567708,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -5007,8 +5007,8 @@
    "code": "FT-028",
    "family": "Sobremesa",
    "doses": "10+",
-   "prepTime": "20",
-   "cookTime": "",
+   "prepTime": "5",
+   "cookTime": " 25",
    "ingredients": [
     {
      "name": "Farinha de trigo",
@@ -5108,7 +5108,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795713419050,
-   "updatedAt": 1795803556491
+   "updatedAt": 1795803565885
   },
   "sheets/mwxw1hidg6im2971": {
    "name": "Madalenas",
