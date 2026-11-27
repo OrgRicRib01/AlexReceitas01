@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795802792637,
+ "updatedAt": 1795802796705,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4250,7 +4250,7 @@
     {
      "name": "Fermento em pó",
      "unit": "kg",
-     "qty": "",
+     "qty": "0.003",
      "price": "14.00",
      "yield": "100"
     },
@@ -4282,7 +4282,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795638374756,
-   "updatedAt": 1795802788216
+   "updatedAt": 1795802792466
   },
   "sheets/mwxsd2u621zefrhg": {
    "name": "Pão de Ló ",
