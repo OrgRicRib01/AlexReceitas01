@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795803452065,
+ "updatedAt": 1795803456798,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4425,7 +4425,7 @@
    "family": "Pastelaria",
    "doses": "10",
    "prepTime": "20",
-   "cookTime": "",
+   "cookTime": " 20",
    "ingredients": [
     {
      "name": "leite",
@@ -4476,7 +4476,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795712396645,
-   "updatedAt": 1795803447787
+   "updatedAt": 1795803452621
   },
   "sheets/mwxsykqcvyqy5a4b": {
    "name": "Palmiers ",
