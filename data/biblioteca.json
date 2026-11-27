@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795802816540,
+ "updatedAt": 1795802825579,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4264,7 +4264,7 @@
     {
      "name": "manteiga",
      "unit": "kg",
-     "qty": "",
+     "qty": "0.125",
      "price": "8.36",
      "yield": "100"
     }
@@ -4282,7 +4282,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795638374756,
-   "updatedAt": 1795802812354
+   "updatedAt": 1795802821336
   },
   "sheets/mwxsd2u621zefrhg": {
    "name": "Pão de Ló ",
