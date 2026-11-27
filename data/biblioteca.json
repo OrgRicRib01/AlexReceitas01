@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795803329879,
+ "updatedAt": 1795803338694,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -3598,7 +3598,7 @@
   "sheets/mwuzhk9h5j6n0853": {
    "name": "Bolinho de Cardamomo",
    "code": "FT-010",
-   "family": "",
+   "family": "Sobremesa",
    "doses": "",
    "prepTime": "",
    "cookTime": "",
@@ -3676,7 +3676,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795542236117,
-   "updatedAt": 1795542652158
+   "updatedAt": 1795803334521
   },
   "sheets/mwuzo9y5zlqvry8d": {
    "name": "Areias",
