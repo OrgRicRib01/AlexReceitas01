@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795803105683,
+ "updatedAt": 1795803108861,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4490,7 +4490,7 @@
      "name": "Massa Folhada",
      "unit": "kg",
      "qty": "",
-     "price": "",
+     "price": "4.13",
      "yield": ""
     },
     {
@@ -4521,7 +4521,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795712671092,
-   "updatedAt": 1795803101287
+   "updatedAt": 1795803105796
   },
   "sheets/mwxsysroi8rycunu": {
    "name": "Creme de pasteleiro",
