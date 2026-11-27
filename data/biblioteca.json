@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795803504987,
+ "updatedAt": 1795803511839,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4714,7 +4714,7 @@
    "name": "Massa brioche ",
    "code": "FT-024",
    "family": "",
-   "doses": "",
+   "doses": "10",
    "prepTime": "",
    "cookTime": "",
    "ingredients": [
@@ -4795,7 +4795,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795712914739,
-   "updatedAt": 1795713085129
+   "updatedAt": 1795803507597
   },
   "sheets/mwxt7pa3te32t76k": {
    "name": "Cobertura de coco",
