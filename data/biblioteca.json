@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795802694789,
+ "updatedAt": 1795802698810,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4229,7 +4229,7 @@
     {
      "name": "Açúcar branco",
      "unit": "kg",
-     "qty": "",
+     "qty": "0.250",
      "price": "1.09",
      "yield": "100"
     },
@@ -4282,7 +4282,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795638374756,
-   "updatedAt": 1795802690545
+   "updatedAt": 1795802694607
   },
   "sheets/mwxsd2u621zefrhg": {
    "name": "Pão de Ló ",
