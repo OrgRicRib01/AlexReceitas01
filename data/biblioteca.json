@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795803496566,
+ "updatedAt": 1795803504987,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4623,7 +4623,7 @@
   "sheets/mwxt1pjve01xb6dt": {
    "name": "Entrelaçados de manteiga de alho ",
    "code": "FT-022",
-   "family": "",
+   "family": "Salgados",
    "doses": "",
    "prepTime": "",
    "cookTime": "",
@@ -4663,7 +4663,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795712817308,
-   "updatedAt": 1795712851456
+   "updatedAt": 1795803500772
   },
   "sheets/mwxt2w4jobjb7op0": {
    "name": "Folhados de legumes ",
