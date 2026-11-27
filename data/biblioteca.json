@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795803578791,
+ "updatedAt": 1795803596811,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4800,7 +4800,7 @@
   "sheets/mwxt7pa3te32t76k": {
    "name": "Cobertura de coco",
    "code": "FT-025",
-   "family": "",
+   "family": "Pastelaria",
    "doses": "",
    "prepTime": "5",
    "cookTime": " 25",
@@ -4861,7 +4861,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795713096891,
-   "updatedAt": 1795803274918
+   "updatedAt": 1795803592569
   },
   "sheets/mwxt872m37xi4cpf": {
    "name": "Creme de bola de berlim",
