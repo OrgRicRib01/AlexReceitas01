@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795803534670,
+ "updatedAt": 1795803541513,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4941,8 +4941,8 @@
    "code": "FT-027",
    "family": "",
    "doses": "",
-   "prepTime": "",
-   "cookTime": "",
+   "prepTime": "5",
+   "cookTime": "0",
    "ingredients": [
     {
      "name": "Farinha de Amêndoa ",
@@ -5000,7 +5000,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795713240642,
-   "updatedAt": 1795713356898
+   "updatedAt": 1795803539937
   },
   "sheets/mwxteluyyuwe0q9t": {
    "name": "Queijadas de Évora",
