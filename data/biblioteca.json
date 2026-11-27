@@ -1,7 +1,7 @@
 {
  "format": "fichas-tecnicas-store",
  "version": 1,
- "updatedAt": 1795803511839,
+ "updatedAt": 1795803524843,
  "docs": {
   "ingredients/i-abacate": {
    "name": "Abacate",
@@ -4714,9 +4714,9 @@
    "name": "Massa brioche ",
    "code": "FT-024",
    "family": "",
-   "doses": "10",
-   "prepTime": "",
-   "cookTime": "",
+   "doses": "10+",
+   "prepTime": "20",
+   "cookTime": " 20",
    "ingredients": [
     {
      "name": "Farinha de trigo",
@@ -4795,7 +4795,7 @@
    "photoId": null,
    "photoUrl": null,
    "createdAt": 1795712914739,
-   "updatedAt": 1795803507597
+   "updatedAt": 1795803520577
   },
   "sheets/mwxt7pa3te32t76k": {
    "name": "Cobertura de coco",
